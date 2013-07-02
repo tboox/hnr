@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/new/main" >
+        <file alias="main" >network.png</file>
+    </qresource>
+    <qresource prefix="/new/filemenu" >
+        <file alias="exit" >fileclose.png</file>
+        <file alias="save" >filesave.png</file>
+        <file alias="add" >plus.png</file>
+        <file alias="remove" >minus.png</file>
+        <file alias="open" >fileopen.png</file>
+    </qresource>
+    <qresource prefix="/new/others" >
+        <file alias="digital" >star.png</file>
+    </qresource>
+</RCC>

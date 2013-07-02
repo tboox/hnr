@@ -1,0 +1,28 @@
+/* ///////////////////////////////////////////////////////////////////////
+ * File:		test.h		
+ *
+ * Created:		08.11.24			
+ * Updated:		09.01.15
+ *
+ * Brief:		the platform synchronization library unit-testing
+ *
+ * [<Home>]
+ * Copyright (c) 2008-2020, Waruqi All rights reserved.
+ * //////////////////////////////////////////////////////////////////// */
+
+#ifndef EXTL_PLATFORM_SYNCH_TEST_H
+#define EXTL_PLATFORM_SYNCH_TEST_H
+
+/* ///////////////////////////////////////////////////////////////////////
+ * Includes
+ */
+#include "../synch.h"
+
+#ifdef EXTL_PLATFORM_SYNCH_ATOMIC_TRAITS_TEST_ENABLE
+#	include "atomic_traits_test.h"
+#endif
+
+/* //////////////////////////////////////////////////////////////////// */
+#endif /* EXTL_PLATFORM_SYNCH_TEST_H */
+/* //////////////////////////////////////////////////////////////////// */
+

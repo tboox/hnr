@@ -1,0 +1,11 @@
+	E:\Qt\4.5.0\bin\moc.exe -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\Qt\4.5.0\include\QtCore" -I"..\Qt\4.5.0\include\QtGui" -I"..\Qt\4.5.0\include\QtSql" -I"..\Qt\4.5.0\include" -I"..\Qt\4.5.0\include\ActiveQt" -I"release" -I"." -I"..\Qt\4.5.0\mkspecs\win32-msvc2003" -D_MSC_VER=1310 -DWIN32 mainwindow.h -o release\moc_mainwindow.cpp
+	cl -c -nologo -Zm300 -O2 -MD -GR -EHsc -W3 -w34100 -w34189 -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\Qt\4.5.0\include\QtCore" -I"..\Qt\4.5.0\include\QtGui" -I"..\Qt\4.5.0\include\QtSql" -I"..\Qt\4.5.0\include" -I"..\Qt\4.5.0\include\ActiveQt" -I"release" -I"." -I"..\Qt\4.5.0\mkspecs\win32-msvc2003" -Forelease\ @C:\DOCUME~1\waruqi\LOCALS~1\Temp\nmAD.tmp
+main.cpp
+mainwindow.cpp
+正在生成代码...
+	cl -c -nologo -Zm300 -O2 -MD -GR -EHsc -W3 -w34100 -w34189 -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -I"..\Qt\4.5.0\include\QtCore" -I"..\Qt\4.5.0\include\QtGui" -I"..\Qt\4.5.0\include\QtSql" -I"..\Qt\4.5.0\include" -I"..\Qt\4.5.0\include\ActiveQt" -I"release" -I"." -I"..\Qt\4.5.0\mkspecs\win32-msvc2003" -Forelease\ @C:\DOCUME~1\waruqi\LOCALS~1\Temp\nmAE.tmp
+moc_mainwindow.cpp
+moc_imageview.cpp
+qrc_res.cpp
+正在生成代码...
+	link /LIBPATH:"e:\Qt\4.5.0\lib" /NOLOGO /INCREMENTAL:NO /SUBSYSTEM:WINDOWS /OUT:release\HNR.exe @C:\DOCUME~1\waruqi\LOCALS~1\Temp\nmAF.tmp 

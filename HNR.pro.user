@@ -1,0 +1,476 @@
+<!DOCTYPE QtCreatorProject>
+<qtcreator>
+ <data>
+  <variable>RunConfiguration0-CommandLineArguments</variable>
+  <valuelist type="QVariantList" />
+ </data>
+ <data>
+  <variable>RunConfiguration0-ProFile</variable>
+  <value type="QString" >E:/HNR/HNR.pro</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-RunConfiguration.name</variable>
+  <value type="QString" >HNR</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserSetName</variable>
+  <value type="bool" >false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-type</variable>
+  <value type="QString" >Qt4ProjectManager.Qt4RunConfiguration</value>
+ </data>
+ <data>
+  <variable>activeRunConfiguration</variable>
+  <value type="int" >0</value>
+ </data>
+ <data>
+  <variable>activebuildconfiguration</variable>
+  <value type="QString" >Release</value>
+ </data>
+ <data>
+  <variable>buildConfiguration-Debug</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
+   <value key="QtVersionId" type="int" >0</value>
+   <value key="addQDumper" type="" ></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildConfiguration-Release</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Release</value>
+   <value key="QtVersionId" type="int" >5</value>
+   <value key="addQDumper" type="" ></value>
+   <value key="buildDirectory" type="QString" >E:\HNR</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-buildstep0</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-buildstep1</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList" >
+    <value type="QString" >ALLUSERSPROFILE=C:\Documents and Settings\All Users</value>
+    <value type="QString" >APPDATA=C:\Documents and Settings\waruqi\Application Data</value>
+    <value type="QString" >BISTRO_GLOBAL_CACHE_DIR=E:\Program Files\Intel\VTune\CGGlbCache</value>
+    <value type="QString" >BISTRO_INSTALL_DIR=E:\Program Files\Intel\VTune\analyzer\bin\</value>
+    <value type="QString" >CLASSPATH=.;E:\Program Files\Intel\VTune\Analyzer\Bin;C:\Program Files\Common Files\Compuware\DLM40JNI.jar</value>
+    <value type="QString" >CLIENTNAME=Console</value>
+    <value type="QString" >COMMONPROGRAMFILES=C:\Program Files\Common Files</value>
+    <value type="QString" >COMPUTERNAME=A21CA439254A466</value>
+    <value type="QString" >COMSPEC=C:\WINDOWS\system32\cmd.exe</value>
+    <value type="QString" >COR_ENABLE_PROFILING=1</value>
+    <value type="QString" >COR_PROFILER={91663010-0D1E-4abd-8F0C-0B4B84CCA809}</value>
+    <value type="QString" >DXSDK_DIR=E:\Program Files\Microsoft DirectX SDK (June 2008)\</value>
+    <value type="QString" >FP_NO_HOST_CHECK=NO</value>
+    <value type="QString" >HOMEDRIVE=C:</value>
+    <value type="QString" >HOMEPATH=\Documents and Settings\waruqi</value>
+    <value type="QString" >INCLUDE=E:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\include\;E:\Program Files\Microsoft Visual Studio\VC98\atl\include;E:\Program Files\Microsoft Visual Studio\VC98\mfc\include;E:\Program Files\Microsoft Visual Studio\VC98\include;E:\Program Files\VC98\atl\include;E:\Program Files\VC98\mfc\include;E:\Program Files\VC98\include</value>
+    <value type="QString" >INTEL_LICENSE_FILE=C:\Program Files\Common Files\Intel\Licenses</value>
+    <value type="QString" >LIB=E:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\Lib\;E:\Program Files\Microsoft Visual Studio\VC98\mfc\lib;E:\Program Files\Microsoft Visual Studio\VC98\lib;E:\Program Files\VC98\mfc\lib;E:\Program Files\VC98\lib</value>
+    <value type="QString" >LOGONSERVER=\\A21CA439254A466</value>
+    <value type="QString" >MSDEVDIR=E:\Program Files\Microsoft Visual Studio\Common\MSDev98</value>
+    <value type="QString" >MSVCDIR=E:\Program Files\Microsoft Visual Studio\VC98</value>
+    <value type="QString" >NUMBER_OF_PROCESSORS=2</value>
+    <value type="QString" >OS=Windows_NT</value>
+    <value type="QString" >PATH=E:\Qt\2009.01\mingw\bin;E:\Qt\2009.01\qt\bin;D:\Program Files\ARM\ADSv1_2\bin;E:\Program Files\php\;E:\Program Files\Intel\VTune\CGGlbCache;E:\Program Files\Intel\VTune\Shared\Bin;C:\Program Files\Common Files\Intel\Shared Files\IDVC;E:\Program Files\Intel\VTune\Analyzer\Bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Compuware;E:\Program Files\Graphviz2.18\Bin;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;E:\Program Files\Perforce;E:\Program Files\Borland\StarTeam SDK 6.0\Lib;E:\Program Files\Borland\StarTeam SDK 6.0\Bin;E:\Program Files\Subversion\bin;E:\Program Files\Microsoft Visual Studio\Common\Tools\WinNT;E:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin;E:\Program Files\Microsoft Visual Studio\Common\Tools;E:\Program Files\Microsoft Visual Studio\VC98\bin;E:\Program Files\Visual C++ 6.0\Tools\WinNT;E:\Program Files\Visual C++ 6.0\MSDev98\Bin;E:\Program Files\Visual C++ 6.0\Tools;E:\Program Files\VC98\bin;E:\Program Files\SSH Communications Security\SSH Secure Shell;E:\Program Files\SlickEdit 2008\win\;C:\Program Files\Common Files\Ahead\Lib\</value>
+    <value type="QString" >PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH</value>
+    <value type="QString" >PHPRC=E:\Program Files\php\</value>
+    <value type="QString" >PHP_PEAR_BIN_DIR=E:\Program Files\php</value>
+    <value type="QString" >PHP_PEAR_DATA_DIR=E:\Program Files\php\data</value>
+    <value type="QString" >PHP_PEAR_DOC_DIR=E:\Program Files\php\docs</value>
+    <value type="QString" >PHP_PEAR_INSTALL_DIR=E:\Program Files\php\pear</value>
+    <value type="QString" >PHP_PEAR_PHP_BIN=E:\Program Files\php\.\php.exe</value>
+    <value type="QString" >PHP_PEAR_SYSCONF_DIR=E:\Program Files\php</value>
+    <value type="QString" >PHP_PEAR_TEST_DIR=E:\Program Files\php\tests</value>
+    <value type="QString" >PROCESSOR_ARCHITECTURE=x86</value>
+    <value type="QString" >PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 4, GenuineIntel</value>
+    <value type="QString" >PROCESSOR_LEVEL=15</value>
+    <value type="QString" >PROCESSOR_REVISION=0604</value>
+    <value type="QString" >PROGRAMFILES=C:\Program Files</value>
+    <value type="QString" >QTDIR=E:/Qt/2009.01/qt</value>
+    <value type="QString" >RAV=C:\Documents and Settings\All Users\Application Data\Rising\Rav</value>
+    <value type="QString" >RFW=C:\Documents and Settings\All Users\Application Data\Rising\RFW</value>
+    <value type="QString" >SESSIONNAME=Console</value>
+    <value type="QString" >STARTEAMAPP=E:\Program Files\Borland\StarTeam 6.0</value>
+    <value type="QString" >SYSTEMDRIVE=C:</value>
+    <value type="QString" >SYSTEMROOT=C:\WINDOWS</value>
+    <value type="QString" >TEMP=C:\DOCUME~1\waruqi\LOCALS~1\Temp</value>
+    <value type="QString" >TMP=C:\DOCUME~1\waruqi\LOCALS~1\Temp</value>
+    <value type="QString" >USERDOMAIN=A21CA439254A466</value>
+    <value type="QString" >USERNAME=waruqi</value>
+    <value type="QString" >USERPROFILE=C:\Documents and Settings\waruqi</value>
+    <value type="QString" >VS71COMNTOOLS=E:\Program Files\Microsoft Visual Studio .NET 2003\Common7\Tools\</value>
+    <value type="QString" >VTUNE_GLOBAL_DIR=E:\Program Files\Intel\VTune\global_data\</value>
+    <value type="QString" >WINDIR=C:\WINDOWS</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList" >
+    <value type="QString" >E:/HNR/HNR.pro</value>
+    <value type="QString" >-spec</value>
+    <value type="QString" >win32-g++</value>
+    <value type="QString" >-r</value>
+    <value type="QString" >CONFIG+=debug_and_release</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString" >E:/Qt/2009.01/qt/bin/qmake.exe</value>
+   <value key="abstractProcess.enabled" type="bool" >false</value>
+   <value key="abstractProcess.workingDirectory" type="QString" >E:/HNR</value>
+   <value key="buildConfiguration" type="int" >10</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-buildstep2</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList" >
+    <value type="QString" >ALLUSERSPROFILE=C:\Documents and Settings\All Users</value>
+    <value type="QString" >APPDATA=C:\Documents and Settings\waruqi\Application Data</value>
+    <value type="QString" >BISTRO_GLOBAL_CACHE_DIR=E:\Program Files\Intel\VTune\CGGlbCache</value>
+    <value type="QString" >BISTRO_INSTALL_DIR=E:\Program Files\Intel\VTune\analyzer\bin\</value>
+    <value type="QString" >CLASSPATH=.;E:\Program Files\Intel\VTune\Analyzer\Bin;C:\Program Files\Common Files\Compuware\DLM40JNI.jar</value>
+    <value type="QString" >CLIENTNAME=Console</value>
+    <value type="QString" >COMMONPROGRAMFILES=C:\Program Files\Common Files</value>
+    <value type="QString" >COMPUTERNAME=A21CA439254A466</value>
+    <value type="QString" >COMSPEC=C:\WINDOWS\system32\cmd.exe</value>
+    <value type="QString" >COR_ENABLE_PROFILING=1</value>
+    <value type="QString" >COR_PROFILER={91663010-0D1E-4abd-8F0C-0B4B84CCA809}</value>
+    <value type="QString" >DXSDK_DIR=E:\Program Files\Microsoft DirectX SDK (June 2008)\</value>
+    <value type="QString" >FP_NO_HOST_CHECK=NO</value>
+    <value type="QString" >HOMEDRIVE=C:</value>
+    <value type="QString" >HOMEPATH=\Documents and Settings\waruqi</value>
+    <value type="QString" >INCLUDE=E:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\include\;E:\Program Files\Microsoft Visual Studio\VC98\atl\include;E:\Program Files\Microsoft Visual Studio\VC98\mfc\include;E:\Program Files\Microsoft Visual Studio\VC98\include;E:\Program Files\VC98\atl\include;E:\Program Files\VC98\mfc\include;E:\Program Files\VC98\include</value>
+    <value type="QString" >INTEL_LICENSE_FILE=C:\Program Files\Common Files\Intel\Licenses</value>
+    <value type="QString" >LIB=E:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\Lib\;E:\Program Files\Microsoft Visual Studio\VC98\mfc\lib;E:\Program Files\Microsoft Visual Studio\VC98\lib;E:\Program Files\VC98\mfc\lib;E:\Program Files\VC98\lib</value>
+    <value type="QString" >LOGONSERVER=\\A21CA439254A466</value>
+    <value type="QString" >MSDEVDIR=E:\Program Files\Microsoft Visual Studio\Common\MSDev98</value>
+    <value type="QString" >MSVCDIR=E:\Program Files\Microsoft Visual Studio\VC98</value>
+    <value type="QString" >NUMBER_OF_PROCESSORS=2</value>
+    <value type="QString" >OS=Windows_NT</value>
+    <value type="QString" >PATH=E:\Qt\2009.01\mingw\bin;E:\Qt\2009.01\qt\bin;D:\Program Files\ARM\ADSv1_2\bin;E:\Program Files\php\;E:\Program Files\Intel\VTune\CGGlbCache;E:\Program Files\Intel\VTune\Shared\Bin;C:\Program Files\Common Files\Intel\Shared Files\IDVC;E:\Program Files\Intel\VTune\Analyzer\Bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Compuware;E:\Program Files\Graphviz2.18\Bin;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;E:\Program Files\Perforce;E:\Program Files\Borland\StarTeam SDK 6.0\Lib;E:\Program Files\Borland\StarTeam SDK 6.0\Bin;E:\Program Files\Subversion\bin;E:\Program Files\Microsoft Visual Studio\Common\Tools\WinNT;E:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin;E:\Program Files\Microsoft Visual Studio\Common\Tools;E:\Program Files\Microsoft Visual Studio\VC98\bin;E:\Program Files\Visual C++ 6.0\Tools\WinNT;E:\Program Files\Visual C++ 6.0\MSDev98\Bin;E:\Program Files\Visual C++ 6.0\Tools;E:\Program Files\VC98\bin;E:\Program Files\SSH Communications Security\SSH Secure Shell;E:\Program Files\SlickEdit 2008\win\;C:\Program Files\Common Files\Ahead\Lib\</value>
+    <value type="QString" >PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH</value>
+    <value type="QString" >PHPRC=E:\Program Files\php\</value>
+    <value type="QString" >PHP_PEAR_BIN_DIR=E:\Program Files\php</value>
+    <value type="QString" >PHP_PEAR_DATA_DIR=E:\Program Files\php\data</value>
+    <value type="QString" >PHP_PEAR_DOC_DIR=E:\Program Files\php\docs</value>
+    <value type="QString" >PHP_PEAR_INSTALL_DIR=E:\Program Files\php\pear</value>
+    <value type="QString" >PHP_PEAR_PHP_BIN=E:\Program Files\php\.\php.exe</value>
+    <value type="QString" >PHP_PEAR_SYSCONF_DIR=E:\Program Files\php</value>
+    <value type="QString" >PHP_PEAR_TEST_DIR=E:\Program Files\php\tests</value>
+    <value type="QString" >PROCESSOR_ARCHITECTURE=x86</value>
+    <value type="QString" >PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 4, GenuineIntel</value>
+    <value type="QString" >PROCESSOR_LEVEL=15</value>
+    <value type="QString" >PROCESSOR_REVISION=0604</value>
+    <value type="QString" >PROGRAMFILES=C:\Program Files</value>
+    <value type="QString" >QTDIR=E:/Qt/2009.01/qt</value>
+    <value type="QString" >RAV=C:\Documents and Settings\All Users\Application Data\Rising\Rav</value>
+    <value type="QString" >RFW=C:\Documents and Settings\All Users\Application Data\Rising\RFW</value>
+    <value type="QString" >SESSIONNAME=Console</value>
+    <value type="QString" >STARTEAMAPP=E:\Program Files\Borland\StarTeam 6.0</value>
+    <value type="QString" >SYSTEMDRIVE=C:</value>
+    <value type="QString" >SYSTEMROOT=C:\WINDOWS</value>
+    <value type="QString" >TEMP=C:\DOCUME~1\waruqi\LOCALS~1\Temp</value>
+    <value type="QString" >TMP=C:\DOCUME~1\waruqi\LOCALS~1\Temp</value>
+    <value type="QString" >USERDOMAIN=A21CA439254A466</value>
+    <value type="QString" >USERNAME=waruqi</value>
+    <value type="QString" >USERPROFILE=C:\Documents and Settings\waruqi</value>
+    <value type="QString" >VS71COMNTOOLS=E:\Program Files\Microsoft Visual Studio .NET 2003\Common7\Tools\</value>
+    <value type="QString" >VTUNE_GLOBAL_DIR=E:\Program Files\Intel\VTune\global_data\</value>
+    <value type="QString" >WINDIR=C:\WINDOWS</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList" >
+    <value type="QString" >debug</value>
+    <value type="QString" >-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString" >E:/Qt/2009.01/mingw/bin/mingw32-make.exe</value>
+   <value key="abstractProcess.enabled" type="bool" >true</value>
+   <value key="abstractProcess.workingDirectory" type="QString" >E:/HNR</value>
+   <valuelist key="makeargs" type="QVariantList" >
+    <value type="QString" >debug</value>
+   </valuelist>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-cleanstep0</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Debug</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Release-buildstep0</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Release</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Release-buildstep1</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Release</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList" >
+    <value type="QString" >ALLUSERSPROFILE=C:\Documents and Settings\All Users</value>
+    <value type="QString" >APPDATA=C:\Documents and Settings\waruqi\Application Data</value>
+    <value type="QString" >BISTRO_GLOBAL_CACHE_DIR=E:\Program Files\Intel\VTune\CGGlbCache</value>
+    <value type="QString" >BISTRO_INSTALL_DIR=E:\Program Files\Intel\VTune\analyzer\bin\</value>
+    <value type="QString" >CLASSPATH=.;E:\Program Files\Intel\VTune\Analyzer\Bin;C:\Program Files\Common Files\Compuware\DLM40JNI.jar</value>
+    <value type="QString" >CLIENTNAME=Console</value>
+    <value type="QString" >COMMONPROGRAMFILES=C:\Program Files\Common Files</value>
+    <value type="QString" >COMPUTERNAME=A21CA439254A466</value>
+    <value type="QString" >COMSPEC=C:\WINDOWS\system32\cmd.exe</value>
+    <value type="QString" >COR_ENABLE_PROFILING=1</value>
+    <value type="QString" >COR_PROFILER={91663010-0D1E-4abd-8F0C-0B4B84CCA809}</value>
+    <value type="QString" >DXSDK_DIR=E:\Program Files\Microsoft DirectX SDK (June 2008)\</value>
+    <value type="QString" >FP_NO_HOST_CHECK=NO</value>
+    <value type="QString" >HOMEDRIVE=C:</value>
+    <value type="QString" >HOMEPATH=\Documents and Settings\waruqi</value>
+    <value type="QString" >INCLUDE=E:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\include\;E:\Program Files\Microsoft Visual Studio\VC98\atl\include;E:\Program Files\Microsoft Visual Studio\VC98\mfc\include;E:\Program Files\Microsoft Visual Studio\VC98\include;E:\Program Files\VC98\atl\include;E:\Program Files\VC98\mfc\include;E:\Program Files\VC98\include</value>
+    <value type="QString" >INTEL_LICENSE_FILE=C:\Program Files\Common Files\Intel\Licenses</value>
+    <value type="QString" >LIB=E:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\Lib\;E:\Program Files\Microsoft Visual Studio\VC98\mfc\lib;E:\Program Files\Microsoft Visual Studio\VC98\lib;E:\Program Files\VC98\mfc\lib;E:\Program Files\VC98\lib</value>
+    <value type="QString" >LOGONSERVER=\\A21CA439254A466</value>
+    <value type="QString" >MSDEVDIR=E:\Program Files\Microsoft Visual Studio\Common\MSDev98</value>
+    <value type="QString" >MSVCDIR=E:\Program Files\Microsoft Visual Studio\VC98</value>
+    <value type="QString" >NUMBER_OF_PROCESSORS=2</value>
+    <value type="QString" >OS=Windows_NT</value>
+    <value type="QString" >PATH=c:\Qt\2009.01\mingw\bin;c:\Qt\2009.01\qt\bin;D:\Program Files\ARM\ADSv1_2\bin;E:\Program Files\php\;E:\Program Files\Intel\VTune\CGGlbCache;E:\Program Files\Intel\VTune\Shared\Bin;C:\Program Files\Common Files\Intel\Shared Files\IDVC;E:\Program Files\Intel\VTune\Analyzer\Bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Compuware;E:\Program Files\Graphviz2.18\Bin;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;E:\Program Files\Perforce;E:\Program Files\Borland\StarTeam SDK 6.0\Lib;E:\Program Files\Borland\StarTeam SDK 6.0\Bin;E:\Program Files\Subversion\bin;e:\matlab6p5\bin\win32;c:\matlab6p5\bin\win32;E:\Program Files\Microsoft Visual Studio\Common\Tools\WinNT;E:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin;E:\Program Files\Microsoft Visual Studio\Common\Tools;E:\Program Files\Microsoft Visual Studio\VC98\bin;E:\Program Files\Visual C++ 6.0\Tools\WinNT;E:\Program Files\Visual C++ 6.0\MSDev98\Bin;E:\Program Files\Visual C++ 6.0\Tools;E:\Program Files\VC98\bin;E:\Program Files\SSH Communications Security\SSH Secure Shell;E:\Program Files\SlickEdit 2008\win\</value>
+    <value type="QString" >PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH</value>
+    <value type="QString" >PHPRC=E:\Program Files\php\</value>
+    <value type="QString" >PHP_PEAR_BIN_DIR=E:\Program Files\php</value>
+    <value type="QString" >PHP_PEAR_DATA_DIR=E:\Program Files\php\data</value>
+    <value type="QString" >PHP_PEAR_DOC_DIR=E:\Program Files\php\docs</value>
+    <value type="QString" >PHP_PEAR_INSTALL_DIR=E:\Program Files\php\pear</value>
+    <value type="QString" >PHP_PEAR_PHP_BIN=E:\Program Files\php\.\php.exe</value>
+    <value type="QString" >PHP_PEAR_SYSCONF_DIR=E:\Program Files\php</value>
+    <value type="QString" >PHP_PEAR_TEST_DIR=E:\Program Files\php\tests</value>
+    <value type="QString" >PROCESSOR_ARCHITECTURE=x86</value>
+    <value type="QString" >PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 4, GenuineIntel</value>
+    <value type="QString" >PROCESSOR_LEVEL=15</value>
+    <value type="QString" >PROCESSOR_REVISION=0604</value>
+    <value type="QString" >PROGRAMFILES=C:\Program Files</value>
+    <value type="QString" >QTDIR=c:/Qt/2009.01/qt</value>
+    <value type="QString" >RAV=C:\Documents and Settings\All Users\Application Data\Rising\Rav</value>
+    <value type="QString" >RFW=C:\Documents and Settings\All Users\Application Data\Rising\RFW</value>
+    <value type="QString" >SESSIONNAME=Console</value>
+    <value type="QString" >STARTEAMAPP=E:\Program Files\Borland\StarTeam 6.0</value>
+    <value type="QString" >SYSTEMDRIVE=C:</value>
+    <value type="QString" >SYSTEMROOT=C:\WINDOWS</value>
+    <value type="QString" >TEMP=C:\DOCUME~1\waruqi\LOCALS~1\Temp</value>
+    <value type="QString" >TMP=C:\DOCUME~1\waruqi\LOCALS~1\Temp</value>
+    <value type="QString" >USERDOMAIN=A21CA439254A466</value>
+    <value type="QString" >USERNAME=waruqi</value>
+    <value type="QString" >USERPROFILE=C:\Documents and Settings\waruqi</value>
+    <value type="QString" >VS71COMNTOOLS=E:\Program Files\Microsoft Visual Studio .NET 2003\Common7\Tools\</value>
+    <value type="QString" >VTUNE_GLOBAL_DIR=E:\Program Files\Intel\VTune\global_data\</value>
+    <value type="QString" >WINDIR=C:\WINDOWS</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList" >
+    <value type="QString" >E:/HNR/HNR.pro</value>
+    <value type="QString" >-spec</value>
+    <value type="QString" >win32-g++</value>
+    <value type="QString" >-r</value>
+    <value type="QString" >CONFIG+=debug_and_release</value>
+    <value type="QString" >CONFIG+=release</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString" >C:/Qt/2009.01/qt/bin/qmake.exe</value>
+   <value key="abstractProcess.enabled" type="bool" >true</value>
+   <value key="abstractProcess.workingDirectory" type="QString" >E:/HNR</value>
+   <value key="buildConfiguration" type="int" >8</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Release-buildstep2</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Release</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList" >
+    <value type="QString" >ALLUSERSPROFILE=C:\Documents and Settings\All Users</value>
+    <value type="QString" >APPDATA=C:\Documents and Settings\waruqi\Application Data</value>
+    <value type="QString" >BISTRO_GLOBAL_CACHE_DIR=E:\Program Files\Intel\VTune\CGGlbCache</value>
+    <value type="QString" >BISTRO_INSTALL_DIR=E:\Program Files\Intel\VTune\analyzer\bin\</value>
+    <value type="QString" >CLASSPATH=.;E:\Program Files\Intel\VTune\Analyzer\Bin;C:\Program Files\Common Files\Compuware\DLM40JNI.jar</value>
+    <value type="QString" >CLIENTNAME=Console</value>
+    <value type="QString" >COMMONPROGRAMFILES=C:\Program Files\Common Files</value>
+    <value type="QString" >COMPUTERNAME=A21CA439254A466</value>
+    <value type="QString" >COMSPEC=C:\WINDOWS\system32\cmd.exe</value>
+    <value type="QString" >COR_ENABLE_PROFILING=1</value>
+    <value type="QString" >COR_PROFILER={91663010-0D1E-4abd-8F0C-0B4B84CCA809}</value>
+    <value type="QString" >DXSDK_DIR=E:\Program Files\Microsoft DirectX SDK (June 2008)\</value>
+    <value type="QString" >FP_NO_HOST_CHECK=NO</value>
+    <value type="QString" >HOMEDRIVE=C:</value>
+    <value type="QString" >HOMEPATH=\Documents and Settings\waruqi</value>
+    <value type="QString" >INCLUDE=E:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\include\;E:\Program Files\Microsoft Visual Studio\VC98\atl\include;E:\Program Files\Microsoft Visual Studio\VC98\mfc\include;E:\Program Files\Microsoft Visual Studio\VC98\include;E:\Program Files\VC98\atl\include;E:\Program Files\VC98\mfc\include;E:\Program Files\VC98\include</value>
+    <value type="QString" >INTEL_LICENSE_FILE=C:\Program Files\Common Files\Intel\Licenses</value>
+    <value type="QString" >LIB=E:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\Lib\;E:\Program Files\Microsoft Visual Studio\VC98\mfc\lib;E:\Program Files\Microsoft Visual Studio\VC98\lib;E:\Program Files\VC98\mfc\lib;E:\Program Files\VC98\lib</value>
+    <value type="QString" >LOGONSERVER=\\A21CA439254A466</value>
+    <value type="QString" >MSDEVDIR=E:\Program Files\Microsoft Visual Studio\Common\MSDev98</value>
+    <value type="QString" >MSVCDIR=E:\Program Files\Microsoft Visual Studio\VC98</value>
+    <value type="QString" >NUMBER_OF_PROCESSORS=2</value>
+    <value type="QString" >OS=Windows_NT</value>
+    <value type="QString" >PATH=c:\Qt\2009.01\mingw\bin;c:\Qt\2009.01\qt\bin;D:\Program Files\ARM\ADSv1_2\bin;E:\Program Files\php\;E:\Program Files\Intel\VTune\CGGlbCache;E:\Program Files\Intel\VTune\Shared\Bin;C:\Program Files\Common Files\Intel\Shared Files\IDVC;E:\Program Files\Intel\VTune\Analyzer\Bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Compuware;E:\Program Files\Graphviz2.18\Bin;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;E:\Program Files\Perforce;E:\Program Files\Borland\StarTeam SDK 6.0\Lib;E:\Program Files\Borland\StarTeam SDK 6.0\Bin;E:\Program Files\Subversion\bin;e:\matlab6p5\bin\win32;c:\matlab6p5\bin\win32;E:\Program Files\Microsoft Visual Studio\Common\Tools\WinNT;E:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin;E:\Program Files\Microsoft Visual Studio\Common\Tools;E:\Program Files\Microsoft Visual Studio\VC98\bin;E:\Program Files\Visual C++ 6.0\Tools\WinNT;E:\Program Files\Visual C++ 6.0\MSDev98\Bin;E:\Program Files\Visual C++ 6.0\Tools;E:\Program Files\VC98\bin;E:\Program Files\SSH Communications Security\SSH Secure Shell;E:\Program Files\SlickEdit 2008\win\</value>
+    <value type="QString" >PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH</value>
+    <value type="QString" >PHPRC=E:\Program Files\php\</value>
+    <value type="QString" >PHP_PEAR_BIN_DIR=E:\Program Files\php</value>
+    <value type="QString" >PHP_PEAR_DATA_DIR=E:\Program Files\php\data</value>
+    <value type="QString" >PHP_PEAR_DOC_DIR=E:\Program Files\php\docs</value>
+    <value type="QString" >PHP_PEAR_INSTALL_DIR=E:\Program Files\php\pear</value>
+    <value type="QString" >PHP_PEAR_PHP_BIN=E:\Program Files\php\.\php.exe</value>
+    <value type="QString" >PHP_PEAR_SYSCONF_DIR=E:\Program Files\php</value>
+    <value type="QString" >PHP_PEAR_TEST_DIR=E:\Program Files\php\tests</value>
+    <value type="QString" >PROCESSOR_ARCHITECTURE=x86</value>
+    <value type="QString" >PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 4, GenuineIntel</value>
+    <value type="QString" >PROCESSOR_LEVEL=15</value>
+    <value type="QString" >PROCESSOR_REVISION=0604</value>
+    <value type="QString" >PROGRAMFILES=C:\Program Files</value>
+    <value type="QString" >QTDIR=c:/Qt/2009.01/qt</value>
+    <value type="QString" >RAV=C:\Documents and Settings\All Users\Application Data\Rising\Rav</value>
+    <value type="QString" >RFW=C:\Documents and Settings\All Users\Application Data\Rising\RFW</value>
+    <value type="QString" >SESSIONNAME=Console</value>
+    <value type="QString" >STARTEAMAPP=E:\Program Files\Borland\StarTeam 6.0</value>
+    <value type="QString" >SYSTEMDRIVE=C:</value>
+    <value type="QString" >SYSTEMROOT=C:\WINDOWS</value>
+    <value type="QString" >TEMP=C:\DOCUME~1\waruqi\LOCALS~1\Temp</value>
+    <value type="QString" >TMP=C:\DOCUME~1\waruqi\LOCALS~1\Temp</value>
+    <value type="QString" >USERDOMAIN=A21CA439254A466</value>
+    <value type="QString" >USERNAME=waruqi</value>
+    <value type="QString" >USERPROFILE=C:\Documents and Settings\waruqi</value>
+    <value type="QString" >VS71COMNTOOLS=E:\Program Files\Microsoft Visual Studio .NET 2003\Common7\Tools\</value>
+    <value type="QString" >VTUNE_GLOBAL_DIR=E:\Program Files\Intel\VTune\global_data\</value>
+    <value type="QString" >WINDIR=C:\WINDOWS</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList" >
+    <value type="QString" >release</value>
+    <value type="QString" >-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString" >C:/Qt/2009.01/mingw/bin/mingw32-make.exe</value>
+   <value key="abstractProcess.enabled" type="bool" >true</value>
+   <value key="abstractProcess.workingDirectory" type="QString" >E:/HNR</value>
+   <valuelist key="makeargs" type="QVariantList" >
+    <value type="QString" >release</value>
+   </valuelist>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Release-cleanstep0</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" >Release</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList" >
+    <value type="QString" >ALLUSERSPROFILE=C:\Documents and Settings\All Users</value>
+    <value type="QString" >APPDATA=C:\Documents and Settings\waruqi\Application Data</value>
+    <value type="QString" >BISTRO_GLOBAL_CACHE_DIR=E:\Program Files\Intel\VTune\CGGlbCache</value>
+    <value type="QString" >BISTRO_INSTALL_DIR=E:\Program Files\Intel\VTune\analyzer\bin\</value>
+    <value type="QString" >CLASSPATH=.;E:\Program Files\Intel\VTune\Analyzer\Bin;C:\Program Files\Common Files\Compuware\DLM40JNI.jar</value>
+    <value type="QString" >CLIENTNAME=Console</value>
+    <value type="QString" >COMMONPROGRAMFILES=C:\Program Files\Common Files</value>
+    <value type="QString" >COMPUTERNAME=A21CA439254A466</value>
+    <value type="QString" >COMSPEC=C:\WINDOWS\system32\cmd.exe</value>
+    <value type="QString" >COR_ENABLE_PROFILING=1</value>
+    <value type="QString" >COR_PROFILER={91663010-0D1E-4abd-8F0C-0B4B84CCA809}</value>
+    <value type="QString" >DXSDK_DIR=E:\Program Files\Microsoft DirectX SDK (June 2008)\</value>
+    <value type="QString" >FP_NO_HOST_CHECK=NO</value>
+    <value type="QString" >HOMEDRIVE=C:</value>
+    <value type="QString" >HOMEPATH=\Documents and Settings\waruqi</value>
+    <value type="QString" >INCLUDE=E:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\include\;E:\Program Files\Microsoft Visual Studio\VC98\atl\include;E:\Program Files\Microsoft Visual Studio\VC98\mfc\include;E:\Program Files\Microsoft Visual Studio\VC98\include;E:\Program Files\VC98\atl\include;E:\Program Files\VC98\mfc\include;E:\Program Files\VC98\include</value>
+    <value type="QString" >INTEL_LICENSE_FILE=C:\Program Files\Common Files\Intel\Licenses</value>
+    <value type="QString" >LIB=E:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\Lib\;E:\Program Files\Microsoft Visual Studio\VC98\mfc\lib;E:\Program Files\Microsoft Visual Studio\VC98\lib;E:\Program Files\VC98\mfc\lib;E:\Program Files\VC98\lib</value>
+    <value type="QString" >LOGONSERVER=\\A21CA439254A466</value>
+    <value type="QString" >MSDEVDIR=E:\Program Files\Microsoft Visual Studio\Common\MSDev98</value>
+    <value type="QString" >MSVCDIR=E:\Program Files\Microsoft Visual Studio\VC98</value>
+    <value type="QString" >NUMBER_OF_PROCESSORS=2</value>
+    <value type="QString" >OS=Windows_NT</value>
+    <value type="QString" >PATH=c:\Qt\2009.01\mingw\bin;c:\Qt\2009.01\qt\bin;D:\Program Files\ARM\ADSv1_2\bin;E:\Program Files\php\;E:\Program Files\Intel\VTune\CGGlbCache;E:\Program Files\Intel\VTune\Shared\Bin;C:\Program Files\Common Files\Intel\Shared Files\IDVC;E:\Program Files\Intel\VTune\Analyzer\Bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Compuware;E:\Program Files\Graphviz2.18\Bin;C:\Program Files\Common Files\Thunder Network\KanKan\Codecs;E:\Program Files\Perforce;E:\Program Files\Borland\StarTeam SDK 6.0\Lib;E:\Program Files\Borland\StarTeam SDK 6.0\Bin;E:\Program Files\Subversion\bin;e:\matlab6p5\bin\win32;c:\matlab6p5\bin\win32;E:\Program Files\Microsoft Visual Studio\Common\Tools\WinNT;E:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin;E:\Program Files\Microsoft Visual Studio\Common\Tools;E:\Program Files\Microsoft Visual Studio\VC98\bin;E:\Program Files\Visual C++ 6.0\Tools\WinNT;E:\Program Files\Visual C++ 6.0\MSDev98\Bin;E:\Program Files\Visual C++ 6.0\Tools;E:\Program Files\VC98\bin;E:\Program Files\SSH Communications Security\SSH Secure Shell;E:\Program Files\SlickEdit 2008\win\;C:\Program Files\Common Files\Ahead\Lib\</value>
+    <value type="QString" >PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH</value>
+    <value type="QString" >PHPRC=E:\Program Files\php\</value>
+    <value type="QString" >PHP_PEAR_BIN_DIR=E:\Program Files\php</value>
+    <value type="QString" >PHP_PEAR_DATA_DIR=E:\Program Files\php\data</value>
+    <value type="QString" >PHP_PEAR_DOC_DIR=E:\Program Files\php\docs</value>
+    <value type="QString" >PHP_PEAR_INSTALL_DIR=E:\Program Files\php\pear</value>
+    <value type="QString" >PHP_PEAR_PHP_BIN=E:\Program Files\php\.\php.exe</value>
+    <value type="QString" >PHP_PEAR_SYSCONF_DIR=E:\Program Files\php</value>
+    <value type="QString" >PHP_PEAR_TEST_DIR=E:\Program Files\php\tests</value>
+    <value type="QString" >PROCESSOR_ARCHITECTURE=x86</value>
+    <value type="QString" >PROCESSOR_IDENTIFIER=x86 Family 15 Model 6 Stepping 4, GenuineIntel</value>
+    <value type="QString" >PROCESSOR_LEVEL=15</value>
+    <value type="QString" >PROCESSOR_REVISION=0604</value>
+    <value type="QString" >PROGRAMFILES=C:\Program Files</value>
+    <value type="QString" >QTDIR=c:/Qt/2009.01/qt</value>
+    <value type="QString" >RAV=C:\Documents and Settings\All Users\Application Data\Rising\Rav</value>
+    <value type="QString" >RFW=C:\Documents and Settings\All Users\Application Data\Rising\RFW</value>
+    <value type="QString" >SESSIONNAME=Console</value>
+    <value type="QString" >STARTEAMAPP=E:\Program Files\Borland\StarTeam 6.0</value>
+    <value type="QString" >SYSTEMDRIVE=C:</value>
+    <value type="QString" >SYSTEMROOT=C:\WINDOWS</value>
+    <value type="QString" >TEMP=C:\DOCUME~1\waruqi\LOCALS~1\Temp</value>
+    <value type="QString" >TMP=C:\DOCUME~1\waruqi\LOCALS~1\Temp</value>
+    <value type="QString" >USERDOMAIN=A21CA439254A466</value>
+    <value type="QString" >USERNAME=waruqi</value>
+    <value type="QString" >USERPROFILE=C:\Documents and Settings\waruqi</value>
+    <value type="QString" >VS71COMNTOOLS=E:\Program Files\Microsoft Visual Studio .NET 2003\Common7\Tools\</value>
+    <value type="QString" >VTUNE_GLOBAL_DIR=E:\Program Files\Intel\VTune\global_data\</value>
+    <value type="QString" >WINDIR=C:\WINDOWS</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList" >
+    <value type="QString" >clean</value>
+    <value type="QString" >-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString" >C:/Qt/2009.01/mingw/bin/mingw32-make.exe</value>
+   <value key="abstractProcess.enabled" type="bool" >true</value>
+   <value key="abstractProcess.workingDirectory" type="QString" >E:/HNR</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfigurations</variable>
+  <valuelist type="QVariantList" >
+   <value type="QString" >Release</value>
+   <value type="QString" >Debug</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>buildstep0</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" ></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildstep1</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" ></value>
+   <value key="mkspec" type="QString" ></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildstep2</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" ></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildsteps</variable>
+  <valuelist type="QVariantList" >
+   <value type="QString" >trolltech.qt4projectmanager.gdbmaros</value>
+   <value type="QString" >trolltech.qt4projectmanager.qmake</value>
+   <value type="QString" >trolltech.qt4projectmanager.make</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>cleanstep0</variable>
+  <valuemap type="QVariantMap" >
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString" ></value>
+   <value key="clean" type="bool" >true</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>cleansteps</variable>
+  <valuelist type="QVariantList" >
+   <value type="QString" >trolltech.qt4projectmanager.make</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>defaultFileEncoding</variable>
+  <value type="QByteArray" >System</value>
+ </data>
+ <data>
+  <variable>project</variable>
+  <valuemap type="QVariantMap" />
+ </data>
+</qtcreator>

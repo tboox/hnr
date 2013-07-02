@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\imageview.o
+./release\sampleview.o
+./release\imageconvector.o
+./release\qimagescene.o
+./release\moc_mainwindow.o
+./release\moc_imageview.o
+./release\moc_qimagescene.o
+./release\qrc_res.o
+);

@@ -1,0 +1,41 @@
+/* ///////////////////////////////////////////////////////////////////////
+ * File:		is_even_test.h		
+ *
+ * Created:		08.03.17				
+ * Updated:		08.05.09
+ *
+ * Brief: Unit testing
+ *
+ * [<Home>]
+ * Copyright (c) 2008-2020, Waruqi All rights reserved.
+ * //////////////////////////////////////////////////////////////////// */
+#ifndef EXTL_MPL_MATH_IS_EVEN_TEST_H
+#define EXTL_MPL_MATH_IS_EVEN_TEST_H
+
+#ifndef EXTL_MPL_MATH_IS_EVEN_H
+#	error This file must be included of is_even.h
+#endif
+
+
+/* ///////////////////////////////////////////////////////////////////////
+ * ::unit_test namespace
+ */
+EXTL_TEST_BEGIN_NAMESPACE
+
+/* ///////////////////////////////////////////////////////////////////////
+ * Unit-testing 
+ */
+EXTL_INLINE void is_even_test()
+{
+	EXTL_STATIC_ASSERT((is_even<2>::value));
+	EXTL_STATIC_ASSERT((is_even<21>::value == 0));
+}
+
+/* ///////////////////////////////////////////////////////////////////////
+ * ::unit_test namespace
+ */
+EXTL_TEST_END_NAMESPACE
+
+/* //////////////////////////////////////////////////////////////////// */
+#endif /* EXTL_MPL_MATH_IS_EVEN_TEST_H */
+/* //////////////////////////////////////////////////////////////////// */

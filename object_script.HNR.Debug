@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\imageview.o
+./debug\sampleview.o
+./debug\imageconvector.o
+./debug\qimagescene.o
+./debug\moc_mainwindow.o
+./debug\moc_imageview.o
+./debug\moc_qimagescene.o
+./debug\qrc_res.o
+);
