@@ -1,0 +1,4357 @@
+From: <ÓÉ Microsoft Internet Explorer 5 ±£´æ>
+Subject: =?gb2312?B?0KG94aO6zbzP8c+4u68o0rspX8zstcCz6sfao6y3ybXDuPy43w==?=
+Date: Sun, 22 Feb 2009 15:56:07 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01C99506.129F6C30"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3350
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C99506.129F6C30
+Content-Type: text/html;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/skyjsq/blog/item/1ac82a1f800ee30f304e1538.html/cmtid/a3c47eec9740ed2f62d09f1c
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--STATUS =
+OK--><HTML><HEAD><TITLE>=D0=A1=BD=E1=A3=BA=CD=BC=CF=F1=CF=B8=BB=AF(=D2=BB=
+)_=CC=EC=B5=C0=B3=EA=C7=DA=A3=AC=B7=C9=B5=C3=B8=FC=B8=DF</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; charset=3Dgb2312">
+<STYLE type=3Dtext/css>.error {
+	FONT-SIZE: 12px; COLOR: #ff0000
+}
+</STYLE>
+
+<SCRIPT src=3D"http://hi.baidu.com/ui/scripts/global.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3Djavascript =
+src=3D"http://hi.baidu.com/js/popup.js"></SCRIPT>
+
+<SCRIPT=20
+src=3D"http://hi.baidu.com/ui/scripts/CommentEditor/BdEditor-mined.js?v=3D=
+2.3"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3DJavaScript =
+src=3D"http://hi.baidu.com/js/g_spjs.js"></SCRIPT>
+
+<SCRIPT language=3Djavascript>
+<!--
+
+var allkey=3D"";
+var i=3D0;
+var flag=3D0;
+function setpv(allnum)
+{
+	var num =3D allnum.split('_');
+	document.getElementById("result").innerHTML=3Dnum[0];
+}
+
+function checkMail(s)
+{
+  	var pattern=3D/\w+@\w+\.[a-z]+/;
+  	if(pattern.test(s))
+    {
+       return true;
+    }
+  	else
+   {
+      return false;
+   }
+}
+
+
+function checkeandu(eanduid)
+{
+	var eanduvalue=3DG(eanduid).value;
+	var len=3Dbytes(eanduvalue);
+	if(len>128)
+	{
+		=
+showErr(2,"=C4=FA=CA=E4=C8=EB=B5=C4=CD=F8=D6=B7=BB=F2=D3=CA=CF=E4=CC=AB=B3=
+=A4=A3=AC=C7=EB=B1=A3=B3=D6=D4=DA128=D7=D6=BD=DA=D2=D4=C4=DA=A1=A3");
+		return false;
+	}
+	else
+	{
+		 return true;
+	}
+
+}
+
+function cmtdel(str)
+{
+	var pop=3Dnew Popup({ =
+contentType:3,isReloadOnClose:false,width:340,height:80});
+	pop.setContent("title","=C9=BE=B3=FD=C6=C0=C2=DB");
+	=
+pop.setContent("confirmCon","=C4=FA=C8=B7=B6=A8=D2=AA=B3=B9=B5=D7=C9=BE=B3=
+=FD=D5=E2=CC=F5=C6=C0=C2=DB=C2=F0=A3=BF");
+	pop.setContent("callBack",delCallback2);
+	pop.setContent("parameter",{fid:str,popup:pop});
+	pop.build();
+	pop.show();
+	return false;
+}
+function delCallback2(para)
+{
+	var o_pop=3Dpara["popup"];
+	o_pop.config.contentType=3D1;
+	o_pop.setContent("contentUrl","");
+	o_pop.reBuild();
+	G(para["fid"]).target=3Do_pop.iframeIdName;
+	eval("document."+para["fid"]).submit();
+}
+
+String.prototype.byteLength =3D function() {
+    return this.replace(/[^\u0000-\u007f]/g,"\u0061\u0061").length;
+}
+
+function checkname(strid)
+{
+	var ele=3Ddocument.getElementById(strid);
+	var len=3Dbytes(ele.value);
+	if(len>49)
+	{
+		=
+showErr(1,"=C4=FA=CA=E4=C8=EB=B5=C4=D0=D5=C3=FB=CC=AB=B3=A4=A3=AC=C7=EB=B1=
+=A3=B3=D6=D4=DA49=D7=D6=BD=DA=D2=D4=C4=DA=A1=A3");
+		return false;
+	}
+	else
+	{
+		if(len=3D=3D0)
+		{
+			document.getElementById(strid).value=3D"=C4=E4=C3=FB=CD=F8=D3=D1";
+		}
+		 return true;
+	}
+
+}
+
+function checktext(textid)
+{
+        var tempStr=3D'';
+        var isLightFont=3Dfalse;
+		if(editor&&textid=3D=3D"spBlogCmtText"){
+			//document.getElementById("spBlogCmtText").value=3Deditor.getHtml();
+			tempStr=3Deditor.getHtml();
+			tempStr=3DtempStr.replace(/<span =
+style=3D"filter:glow\(color=3D#([0-9a-z]{3,6}),strength=3D2\);height:0px;=
+color:#([0-9a-z]{3,6})">/ig,'');
+			tempStr=3DtempStr.replace(/<\/span>/ig,'');
+			document.getElementById("spBlogCmtText").value=3DtempStr;
+            isLightFont=3D!(tempStr=3D=3Deditor.getHtml());
+        }
+		document.getElementById(textid).value=3Dtrimlr(textid);
+		var str=3Dtrimrn(textid);
+		len=3Dstr.length;
+		if(len=3D=3D0 || ((/^[\s,=A1=A1]+$/gi).test(str)) )
+		{
+			=
+showErr(3,"=C4=FA=B1=D8=D0=EB=CA=E4=C8=EB=C6=C0=C2=DB=C4=DA=C8=DD=A3=AC=C7=
+=EB=BC=EC=B2=E9=A1=A3");
+			return false;
+		}
+		else
+        {
+                len=3Dstr.byteLength();
+                var maxLength=3DisLightFont?916:1000;
+				if(len > maxLength)
+				{
+					=
+showErr(3,"=C4=FA=CA=E4=C8=EB=B5=C4=C6=C0=C2=DB=C4=DA=C8=DD=CC=AB=B3=A4=A3=
+=AC=C7=EB=B1=A3=B3=D6=D4=DA500=D7=D6=D2=D4=C4=DA=A1=A3");
+					return false;
+				}
+				if(editor&&textid=3D=3D"spBlogCmtText"){
+					document.getElementById("spBlogCmtText").value=3Deditor.getHtml();
+					document.getElementById(textid).value=3Dtrimlr(textid);
+				}
+
+			return true;
+		}
+}
+
+function showErr(index,str)
+{
+	G(index+"_err").style.display=3D"";
+	G(index+"_err_con").innerHTML=3Dstr;
+}
+function hidErr(index)
+{
+	G(index+"_err").style.display=3D"none";
+	G(index+"_err_con").innerHTML=3D"";
+}
+
+function alertPop(tit,con)
+{
+	var pop=3Dnew Popup({ =
+contentType:4,isReloadOnClose:false,width:340,height:80});
+	pop.setContent("title",tit);
+	pop.setContent("alertCon",con);
+	pop.build();
+	pop.show();
+}
+
+function cmtfull()
+{
+	var cnum=3D2;
+	if(cnum>=3D50000)
+	{
+		=
+alertPop("=B7=A2=B1=ED=C6=C0=C2=DB","=B5=A5=C6=AA=C8=D5=D6=BE=C6=C0=C2=DB=
+=CA=FD=D7=EE=B6=E0=CE=AA50000=CC=F5.");
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
+function checkcmtform()
+{
+	=
+if(checkname("spBlogCmtor")&&checkeandu("spBlogCmtURL")&&checktext("spBlo=
+gCmtText")&&cmtfull())
+	{
+		submitForm();
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+var g_pop=3Dnull;
+function submitForm()
+{
+	g_pop=3Dnew Popup({ =
+contentType:1,isReloadOnClose:false,width:340,height:80});
+	g_pop.setContent("title","=CC=ED=BC=D3=C6=C0=C2=DB");
+	g_pop.setContent("contentUrl","");
+	g_pop.setContent("someDisabledBtn","btn_ok");
+	g_pop.build();
+	G("popFormSubmit").target=3Dg_pop.iframeIdName;
+	g_pop.show();
+}
+
+function g_close_pop()
+{
+	g_pop.close();
+}
+
+function formatonlinpic()
+{
+var picobj=3Ddocument.getElementsByName("onlinepic");
+var picnum=3Dpicobj.length;
+
+	for(var i=3D0;i<picnum;i++)
+	{
+		if(picobj[i].width>200)
+		{
+			picobj[i].width=3D200;
+		}
+		if(picobj[i].height>200)
+		{
+			picobj[i].height=3D200;
+		}
+	}
+    try{document.getElementById("btn_ok").disabled =3D "";}catch(e){}
+}
+
+function addToFavor(){
+var =
+blogTitle=3D'=D0=A1=BD=E1=A3=BA=CD=BC=CF=F1=CF=B8=BB=AF(=D2=BB)'.replace(=
+/&#39;/g,'\'');
+window.open('http://cang.baidu.com/do/add?it=3D'+encodeURIComponent(blogT=
+itle+'_=B0=D9=B6=C8=BF=D5=BC=E4')+'&iu=3D'+encodeURIComponent(location.hr=
+ef)+'&fr=3Dsp#nw=3D1','_s','scrollbars=3Dno,width=3D600,height=3D450,righ=
+t=3D75,top=3D20,status=3Dno,resizable=3Dyes');
+return false;
+}
+
+var isIE =3D /*@cc_on!@*/false;
+function tracker(did,a){
+	return function(){
+		var t=3Dnew Date().getTime();
+		var href=3Da.href;
+        if(isIE){
+            var r =3D /href\s*=3D\s*("|')?([^\s]*)\1/gi;
+            if(r.test(a.outerHTML))
+                href =3D RegExp.$2;
+        }
+        new Image().src =3D "http://hi.baidu.com/sys/statlog/1.gif?m=3D" =
++ did + "&v=3D" + encodeURIComponent(href) + "&c=3D" + =
+encodeURIComponent(location.href) + "&t=3D"+t;
+	}
+}
+
+function tracker_init(did){
+	var _s=3Ddocument.getElementById(did);
+	var as =3D _s.getElementsByTagName('A');
+	for(var i =3D 0, j =3D as.length; i < j; i ++){
+		var a =3D as[i];
+		if(isIE){
+			a.attachEvent("onclick", tracker(did,a));
+		}else{
+			a.addEventListener("click", tracker(did,a), false);
+		}
+	}
+}
+
+
+/* some functions for cmt-reply */
+		function cmtreply(cmtName,cmtPorID)
+		{
+			window.location.hash=3D"#send";
+			var cmtForm=3Ddocument.form1;
+			cmtForm.cm.value=3D"3";
+			if(!cmtForm.spReferTarget)
+			{
+				var ipt=3Ddocument.createElement("input");
+				ipt.type=3D"hidden";
+				ipt.name=3D"spReferTarget";
+				ipt.value=3DcmtPorID;
+				cmtForm.appendChild(ipt);
+			}else cmtForm.spReferTarget.value=3DcmtPorID;
+
+
+			 //G("reTitle").innerHTML=3D"=BB=D8=B8=B4"+cmtName+"=A3=BA";
+			 G("cancleReLink").style.display=3D"";
+			 cmtForm.btn_ok.value=3D"=BB=D8=B8=B4=C6=C0=C2=DB";
+
+
+			 try{
+				editor.window.focus();
+                =
+editor.window.document.body.innerHTML=3D"=BB=D8=B8=B4"+cmtName+"=A3=BA";
+
+                var w =3D editor.window;
+				if(w.getSelection){
+					var d =3D w.document;
+					var s =3D w.getSelection();
+					var r =3D d.createRange();
+					r.setStartAfter(d.body.firstChild);
+					r.setEndAfter(d.body.lastChild);
+					s.removeAllRanges();
+					s.addRange(r);
+				}
+			}catch(e){
+			 		try{
+				 		cmtForm.getElementsByTagName("textarea")[0].focus();
+				 		=
+cmtForm.getElementsByTagName("textarea")[0].value=3D"=BB=D8=B8=B4"+cmtNam=
+e+"=A3=BA";
+				 	}catch(e){}
+			}
+		}
+
+		function canclereply()
+		{
+			var cmtForm=3Ddocument.form1;
+			cmtForm.cm.value=3D"1";
+			try{cmtForm.removeChild(cmtForm.spReferTarget);}catch(e){}
+			/*
+			try{
+					var cmt=3DcmtForm.getElementsByTagName("textarea")[0]
+					cmt.value=3D"";
+					cmt.focus();
+			}catch(e){}
+			*/
+
+			try{
+					var ed=3Deditor.window.document.body;
+					ed.innerHTML=3D"";
+					editor.window.focus();
+				}catch(e){
+					var cmt=3DcmtForm.getElementsByTagName("textarea")[0];
+					cmt.value=3D"";
+					cmt.focus();
+			}
+
+			G("cancleReLink").style.display=3D"none";
+			cmtForm.btn_ok.value=3D"=B7=A2=B1=ED=C6=C0=C2=DB";
+		}
+
+		function gotoreply()
+		{//to checking whether reply cmt
+			if( window.location.hash.indexOf("&re=3D1")<0) return;
+			var cmtID=3Dwindow.location.hash.split("&")[0].replace("#","");
+			var cmtlinks=3Ddocument.getElementsByTagName("a");
+			for(var i=3D0,n=3Dcmtlinks.length;i<n;i++)
+			{
+				if(cmtlinks[i].name=3D=3DcmtID){ var =
+rename=3Dcmtlinks[i].getAttribute("rename");  =
+repid=3Dcmtlinks[i].getAttribute("repid"); break;}
+			}
+			if(typeof(rename)!=3D"undefined"){
+				cmtreply(rename, repid);
+			}
+		}
+
+//-->
+</SCRIPT>
+
+<SCRIPT type=3Dtext/javascript>
+    /*<![CDATA[*/
+
+window.onerror=3Dfunction(){return true;}
+
+var RelatedDocData =3D null, GetAndEval =3D false;
+(function(){
+	var xhr =3D BdAjax.getXHR();
+	if(xhr =3D=3D null){
+		RelatedDocData =3D -1;
+		return;
+	}
+
+	xhr.open("GET", =
+"/sys/search?type=3D8&word=3D%D0%A1%BD%E1%A3%BA%CD%BC%CF%F1%CF%B8%BB%AF%2=
+8%D2%BB%29&item=3D1ac82a1f800ee30f304e1538&t=3D" + new Date().getTime(), =
+true);
+	xhr.onreadystatechange =3D function(){
+		if(xhr.readyState =3D=3D 4){
+			if(xhr.status =3D=3D 0 || xhr.status =3D=3D 200){
+				if(GetAndEval){
+					eval(xhr.responseText);
+				}else{
+					RelatedDocData =3D xhr.responseText;
+				}
+			}
+		}
+	}
+	xhr.send(null);
+})();
+/*]]>*/
+</SCRIPT>
+
+<META content=3D"MSHTML 6.00.2900.3492" name=3DGENERATOR></HEAD>
+<BODY onload=3Dformatonlinpic();>
+<CENTER>
+<SCRIPT type=3Dtext/javascript>=0A=
+/*<![CDATA[*/=0A=
+if(top.location !=3D self.location){=0A=
+	top.location =3D self.location;=0A=
+}=0A=
+var myref =3D =
+encodeURIComponent("http://hi.baidu.com/skyjsq/blog/item/1ac82a1f800ee30f=
+304e1538%2Ehtml/cmtid/a3c47eec9740ed2f62d09f1c");=0A=
+/*]]>*/=0A=
+</SCRIPT>
+<LINK href=3D"http://hi.baidu.com/ui/css/mods.css" type=3Dtext/css=20
+rel=3Dstylesheet><LINK=20
+href=3D"http://hi.baidu.com/skyjsq/css/item/54d6ac89762771b30f2444f7.css"=
+=20
+type=3Dtext/css rel=3Dstylesheet><LINK =
+href=3D"http://hi.baidu.com/space.css"=20
+type=3Dtext/css rel=3Dstylesheet>
+<STYLE type=3Dtext/css>#usrbar {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; FONT-SIZE: 12px; BACKGROUND: =
+#ffffff; FILTER: alpha(opacity=3D65); PADDING-BOTTOM: 3px; WIDTH: 100%; =
+COLOR: #000000; LINE-HEIGHT: 19px; PADDING-TOP: 4px; FONT-FAMILY: Arial; =
+LETTER-SPACING: normal; HEIGHT: 19px; TEXT-ALIGN: right; moz-opacity: =
+0.5
+}
+#usrbar A {
+	COLOR: #0000cc; TEXT-DECORATION: underline
+}
+#usrbar A:link {
+	COLOR: #0000cc; TEXT-DECORATION: underline
+}
+#usrbar A:visited {
+	COLOR: #0000cc; TEXT-DECORATION: underline
+}
+#ft {
+	CLEAR: both; FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 20px; =
+FONT-FAMILY: Arial; HEIGHT: 20px; TEXT-ALIGN: center
+}
+#ft A {
+	COLOR: #7777cc; TEXT-DECORATION: underline
+}
+#ft A:link {
+	COLOR: #7777cc; TEXT-DECORATION: underline
+}
+#ft A:visited {
+	COLOR: #7777cc; TEXT-DECORATION: underline
+}
+#usrbar {
+	LETTER-SPACING: normal
+}
+#usrbar A {
+	LETTER-SPACING: normal
+}
+#usrbar A:link {
+	LETTER-SPACING: normal
+}
+#usrbar A:visited {
+	LETTER-SPACING: normal
+}
+#ft {
+	LETTER-SPACING: normal
+}
+#ft A {
+	LETTER-SPACING: normal
+}
+#ft A:link {
+	LETTER-SPACING: normal
+}
+#ft A:visited {
+	LETTER-SPACING: normal
+}
+</STYLE>
+
+<DIV id=3Dusrbar><NOBR><A href=3D"http://www.baidu.com/"=20
+target=3D_blank>=B0=D9=B6=C8=CA=D7=D2=B3</A>&nbsp;|&nbsp;<A =
+id=3Dhi_index href=3D"http://hi.baidu.com/"=20
+target=3D_blank>=B0=D9=B6=C8=BF=D5=BC=E4</A>&nbsp;
+<SCRIPT type=3Dtext/javascript>=0A=
+		document.write('| <a =
+href=3D"http://passport.baidu.com/?login&tpl=3Dsp&tpl_reg=3Dsp&u=3Dhttp:/=
+/hi.baidu.com' + =
+encodeURIComponent('/skyjsq/blog/item/1ac82a1f800ee30f304e1538%2Ehtml/cmt=
+id/a3c47eec9740ed2f62d09f1c') + '">=B5=C7=C2=BC</a>');=0A=
+		</SCRIPT>
+ </NOBR></DIV>
+<DIV id=3DnewUserTip=20
+style=3D"Z-INDEX: 30000; RIGHT: 0px; FLOAT: right; WIDTH: 220px; =
+POSITION: absolute; TOP: 26px; HEIGHT: 90px; TEXT-ALIGN: right"><A=20
+id=3DnewUserTipShadow=20
+style=3D"DISPLAY: block; FONT-SIZE: 14px; Z-INDEX: 30001; RIGHT: 120px; =
+BACKGROUND: none transparent scroll repeat 0% 0%; OVERFLOW: hidden; =
+WIDTH: 55px; COLOR: #4242f9! important; POSITION: absolute; TOP: 68px; =
+HEIGHT: 14px; TEXT-DECORATION: none! important"=20
+onclick=3DnewUserRegLog()=20
+href=3D"http://passport.baidu.com/?reg&amp;tpl=3Dsp&amp;return_method=3Dg=
+et&amp;skip_ok=3D1&amp;u=3Dhttp://hi.baidu.com/sys/reg/"=20
+target=3D_blank>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>=20
+<EMBED id=3DnewUserTipSwf style=3D"WIDTH: 220px; HEIGHT: 90px"=20
+src=3Dhttp://hi.baidu.com/ui/flash/userReg/guide.swf=20
+type=3Dapplication/x-shockwave-flash wmode=3D"transparent"=20
+allowScriptAcess=3D"always"> </DIV>
+<SCRIPT language=3Djavascript>=0A=
+	<!--=0A=
+	=0A=
+		function newUserTipShow(f)=0A=
+		{=0A=
+			if(f=3D=3D"0"){//close=0A=
+				G("newUserTipSwf").style.width=3D"40px";=0A=
+				G("newUserTip").style.width=3D"40px";=0A=
+				G("newUserTipShadow").style.display=3D"none";=0A=
+			}else{//show=0A=
+				G("newUserTip").style.width=3D"220px";=0A=
+				G("newUserTipSwf").style.width=3D"220px";=0A=
+				G("newUserTipShadow").style.display=3D"block";=0A=
+=0A=
+			}=0A=
+		}=0A=
+=0A=
+		function newUserRegLog(){=0A=
+		=0A=
+		}=0A=
+	//-->=0A=
+	</SCRIPT>
+
+<SCRIPT type=3Dtext/javascript>=0A=
+=0A=
+function set_cookie_4_bdtip(index/* start from one */, value){=0A=
+	var bdtip =3D document.cookie.match(/(^| )BDTIP=3D([^;]*)(;|$)/);=0A=
+	if(!bdtip){=0A=
+		bdtip=3Dnew Array(index);=0A=
+		for(var i=3D0,n=3Dbdtip.length;i<n;i++)=0A=
+		{=0A=
+			if(bdtip[i]=3D=3D"" || bdtip[i]=3D=3Dnull)  bdtip[i]=3D0;=0A=
+			if(i =3D=3D index - 1){=0A=
+				bdtip[i] =3D value;=0A=
+			}=0A=
+		}=0A=
+	}else{=0A=
+	bdtip =3D bdtip[2].split('-');=0A=
+	if(index > bdtip.length)  bdtip.length=3D index;=0A=
+	for(var i =3D 0, j =3D bdtip.length; i < j; i ++){=0A=
+		if(bdtip[i]=3D=3D"" || bdtip[i]=3D=3Dnull) bdtip[i]=3D0;=0A=
+		if(i =3D=3D index - 1){=0A=
+			bdtip[i] =3D value;=0A=
+		}=0A=
+	}=0A=
+	}=0A=
+	bdtip =3D bdtip.join('-');=0A=
+	document.cookie =3D "BDTIP=3D" + bdtip+ ";expires=3DWed, 28-Nov-37 =
+01:45:46 GMT;path=3D/;domain=3D.baidu.com";=0A=
+}=0A=
+</SCRIPT>
+
+<DIV id=3Dmain align=3Dleft><!--[if IE]>
+<SCRIPT>
+var objmain =3D document.getElementById("main");
+function updatesize(){ var bodyw =3D window.document.body.offsetWidth; =
+if(bodyw <=3D 790) objmain.style.width=3D"772px"; else if(bodyw >=3D =
+1016) objmain.style.width=3D"996px"; else objmain.style.width=3D"100%"; =
+}
+updatesize(); window.onresize =3D updatesize;
+</SCRIPT>
+<![endif]-->
+<DIV id=3Dheader>
+<DIV class=3Dlc>
+<DIV class=3Drc></DIV></DIV>
+<DIV class=3Dtit><A class=3Dtitlink title=3D"skyjsq=B5=C4=BF=D5=BC=E4 =
+http://hi.baidu.com/skyjsq"=20
+href=3D"http://hi.baidu.com/skyjsq">=CC=EC=B5=C0=B3=EA=C7=DA=A3=AC=B7=C9=B5=
+=C3=B8=FC=B8=DF</A></DIV>
+<DIV =
+class=3Ddesc>=B5=AD=B6=A8=A3=AC=C5=AC=C1=A6=A3=AC=C6=DA=B4=FD=A1=A3=A1=A3=
+=A1=A3</DIV>
+<DIV id=3Dtabline></DIV>
+<DIV id=3Dtab><A href=3D"http://hi.baidu.com/skyjsq">=D6=F7=D2=B3</A><A =
+class=3Don=20
+href=3D"http://hi.baidu.com/skyjsq/blog">=B2=A9=BF=CD</A><A=20
+href=3D"http://hi.baidu.com/skyjsq/album">=CF=E0=B2=E1</A><SPAN>|</SPAN><=
+A=20
+href=3D"http://hi.baidu.com/skyjsq/profile">=B8=F6=C8=CB=B5=B5=B0=B8</A> =
+<SPAN>|</SPAN><A=20
+href=3D"http://hi.baidu.com/skyjsq/friends">=BA=C3=D3=D1</A> =
+</DIV></DIV>
+<DIV class=3Dstage>
+<DIV class=3Dstagepad>
+<DIV style=3D"WIDTH: 100%">
+<TABLE class=3Dmodth cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD class=3Dmodtl width=3D7>&nbsp;</TD>
+    <TD class=3Dmodtc noWrap>
+      <DIV class=3Dmodhead><SPAN =
+class=3Dmodtit>=B2=E9=BF=B4=CE=C4=D5=C2</SPAN></DIV></TD>
+    <TD class=3Dmodtc noWrap align=3Dright></TD>
+    <TD class=3Dmodtr width=3D7>&nbsp;</TD></TR></TBODY></TABLE>
+<DIV class=3Dmodbox id=3Dm_blog>
+<DIV =
+class=3Dtit>=D0=A1=BD=E1=A3=BA=CD=BC=CF=F1=CF=B8=BB=AF(=D2=BB)</DIV>
+<DIV class=3Ddate>2008=C4=EA05=D4=C223=C8=D5 =D0=C7=C6=DA=CE=E5 =
+16:22</DIV>
+<TABLE style=3D"TABLE-LAYOUT: fixed">
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class=3Dcnt id=3Dblog_text>
+      <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=D4=DA=C4=A3=CA=BD=CA=B6=B1=F0=D6=D0=A3=AC=CD=BC=CF=F1=CF=B8=BB=AF=CA=C7=D4=
+=A4=B4=A6=C0=ED=D6=D0=BA=DC=D6=D8=D2=AA=B5=C4=D2=BB=B2=BD=A3=AC=C6=E4=CF=B8=
+=BB=AF=D0=A7=B9=FB=D6=B1=BD=D3=D3=B0=CF=EC=CA=B6=B1=F0=B5=C4=D0=A7=C2=CA=A1=
+=A3=CB=E4=C8=BB=CF=B8=BB=AF=BA=F3=C3=E6=BB=B9=D3=D0=CC=D8=D5=F7=CC=E1=C8=A1=
+=A3=AC=D1=B5=C1=B7=BA=CD=CA=B6=B1=F0=A1=A3</P>
+      <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=D3=C9=D3=DA=CE=D2=B5=C4=BF=CE=CC=E2=CA=C7=C0=EB=CF=DF=C7=A9=C3=FB=CA=B6=B1=
+=F0=A3=AC=BE=CD=CA=C7=CA=D6=D0=B4=BA=BA=D7=D6=B5=C4=BC=F8=B1=F0=A3=AC=BF=B4=
+=B6=E0=B8=F6=C7=A9=C3=FB=CA=C7=B7=F1=CA=C7=CD=AC=D2=BB=B8=F6=C8=CB=D0=B4=B5=
+=C4=A1=A3=D6=F7=D2=AA=CA=C7=D5=EB=B6=D4=D7=D4=D1=A7=BF=BC=CA=D4=B5=C4=A3=AC=
+=B7=C0=D6=B9=BF=BC=C9=FA=D7=F7=B1=D7=A3=AC=CC=E6=BF=BC=A1=A3</P>
+      <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+=CB=F9=CE=BD=B5=C4=CF=B8=BB=AF=BE=CD=CA=C7=BE=AD=B9=FD=D2=BB=B2=E3=B2=E3=B5=
+=C4=B0=FE=C0=EB=A3=AC=B4=D3<FONT=20
+      =
+face=3D=CB=CE=CC=E5>=D4=AD=C0=B4=B5=C4=CD=BC=D6=D0=C8=A5=B5=F4=D2=BB=D0=A9=
+=B5=E3=A3=AC=B5=AB=C8=D4=D2=AA=B1=A3=B3=D6=D4=AD=C0=B4=B5=C4=D0=CE=D7=B4=A3=
+=AC=D6=B1=B5=BD</FONT>=B5=C3=B5=BD=CD=BC=CF=F1=B5=C4=B9=C7=BC=DC=A1=A3<SP=
+AN>=B9=C7=BC=DC=A3=AC=BF=C9=D2=D4=C0=ED=BD=E2=CE=AA=CD=BC=CF=F3=B5=C4=D6=D0=
+=D6=E1=A3=AC=C0=FD=C8=E7=D2=BB=B8=F6=B3=A4=B7=BD=D0=CE=B5=C4=B9=C7=BC=DC=CA=
+=C7=CB=FC=B5=C4=B3=A4=B7=BD=CF=F2=C9=CF=B5=C4=D6=D0=D6=E1=CF=DF=A3=BB=D5=FD=
+=B7=BD=D0=CE=B5=C4=B9=C7=BC=DC=CA=C7=CB=FC=B5=C4=D6=D0=D0=C4=B5=E3=A3=BB=D4=
+=B2=B5=C4=B9=C7=BC=DC=CA=C7=CB=FC=B5=C4=D4=B2=D0=C4=A3=AC=D6=B1=CF=DF=B5=C4=
+=B9=C7=BC=DC=CA=C7=CB=FC=D7=D4=C9=ED=A3=AC=B9=C2=C1=A2=B5=E3=B5=C4=B9=C7=BC=
+=DC=D2=B2=CA=C7=D7=D4=C9=ED=A1=A3</SPAN></P>
+      <P><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=BA=C3=B5=C4=CF=B8=BB=AF=CB=E3=B7=A8=D2=BB=B6=A8=D2=AA=C2=FA=D7=E3=A3=BA=CA=
+=D5=C1=B2=D0=D4=A3=BB=B1=A3=D6=A4=CF=B8=BB=AF=BA=F3=CF=B8=CF=DF=B5=C4=C1=AC=
+=CD=A8=D0=D4=A3=AC=B1=A3=B3=D6=D4=AD=CD=BC=B5=C4=BB=F9=B1=BE=D0=CE=D7=B4=A3=
+=AC=BC=F5=C9=D9=B1=CA=BB=AD=CF=E0=BD=BB=B4=A6=B5=C4=BB=FB=B1=E4=A3=AC=CF=B8=
+=BB=AF=BD=E1=B9=FB=CA=C7=D4=AD=CD=BC=CF=F1=B5=C4=D6=D0=D0=C4=CF=DF=A3=AC=CF=
+=B8=BB=AF=B5=C4=BF=EC=CB=D9=D0=D4=BA=CD=B5=FC=B4=FA=B4=CE=CA=FD=C9=D9=A1=A3=
+</SPAN></P>
+      <P><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=C4=C7=C3=B4=C8=E7=BA=CE=C5=D0=B6=CF=D2=BB=B8=F6=B5=E3=CA=C7=B7=F1=C4=DC=C8=
+=A5=B5=F4=C4=D8=A3=BF=D2=AA=B8=F9=BE=DD=CB=FC=B5=C4=B0=CB=B8=F6=CF=E0=C1=DA=
+=B5=E3=B5=C4=C7=E9=BF=F6=C0=B4=C5=D0=B6=CF=A3=AC=CF=C2=C3=E6=BC=B8=B8=F6=C0=
+=FD=D7=D3</SPAN><SPAN>(</SPAN><SPAN>=C8=E7=CD=BC</SPAN><SPAN>6.22</SPAN><=
+SPAN>=CB=F9=CA=BE</SPAN><SPAN>)</SPAN><SPAN>=A1=A3</SPAN></P>
+      <P class=3Da style=3D"LINE-HEIGHT: 18pt" align=3Dcenter><SPAN><IMG =
+
+      style=3D"WIDTH: 473px; HEIGHT: 93px" height=3D66=20
+      src=3D"http://vipbase.net/ipbook/chap06.files/image060.gif"=20
+      width=3D344></SPAN></P>
+      <DIV class=3Da style=3D"LINE-HEIGHT: 18pt" align=3Dcenter>
+      <DIV align=3Dcenter>
+      <TABLE class=3DMsoTableGrid=20
+      style=3D"BORDER-RIGHT: medium none; BORDER-TOP: medium none; =
+BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: =
+collapse; mso-table-layout-alt: fixed; mso-border-alt: solid windowtext =
+.5pt; mso-yfti-tbllook: 480; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; =
+mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt =
+solid windowtext"=20
+      cellSpacing=3D0 cellPadding=3D0 align=3Dcenter border=3D1>
+        <TBODY>
+        <TR=20
+        style=3D"HEIGHT: 8.5pt; mso-yfti-irow: 0; mso-yfti-firstrow: =
+yes; mso-height-rule: exactly">
+          <TD=20
+          style=3D"BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: =
+5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; =
+PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; WIDTH: 8.5pt; =
+PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 8.5pt; =
+BACKGROUND-COLOR: transparent; mso-border-alt: solid windowtext .5pt; =
+mso-height-rule: exactly"=20
+          vAlign=3Dtop width=3D11>
+            <P class=3DMsoNormal style=3D"MARGIN: 0cm 0cm 0pt"></P></TD>
+          <TD=20
+          style=3D"BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: =
+5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; =
+PADDING-BOTTOM: 0cm; BORDER-LEFT: #ebe9ed; WIDTH: 8.5pt; PADDING-TOP: =
+0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 8.5pt; =
+BACKGROUND-COLOR: transparent; mso-border-alt: solid windowtext .5pt; =
+mso-height-rule: exactly; mso-border-left-alt: solid windowtext .5pt"=20
+          vAlign=3Dtop width=3D11>
+            <P class=3DMsoNormal style=3D"MARGIN: 0cm 0cm 0pt"></P></TD>
+          <TD=20
+          style=3D"BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: =
+5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; =
+PADDING-BOTTOM: 0cm; BORDER-LEFT: #ebe9ed; WIDTH: 8.5pt; PADDING-TOP: =
+0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 8.5pt; =
+BACKGROUND-COLOR: transparent; mso-border-alt: solid windowtext .5pt; =
+mso-height-rule: exactly; mso-border-left-alt: solid windowtext .5pt"=20
+          vAlign=3Dtop width=3D11>
+            <P class=3DMsoNormal style=3D"MARGIN: 0cm 0cm =
+0pt"></P></TD></TR>
+        <TR style=3D"HEIGHT: 8.5pt; mso-yfti-irow: 1; mso-height-rule: =
+exactly">
+          <TD=20
+          style=3D"BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: =
+5.4pt; BORDER-TOP: #ebe9ed; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; =
+BORDER-LEFT: windowtext 1pt solid; WIDTH: 8.5pt; PADDING-TOP: 0cm; =
+BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 8.5pt; BACKGROUND-COLOR: =
+transparent; mso-border-alt: solid windowtext .5pt; mso-height-rule: =
+exactly; mso-border-top-alt: solid windowtext .5pt"=20
+          vAlign=3Dtop width=3D11>
+            <P class=3DMsoNormal style=3D"MARGIN: 0cm 0cm 0pt"></P></TD>
+          <TD=20
+          style=3D"BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: =
+5.4pt; BORDER-TOP: #ebe9ed; PADDING-LEFT: 5.4pt; BACKGROUND: black; =
+PADDING-BOTTOM: 0cm; BORDER-LEFT: #ebe9ed; WIDTH: 8.5pt; PADDING-TOP: =
+0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 8.5pt; mso-border-alt: =
+solid windowtext .5pt; mso-height-rule: exactly; mso-border-left-alt: =
+solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt"=20
+          vAlign=3Dtop width=3D11>
+            <P class=3DMsoNormal style=3D"MARGIN: 0cm 0cm 0pt"></P></TD>
+          <TD=20
+          style=3D"BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: =
+5.4pt; BORDER-TOP: #ebe9ed; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; =
+BORDER-LEFT: #ebe9ed; WIDTH: 8.5pt; PADDING-TOP: 0cm; BORDER-BOTTOM: =
+windowtext 1pt solid; HEIGHT: 8.5pt; BACKGROUND-COLOR: transparent; =
+mso-border-alt: solid windowtext .5pt; mso-height-rule: exactly; =
+mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+          vAlign=3Dtop width=3D11>
+            <P class=3DMsoNormal style=3D"MARGIN: 0cm 0cm =
+0pt"></P></TD></TR>
+        <TR=20
+        style=3D"HEIGHT: 8.5pt; mso-yfti-irow: 2; mso-height-rule: =
+exactly; mso-yfti-lastrow: yes">
+          <TD=20
+          style=3D"BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: =
+5.4pt; BORDER-TOP: #ebe9ed; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; =
+BORDER-LEFT: windowtext 1pt solid; WIDTH: 8.5pt; PADDING-TOP: 0cm; =
+BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 8.5pt; BACKGROUND-COLOR: =
+transparent; mso-border-alt: solid windowtext .5pt; mso-height-rule: =
+exactly; mso-border-top-alt: solid windowtext .5pt"=20
+          vAlign=3Dtop width=3D11>
+            <P class=3DMsoNormal style=3D"MARGIN: 0cm 0cm 0pt"></P></TD>
+          <TD=20
+          style=3D"BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: =
+5.4pt; BORDER-TOP: #ebe9ed; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; =
+BORDER-LEFT: #ebe9ed; WIDTH: 8.5pt; PADDING-TOP: 0cm; BORDER-BOTTOM: =
+windowtext 1pt solid; HEIGHT: 8.5pt; BACKGROUND-COLOR: transparent; =
+mso-border-alt: solid windowtext .5pt; mso-height-rule: exactly; =
+mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+          vAlign=3Dtop width=3D11>
+            <P class=3DMsoNormal style=3D"MARGIN: 0cm 0cm 0pt"></P></TD>
+          <TD=20
+          style=3D"BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: =
+5.4pt; BORDER-TOP: #ebe9ed; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; =
+BORDER-LEFT: #ebe9ed; WIDTH: 8.5pt; PADDING-TOP: 0cm; BORDER-BOTTOM: =
+windowtext 1pt solid; HEIGHT: 8.5pt; BACKGROUND-COLOR: transparent; =
+mso-border-alt: solid windowtext .5pt; mso-height-rule: exactly; =
+mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+          vAlign=3Dtop width=3D11>
+            <P class=3DMsoNormal=20
+      style=3D"MARGIN: 0cm 0cm =
+0pt"></P></TD></TR></TBODY></TABLE></DIV>=A3=A87=A3=A9</DIV>
+      <P class=3Da style=3D"LINE-HEIGHT: 18pt"></P>
+      <P style=3D"LINE-HEIGHT: 18pt; TEXT-ALIGN: center"=20
+      align=3Dcenter><STRONG><SPAN>=CD=BC1</SPAN>&nbsp;&nbsp;=20
+      =
+</STRONG><STRONG><SPAN>=B8=F9=BE=DD=C4=B3=B5=E3=B5=C4=B0=CB=B8=F6=CF=E0=C1=
+=DA=B5=E3=B5=C4=C7=E9=BF=F6=C0=B4=C5=D0=B6=CF=B8=C3=B5=E3=CA=C7=B7=F1=C4=DC=
+=C9=BE=B3=FD</SPAN></STRONG></P>
+      <P=20
+      style=3D"LINE-HEIGHT: =
+18pt"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=CD=BC</SPAN><SPAN>1</SPAN><SPAN>=D6=D0=A3=AC</SPAN><SPAN>(1)</SPAN><SPAN=
+>=B2=BB=C4=DC=C9=BE=A3=AC=D2=F2=CE=AA=CB=FC=CA=C7=B8=F6=C4=DA=B2=BF=B5=E3=
+=A3=AC=CE=D2=C3=C7=D2=AA=C7=F3=B5=C4=CA=C7=B9=C7=BC=DC=A3=AC=C8=E7=B9=FB=C1=
+=AC=C4=DA=B2=BF=B5=E3=D2=B2=C9=BE=C1=CB=A3=AC=B9=C7=BC=DC=D2=B2=BB=E1=B1=BB=
+=CC=CD=BF=D5=B5=C4=A3=BB</SPAN><SPAN>=20
+      =
+(2)</SPAN><SPAN>=B2=BB=C4=DC=C9=BE=A3=AC=BA=CD</SPAN><SPAN>(1)</SPAN><SPA=
+N>=CA=C7=CD=AC=D1=F9=B5=C4=B5=C0=C0=ED=A3=BB</SPAN><SPAN>(3)</SPAN><SPAN>=
+=BF=C9=D2=D4=C9=BE=A3=AC=D5=E2=D1=F9=B5=C4=B5=E3=B2=BB=CA=C7=B9=C7=BC=DC=A3=
+=BB</SPAN><SPAN>(4)</SPAN><SPAN>=B2=BB=C4=DC=C9=BE=A3=AC=D2=F2=CE=AA=C9=BE=
+=B5=F4=BA=F3=A3=AC=D4=AD=C0=B4=CF=E0=C1=AC=B5=C4=B2=BF=B7=D6=B6=CF=BF=AA=C1=
+=CB=A3=BB</SPAN><SPAN>(5)</SPAN><SPAN>=BF=C9=D2=D4=C9=BE=A3=AC=D5=E2=D1=F9=
+=B5=C4=B5=E3=B2=BB=CA=C7=B9=C7=BC=DC=A3=BB</SPAN><SPAN>(6)</SPAN><SPAN>=B2=
+=BB=C4=DC=C9=BE=A3=AC=D2=F2=CE=AA=CB=FC=CA=C7=D6=B1=CF=DF=B5=C4=B6=CB=B5=E3=
+=A3=AC=C8=E7=B9=FB=D5=E2=D1=F9=B5=C4=B5=E3=C9=BE=C1=CB=A3=AC=C4=C7=C3=B4=D7=
+=EE=BA=F3=D5=FB=B8=F6=D6=B1=CF=DF=D2=B2=B1=BB=C9=BE=C1=CB=A3=AC=CA=A3=B2=BB=
+=CF=C2=CA=B2=C3=B4=A3=BB</SPAN><SPAN>(7)</SPAN><SPAN>=B2=BB=C4=DC=C9=BE=A3=
+=AC=D2=F2=CE=AA=B9=C2=C1=A2=B5=E3=B5=C4=B9=C7=BC=DC=BE=CD=CA=C7=CB=FC=D7=D4=
+=C9=ED=A1=A3</SPAN></P>
+      <P=20
+      style=3D"LINE-HEIGHT: =
+18pt"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=D7=DC=BD=E1=D2=BB=CF=C2=A3=AC=D3=D0=C8=E7=CF=C2=B5=C4=C5=D0=BE=DD=A3=BA<=
+/SPAN><SPAN>(1)</SPAN><SPAN>=C4=DA=B2=BF=B5=E3=B2=BB=C4=DC=C9=BE=B3=FD=A3=
+=BB</SPAN><SPAN>(2)</SPAN><SPAN>=B9=C2=C1=A2=B5=E3=B2=BB=C4=DC=C9=BE=B3=FD=
+=A3=BB</SPAN><SPAN>(3)</SPAN><SPAN>=D6=B1=CF=DF=B6=CB=B5=E3=B2=BB=C4=DC=C9=
+=BE=B3=FD=A3=BB</SPAN><SPAN>(4)</SPAN><SPAN>=C8=E7=B9=FB</SPAN><SPAN>P</S=
+PAN><SPAN>=CA=C7=B1=DF=BD=E7=B5=E3=A3=AC=C8=A5=B5=F4</SPAN><SPAN>P</SPAN>=
+<SPAN>=BA=F3=A3=AC=C8=E7=B9=FB=C1=AC=CD=A8=B7=D6=C1=BF=B2=BB=D4=F6=BC=D3=A3=
+=AC=D4=F2</SPAN><SPAN>P</SPAN><SPAN>=BF=C9=D2=D4=C9=BE=B3=FD=A1=A3</SPAN>=
+</P>
+      <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=CF=B8=BB=AF=CB=E3=B7=A8=D3=D0=BE=AD=B5=E4=B5=C4Zhang=B2=A2=D0=D0=BF=EC=CB=
+=D9=CF=B8=BB=AF=CB=E3=B7=A8=A3=BAp1=B5=E3=B5=C4=B0=CB=C1=DA=D3=F2=CE=AA=A3=
+=BA</P>
+      <P =
+align=3Dcenter>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      p3&nbsp;&nbsp;&nbsp; p2&nbsp;&nbsp;&nbsp;&nbsp; p9</P>
+      <P align=3Dcenter>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+
+      p4&nbsp;&nbsp;&nbsp; p1&nbsp;&nbsp;&nbsp;&nbsp; p8</P>
+      <P =
+align=3Dcenter>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      p5&nbsp;&nbsp;&nbsp; p6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; p7</P>
+      <P =
+align=3Dcenter>=A3=A8=C6=E4=D6=D0p1=CE=AA=BA=DA=B5=E3=A3=AC=C8=E7=B9=FB=D2=
+=D4=CF=C2=CB=C4=B8=F6=CC=F5=BC=FE=CD=AC=CA=B1=C2=FA=D7=E3=A3=AC=D4=F2=C9=BE=
+=B3=FDp1=A3=AC=BC=B4=C1=EEp1=3D0=A3=A9</P>
+      =
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=CF=B8=BB=AF=C9=BE=B3=FD=CC=F5=BC=FE=CE=AA=A3=BA=A3=A81=A3=A9=A1=A22 =
+&lt;=3D Nz(p1) &lt;=3D 6&nbsp;&nbsp; =
+Nz=CE=AA=B0=CB=C1=DA=D3=F2=D6=D0=BA=DA=B5=E3=B5=C4=CA=FD=C4=BF</P>
+      =
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      (2)=A1=A2Zo(p1)=3D1,=D6=B8=D6=D0=D0=C4=CE=AA=BA=DA=B5=E3</P>
+      =
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =A3=A83=A3=A9=A1=A2p2*p4*p8=3D0&nbsp;&nbsp;&nbsp; or=20
+      Zo(p2)!=3D1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+=B1=DC=C3=E2=BA=DA=CF=DF=B1=BB=B4=F2=B6=CF</P>
+      =
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =A3=A84=A3=A9=A1=A2p2*p4*p6=3D0&nbsp;&nbsp;&nbsp; or =
+Zo(p4)!=3D1</P>
+      <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=C8=E7=B9=FB=CD=AC=CA=B1=C2=FA=D7=E3=D2=D4=C9=CF=CB=C4=B8=F6=CC=F5=BC=FE=D4=
+=F2=B8=C3=B5=E3=BF=C9=D2=D4=C9=BE=B3=FD=A1=A3</P></DIV></TD></TR></TBODY>=
+</TABLE><BR>
+<DIV class=3Dopt><A =
+title=3D=B2=E9=BF=B4=B8=C3=B7=D6=C0=E0=D6=D0=CB=F9=D3=D0=CE=C4=D5=C2=20
+href=3D"http://hi.baidu.com/skyjsq/blog/category/&Iacute;&frac14;&Iuml;&n=
+tilde;&acute;&brvbar;&Agrave;=A8=AA&Iuml;=A8=A4&sup1;&Oslash;">=C0=E0=B1=F0=
+=A3=BA=CD=BC=CF=F1=B4=A6=C0=ED=CF=E0=B9=D8</A> | <A=20
+title=3D=BD=AB=B4=CB=CE=C4=D5=C2=CC=ED=BC=D3=B5=BD=B0=D9=B6=C8=CB=D1=B2=D8=
+ onclick=3D"return addToFavor();"=20
+href=3D"http://cang.baidu.com/do/add" =
+target=3D_blank>=CC=ED=BC=D3=B5=BD=CB=D1=B2=D8</A> | =E4=AF=C0=C0(<SPAN=20
+id=3Dresult></SPAN>) | <A=20
+href=3D"http://hi.baidu.com/skyjsq/blog/item/1ac82a1f800ee30f304e1538.htm=
+l/cmtid/a3c47eec9740ed2f62d09f1c#send">=C6=C0=C2=DB</A>&nbsp;(2)
+<SCRIPT language=3Djavascript>
+/*<![CDATA[*/
+var pre =3D =
+[true,'=D6=AA=CA=B6=D0=A1=BD=E1=A3=BA=B6=FE=D6=B5=CD=BC=CF=F1=A3=AC=BB=D2=
+=B6=C8=CD=BC=CF=F1', =
+'=D6=AA=CA=B6=D0=A1=BD=E1=A3=BA=B6=FE=D6=B5=CD=BC=CF=F1=A3=AC=BB=D2=B6=C8=
+=CD=BC=CF=F1','/skyjsq/blog/item/358f73c2a234a61e0ef47728.html'];
+var post =3D [true,'=C8=ED=BC=C6=CB=E3=A3=BAsoft =
+computing','=C8=ED=BC=C6=CB=E3=A3=BAsoft computing', =
+'/skyjsq/blog/item/4204ed29b02f9bfb99250a98.html'];
+if(pre[0] || post[0]){
+	document.write('<div =
+style=3D"height:5px;line-height:5px;">&nbsp;</div><div id=3D"in_nav">');
+	if(pre[0]){
+		document.write('=C9=CF=D2=BB=C6=AA=A3=BA<a href=3D"' + pre[3] + '" =
+title=3D"' + pre[1] + '">' +  pre[2] + '</a>&nbsp;&nbsp;&nbsp;&nbsp;');
+	}
+	if(post[0]){
+		document.write('=CF=C2=D2=BB=C6=AA=A3=BA<a href=3D"' + post[3] + '" =
+title=3D"' + post[1] + '">' +  post[2] + '</a>');
+	}
+	document.write('</div>');
+}
+/*]]>*/
+</SCRIPT>
+ </DIV>
+<DIV class=3Dline></DIV>
+<STYLE type=3Dtext/css>#in_related_doc A {
+	TEXT-DECORATION: none
+}
+</STYLE>
+
+<DIV id=3Din_related_tmp></DIV>
+<SCRIPT language=3Djavascript type=3Dtext/javascript>
+/*<![CDATA[*/
+function HI_MOD_IN_RELATED_DOC_CALLBACK(arg){
+    if(arg.length <=3D 1) return false;
+    var hasMore =3D arg[0];
+    var D=3Dfunction(A,B){A[A.length]=3DB;}
+    if(arg.length % 2 =3D=3D 0) D(arg, ["","","",""]);
+
+    var html =3D ['<div id=3D"in_related_doc"><div =
+class=3D"tit">=CF=E0=B9=D8=CE=C4=D5=C2=A3=BA</div>'];
+    D(html, '<table cellpadding=3D"0" cellspacing=3D"3" border=3D"0">');
+    for(var i =3D 1, j =3D arg.length; i < j; i +=3D 2){
+        D(html, '<tr>');
+        D(html, '<td width=3D"15px"><a style=3D"font-size:25px" =
+>&#8226;</a></td><td><a href=3D"http://hi.baidu.com/' + arg[i][3] + =
+'/blog/item/' + arg[i][2] + '.html" target=3D"_blank" title=3D"' + =
+arg[i][0] + '">' + arg[i][1] + '</a>');
+        D(html, new Array(10).join('\u3000'));
+        D(html, '</td>');
+        if(arg[i + 1][0] !=3D "")
+            D(html, '<td width=3D"15px"><a style=3D"font-size:25px" =
+>&#8226;</a></td><td><a href=3D"http://hi.baidu.com/' + arg[i + 1][3] + =
+'/blog/item/' + arg[i + 1][2] + '.html" target=3D"_blank" title=3D"' + =
+arg[i + 1][0] + '">' + arg[i + 1][1] + '</a></td>');
+        else
+            D(html, '<td>&nbsp;</td><td>&nbsp;</td>');
+        D(html, '</tr>');
+    }
+    if(hasMore) D(html, '<tr><td colspan=3D"4"><a target=3D"_blank" =
+href=3D"/sys/search?pageno=3D1&type=3D7&sort=3D1&word=3D%D0%A1%BD%E1%A3%B=
+A%CD%BC%CF%F1%CF%B8%BB%AF%28%D2%BB%29&item=3D1ac82a1f800ee30f304e1538">=B8=
+=FC=B6=E0&gt;&gt;</a></td></tr>');
+    D(html, '</table></div><div class=3D"line">&nbsp;</div>');
+
+    var div =3D document.getElementById('in_related_tmp');
+    if(div){
+        div.innerHTML =3D html.join('');
+        while(div.firstChild){
+            div.parentNode.insertBefore(div.firstChild, div);
+        }
+        div.parentNode.removeChild(div);
+    }
+	window.setTimeout("tracker_init('in_related_doc')",100);
+}
+
+if(RelatedDocData =3D=3D -1){	// not supported xhr
+    var script =3D document.createElement('script');
+    script.type =3D 'text/javascript';
+    script.src =3D =
+'/sys/search?type=3D8&word=3D%D0%A1%BD%E1%A3%BA%CD%BC%CF%F1%CF%B8%BB%AF%2=
+8%D2%BB%29&item=3D1ac82a1f800ee30f304e1538&t=3D' + new Date().getTime();
+    document.getElementsByTagName('HEAD')[0].appendChild(script);
+}else if(RelatedDocData =3D=3D null){
+	GetAndEval =3D true;
+}else{
+	eval(RelatedDocData);
+}
+
+/*]]>*/
+</SCRIPT>
+
+<DIV id=3Din_reader>
+<DIV class=3Dtit>=D7=EE=BD=FC=B6=C1=D5=DF=A3=BA</DIV>
+<SCRIPT>
+
+	var g_spAnnony=3Dtrue;
+
+
+var g_read=3D[
+
+["xtlp","be037377616e646c654700","swandle"],
+
+["zxx%5F0405","2ab37a78785f303430356503","zxx_0405"],
+
+["satanness","9d09736174616e6e6573738504","satanness"],
+
+["conglingks","3f3e7468737a686f6e67f600","thszhong"],
+
+{}
+];
+g_read.length=3Dg_read.length-1;
+
+var _rh1=3D"";
+var _rh2=3D"";
+
+function wrreader(){
+	_rh1 +=3D '<table width=3D"100%" ><tr>';
+	_rh2+=3D'<tr>';
+	if(g_spAnnony){
+		_rh1+=3D'<td align=3D"center" width=3D"10%" ><img border=3D"0" =
+width=3D"55" height=3D"55" =
+src=3D"http://img.baidu.com/hi/img/portraitn.jpg"></td>';
+		_rh2+=3D'<td>&nbsp;</td>';
+		if(g_read.length>0){
+			_rh1+=3D'<td align=3D"left" width=3D"12%">';
+		}else{
+			_rh1+=3D'<td align=3D"left" width=3D"100%">';
+		}
+		_rh1+=3D'<a =
+href=3D"http://passport.baidu.com/?login&tpl=3Dsp&tpl_reg=3Dsp&u=3D'+myre=
+f+'" =
+target=3D"_self">=B5=C7=C2=BC</a>=BA=F3=A3=AC=C4=FA=BE=CD=B3=F6=CF=D6=D4=DA=
+=D5=E2=C0=EF=A1=A3</td>';
+		_rh2+=3D'<td>&nbsp;</td>'
+	}
+	if(g_read.length=3D=3D0){
+		if(!g_spAnnony){
+			_rh1+=3D'<td align=3Dleft =
+width=3D"100%">=D7=EE=BD=FC=BB=B9=C3=BB=D3=D0=B5=C7=C2=BC=D3=C3=BB=A7=BF=B4=
+=B9=FD=D5=E2=C6=AA=CE=C4=D5=C2=A1=AD=A1=AD</td>';
+			_rh2+=3D'<td>&nbsp;</td>';
+		}
+	}else{
+		for(i=3D0,len=3Dg_read.length;i<len;i++){
+			_rh1+=3D'<td align=3D"center" valign=3D"bottom" width=3D"10%" =
+class=3D"user"><a href=3D"/'+g_read[i][0]+'" target=3D"_blank"><img =
+border=3D"0" =
+src=3D"http://himg.baidu.com/sys/portraitn/item/'+g_read[i][1]+'.jpg"></a=
+></td>';
+			_rh2+=3D'<td align=3D"center" valign=3D"top" class=3D"user"><a =
+href=3D"/'+g_read[i][0]+'" target=3D"_blank">'+g_read[i][2]+'</a></td>';
+		}
+	}
+	_rh1+=3D'<td width=3D"100%"></td></tr>';
+	_rh2+=3D'<td></td></tr></table>';
+	document.write(_rh1+_rh2);
+}
+
+wrreader();
+</SCRIPT>
+</DIV>
+<DIV class=3Dline></DIV>
+<SCRIPT language=3DJavaScript>
+allkey=3Dallkey+"c1967e778b09641bb051b95d_1ac82a1f800ee30f304e1538_";
+</SCRIPT>
+
+<DIV id=3Din_comment><A name=3Dcomment></A>
+<DIV class=3Dtit>=CD=F8=D3=D1=C6=C0=C2=DB=A3=BA</DIV>
+<SCRIPT>
+function writecmt(type,id,cmtname,cmturl,portraitId){
+	var html1=3D"";
+
+	if(type=3D=3D1){
+			html1=3D"<a href=3D'"+cmturl+"' target=3D'_blank' =
+title=3D'"+cmturl+"'><img  border=3D'0' =
+src=3D'http://himg.baidu.com/sys/portraitn/item/"+portraitId+".jpg'><br>"=
++cmtname+"</a>";
+	}else{
+		if(cmtname=3D=3D"" || cmtname=3D=3D"=C4=E4=C3=FB=CD=F8=D3=D1"){
+			if(cmturl=3D=3D""){
+				html1=3D"<a>=C4=E4=C3=FB=CD=F8=D3=D1</a>";
+			}else{
+				html1=3D"<a href=3D'"+cmturl+"' target=3D'_blank' =
+title=3D'"+cmturl+"'>"+cmtname+"</a>";
+			}
+		}else{
+			if(cmturl=3D=3D""){
+				html1=3D"<div class=3D'f14' =
+style=3D'display:inline'>=CD=F8=D3=D1:<a>"+cmtname+"</a></div>";
+			}else{
+				html1=3D"<div class=3D'f14' style=3D'display:inline'>=CD=F8=D3=D1:<a =
+href=3D'"+cmturl+"' target=3D'_blank' =
+title=3D'"+cmturl+"'>"+cmtname+"</a></div>";
+			}
+		}
+	}
+	document.write(html1);
+}
+function filterCmtContent(n){
+	if(!BdBrowser.isIE){
+		var defaultfilter1=3D'<span =
+style=3D"filter:glow(color=3D#000000,strength=3D2);height:0px;color:#0000=
+00">';
+		var defaultfilter2=3D'<span style=3D"height: 0px; color: rgb(0, 0, =
+0);">';
+		var commentDiv=3Ddocument.getElementById(n);
+		var divs=3DcommentDiv.getElementsByTagName('div');
+		var d,tmp;
+		for( var i=3D0,len=3Ddivs.length;i<len;i++){
+			d=3Ddivs[i];
+			if(d.getAttribute('name')=3D=3D'cmtcontent'){
+				tmp=3Dd.innerHTML;
+				tmp=3Dtmp.replace(/<span =
+style=3D"filter:glow\(color=3D#([0-9a-z]{3,6}),strength=3D2\);height:0px;=
+color:#([0-9a-z]{3,6})">/ig,defaultfilter1);
+				tmp=3Dtmp.replace('<span style=3D"height: 0px; color: rgb(255, 255, =
+255);">',defaultfilter2);
+				d.innerHTML=3Dtmp;
+			}
+		}
+	}
+}
+
+</SCRIPT>
+<A name=3Decc45ab15931c75c09230223 repid=3D"0000c4e4c3fbcdf8d3d10000"=20
+rename=3D"=C4=E4=C3=FB=CD=F8=D3=D1"></A>
+<TABLE class=3Ditem=20
+style=3D"TABLE-LAYOUT: fixed; OVERFLOW: hidden; WORD-WRAP: break-word"=20
+cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0 ;>
+  <TBODY>
+  <TR>
+    <TD class=3Dindex vAlign=3Dtop width=3D"5%">1</TD>
+    <TD vAlign=3Dtop align=3Dmiddle width=3D"10%">
+      <DIV class=3Duser style=3D"OVERFLOW: hidden">
+      <SCRIPT language=3Djavascript>
+writecmt(2,"ecc45ab15931c75c09230223","=C4=E4=C3=FB=CD=F8=D3=D1","","0000=
+c4e4c3fbcdf8d3d10000");
+
+</SCRIPT>
+      </DIV></TD>
+    <TD class=3Dcnt style=3D"PADDING-LEFT: 20px"><SPAN =
+class=3Ddate>2008=C4=EA11=D4=C210=C8=D5 =D0=C7=C6=DA=D2=BB=20
+      16:50 | <A=20
+      =
+onclick=3D'cmtreply("=C4=E4=C3=FB=CD=F8=D3=D1","0000c4e4c3fbcdf8d3d10000"=
+);return false;'=20
+      =
+href=3D"http://hi.baidu.com/skyjsq/blog/item/1ac82a1f800ee30f304e1538.htm=
+l/cmtid/a3c47eec9740ed2f62d09f1c#">=BB=D8=B8=B4</A>=20
+      </SPAN>
+      <DIV class=3Ddesc style=3D"OVERFLOW: hidden; WORD-BREAK: normal"=20
+      name=3D"cmtcontent">p2*p4*p8=3D0 or Zo(p1)!=3D1 =A3=BF =
+Zo(p1)=B2=BB=CE=AA1 =
+=CE=AA=CA=B2=C3=B4=BB=B9=D2=AA=C9=BE=B3=FD=CB=FC=B0=A2=A3=BF=20
+  </DIV></TD></TR></TBODY></TABLE>
+<DIV class=3Dline></DIV><A name=3Da3c47eec9740ed2f62d09f1c=20
+repid=3D"9714736b796a73713604" rename=3D"skyjsq"></A>
+<TABLE class=3Ditem=20
+style=3D"TABLE-LAYOUT: fixed; OVERFLOW: hidden; WORD-WRAP: break-word"=20
+cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0 ;>
+  <TBODY>
+  <TR>
+    <TD class=3Dindex vAlign=3Dtop width=3D"5%">2</TD>
+    <TD vAlign=3Dtop align=3Dmiddle width=3D"10%">
+      <DIV class=3Duser style=3D"OVERFLOW: hidden">
+      <SCRIPT>
+writecmt(1,"a3c47eec9740ed2f62d09f1c","skyjsq","http://hi.baidu.com/skyjs=
+q","9714736b796a73713604");
+</SCRIPT>
+      </DIV></TD>
+    <TD class=3Dcnt style=3D"PADDING-LEFT: 20px"><SPAN =
+class=3Ddate>2008=C4=EA11=D4=C210=C8=D5 =D0=C7=C6=DA=D2=BB=20
+      18:17 | <A=20
+      onclick=3D'cmtreply("skyjsq","9714736b796a73713604");return =
+false;'=20
+      =
+href=3D"http://hi.baidu.com/skyjsq/blog/item/1ac82a1f800ee30f304e1538.htm=
+l/cmtid/a3c47eec9740ed2f62d09f1c#">=BB=D8=B8=B4</A>=20
+      </SPAN>
+      <DIV class=3Ddesc style=3D"OVERFLOW: hidden; WORD-BREAK: normal"=20
+      name=3D"cmtcontent">sorry =
+,=D2=D1=B8=C4=D5=FD=CA=C7=A3=BAp2*p4*p8=3D0 or Zo(p2)!=3D1=20
+</DIV></TD></TR></TBODY></TABLE>
+<DIV class=3Dline></DIV>
+<DIV id=3Dpage></DIV></DIV>
+<SCRIPT>filterCmtContent('in_comment');</SCRIPT>
+
+<DIV id=3Din_send><A name=3Dsend></A>
+<FORM id=3DpopFormSubmit name=3Dform1 onsubmit=3D"return checkcmtform()" =
+
+action=3D/skyjsq/commit method=3Dpost><INPUT type=3Dhidden value=3D8 =
+name=3Dct> <INPUT=20
+type=3Dhidden value=3D1 name=3Dcm> <INPUT type=3Dhidden =
+value=3D1ac82a1f800ee30f304e1538=20
+name=3DspBlogID> <INPUT id=3DspRefURL type=3Dhidden name=3DspRefURL>
+<SCRIPT>
+    document.getElementById("spRefURL").value =3D window.location.href;
+</SCRIPT>
+=20
+<DIV class=3Dtit>=B7=A2=B1=ED=C6=C0=C2=DB=A3=BA</DIV>
+<TABLE cellSpacing=3D5 cellPadding=3D0 width=3D620 border=3D0>
+  <TBODY>
+  <TR>
+    <TD class=3Df14>=D0=D5=A1=A1=C3=FB=A3=BA</TD>
+    <TD><INPUT id=3DspBlogCmtor style=3D"WIDTH: 220px" =
+onfocus=3DhidErr(1);=20
+      maxLength=3D49 onchange=3D"checkname('spBlogCmtor')" =
+name=3DspBlogCmtor>
+      <SCRIPT>
+document.write(" &nbsp;&nbsp; <a =
+href=3D'http://passport.baidu.com/?reg&tpl=3Dsp&return_method=3Dget&skip_=
+ok=3D1&u=3Dhttp://hi.baidu.com/sys/reg/' =
+target=3D'_blank'>=D7=A2=B2=E1</a>");
+document.write(' | <a =
+href=3D"http://passport.baidu.com/?login&tpl=3Dsp&tpl_reg=3Dsp&u=3D'+myre=
+f+'">=B5=C7=C2=BC</a>');
+
+</SCRIPT>
+      =20
+      <DIV id=3Dnmerror style=3D"DISPLAY: =
+none">*=D0=D5=C3=FB=D7=EE=B3=A4=CE=AA50=D7=D6=BD=DA</DIV></TD></TR>
+  <TR id=3D1_err style=3D"DISPLAY: none">
+    <TD>&nbsp;</TD>
+    <TD>
+      <DIV class=3Derror id=3D1_err_con></DIV></TD></TR>
+  <TR>
+    <TD class=3Df14>=CD=F8=D6=B7=BB=F2=D3=CA=CF=E4=A3=BA</TD>
+    <TD><INPUT id=3DspBlogCmtURL style=3D"WIDTH: 360px" =
+onfocus=3DhidErr(2);=20
+      maxLength=3D128 onchange=3D"checkeandu('spBlogCmtURL')" =
+name=3DspBlogCmtURL>=20
+    (=D1=A1=CC=EE)</TD>
+    <SCRIPT>
+G("spBlogCmtor").value=3D"";
+G("spBlogCmtURL").value=3D"";
+</SCRIPT>
+  </TR>
+  <TR id=3D2_err style=3D"DISPLAY: none">
+    <TD>&nbsp;</TD>
+    <TD>
+      <DIV class=3Derror id=3D2_err_con></DIV></TD></TR>
+  <TR>
+    <TD class=3Df14 id=3DreTitle =
+vAlign=3Dtop>=C4=DA=A1=A1=C8=DD=A3=BA</TD>
+    <TD><TEXTAREA id=3DspBlogCmtText style=3D"WIDTH: 520px; HEIGHT: =
+155px" onfocus=3DhidErr(3); name=3DspBlogCmtText></TEXTAREA>
+      <SCRIPT>
+	var editor=3Dnull;
+	try{
+		editor=3Dnew BdEditor("spBlogCmtText",{width:"100%",height:"155px"});
+		editor.onfocus =3D function(){hidErr(3);}
+		editor.render();
+	}catch(e){
+		var spBlogCmtText =3D document.getElementById("spBlogCmtText");
+		var p =3D spBlogCmtText.previousSibling;
+		while(p && p.nodeType !=3D 1) p =3D p.previousSibling;
+		if(p && /bdeditor_container/.test(p.id)){
+			p.parentNode.removeChild(p);
+		}
+		spBlogCmtText.style.display =3D '';
+		editor=3Dnull;
+	}
+</SCRIPT>
+
+      <SCRIPT>
+G("spBlogCmtor").value=3DG("spBlogCmtor").defaultValue;
+G("spBlogCmtText").value=3D"";
+</SCRIPT>
+       </TD></TR>
+  <TR id=3D3_err style=3D"DISPLAY: none">
+    <TD>&nbsp;</TD>
+    <TD>
+      <DIV class=3Derror id=3D3_err_con></DIV></TD></TR>
+  <TR id=3Dvercode>
+    <TD class=3Df14 vAlign=3Dtop>=D1=E9=D6=A4=C2=EB=A3=BA</TD>
+    <TD vAlign=3Dtop><INPUT type=3Dhidden=20
+      =
+value=3D30357370616365313336333431363830383030303030303030303030303030313=
+2333532383933353010859E06E6B92977DA31FD39B3CAACFA=20
+      name=3DspVcode> <INPUT id=3DspVerifyKey onfocus=3Df_focus() =
+tabIndex=3D4=20
+      maxLength=3D4 size=3D6 name=3DspVerifyKey =
+autocomplete=3D"off"><BR>
+      <SCRIPT type=3Dtext/javascript>
+/*<![CDATA[*/
+var =
+imgsrc=3D"http://hiup.baidu.com/cgi-bin/genimg?30357370616365313336333431=
+3638303830303030303030303030303030303132333532383933353010859E06E6B92977D=
+A31FD39B3CAACFA";
+function f_focus(){
+	if(G('yanzheng').style.display=3D=3D"none" ){
+		G('verifypic').src=3Dimgsrc;
+		G('yanzheng').style.display=3D"block";
+	}
+}
+function newverifypic(){
+	G("verifypic").src =3D imgsrc +"&t=3D"+ Math.random();
+	return false;
+}
+/*]]>*/
+</SCRIPT>
+
+      <DIV id=3Dyanzheng style=3D"DISPLAY: none"><IMG id=3Dverifypic =
+height=3D40=20
+      width=3D120><WBR><A =
+title=3D=BF=B4=B2=BB=C7=E5=D7=F3=B1=DF=B5=C4=D7=D6=B7=FB =
+onfocus=3Dthis.blur();=20
+      onclick=3D"return newverifypic();"=20
+      =
+href=3D"http://hi.baidu.com/skyjsq/blog/item/1ac82a1f800ee30f304e1538.htm=
+l/cmtid/a3c47eec9740ed2f62d09f1c#">=BF=B4=B2=BB=C7=E5?</A>=20
+      </DIV></TD></TR>
+  <TR>
+    <TD class=3Df14 vAlign=3Dtop>&nbsp;</TD>
+    <TD class=3Df14 vAlign=3Dtop><INPUT id=3Dbtn_ok tabIndex=3D5 =
+type=3Dsubmit value=3D=B7=A2=B1=ED=C6=C0=C2=DB =
+name=3Dbtn_ok>&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+      id=3DcancleReLink style=3D"DISPLAY: none; FONT-SIZE: 12px; COLOR: =
+#666"=20
+      onclick=3D"canclereply(); return false;"=20
+      =
+href=3D"http://hi.baidu.com/skyjsq/blog/item/1ac82a1f800ee30f304e1538.htm=
+l/cmtid/a3c47eec9740ed2f62d09f1c#">=C8=A1=CF=FB=BB=D8=B8=B4</A></TD></TR>=
+</TBODY></TABLE></FORM></DIV><BR></DIV>
+<TABLE height=3D8 cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD class=3Dmodbl width=3D7>&nbsp;</TD>
+    <TD class=3Dmodbc>&nbsp;</TD>
+    <TD class=3Dmodbr =
+width=3D7>&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV>
+<SCRIPT language=3Djavascript>
+<!--
+var hstr=3D"/skyjsq/brwstat?key1=3D1";
+document.write("<script src=3D'"+hstr+"&key2=3D"+allkey+"'><\/script>");
+//-->
+</SCRIPT>
+<BR>
+<CENTER>
+<DIV id=3Dft>&copy;2009 Baidu</DIV></CENTER>
+<SCRIPT>
+if(document.getElementById("m_blog"))
+{
+	var imgarray =3D =
+document.getElementById("m_blog").getElementsByTagName('img');
+	var imgw =3D document.getElementById("m_blog").offsetWidth;
+	imgw =3Dimgw-40;
+	for(var i=3D0; i<imgarray.length; i++){
+	if(imgarray[i].className=3D=3D"blogimg" && imgarray[i].width>=3Dimgw) =
+imgarray[i].width=3Dimgw;
+	}
+}
+
+// Fix ff bugs
+var blog_text =3D document.getElementById('blog_text');
+blog_text.innerHTML =3D =
+blog_text.innerHTML.replace(/href\s*=3D\s*("|')?(\.\.\/\.\.\/)/gi,"href=3D=
+$1../$2");
+
+gotoreply();
+</SCRIPT>
+</CENTER><IMG style=3D"DISPLAY: none" src=3D""> </BODY></HTML>
+
+------=_NextPart_000_0000_01C99506.129F6C30
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://vipbase.net/ipbook/chap06.files/image060.gif
+
+R0lGODlhWAFCAHcAMSH/C01TT0ZGSUNFOS4wDQAAAAFzUkdCAkDAfcUAIf8LTVNPRkZJQ0U5LjAY
+AAAADG1zT1BNU09GRklDRTkuMALxmbSWACH/C01TT0ZGSUNFOS4wFQAAAAlwSFlzAAAOxAAADsQB
+lSsOGwAsAAAAAFgBQgCBBAQE/Pz8AQIDAQIDAv+Ej6nLGw+jbLRaIHO+vGMNBt5IhSGJKuaZtq67
+Rt/axaIt23U84/2pC+IgP9CONpRxhLRXaljUHE1Rqm7JS96yXKS2OsF6v2Irz4mCXi9M39rSjhvl
+Uu22ye4mp8AzeqTmB6dHt1HWFzhmpugmWFGIN8ho9AfYGPlIqCl1OLcHmbM5yZk36lgiGlbJt0jV
+Wfd52gAKazpBW+ta2gr1uvG2KpmqtIt4qStsjHvH6xmLiWqLnClNFOyby1LsfKydzL0MFlqdTbld
+DhzdTHpNPWx9/vs8ra78/iBOtHwry7Cv+g2doXbuyInANq6buYDyEq1r+DAiMYb8yMSrSI+gCoX/
+7AqCu3fwYsJwJL+kmwVyIMWRCzU64KjSo0B7Het9NJgP3z99/V4ajGlz5kSXG8Mh5OnQm0yIJXHa
+yRlyJdI9R3X2JNqLaFEfWree1Pq0awI7UcWaHcv1LFSWNV9YPPv0awuyUFm17ZoV7jylTt6ajXs1
+DWBoKAnjTas3acu+VNUOzgjjMd/CkMEi/rt3sdvGiRXfnStZs7/AGvNi9gx0s2mxoT8/aZ16tGHL
+cl2aJG1p9eHMrgXfnu1VNG3c135Xfq17OEyAaOjWRgvc9mXWvGODTo7V+OTI2oUH7116+u7lQxlj
+l16dufn05SlvV348PGr1qsXDBxnMOfG6ag2c/5dPHjx/+EUdewI2Bxt9ssUHYHQEdQdebvZlZyA+
+q+jn4AHPNchgOxBah9yE6M3XHncVlhUUiCNmWBxnp4nI4X4XhtVffyQeuJ5RIk3VlEQ89kgTUwFa
+hVONN1pYyYcK+uSjkEL9+GSUzASJ0ZFT3qRijFguGaKOUhE55JVSrsWWk2ZWGWZdGz6Y5oxW2nXm
+lmWiKSWdcUJ5p5x42snlik2iWJ+XS/GpJ5hUznnonogqmqihhQI6XpFJnggnoWMCiemlCS7qaIQe
+tjnpm1WJ+aeaKXFKqqWd4ifoi5IOSOmoZK6qaqqo1mrqT7i2WiB+boL6pa2aOqUkqrlSymukpf/+
+miyTje7KarGM0nortK92dm2Ovu5I7bClbjqtsN0+eux7FG4Lq6jcimvtt9KOy+6s4ZbrnZ/P5hfr
+uvLS622amUabba8s4vsfmwV/6qLAMBpMVsMOPwxxxBJPTHHFFl+MccYab8xxxx5/DHLIIo9Mcskm
+n4xyyiqvzHLLLr8Mc8wyz0xzzTbfjHPOOu/Mc88+/wx00EIPTTTJM2jIbtFKo9yDf0l3/MFY8mrs
+dNQYOE1x01GnbHXVL3e9tcpYI421yVVrLbaFeVIFj9pmX231QS37d7bcXBMTLsdx16o32EdPjQgC
+eWdchNcsFx72yWPbzbjRflvD9N51S7z42ICxU46421xr/Xfk+liuuOR7v+325BGXzTjqIKMOutiZ
+N+64Va2XrLrptIuuOcSsdx475L5vbkjuvW+kesi1j3576cg/vPvvIs8uPOlhRP/8D9CPPLnttAs4
++BnTU++x9rBLn/3lFVt/9N1Ipg88J+d//zTGfiee9vrdU11F8dVTsnL+Fuuvv48B0Hzyyx8B31cn
+qD1qaf5j2gKN98ClSXCCFKygBS+IwQxqcIMc7KAHNVYAADs=
+
+------=_NextPart_000_0000_01C99506.129F6C30
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/ui/css/mods.css
+
+#m_comment P {
+	MARGIN: 0pt
+}
+#m_comment .cnt IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: =
+0px
+}
+#m_comment .date {
+	COLOR: #666666
+}
+#m_event .nav {
+	TEXT-ALIGN: right
+}
+#m_event .nav SPAN {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+#m_event .nav SPAN.lk {
+	FONT-WEIGHT: normal; CURSOR: pointer; COLOR: #3399cc; TEXT-DECORATION: =
+underline
+}
+#m_event TD {
+	PADDING-LEFT: 5px; VERTICAL-ALIGN: middle; HEIGHT: 30px
+}
+#m_event .alter TD {
+	BACKGROUND-COLOR: #f0f0f0
+}
+#m_event .time {
+	WIDTH: 100px; COLOR: #666
+}
+#m_event .line {
+	BORDER-TOP: #ececec 1px solid; MARGIN-TOP: 3px; LINE-HEIGHT: 3px; =
+HEIGHT: 3px
+}
+#m_friends {
+	OVERFLOW: hidden
+}
+#m_friends .frd {
+	FLOAT: left; MARGIN: 0px 3px; OVERFLOW: hidden; WIDTH: 75px; HEIGHT: =
+90px
+}
+#m_friends .portrait {
+	BACKGROUND-POSITION: center bottom; DISPLAY: block; BACKGROUND-REPEAT: =
+no-repeat; HEIGHT: 55px
+}
+#m_friends .info {
+	TEXT-ALIGN: center
+}
+#m_friends .info A {
+	BACKGROUND-POSITION: left top; PADDING-LEFT: 16px; BACKGROUND-REPEAT: =
+no-repeat
+}
+#m_friends .online A {
+	BACKGROUND-IMAGE: url(http://img.baidu.com/passport/icn_online.gif)
+}
+#m_friends .offline A {
+	BACKGROUND-IMAGE: url(http://img.baidu.com/passport/icn_offline.gif)
+}
+#m_friends .hosttip {
+	LINE-HEIGHT: 90px; HEIGHT: 90px
+}
+#m_pro .wrapper {
+	CLEAR: both; OVERFLOW: hidden
+}
+#m_pro .portrait {
+	FLOAT: left; WIDTH: 110px; MARGIN-RIGHT: 6px; TEXT-ALIGN: center
+}
+#m_pro .userinfo {
+	PADDING-LEFT: 6px; FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #333333
+}
+#m_pro A.btfan {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 10px; DISPLAY: block; PADDING-LEFT: =
+0px; BACKGROUND: url(http://img.baidu.com/hi/img/mf/btfanbg.gif) =
+no-repeat; PADDING-BOTTOM: 0px; WIDTH: 88px; LINE-HEIGHT: 22px; =
+MARGIN-RIGHT: 10px; PADDING-TOP: 2px; HEIGHT: 22px; TEXT-ALIGN: center
+}
+#m_pro DIV.line {
+	MARGIN-TOP: 10px; LINE-HEIGHT: 5px
+}
+#m_pro .act {
+	CLEAR: both
+}
+#m_pro .act-links {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: =
+0px; PADDING-TOP: 0px
+}
+#m_pro .act-links A {
+	DISPLAY: block; FLOAT: left
+}
+#m_pro .act-links A.send-message-link {
+	MARGIN-TOP: 4px; MARGIN-LEFT: 0px
+}
+#m_useronline .frd {
+	FLOAT: left; MARGIN: 0px 3px; OVERFLOW: hidden; WIDTH: 75px; HEIGHT: =
+90px
+}
+#m_useronline .portrait {
+	BACKGROUND-POSITION: center bottom; DISPLAY: block; BACKGROUND-REPEAT: =
+no-repeat; HEIGHT: 55px
+}
+#m_useronline .info {
+	TEXT-ALIGN: center
+}
+#warpper {
+	MARGIN: 0px 0px 0px 200px; POSITION: relative
+}
+#warpper .content {
+	LEFT: -200px; POSITION: absolute; TOP: 5px
+}
+#warpper .photo {
+	LEFT: -200px; WIDTH: 190px; POSITION: absolute; TOP: 5px; TEXT-ALIGN: =
+center
+}
+#warpper .line {
+	MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+#warpper .act {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px
+}
+.clear {
+	CLEAR: both; FONT-SIZE: 0px; LINE-HEIGHT: 1px; HEIGHT: 1px
+}
+#m_friendStat TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+#m_friendStat TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+#m_friendStat TD {
+	FONT: 400 14px/22px arial; BORDER-BOTTOM: #d2e9f4 1px solid
+}
+#m_friendStat TD.info A:link {
+	FONT-WEIGHT: bold
+}
+#m_friendStat TD.info A:visited {
+	FONT-WEIGHT: 400
+}
+#m_friendStat TD SPAN {
+	FONT-SIZE: 12px; MARGIN-LEFT: 10px; COLOR: #8c8c8c; ZOOM: 1
+}
+#m_friendStat TD IMG {
+	BORDER-RIGHT: #a1ccdd 1px solid; BORDER-TOP: #a1ccdd 1px solid; =
+VERTICAL-ALIGN: middle; BORDER-LEFT: #a1ccdd 1px solid; MARGIN-RIGHT: =
+10px; BORDER-BOTTOM: #a1ccdd 1px solid
+}
+#m_friendStat TD A IMG {
+	BORDER-RIGHT: #a1ccdd 1px solid; BORDER-TOP: #a1ccdd 1px solid; =
+VERTICAL-ALIGN: bottom; BORDER-LEFT: #a1ccdd 1px solid; MARGIN-RIGHT: =
+10px; BORDER-BOTTOM: #a1ccdd 1px solid
+}
+#m_friendStat .pg {
+	FONT: 400 14px/30px arial; PADDING-TOP: 10px; HEIGHT: 30px; TEXT-ALIGN: =
+center
+}
+#m_searchFriend TD {
+	HEIGHT: 28px
+}
+#mod_inbaidu UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 5px =
+0px 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #b2b2b2 1px dotted
+}
+#mod_inbaidu .title {
+	FONT-SIZE: 14px; PADDING-BOTTOM: 5px; LIST-STYLE-TYPE: none
+}
+#mod_inbaidu .list {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 15px; BORDER-BOTTOM: #f0f0f0 1px solid
+}
+#mod_inbaidu .list A {
+	TEXT-DECORATION: none
+}
+#mod_inbaidu .noContent {
+	PADDING-BOTTOM: 5px; LIST-STYLE-TYPE: none
+}
+#mod_inbaidu .qzContent {
+	PADDING-BOTTOM: 5px; LIST-STYLE-TYPE: none
+}
+#m_comment #picCmt .img {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; OVERFLOW: =
+hidden; BORDER-LEFT: #ccc 1px solid; WIDTH: 65px; BORDER-BOTTOM: #ccc =
+1px solid; HEIGHT: 65px
+}
+#m_comment #picCmt A IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: =
+0px
+}
+#m_comment #picCmt .name {
+	HEIGHT: 20px
+}
+.error {
+	COLOR: red
+}
+#m_albumlist .tit .cmt A:link {
+	FONT: 400 12px/18px arial; COLOR: #666; TEXT-DECORATION: none
+}
+#m_albumlist .tit .cmt A:visited {
+	FONT: 400 12px/18px arial; COLOR: #666; TEXT-DECORATION: none
+}
+#m_albumlist .tit .cmt A:hover {
+	TEXT-DECORATION: underline
+}
+#m_pet_setting .name {
+	WIDTH: 80px
+}
+#m_pet_setting .space {
+	WIDTH: 50px
+}
+#petset #layout {
+	TABLE-LAYOUT: fixed
+}
+#petset #layout TD.c2t1 {
+	PADDING-LEFT: 10px; WIDTH: 74%! important
+}
+#petset #layout TD.c2t2 {
+	WIDTH: 20px
+}
+#petset #layout TD.c2t3 {
+	PADDING-RIGHT: 10px; WIDTH: 24%! important
+}
+#m_pet_info .petheader {
+	PADDING-BOTTOM: 10px
+}
+#m_pet_setting DT {
+	FONT-WEIGHT: bold
+}
+#m_pet_setting DD {
+	MARGIN-TOP: 8px
+}
+#m_pet_setting .prompt {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; COLOR: =
+#707070; PADDING-TOP: 0px
+}
+#m_pet_setting .limit {
+	COLOR: #707070
+}
+#m_petcard .feed {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: =
+0px; PADDING-TOP: 5px
+}
+#mod_pet_record .feed {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: =
+0px; PADDING-TOP: 5px
+}
+#m_petcard .feed LI {
+	LIST-STYLE-TYPE: none
+}
+#mod_pet_record .feed LI {
+	LIST-STYLE-TYPE: none
+}
+#m_petcard .more {
+	TEXT-ALIGN: right
+}
+#mod_pet_record .more {
+	TEXT-ALIGN: right
+}
+#m_petcard .time {
+	COLOR: #676767
+}
+#mod_pet_record .time {
+	COLOR: #676767
+}
+#m_petcard DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 8px; LINE-HEIGHT: 8px; =
+HEIGHT: 8px
+}
+#m_pet_record DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 8px; LINE-HEIGHT: 8px; =
+HEIGHT: 8px
+}
+#m_pet_setting DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 8px; LINE-HEIGHT: 8px; =
+HEIGHT: 8px
+}
+#layout DIV.uwaTitleEdit {
+	FONT-SIZE: 12px; COLOR: #000000
+}
+#layout DIV.uwaTitleEdit SPAN A {
+	COLOR: #0000ff; LINE-HEIGHT: 26px
+}
+#layout DIV.uwaConfEdit DIV {
+	FONT-SIZE: 12px; MARGIN: 4px 0px
+}
+#layout DIV.uwaConfEdit DIV LABEL {
+	MARGIN-RIGHT: 3px
+}
+#layout DIV.uwaConfEdit DIV INPUT {
+	MARGIN-BOTTOM: 3px; VERTICAL-ALIGN: middle
+}
+SELECT {
+	MARGIN-BOTTOM: 3px; VERTICAL-ALIGN: middle
+}
+.clearfix:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: =
+"."
+}
+.clearfix {
+	DISPLAY: inline-block
+}
+ HTML .clearfix {
+	HEIGHT: 1%
+}
+.clearfix {
+	DISPLAY: block
+}
+
+------=_NextPart_000_0000_01C99506.129F6C30
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/skyjsq/css/item/54d6ac89762771b30f2444f7.css
+
+BODY {
+	BACKGROUND-COLOR: #ffffff
+}
+#header {
+	BACKGROUND: #3399cc; HEIGHT: 122px
+}
+#header DIV.lc {
+	BACKGROUND: =
+url(http://imgsrc.baidu.com/css/pic/item/7153c2316b973cbd5fdf0ee7.jpg)
+}
+#header DIV.rc {
+	BACKGROUND: no-repeat right top
+}
+#header DIV.tit {
+	FONT-SIZE: 20px; LEFT: 20px; LINE-HEIGHT: 22px; FONT-FAMILY: =
+=BA=DA=CC=E5; TOP: 8px
+}
+#header DIV.tit A.titlink {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+#header DIV.tit A.titlink:visited {
+	COLOR: #4d4db3; TEXT-DECORATION: none
+}
+#header DIV.desc {
+	FONT-SIZE: 13px; LEFT: 20px; COLOR: #4d4db3; TOP: 33px
+}
+#tabline {
+	TOP: 122px; BACKGROUND-COLOR: #ffffff
+}
+#tab {
+	BACKGROUND: =
+url(http://imgsrc.baidu.com/css/pic/item/9b86fc02d658ac1a4afb51e7.jpg) =
+repeat-x; TOP: 100px
+}
+#tab A.on {
+	BORDER-RIGHT: #4d4db3 1px solid; BORDER-TOP: #4d4db3 1px solid; =
+MARGIN-TOP: 3px; FONT-SIZE: 14px; BORDER-LEFT: #4d4db3 1px solid; COLOR: =
+#197cae; LINE-HEIGHT: 19px; BACKGROUND-COLOR: #f3f1f1
+}
+#tab A.on:link {
+	BORDER-RIGHT: #4d4db3 1px solid; BORDER-TOP: #4d4db3 1px solid; =
+MARGIN-TOP: 3px; FONT-SIZE: 14px; BORDER-LEFT: #4d4db3 1px solid; COLOR: =
+#197cae; LINE-HEIGHT: 19px; BACKGROUND-COLOR: #f3f1f1
+}
+#tab A.on:visited {
+	BORDER-RIGHT: #4d4db3 1px solid; BORDER-TOP: #4d4db3 1px solid; =
+MARGIN-TOP: 3px; FONT-SIZE: 14px; BORDER-LEFT: #4d4db3 1px solid; COLOR: =
+#197cae; LINE-HEIGHT: 19px; BACKGROUND-COLOR: #f3f1f1
+}
+#tab SPAN {
+	FONT-SIZE: 14px; COLOR: #4d4db3
+}
+#tab A:link {
+	FONT-SIZE: 14px; COLOR: #4d4db3; TEXT-DECORATION: none
+}
+#tab A:visited {
+	FONT-SIZE: 14px; COLOR: #4d4db3; TEXT-DECORATION: none
+}
+#tab2 {
+	BACKGROUND: #dae9f5
+}
+#tab2 SPAN {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000
+}
+#tab2 A {
+	FONT-SIZE: 12px
+}
+#tab2 A:link {
+	COLOR: #0000cc
+}
+#tab2 A:visited {
+	COLOR: #0000cc
+}
+.stage {
+	BACKGROUND: #f3f1f1
+}
+#comm_info {
+	COLOR: #333333; FONT-FAMILY: Arial; TEXT-ALIGN: left
+}
+#comm_info DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#comm_info A {
+	COLOR: #3399cc
+}
+#page {
+	FONT-SIZE: 14px; FONT-FAMILY: Arial; HEIGHT: 30px; TEXT-ALIGN: center
+}
+#page SPAN {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: =
+14px; PADDING-BOTTOM: 3px; COLOR: #000000; PADDING-TOP: 3px
+}
+#page A.pc {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #3399cc
+}
+#page A.pc:visited {
+	COLOR: #3399cc
+}
+#page A.pi {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 14px; PADDING-BOTTOM: =
+3px; COLOR: #3399cc; PADDING-TOP: 3px
+}
+#page A.pi:visited {
+	COLOR: #3399cc
+}
+.mod {
+	MARGIN-BOTTOM: 10px
+}
+.modhandle {
+	CURSOR: move
+}
+.modth {
+	HEIGHT: 24px
+}
+.modhead {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 4px
+}
+.modopt {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 4px
+}
+.modtit {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #4d4db3
+}
+A.modtit {
+	COLOR: #4d4db3
+}
+A.modtit:visited {
+	COLOR: #ffffff
+}
+.modtitlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffffff
+}
+A.modtitlink {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.modtitlink:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.modtitlink:hover {
+	COLOR: #ff5100; TEXT-DECORATION: underline
+}
+.modact {
+	FONT-SIZE: 12px; COLOR: #ffffff
+}
+A.modact:link {
+	COLOR: #ffffff
+}
+A.modact:visited {
+	COLOR: #ffffff
+}
+.modbox {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 10px; BACKGROUND-COLOR: #ffffff
+}
+.modtl {
+	BACKGROUND: =
+url(http://imgsrc.baidu.com/css/pic/item/9b86fc02d658ac1a4afb51e7.jpg) =
+no-repeat left top; LINE-HEIGHT: 1px
+}
+.modtc {
+	BACKGROUND: =
+url(http://imgsrc.baidu.com/css/pic/item/9b86fc02d658ac1a4afb51e7.jpg) =
+repeat-x
+}
+.modtr {
+	BACKGROUND: =
+url(http://imgsrc.baidu.com/css/pic/item/9b86fc02d658ac1a4afb51e7.jpg) =
+no-repeat right top; LINE-HEIGHT: 1px
+}
+.modbl {
+	LINE-HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.modbc {
+	LINE-HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.modbr {
+	LINE-HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.modlabel {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000
+}
+#m_blog DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+#m_blog DIV.tit A {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #333333
+}
+#m_blog DIV.tit A:visited {
+	COLOR: #333333
+}
+#m_blog DIV.date {
+	MARGIN: 5px 0px 8px; COLOR: #666666
+}
+#m_blog DIV.cnt {
+	FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 20px
+}
+#m_blog DIV.cnt DIV {
+	FONT-SIZE: 14px
+}
+#m_blog DIV.more {
+	MARGIN: 14px 0px 16px
+}
+#m_blog DIV.more A {
+	FONT-SIZE: 14px; COLOR: #3399cc
+}
+#m_blog DIV.more A:visited {
+	COLOR: #3399cc
+}
+#m_blog DIV.opt {
+	FONT-SIZE: 12px; COLOR: #666666
+}
+#m_blog DIV.opt A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#m_blog DIV.opt A:visited {
+	COLOR: #3399cc
+}
+#m_blog DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 17px; LINE-HEIGHT: 17px
+}
+#m_blog DIV.none {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 14px; PADDING-BOTTOM: =
+100px; COLOR: #333333; PADDING-TOP: 100px
+}
+#m_pro A {
+	COLOR: #3399cc
+}
+#m_pro A:visited {
+	COLOR: #3399cc
+}
+#m_pro DIV.image {
+	TEXT-ALIGN: center
+}
+#m_pro DIV.act {
+	MARGIN-TOP: 10px
+}
+#m_pro DIV.user {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333333
+}
+#m_pro DIV.desc {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_pro DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 17px; LINE-HEIGHT: 17px
+}
+#m_pro TD {
+	FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 24px
+}
+#m_pro .photo {
+	BORDER-RIGHT: #ddd 1px solid; BORDER-TOP: #ddd 1px solid; BACKGROUND: =
+#fff; BORDER-LEFT: #ddd 1px solid; BORDER-BOTTOM: #ddd 1px solid
+}
+#m_pro .photo TD {
+	FONT-SIZE: 12px
+}
+#m_pro .photo .image {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; =
+PADDING-TOP: 20px
+}
+#m_pro .photo .line {
+	BORDER-TOP: #ddd 1px dashed; FONT-SIZE: 1px; WIDTH: 90%; LINE-HEIGHT: 0
+}
+#m_pro .ref {
+	BORDER-RIGHT: #ddd 1px solid; BORDER-TOP: #ddd 1px solid; MARGIN-TOP: =
+10px; BORDER-LEFT: #ddd 1px solid; BORDER-BOTTOM: #ddd 1px solid
+}
+#m_pro .ref .tit {
+	PADDING-LEFT: 10px; BACKGROUND: #eee; BORDER-BOTTOM: #ddd 1px solid
+}
+#m_pro .ref .cnt {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: #fff; =
+PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#m_pro .basic TD {
+	FONT-SIZE: 14px; COLOR: #666
+}
+#m_pro .basic .tit {
+	FONT-WEIGHT: bold
+}
+#m_pro .basic A:hover {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BACKGROUND: #261cdc; =
+PADDING-BOTTOM: 1px; COLOR: #fff; PADDING-TOP: 1px; TEXT-DECORATION: =
+none
+}
+#m_pro .basic A.nlk:hover {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: =
+#196cca; PADDING-TOP: 0px; BACKGROUND-COLOR: #fff; TEXT-DECORATION: =
+underline
+}
+#m_pro .pline {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 10px; MARGIN-LEFT: 5px; =
+LINE-HEIGHT: 10px
+}
+#m_pro .pitem {
+	FONT-SIZE: 14px; MARGIN-LEFT: 5px; LINE-HEIGHT: 22px
+}
+#m_pro .pitem .tit {
+	COLOR: #666
+}
+#m_pro .pitem A:hover {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BACKGROUND: #261cdc; =
+PADDING-BOTTOM: 1px; COLOR: #fff; PADDING-TOP: 1px; TEXT-DECORATION: =
+none
+}
+#m_album DIV.image {
+	TEXT-ALIGN: center
+}
+#m_album DIV.page {
+	FONT-SIZE: 12px; COLOR: #666666; TEXT-ALIGN: center
+}
+#m_album DIV.page A {
+	FONT-SIZE: 12px; COLOR: #0000cc
+}
+#m_album DIV.page A:visited {
+	COLOR: #0000cc
+}
+#m_album .phpage {
+	MARGIN-TOP: 10px; PADDING-BOTTOM: 5px; TEXT-ALIGN: center
+}
+#m_links DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_links DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc; TEXT-DECORATION: none
+}
+#m_links DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_links DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_mylink1 DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_mylink1 DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc; TEXT-DECORATION: none
+}
+#m_mylink1 DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_mylink1 DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_mylink2 DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_mylink2 DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc; TEXT-DECORATION: none
+}
+#m_mylink2 DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_mylink2 DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_mylink3 DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_mylink3 DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc; TEXT-DECORATION: none
+}
+#m_mylink3 DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_mylink3 DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_mylink4 DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_mylink4 DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc; TEXT-DECORATION: none
+}
+#m_mylink4 DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_mylink4 DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_artclg DIV.item {
+	FONT-SIZE: 12px; COLOR: #666666
+}
+#m_artclg DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#m_artclg DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_artclg DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_filed DIV.item {
+	FONT-SIZE: 12px; COLOR: #666666
+}
+#m_filed DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#m_filed DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_filed DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_comment DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_comment DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#m_comment DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_comment DIV.item A.cnt {
+	FONT-SIZE: 12px; COLOR: #333333; TEXT-DECORATION: none
+}
+#m_comment DIV.item A.cnt:visited {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+#m_comment DIV.item A.cnt:hover {
+	COLOR: #333333; TEXT-DECORATION: underline
+}
+#m_comment DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_albumlist DIV.note {
+	FONT-SIZE: 14px; COLOR: #333333
+}
+#m_albumlist DIV.desc {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 14px; =
+MARGIN-BOTTOM: 12px; PADDING-BOTTOM: 3px; LINE-HEIGHT: 22px; =
+PADDING-TOP: 3px; BACKGROUND-COLOR: #f2f2f2
+}
+#m_albumlist DIV.none {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 14px; PADDING-BOTTOM: =
+100px; COLOR: #333333; PADDING-TOP: 100px
+}
+#m_albumlist DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 10px; LINE-HEIGHT: 16px
+}
+#m_albumlist DIV.tit {
+	FONT-SIZE: 14px; MARGIN: 6px 0px 7px; COLOR: #333333
+}
+#m_albumlist DIV.tit A {
+	FONT-SIZE: 14px; COLOR: #3399cc
+}
+#m_albumlist DIV.tit A:visited {
+	COLOR: #3399cc
+}
+#m_albumlist SPAN.count {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #666666
+}
+#m_albumlist SPAN.size {
+	FONT-SIZE: 12px; COLOR: #999999; FONT-FAMILY: Arial
+}
+#m_albumlist A.act {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#m_albumlist A.act:visited {
+	COLOR: #3399cc
+}
+#m_albumlist A.page {
+	FONT-SIZE: 14px; COLOR: #0000cc
+}
+#m_albumlist A.page:visited {
+	COLOR: #0000cc
+}
+#m_albumlist TD.image {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#999999 1px solid; PADDING-LEFT: 5px; BACKGROUND: #ffffff; =
+PADDING-BOTTOM: 5px; BORDER-LEFT: #999999 1px solid; PADDING-TOP: 5px; =
+BORDER-BOTTOM: #999999 1px solid
+}
+#m_albumlist .phbox {
+	MARGIN-TOP: 15px; MARGIN-LEFT: 15px
+}
+#m_albumlist .phbox .phpage {
+	FONT-SIZE: 14px; COLOR: #636363
+}
+#m_albumlist .phbox .phinfo {
+	FONT-SIZE: 12px; MARGIN: 6px 0px 2px; COLOR: #636363
+}
+#m_albumlist .phbox .phimg {
+	MARGIN-BOTTOM: 10px
+}
+#m_friend DIV.filter {
+	PADDING-LEFT: 10px; MARGIN-BOTTOM: 10px; LINE-HEIGHT: 27px; =
+PADDING-TOP: 10px; HEIGHT: 27px
+}
+#m_friend DIV.catalog {
+	PADDING-LEFT: 10px; FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; LINE-HEIGHT: =
+27px; HEIGHT: 27px; BACKGROUND-COLOR: #f2f2f2
+}
+#m_friend DIV.user {
+	MARGIN-TOP: 4px; FONT-SIZE: 12px; COLOR: #333333
+}
+#m_friend DIV.user A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#m_friend DIV.user A:visited {
+	COLOR: #3399cc
+}
+#m_friend DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 10px; LINE-HEIGHT: 16px
+}
+#m_setting A {
+	COLOR: #3399cc
+}
+#m_setting A:visited {
+	COLOR: #3399cc
+}
+#m_setting {
+	FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 22px
+}
+#m_setting IMG.sel {
+	BORDER-RIGHT: #ffdb7b 4px solid; BORDER-TOP: #ffdb7b 4px solid; =
+BORDER-LEFT: #ffdb7b 4px solid; BORDER-BOTTOM: #ffdb7b 4px solid
+}
+#m_setting IMG.unsel {
+	BORDER-RIGHT: #d2d2d2 1px solid; BORDER-TOP: #d2d2d2 1px solid; =
+BORDER-LEFT: #d2d2d2 1px solid; BORDER-BOTTOM: #d2d2d2 1px solid
+}
+#m_setting SPAN.tit {
+	FONT-SIZE: 14px
+}
+#m_setting SPAN.usr {
+	COLOR: #666666
+}
+#m_setting DIV.sel {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-TOP: 6px
+}
+#m_setting DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 20px; LINE-HEIGHT: 16px
+}
+#m_sysinfo A {
+	COLOR: #3399cc
+}
+#m_sysinfo A:visited {
+	COLOR: #3399cc
+}
+#m_sysinfo {
+	FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 22px
+}
+#m_sysinfo SPAN.new {
+	FONT-SIZE: 10px; COLOR: #ff0000; FONT-FAMILY: Arial
+}
+#m_sysinfo SPAN.date {
+	FONT-SIZE: 14px; COLOR: #666666
+}
+#m_setbase {
+	FONT-SIZE: 14px; COLOR: #333333
+}
+#m_setbase TD {
+	FONT-SIZE: 14px; COLOR: #333333
+}
+#m_setbase DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#in_comment {
+	WIDTH: 710px
+}
+#in_comment DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-BOTTOM: 12px; COLOR: #333333
+}
+#in_comment DIV.user {
+	FONT-SIZE: 12px; MARGIN-BOTTOM: 6px; COLOR: #333333
+}
+#in_comment DIV.user A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#in_comment DIV.user A:visited {
+	COLOR: #3399cc
+}
+#in_comment DIV.user SPAN.date {
+	FONT-SIZE: 12px; COLOR: #666666
+}
+#in_comment DIV.desc {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#in_comment DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 17px; LINE-HEIGHT: 17px
+}
+#m_track {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_track A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#m_track A:visited {
+	COLOR: #3399cc
+}
+#in_send DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN: 10px 0px; COLOR: #333333
+}
+#m_search {
+=09
+}
+#m_search INPUT.text {
+=09
+}
+#m_search INPUT.radio {
+=09
+}
+#m_search INPUT.submit {
+=09
+}
+#in_msg {
+	WIDTH: 710px
+}
+#in_msg DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-BOTTOM: 12px; COLOR: #333333
+}
+#in_msg .item TD.index {
+	FONT-WEIGHT: bold; WIDTH: 40px
+}
+#in_msg .item DIV.user {
+	WIDTH: 150px; COLOR: #333333
+}
+#in_msg .item DIV.user A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#in_msg .item DIV.user A:visited {
+	COLOR: #3399cc
+}
+#in_msg .item DIV.user IMG {
+	MARGIN-BOTTOM: 5px
+}
+#in_msg .item TD.cnt A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#in_msg .item TD.cnt A:visited {
+	COLOR: #3399cc
+}
+#in_msg SPAN.date {
+	FONT-SIZE: 12px; COLOR: #666666
+}
+#in_msg DIV.desc {
+	MARGIN-TOP: 5px; FONT-SIZE: 12px; COLOR: #333333
+}
+#in_msg DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 17px; LINE-HEIGHT: 17px
+}
+#m_cang DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_cang DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc; TEXT-DECORATION: none
+}
+#m_cang DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_cang DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_friblog DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_friblog DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#m_friblog DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_friblog DIV.item A.cnt {
+	FONT-SIZE: 12px; COLOR: #333333; TEXT-DECORATION: none
+}
+#m_friblog DIV.item A.cnt:visited {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+#m_friblog DIV.item A.cnt:hover {
+	COLOR: #333333; TEXT-DECORATION: underline
+}
+#m_friblog DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#in_reader {
+	WIDTH: 710px
+}
+#in_reader DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-BOTTOM: 12px; COLOR: #333333
+}
+#in_reader TD.user {
+	FONT-SIZE: 12px; MARGIN-BOTTOM: 6px; COLOR: #333333
+}
+#in_reader TD.user A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#in_reader TD.user A:visited {
+	COLOR: #3399cc
+}
+#m_rss DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_rss DIV.item TABLE {
+	COLOR: #3399cc
+}
+#m_rss DIV.item A {
+	FONT-SIZE: 12px; COLOR: #3399cc; TEXT-DECORATION: none
+}
+#m_rss DIV.item A:visited {
+	COLOR: #3399cc
+}
+#m_rss DIV.item DIV.dt {
+	MARGIN-TOP: 5px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 5px
+}
+#m_rss DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 5px; LINE-HEIGHT: 1px; =
+HEIGHT: 1px
+}
+#in_nav {
+	FONT-SIZE: 12px; COLOR: #666666
+}
+#in_nav A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#in_nav A:visited {
+	COLOR: #3399cc
+}
+#in_related_doc {
+	WIDTH: 710px
+}
+#in_related_doc DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-BOTTOM: 12px; COLOR: #333333
+}
+#in_related_doc {
+	FONT-SIZE: 12px; MARGIN-BOTTOM: 6px; COLOR: #333333
+}
+#in_related_doc A {
+	FONT-SIZE: 12px; COLOR: #3399cc
+}
+#in_related_doc A:visited {
+	COLOR: #3399cc
+}
+
+------=_NextPart_000_0000_01C99506.129F6C30
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/space.css
+
+BODY {
+	MARGIN: 0px
+}
+FORM {
+	MARGIN: 0px
+}
+BODY {
+	FILTER: none; VISIBILITY: visible! important; WORD-BREAK: break-all; =
+ZOOM: 1! important; FONT-FAMILY: Arial; WORD-WRAP: break-word; =
+moz-opacity: 1
+}
+TD {
+	FILTER: none; VISIBILITY: visible! important; WORD-BREAK: break-all; =
+ZOOM: 1! important; FONT-FAMILY: Arial; WORD-WRAP: break-word; =
+moz-opacity: 1
+}
+DIV {
+	FILTER: none; VISIBILITY: visible! important; WORD-BREAK: break-all; =
+ZOOM: 1! important; FONT-FAMILY: Arial; WORD-WRAP: break-word; =
+moz-opacity: 1
+}
+TD {
+	FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+DIV {
+	FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+HTML BODY CENTER {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #ft {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar NOBR {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar STRONG {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar A {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar A:link {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar A:visited {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #ft A {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #ft A:link {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #ft A:visited {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar {
+	DISPLAY: block! important; LINE-HEIGHT: 19px! important; HEIGHT: 19px! =
+important
+}
+HTML BODY CENTER #ft {
+	DISPLAY: block! important; LINE-HEIGHT: 19px! important; HEIGHT: 19px! =
+important
+}
+HTML BODY CENTER #usrbar NOBR {
+	DISPLAY: block! important; LINE-HEIGHT: 19px! important; HEIGHT: 19px! =
+important
+}
+HTML BODY CENTER #usrbar STRONG {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #usrbar A {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #usrbar A:link {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #usrbar A:visited {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #ft A {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #ft A:link {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #ft A:visited {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #usrbar STRONG {
+	COLOR: #000000! important; TEXT-ALIGN: left! important; =
+TEXT-DECORATION: none! important
+}
+HTML BODY CENTER {
+	DISPLAY: block! important
+}
+HTML BODY CENTER #main {
+	RIGHT: auto! important; LEFT: auto! important; BOTTOM: auto! important; =
+POSITION: relative! important; TOP: auto! important
+}
+HTML BODY CENTER #usrbar {
+	RIGHT: auto! important; LEFT: auto! important; BOTTOM: auto! important; =
+POSITION: relative! important; TOP: auto! important
+}
+HTML BODY CENTER #ft {
+	RIGHT: auto! important; LEFT: auto! important; BOTTOM: auto! important; =
+POSITION: relative! important; TOP: auto! important
+}
+HTML BODY CENTER #usrbar NOBR {
+	COLOR: #000000! important; TEXT-ALIGN: right! important
+}
+HTML BODY CENTER #usrbar {
+	PADDING-RIGHT: 10px! important; PADDING-LEFT: 0px! important; Z-INDEX: =
+65530! important; BACKGROUND: #ffffff; FILTER: alpha(opacity=3D65)! =
+important; PADDING-BOTTOM: 3px! important; WIDTH: auto! important; =
+COLOR: #000000! important; PADDING-TOP: 4px! important; TEXT-ALIGN: =
+right! important; moz-opacity: 0.5
+}
+HTML BODY CENTER #usrbar A {
+	COLOR: #0000cc! important
+}
+HTML BODY CENTER #usrbar A:link {
+	COLOR: #0000cc! important
+}
+HTML BODY CENTER #usrbar A:visited {
+	COLOR: #0000cc! important
+}
+HTML BODY CENTER #ft {
+	Z-INDEX: 65534! important; COLOR: #666666! important; TEXT-ALIGN: =
+center! important
+}
+HTML BODY CENTER #ft A {
+	COLOR: #7777cc! important
+}
+HTML BODY CENTER #ft A:link {
+	COLOR: #7777cc! important
+}
+HTML BODY CENTER #ft A:visited {
+	COLOR: #7777cc! important
+}
+HTML BODY CENTER #main {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; Z-INDEX: 10000! important; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; max-width: 1000px; min-width: =
+756px
+}
+#header {
+	POSITION: relative
+}
+#header DIV.lc {
+	FONT-SIZE: 0px; POSITION: relative; HEIGHT: 100%
+}
+#header DIV.rc {
+	FONT-SIZE: 0px; RIGHT: 0px; POSITION: relative; HEIGHT: 100%
+}
+#header DIV.tit {
+	POSITION: absolute
+}
+#header DIV.desc {
+	POSITION: absolute
+}
+#tabline {
+	FONT-SIZE: 0px; WIDTH: 100%; LINE-HEIGHT: 1px; POSITION: absolute; =
+HEIGHT: 1px
+}
+#tab {
+	PADDING-LEFT: 10px; WIDTH: 100%; LINE-HEIGHT: 22px; POSITION: absolute; =
+HEIGHT: 22px
+}
+#tab A.on {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 12px; FONT-WEIGHT: bold; FONT-SIZE: =
+13px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#tab SPAN {
+	FONT-SIZE: 13px; FLOAT: left
+}
+#tab A {
+	PADDING-RIGHT: 14px; PADDING-LEFT: 14px; FONT-SIZE: 13px; FLOAT: left; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#tab2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 348px; FONT-SIZE: 12px; =
+PADDING-BOTTOM: 0px; LINE-HEIGHT: 23px; PADDING-TOP: 1px; POSITION: =
+relative; HEIGHT: 23px
+}
+#tab2 SPAN {
+	CURSOR: default
+}
+.stage {
+	WIDTH: 100%; PADDING-TOP: 10px; HEIGHT: auto
+}
+.stagepad {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; =
+PADDING-TOP: 0px
+}
+.applytmp {
+	BACKGROUND: #ffffe1; BORDER-BOTTOM: #ce0f0f 2px solid; HEIGHT: 43px
+}
+#set_cs {
+	Z-INDEX: 65533; POSITION: relative
+}
+#set_cs TABLE.actbar {
+	BORDER-RIGHT: #e10602 1px solid; BORDER-TOP: #e10602 1px solid; =
+BACKGROUND: #ffffe1; MARGIN-BOTTOM: 10px; BORDER-LEFT: #e10602 1px =
+solid; BORDER-BOTTOM: #e10602 1px solid; HEIGHT: 70px
+}
+#set_cs DIV.panel {
+	WIDTH: 100%; POSITION: absolute; TOP: 71px
+}
+#cscnt {
+	BORDER-RIGHT: #ec4847 2px solid; PADDING-RIGHT: 15px; BORDER-TOP: =
+#ec4847 2px solid; PADDING-LEFT: 15px; BACKGROUND: #ffffff; =
+PADDING-BOTTOM: 15px; BORDER-LEFT: #ec4847 2px solid; PADDING-TOP: 15px; =
+BORDER-BOTTOM: #ec4847 2px solid; TEXT-ALIGN: left
+}
+#cslayout {
+	BORDER-RIGHT: #ec4847 2px solid; PADDING-RIGHT: 15px; BORDER-TOP: =
+#ec4847 2px solid; PADDING-LEFT: 15px; BACKGROUND: #ffffff; =
+PADDING-BOTTOM: 15px; BORDER-LEFT: #ec4847 2px solid; PADDING-TOP: 15px; =
+BORDER-BOTTOM: #ec4847 2px solid; TEXT-ALIGN: left
+}
+#csbg {
+	BORDER-RIGHT: #ec4847 2px solid; PADDING-RIGHT: 15px; BORDER-TOP: =
+#ec4847 2px solid; PADDING-LEFT: 15px; BACKGROUND: #ffffff; =
+PADDING-BOTTOM: 15px; BORDER-LEFT: #ec4847 2px solid; PADDING-TOP: 15px; =
+BORDER-BOTTOM: #ec4847 2px solid; TEXT-ALIGN: left
+}
+#cscnt {
+	WIDTH: 800px
+}
+#cslayout {
+	WIDTH: 620px
+}
+#csbg {
+	WIDTH: 520px
+}
+.f12 {
+	FONT-SIZE: 12px
+}
+.f14 {
+	FONT-SIZE: 14px
+}
+#layout {
+	TABLE-LAYOUT: fixed
+}
+#m_blog DIV.cnt {
+	OVERFLOW: hidden
+}
+#m_albumlist DIV.desc {
+	OVERFLOW: hidden
+}
+#m_blog DIV.tit {
+	OVERFLOW: hidden
+}
+#m_artclg DIV.item {
+	OVERFLOW: hidden
+}
+#m_comment DIV.item {
+	OVERFLOW: hidden
+}
+#m_links DIV.item {
+	OVERFLOW: hidden
+}
+#m_cang DIV.item {
+	OVERFLOW: hidden
+}
+#m_album DIV.image {
+	OVERFLOW: hidden
+}
+#m_links DIV.item {
+	OVERFLOW: hidden
+}
+#in_comment DIV.desc {
+	OVERFLOW: hidden
+}
+#m_friblog DIV.item {
+	OVERFLOW: hidden
+}
+#m_blog DIV.cnt {
+	OVERFLOW: hidden; WORD-BREAK: normal; POSITION: static
+}
+#m_blog DIV.cnt FONT {
+	LINE-HEIGHT: normal
+}
+#m_blog DIV.cnt  {
+	LINE-HEIGHT: normal
+}
+#m_blog TABLE {
+	TABLE-LAYOUT: auto
+}
+#in_comment DIV.tit {
+	TEXT-ALIGN: left
+}
+#in_send DIV.tit {
+	TEXT-ALIGN: left
+}
+#in_reader DIV.tit {
+	TEXT-ALIGN: left
+}
+#usrbar_popup {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup NOBR {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup STRONG {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup A {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup A:link {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup A:visited {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup {
+	DISPLAY: block! important; LINE-HEIGHT: 19px! important; HEIGHT: 19px! =
+important
+}
+#usrbar_popup NOBR {
+	DISPLAY: block! important; LINE-HEIGHT: 19px! important; HEIGHT: 19px! =
+important
+}
+#usrbar_popup STRONG {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+#usrbar_popup A {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+#usrbar_popup A:link {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+#usrbar_popup A:visited {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+#usrbar_popup STRONG {
+	COLOR: #000000! important; TEXT-ALIGN: left! important; =
+TEXT-DECORATION: none! important
+}
+#usrbar_popup {
+	PADDING-RIGHT: 10px! important; PADDING-LEFT: 0px! important; RIGHT: =
+auto! important; BACKGROUND: #ffffff; FILTER: alpha(opacity=3D65)! =
+important; LEFT: auto! important; PADDING-BOTTOM: 3px! important; WIDTH: =
+auto! important; COLOR: #000000! important; BOTTOM: auto! important; =
+PADDING-TOP: 4px! important; POSITION: relative! important; TOP: auto! =
+important; TEXT-ALIGN: right! important; moz-opacity: 0.5
+}
+#usrbar_popup NOBR {
+	COLOR: #000000! important; TEXT-ALIGN: right! important
+}
+#usrbar_popup A {
+	COLOR: #0000cc! important
+}
+#usrbar_popup A:link {
+	COLOR: #0000cc! important
+}
+#usrbar_popup A:visited {
+	COLOR: #0000cc! important
+}
+#usrbar_popup #my_home_container {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px
+}
+#cals {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #ccc 1px =
+solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #ccc 1px =
+solid; WIDTH: 100%; PADDING-TOP: 2px; BORDER-BOTTOM: #ccc 1px solid; =
+BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+#cals .cal_body {
+	FONT-SIZE: 12px; WIDTH: 100%; FONT-FAMILY: Arial
+}
+#cals .cal_mth {
+	FONT-SIZE: 12px; WIDTH: 100%; FONT-FAMILY: Arial
+}
+#cals .cal_yr TD {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 12px; BACKGROUND: =
+none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 1px; LINE-HEIGHT: =
+15px; PADDING-TOP: 1px; WHITE-SPACE: nowrap
+}
+#cals .cal_yr .cal_pre {
+	PADDING-LEFT: 10px; FONT-SIZE: 8px; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/pre.gif) no-repeat center center
+}
+#cals .cal_yr .cal_nxt {
+	PADDING-LEFT: 10px; FONT-SIZE: 8px; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/nxt.gif) no-repeat center center
+}
+#cals .cal_yr .cal_pre_ovr {
+	PADDING-LEFT: 10px; FONT-SIZE: 8px; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/pre_ovr.gif) no-repeat center =
+center; CURSOR: pointer
+}
+#cals .cal_yr .cal_nxt_ovr {
+	PADDING-LEFT: 10px; FONT-SIZE: 8px; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/nxt_ovr.gif) no-repeat center =
+center; CURSOR: pointer
+}
+#cals .cal_yr TABLE {
+	WIDTH: 30px
+}
+#cals TR {
+=09
+}
+#cals TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 12px; PADDING-BOTTOM: =
+3px; LINE-HEIGHT: 14px; PADDING-TOP: 3px; FONT-FAMILY: Arial; =
+WHITE-SPACE: nowrap; TEXT-ALIGN: center
+}
+#cals .today {
+	BORDER-RIGHT: #fca93f 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#fca93f 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; BACKGROUND: =
+#fff4cc; PADDING-BOTTOM: 2px; BORDER-LEFT: #fca93f 1px solid; =
+PADDING-TOP: 2px; BORDER-BOTTOM: #fca93f 1px solid
+}
+#cals .cal_week TD {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Tahoma
+}
+#cals .mth_ctrl {
+	COLOR: #000000
+}
+#cals .cal_date {
+	COLOR: #000000
+}
+#cals .cal_sa {
+	COLOR: #000066
+}
+#cals .cal_su {
+	COLOR: #000066
+}
+#cals .not_come {
+	COLOR: #333
+}
+#cals .cal_before {
+	VISIBILITY: hidden
+}
+#cals .cal_after {
+	VISIBILITY: hidden
+}
+#cals .cal_active {
+	FONT-WEIGHT: bold; COLOR: #0000cc; TEXT-DECORATION: underline
+}
+#cals .cal_select {
+	BORDER-RIGHT: #d6d6d6 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#d6d6d6 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: =
+#d6d6d6 1px solid; COLOR: #0000cc; PADDING-TOP: 2px; BORDER-BOTTOM: =
+#d6d6d6 1px solid; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: underline
+}
+#cals .disable {
+	COLOR: #999; TEXT-DECORATION: none
+}
+#cals .yr_normal {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #fff 1px solid; BORDER-LEFT: =
+#fff 1px solid; LINE-HEIGHT: 14px; BORDER-BOTTOM: #fff 1px solid
+}
+#cals .mth_normal {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #fff 1px solid; BORDER-LEFT: =
+#fff 1px solid; LINE-HEIGHT: 14px; BORDER-BOTTOM: #fff 1px solid
+}
+#cals .yr_sel {
+	BORDER-RIGHT: #ffad42 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: =
+#ffad42 1px solid; PADDING-LEFT: 0px; BACKGROUND: #ffec93; =
+PADDING-BOTTOM: 0px; BORDER-LEFT: #ffad42 1px solid; CURSOR: pointer; =
+LINE-HEIGHT: 14px; PADDING-TOP: 0px; BORDER-BOTTOM: #ffad42 1px solid
+}
+#cals .mth_sel {
+	BORDER-RIGHT: #ffad42 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: =
+#ffad42 1px solid; PADDING-LEFT: 0px; BACKGROUND: #ffec93; =
+PADDING-BOTTOM: 0px; BORDER-LEFT: #ffad42 1px solid; CURSOR: pointer; =
+LINE-HEIGHT: 14px; PADDING-TOP: 0px; BORDER-BOTTOM: #ffad42 1px solid
+}
+#cals .yr_sel .cal_arrow {
+	DISPLAY: none
+}
+#cals .mth_sel .cal_arrow {
+	DISPLAY: none
+}
+#cals .yr_normal .cal_arrow {
+	DISPLAY: none
+}
+#cals .mth_normal .cal_arrow {
+	DISPLAY: none
+}
+#cals .cal_roll {
+	BORDER-RIGHT: #ff9000 1px solid; BORDER-TOP: #ff9000 1px solid; =
+DISPLAY: none; FONT-SIZE: 12px; BACKGROUND: #fef3c1; BORDER-LEFT: =
+#ff9000 1px solid; LINE-HEIGHT: 18px; BORDER-BOTTOM: #ff9000 1px solid; =
+FONT-FAMILY: Arial; POSITION: absolute
+}
+#cals .cal_roll .normal {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#cals .cal_roll .msover {
+	BACKGROUND: #f5e182; CURSOR: pointer
+}
+#cals .cal_pop {
+	DISPLAY: none; POSITION: absolute
+}
+#cals .cal_pp_arw {
+	DISPLAY: none; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/poparrow.gif) no-repeat; LEFT: 10%; =
+POSITION: relative; TOP: 1px; line-h: 6px
+}
+#cals .cal_pp_cnt {
+	BORDER-RIGHT: #666 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #666 1px =
+solid; PADDING-LEFT: 3px; FONT-SIZE: 12px; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/popbg.gif); PADDING-BOTTOM: 3px; =
+BORDER-LEFT: #666 1px solid; MARGIN-RIGHT: 20px; PADDING-TOP: 3px; =
+BORDER-BOTTOM: #666 1px solid; FONT-FAMILY: Arial; WHITE-SPACE: nowrap
+}
+#cals .cal_rng {
+=09
+}
+#cals .cal_rng TD {
+	FONT-SIZE: 12px; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#spVerifyKey {
+	IME-MODE: disabled
+}
+#spVerifyKey INPUT {
+	IME-MODE: disabled
+}
+
+------=_NextPart_000_0000_01C99506.129F6C30
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/ui/scripts/global.js
+
+/* declare namespace */=0A=
+(function(){=0A=
+	var namespaces =3D [ "System","BdElement", "BdBrowser", "BdEvent", =
+"BdUtil", "BdAjax","BdString"];=0A=
+	for(var i =3D 0, j =3D namespaces.length; i < j; i ++){=0A=
+		if(window[namespaces[i]] !=3D 'object')=0A=
+			window[namespaces[i]] =3D {};=0A=
+	}=0A=
+})();=0A=
+=0A=
+/* attach methods */=0A=
+(function(){=0A=
+	/* BdBrowser scope */=0A=
+	var ua =3D navigator.userAgent.toLowerCase();=0A=
+=0A=
+	var isStrict =3D document.compatMode =3D=3D "CSS1Compat",=0A=
+		isOpera =3D ua.indexOf("opera") > -1,=0A=
+		isSafari =3D (/webkit|khtml/).test(ua),=0A=
+		isSafari3 =3D isSafari && ua.indexOf('webkit/5') !=3D -1,=0A=
+		isIE =3D !isOpera && ua.indexOf("msie") > -1,=0A=
+		isIE7 =3D !isOpera && ua.indexOf("msie 7") > -1,=0A=
+		isGecko =3D !isSafari && ua.indexOf("gecko") > -1,=0A=
+		isBorderBox =3D isIE && !isStrict,=0A=
+		isWindows =3D (ua.indexOf("windows") !=3D -1 || ua.indexOf("win32") =
+!=3D -1),=0A=
+		isMac =3D (ua.indexOf("macintosh") !=3D -1 || ua.indexOf("mac os x") =
+!=3D -1),=0A=
+		isAir =3D (ua.indexOf("adobeair") !=3D -1),=0A=
+		isLinux =3D (ua.indexOf("linux") !=3D -1),=0A=
+		isSecure =3D window.location.href.toLowerCase().indexOf("https") =
+=3D=3D=3D 0;=0A=
+=0A=
+    // remove css image flicker=0A=
+    if(isIE && !isIE7){=0A=
+        try{=0A=
+            document.execCommand("BackgroundImageCache", false, true);=0A=
+        }catch(e){}=0A=
+    }=0A=
+    =0A=
+    var browsers =3D {=0A=
+        isOpera : isOpera,=0A=
+        isSafari : isSafari,=0A=
+        isSafari3 : isSafari3,=0A=
+        isSafari2 : isSafari && !isSafari3,=0A=
+        isIE : isIE,=0A=
+        isIE6 : isIE && !isIE7,=0A=
+        isIE7 : isIE7,=0A=
+        isGecko : isGecko,=0A=
+        isBorderBox : isBorderBox,=0A=
+        isLinux : isLinux,=0A=
+        isWindows : isWindows,=0A=
+        isMac : isMac,=0A=
+        isAir : isAir=0A=
+    };=0A=
+=0A=
+    for(var p in browsers){=0A=
+        BdBrowser[p] =3D browsers[p];=0A=
+    }=0A=
+=0A=
+    /* BdElement scope */=0A=
+    window.Bd$ =3D BdElement.check =3D function(id){=0A=
+        return typeof id =3D=3D 'string' ? document.getElementById(id) : =
+id;=0A=
+    }=0A=
+=0A=
+    BdElement.removeNode =3D isIE ? function(){=0A=
+        var d;=0A=
+        return function(node){=0A=
+            if(node && node.tagName !=3D 'BODY'){=0A=
+                d =3D d || document.createElement('DIV');=0A=
+                d.appendChild(node);=0A=
+                d.innerHTML =3D '';=0A=
+            }=0A=
+        }=0A=
+    }() : function(node){=0A=
+        if(node && node.parentNode && node.tagName !=3D 'BODY'){=0A=
+            node.parentNode.removeChild(node);=0A=
+        }=0A=
+    }=0A=
+=0A=
+    /* BdEvent scope */=0A=
+    BdEvent.addEvent =3D function(el, fn, handler){=0A=
+        if(isIE){=0A=
+            el.attachEvent("on" + fn, handler);=0A=
+        }else{=0A=
+            el.addEventListener(fn, handler, false); =0A=
+        }=0A=
+    }=0A=
+=0A=
+    BdEvent.removeEvent =3D function(el, fn, handler){=0A=
+        if(isIE){=0A=
+            el.detachEvent("on" + fn, handler);=0A=
+        }else{=0A=
+            el.removeEventListener(fn, handler, false); =0A=
+        }=0A=
+    }=0A=
+=0A=
+	BdEvent.addDOMLoadEvent =3D (function(){=0A=
+        // create event function stack=0A=
+        var load_events =3D [],=0A=
+            load_timer,=0A=
+            script,=0A=
+            done,=0A=
+            exec,=0A=
+            old_onload,=0A=
+            init =3D function () {=0A=
+                done =3D true;=0A=
+                // kill the timer=0A=
+                clearInterval(load_timer);=0A=
+=0A=
+                // execute each function in the stack in the order they =
+were added=0A=
+                while (exec =3D load_events.shift())=0A=
+                    setTimeout(exec, 10);=0A=
+                if (script) script.onreadystatechange =3D '';=0A=
+            };=0A=
+=0A=
+            return function (func) {=0A=
+                // if the init function was already ran, just run this =
+function now and stop=0A=
+                if (done) return func();=0A=
+=0A=
+=0A=
+                if (!load_events[0]) {=0A=
+                    // for Mozilla/Opera9=0A=
+                    if (document.addEventListener)=0A=
+                        document.addEventListener("DOMContentLoaded", =
+init, false);=0A=
+=0A=
+                    // for Internet Explorer=0A=
+=0A=
+                    /*@cc_on @*/=0A=
+                    /*@if (@_win32)=0A=
+                        document.write("<script id=3D__ie_onload defer =
+src=3D//0><\/scr"+"ipt>");=0A=
+                        script =3D =
+document.getElementById("__ie_onload");=0A=
+                        script.onreadystatechange =3D function() {=0A=
+                            if (this.readyState =3D=3D "complete")=0A=
+                                init(); // call the onload handler=0A=
+                        };=0A=
+                    /*@end @*/=0A=
+=0A=
+=0A=
+                    // for Safari=0A=
+                    if (/WebKit/i.test(navigator.userAgent)) { // sniff=0A=
+                        load_timer =3D setInterval(function() {=0A=
+                            if =
+(/loaded|complete/.test(document.readyState))=0A=
+                                init(); // call the onload handler=0A=
+                        }, 10);=0A=
+                    }=0A=
+=0A=
+                    // for other browsers set the window.onload, but =
+also execute the old window.onload=0A=
+                    old_onload =3D window.onload;=0A=
+=0A=
+                    window.onload =3D function() {=0A=
+                        init();=0A=
+                        if (old_onload) old_onload();=0A=
+                    };=0A=
+                }=0A=
+=0A=
+            load_events.push(func);=0A=
+        }=0A=
+	})();=0A=
+=0A=
+	/* BdUtil scope */=0A=
+	BdUtil.insertWBR =3D (function(){=0A=
+		var textAreaCache =3D null;=0A=
+=0A=
+		function getContainer(){=0A=
+			var textarea =3D document.getElementById('insertWBR_container');=0A=
+			if(!textarea){=0A=
+				textarea =3D document.createElement('TEXTAREA');=0A=
+				textarea.id =3D 'insertWBR_container';=0A=
+				textarea.style.display =3D 'none';=0A=
+				document.body.insertBefore(textarea, document.body.firstChild);=0A=
+			}=0A=
+			return (textAreaCache =3D textarea)=0A=
+		}=0A=
+=0A=
+		return function(text, step){=0A=
+			var textarea =3D textAreaCache || getContainer();=0A=
+			if(!textarea) return text;=0A=
+			=0A=
+			textarea.innerHTML =3D =
+text.replace(/&/g,'&amp;').replace(/</g,"&lt;").replace(/>/g,"&gt;");=0A=
+			var string =3D textarea.value;=0A=
+			=0A=
+=0A=
+			var step =3D (step || 5), reg =3D new RegExp("(\\S{" + step + "})", =
+"gi");=0A=
+			var result =3D =
+string.replace(/(<[^>]+>)/gi,"$1<wbr/>").replace(/(>|^)([^<]+)(<|$)/gi, =
+function(a,b,c,d){=0A=
+				if(c.length < step) return a;=0A=
+				return b + c.replace(reg, "$1<wbr/>") + d;=0A=
+			}).replace(/&([^;]*)(<wbr\/?>)([^;]*);/g,'&$1$3;');=0A=
+			return result;=0A=
+		}=0A=
+	})();=0A=
+=0A=
+	BdUtil.hi_tracker =3D (function(){=0A=
+		function E(s){ return encodeURIComponent(s) }=0A=
+=0A=
+		function tracker(mn, a){=0A=
+			return function(){=0A=
+				var t =3D new Date().getTime(),=0A=
+					href =3D a.href;=0A=
+				if(isIE){=0A=
+					var regex =3D /href\s*=3D\s*("|')?([^\s]*)\1/gi;=0A=
+					if(regex.test(a.outerHTML))=0A=
+						href =3D RegExp.$2;=0A=
+				}=0A=
+				new Image().src =3D "http://hi.baidu.com/sys/statlog/1.gif?m=3D" + =
+E(mn) + "&v=3D" + E(href) + "&t=3D"+t;=0A=
+			}=0A=
+		}=0A=
+=0A=
+		return function(mod_id_or_el, mod_name){=0A=
+			var bl =3D (typeof mod_id_or_el =3D=3D 'string'),=0A=
+				el =3D bl ? document.getElementById(mod_id_or_el) : mod_id_or_el,=0A=
+				mn =3D mod_name || (bl ? mod_id_or_el : el.tagName),=0A=
+				as =3D el.nodeName.toUpperCase() =3D=3D 'A' ? [el] : =
+el.getElementsByTagName('A');=0A=
+			if(!as || as.length <=3D 0) return false;=0A=
+			for(var i =3D 0, j =3D as.length; i < j; i ++){=0A=
+				var a =3D as[i];=0A=
+				isIE ? a.attachEvent("onclick", tracker(mn, a)) : =
+a.addEventListener("click", tracker(mn, a), false);=0A=
+			}=0A=
+		}=0A=
+	})();=0A=
+=0A=
+    /* BdAjax scope */=0A=
+    BdAjax.getXHR =3D function(){=0A=
+        var xhr =3D null;=0A=
+        try{=0A=
+            return (xhr =3D new XMLHttpRequest());=0A=
+        }catch(e){}=0A=
+=0A=
+        for(var i =3D 0, a =3D ['MSXML3','MSXML2','Microsoft']; i < =
+a.length; i ++){=0A=
+            try{=0A=
+                xhr =3D new ActiveXObject(a[i]+'.XMLHTTP');=0A=
+                break;=0A=
+            }catch(e){}=0A=
+        }=0A=
+=0A=
+        return xhr;=0A=
+    }=0A=
+=0A=
+    BdAjax.request =3D function(url, json){=0A=
+        var xhr =3D this.getXHR();=0A=
+        if(!xhr){=0A=
+            throw new Error("cant't initialize xhr instance.");=0A=
+        }=0A=
+		var options=3D{};=0A=
+        options.method    =3D (json.method || 'get').toLowerCase();=0A=
+        options.asyn      =3D true;=0A=
+        options.onSuccess =3D json.onSuccess || function(){};=0A=
+        options.onFailure =3D json.onFailure || function(){ new =
+Image().src =3D "/sys/statlog/1.gif?m=3Dajax-request&v=3D" + =
+encodeURIComponent(url) + "&t=3D" + new Date().getTime();};=0A=
+       =0A=
+        =0A=
+        options.postData =3D json.postData || null;=0A=
+=0A=
+        xhr.open(options.method, url, options.asyn);=0A=
+=0A=
+		if("post" =3D=3D options.method.toLowerCase()){=0A=
+            xhr.setRequestHeader("Content-Type", =
+"application/x-www-form-urlencoded");=0A=
+        } =0A=
+=0A=
+        xhr.onreadystatechange =3D function(){=0A=
+            if(xhr.readyState =3D=3D 4){=0A=
+                if(xhr.status =3D=3D 0 || xhr.status =3D=3D 200){=0A=
+                    options.onSuccess(xhr);=0A=
+                }else{=0A=
+                    options.onFailure(xhr);=0A=
+                }=0A=
+            }=0A=
+        }=0A=
+        xhr.send(options.postData);=0A=
+    }=0A=
+=0A=
+	BdAjax.loadJS=3D(function()=0A=
+	{=0A=
+		var head ;=0A=
+		return function(jsUrl){=0A=
+			head =3D head || document.getElementsByTagName("head")[0];=0A=
+			var s=3Ddocument.createElement("script");=0A=
+			s.type=3D"text/javascript";=0A=
+			s.src=3DjsUrl;=0A=
+			head.appendChild(s);=0A=
+		}=0A=
+=0A=
+	})();=0A=
+	=0A=
+	BdString.trim=3Dfunction(str)=0A=
+	{=0A=
+		return str.replace(/(^[\s\t\xa0\u3000]+)|([\u3000\xa0\s\t]+$)/g, "");=0A=
+	}=0A=
+	BdString.byteLength =3D function(str){=0A=
+		return str.replace(/[^\x00-\xFF]/g, "ly").length;=0A=
+	}=0A=
+	BdString.subByte =3D function(s, n){=0A=
+		if(this.byteLength(s)<=3Dn) =0A=
+			return s;=0A=
+		for(var i=3DMath.floor((n=3Dn-2)/2),l=3Ds.length; i<l; i++)=0A=
+			if(this.byteLength(s.substr(0,i))>=3Dn)=0A=
+				return s.substr(0,i) +"\u2026";=0A=
+		return s;=0A=
+	}=0A=
+})();=0A=
+
+------=_NextPart_000_0000_01C99506.129F6C30
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/js/popup.js
+
+if(!Array.prototype.push){Array.prototype.push=3Dfunction(){var =
+startLength=3Dthis.length;for(var =
+i=3D0;i<arguments.length;i++)this[startLength+i]=3Darguments[i];return =
+this.length}};function G(){var elements=3Dnew Array();for(var =
+i=3D0;i<arguments.length;i++){var element=3Darguments[i];if(typeof =
+element=3D=3D'string')element=3Ddocument.getElementById(element);if(argum=
+ents.length=3D=3D1)return element;elements.push(element)};return =
+elements};Function.prototype.bind=3Dfunction(object){var =
+__method=3Dthis;return =
+function(){__method.apply(object,arguments)}};Function.prototype.bindAsEv=
+entListener=3Dfunction(object){var __method=3Dthis;return =
+function(event){__method.call(object,event||window.event)}};Object.extend=
+=3Dfunction(destination,source){for(property in =
+source){destination[property]=3Dsource[property]};return =
+destination};if(!window.Event){var Event=3Dnew =
+Object()};Object.extend(Event,{observers:false,element:function(event){re=
+turn =
+event.target||event.srcElement},isLeftClick:function(event){return(((even=
+t.which)&&(event.which=3D=3D1))||((event.button)&&(event.button=3D=3D1)))=
+},pointerX:function(event){return =
+event.pageX||(event.clientX+(document.documentElement.scrollLeft||documen=
+t.body.scrollLeft))},pointerY:function(event){return =
+event.pageY||(event.clientY+(document.documentElement.scrollTop||document=
+.body.scrollTop))},stop:function(event){if(event.preventDefault){event.pr=
+eventDefault();event.stopPropagation()}else{event.returnValue=3Dfalse;eve=
+nt.cancelBubble=3Dtrue}},findElement:function(event,tagName){var =
+element=3DEvent.element(event);while(element.parentNode&&(!element.tagNam=
+e||(element.tagName.toUpperCase()!=3DtagName.toUpperCase())))element=3Del=
+ement.parentNode;return =
+element},_observeAndCache:function(element,name,observer,useCapture){if(!=
+this.observers)this.observers=3D[];if(element.addEventListener){this.obse=
+rvers.push([element,name,observer,useCapture]);element.addEventListener(n=
+ame,observer,useCapture)}else =
+if(element.attachEvent){this.observers.push([element,name,observer,useCap=
+ture]);element.attachEvent('on'+name,observer)}},unloadCache:function(){i=
+f(!Event.observers)return;for(var =
+i=3D0;i<Event.observers.length;i++){Event.stopObserving.apply(this,Event.=
+observers[i]);Event.observers[i][0]=3Dnull};Event.observers=3Dfalse},obse=
+rve:function(element,name,observer,useCapture){var =
+element=3DG(element);useCapture=3DuseCapture||false;if(name=3D=3D'keypres=
+s'&&(navigator.appVersion.match(/Konqueror|Safari|KHTML/)||element.attach=
+Event))name=3D'keydown';this._observeAndCache(element,name,observer,useCa=
+pture)},stopObserving:function(element,name,observer,useCapture){var =
+element=3DG(element);useCapture=3DuseCapture||false;if(name=3D=3D'keypres=
+s'&&(navigator.appVersion.match(/Konqueror|Safari|KHTML/)||element.detach=
+Event))name=3D'keydown';if(element.removeEventListener){element.removeEve=
+ntListener(name,observer,useCapture)}else =
+if(element.detachEvent){element.detachEvent('on'+name,observer)}}});Event=
+.observe(window,'unload',Event.unloadCache,false);var =
+Class=3Dfunction(){var =
+_class=3Dfunction(){this.initialize.apply(this,arguments)};for(i=3D0;i<ar=
+guments.length;i++){superClass=3Darguments[i];for(member in =
+superClass.prototype){_class.prototype[member]=3DsuperClass.prototype[mem=
+ber]}};_class.child=3Dfunction(){return new =
+Class(this)};_class.extend=3Dfunction(f){for(property in =
+f){_class.prototype[property]=3Df[property]}};return _class};function =
+space(flag){if(flag=3D=3D"begin"){var =
+ele=3Ddocument.getElementById("ft");if(typeof(ele)!=3D"undefined"&&ele!=3D=
+null)ele.id=3D"ft_popup";ele=3Ddocument.getElementById("usrbar");if(typeo=
+f(ele)!=3D"undefined"&&ele!=3Dnull)ele.id=3D"usrbar_popup"}else =
+if(flag=3D=3D"end"){var =
+ele=3Ddocument.getElementById("ft_popup");if(typeof(ele)!=3D"undefined"&&=
+ele!=3Dnull)ele.id=3D"ft";ele=3Ddocument.getElementById("usrbar_popup");i=
+f(typeof(ele)!=3D"undefined"&&ele!=3Dnull)ele.id=3D"usrbar"}};var =
+Popup=3Dnew =
+Class();Popup.prototype=3D{iframeIdName:'ifr_popup',initialize:function(c=
+onfig){this.config=3DObject.extend({contentType:1,isHaveTitle:true,scroll=
+Type:'no',isBackgroundCanClick:false,isSupportDraging:true,isShowShadow:t=
+rue,isReloadOnClose:true,width:400,height:300},config||{});this.info=3D{s=
+hadowWidth:4,title:"",contentUrl:"",contentHtml:"",callBack:null,paramete=
+r:null,confirmCon:"",alertCon:"",someHiddenTag:"select,object,embed",some=
+DisabledBtn:"",someHiddenEle:"",overlay:0,coverOpacity:40};this.color=3D{=
+cColor:"#EEEEEE",bColor:"#FFFFFF",tColor:"#709CD2",wColor:"#FFFFFF"};this=
+.dropClass=3Dnull;this.someToHidden=3D[];this.someToDisabled=3D[];if(!thi=
+s.config.isHaveTitle)this.config.isSupportDraging=3Dfalse;this.iniBuild()=
+},setContent:function(arrt,val){if(val!=3D''){switch(arrt){case =
+'width':this.config.width=3Dval;break;case =
+'height':this.config.height=3Dval;break;case =
+'title':this.info.title=3Dval;break;case =
+'contentUrl':this.info.contentUrl=3Dval;break;case =
+'contentHtml':this.info.contentHtml=3Dval;break;case =
+'callBack':this.info.callBack=3Dval;break;case =
+'parameter':this.info.parameter=3Dval;break;case =
+'confirmCon':this.info.confirmCon=3Dval;break;case =
+'alertCon':this.info.alertCon=3Dval;break;case =
+'someHiddenTag':this.info.someHiddenTag=3Dval;break;case =
+'someHiddenEle':this.info.someHiddenEle=3Dval;break;case =
+'someDisabledBtn':this.info.someDisabledBtn=3Dval;break;case =
+'overlay':this.info.overlay=3Dval}}},iniBuild:function(){G('dialogCase')?=
+G('dialogCase').parentNode.removeChild(G('dialogCase')):function(){};var =
+oDiv=3Ddocument.createElement('span');oDiv.id=3D'dialogCase';document.bod=
+y.appendChild(oDiv)},build:function(){var =
+baseZIndex=3D10001+this.info.overlay*10;var =
+showZIndex=3DbaseZIndex+2;this.iframeIdName=3D'ifr_popup'+this.info.overl=
+ay;var path=3D"http://img.baidu.com/hi/img/";var close=3D'<input =
+type=3D"image" id=3D"dialogBoxClose" src=3D"'+path+'dialogclose.gif" =
+border=3D"0" width=3D"16" height=3D"16" align=3D"absmiddle" =
+title=3D"=B9=D8=B1=D5"/>';var cB=3D'filter: =
+alpha(opacity=3D'+this.info.coverOpacity+');opacity:'+this.info.coverOpac=
+ity/100+';';var cover=3D'<div id=3D"dialogBoxBG" =
+style=3D"position:absolute;top:0px;left:0px;width:100%;height:100%;z-inde=
+x:'+baseZIndex+';'+cB+'background-color:'+this.color.cColor+';display:non=
+e;"></div>';var mainBox=3D'<div id=3D"dialogBox" style=3D"border:1px =
+solid =
+'+this.color.tColor+';display:none;z-index:'+showZIndex+';position:relati=
+ve;width:'+this.config.width+'px;"><table width=3D"100%" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" =
+bgcolor=3D"'+this.color.bColor+'">';if(this.config.isHaveTitle){mainBox+=3D=
+'<tr height=3D"24" bgcolor=3D"'+this.color.tColor+'"><td><table =
+style=3D"-moz-user-select:none;height:24px;" width=3D"100%" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" ><tr>'+'<td width=3D"6" =
+height=3D"24"></td><td id=3D"dialogBoxTitle" =
+style=3D"color:'+this.color.wColor+';font-size:14px;font-weight:bold;">'+=
+this.info.title+'&nbsp;</td>'+'<td id=3D"dialogClose" width=3D"20" =
+align=3D"right" valign=3D"middle">'+close+'</td><td =
+width=3D"6"></td></tr></table></td></tr>'}else{mainBox+=3D'<tr =
+height=3D"10"><td align=3D"right">'+close+'</td></tr>'};mainBox+=3D'<tr =
+style=3D"height:'+this.config.height+'px" valign=3D"top"><td =
+id=3D"dialogBody" =
+style=3D"position:relative;"></td></tr></table></div>'+'<div =
+id=3D"dialogBoxShadow" =
+style=3D"display:none;z-index:'+baseZIndex+';"></div>';if(!this.config.is=
+BackgroundCanClick){G('dialogCase').innerHTML=3Dcover+mainBox;G('dialogBo=
+xBG').style.height=3Ddocument.body.scrollHeight}else =
+G('dialogCase').innerHTML=3DmainBox;Event.observe(G('dialogBoxClose'),"cl=
+ick",this.reset.bindAsEventListener(this),false);if(this.config.isSupport=
+Draging){dropClass=3Dnew =
+Dragdrop(this.config.width,this.config.height,this.info.shadowWidth,this.=
+config.isSupportDraging,this.config.contentType);G("dialogBoxTitle").styl=
+e.cursor=3D"move"};this.lastBuild()},lastBuild:function(){var =
+confirm=3D'<div style=3D"width:100%;height:100%;text-align:center;"><div =
+style=3D"margin:20px 20px 0 =
+20px;font-size:14px;line-height:16px;color:#000000;">'+this.info.confirmC=
+on+'</div><div style=3D"margin:20px;"><input id=3D"dialogOk" =
+type=3D"button" value=3D"  =C8=B7=B6=A8  "/>&nbsp;<input =
+id=3D"dialogCancel" type=3D"button" value=3D"  =C8=A1=CF=FB  =
+"/></div></div>';var alert=3D'<div =
+style=3D"width:100%;height:100%;text-align:center;"><div =
+style=3D"margin:20px 20px 0 =
+20px;font-size:14px;line-height:16px;color:#000000;">'+this.info.alertCon=
++'</div><div style=3D"margin:20px;"><input id=3D"dialogYES" =
+type=3D"button" value=3D"  =C8=B7=B6=A8  "/></div></div>';var =
+baseZIndex=3D10001+this.info.overlay*10;var =
+coverIfZIndex=3DbaseZIndex+4;if(this.config.contentType=3D=3D1){var =
+openIframe=3D"<iframe width=3D'100%' =
+style=3D'height:"+this.config.height+"px' name=3D'"+this.iframeIdName+"' =
+id=3D'"+this.iframeIdName+"' src=3D'"+this.info.contentUrl+"' =
+frameborder=3D'0' =
+scrolling=3D'"+this.config.scrollType+"'></iframe>";var =
+coverIframe=3D"<div id=3D'iframeBG' =
+style=3D'position:absolute;top:0px;left:0px;width:1px;height:1px;z-index:=
+"+coverIfZIndex+";filter: =
+alpha(opacity=3D00);opacity:0.00;background-color:#ffffff;'><div>";G("dia=
+logBody").innerHTML=3DopenIframe+coverIframe}else =
+if(this.config.contentType=3D=3D2){G("dialogBody").innerHTML=3Dthis.info.=
+contentHtml}else =
+if(this.config.contentType=3D=3D3){G("dialogBody").innerHTML=3Dconfirm;Ev=
+ent.observe(G('dialogOk'),"click",this.forCallback.bindAsEventListener(th=
+is),false);Event.observe(G('dialogCancel'),"click",this.close.bindAsEvent=
+Listener(this),false)}else =
+if(this.config.contentType=3D=3D4){G("dialogBody").innerHTML=3Dalert;Even=
+t.observe(G('dialogYES'),"click",this.close.bindAsEventListener(this),fal=
+se)}},reBuild:function(){G('dialogBody').height=3DG('dialogBody').clientH=
+eight;this.lastBuild()},show:function(){this.hiddenSome();this.middle();i=
+f(this.config.isShowShadow)this.shadow()},forCallback:function(){return =
+this.info.callBack(this.info.parameter)},shadow:function(){var =
+oShadow=3DG('dialogBoxShadow');var =
+oDialog=3DG('dialogBox');oShadow['style']['position']=3D"absolute";oShado=
+w['style']['background']=3D"#000";oShadow['style']['display']=3D"";oShado=
+w['style']['opacity']=3D"0.2";oShadow['style']['filter']=3D"alpha(opacity=
+=3D20)";oShadow['style']['top']=3DoDialog.offsetTop+this.info.shadowWidth=
+;oShadow['style']['left']=3DoDialog.offsetLeft+this.info.shadowWidth;oSha=
+dow['style']['width']=3DoDialog.offsetWidth;oShadow['style']['height']=3D=
+oDialog.offsetHeight},middle:function(){if(!this.config.isBackgroundCanCl=
+ick)G('dialogBoxBG').style.display=3D'';var =
+oDialog=3DG('dialogBox');oDialog['style']['position']=3D"absolute";oDialo=
+g['style']['display']=3D'';var =
+sClientWidth=3Ddocument.body.clientWidth;var =
+sClientHeight=3Ddocument.body.clientHeight;var =
+sScrollTop=3Ddocument.body.scrollTop;var =
+sleft=3D(document.body.clientWidth/2)-(oDialog.offsetWidth/2);var =
+iTop=3D-80+(sClientHeight/2+sScrollTop)-(oDialog.offsetHeight/2);var =
+sTop=3DiTop>0?iTop:(sClientHeight/2+sScrollTop)-(oDialog.offsetHeight/2);=
+if(sTop<1)sTop=3D"20";if(sleft<1)sleft=3D"20";oDialog['style']['left']=3D=
+sleft;oDialog['style']['top']=3DsTop},reset:function(){if(this.config.isR=
+eloadOnClose){top.location.reload()};this.close()},close:function(){G('di=
+alogBox').style.display=3D'none';if(!this.config.isBackgroundCanClick)G('=
+dialogBoxBG').style.display=3D'none';if(this.config.isShowShadow)G('dialo=
+gBoxShadow').style.display=3D'none';G('dialogBody').innerHTML=3D'';this.s=
+howSome()},hiddenSome:function(){var =
+tag=3Dthis.info.someHiddenTag.split(",");if(tag.length=3D=3D1&&tag[0]=3D=3D=
+"")tag.length=3D0;for(var =
+i=3D0;i<tag.length;i++){this.hiddenTag(tag[i])};var =
+ids=3Dthis.info.someHiddenEle.split(",");if(ids.length=3D=3D1&&ids[0]=3D=3D=
+"")ids.length=3D0;for(var =
+i=3D0;i<ids.length;i++){this.hiddenEle(ids[i])};var =
+ids=3Dthis.info.someDisabledBtn.split(",");if(ids.length=3D=3D1&&ids[0]=3D=
+=3D"")ids.length=3D0;for(var =
+i=3D0;i<ids.length;i++){this.disabledBtn(ids[i])};space("begin")},disable=
+dBtn:function(id){var =
+ele=3Ddocument.getElementById(id);if(typeof(ele)!=3D"undefined"&&ele!=3Dn=
+ull&&ele.disabled=3D=3Dfalse){ele.disabled=3Dtrue;this.someToDisabled.pus=
+h(ele)}},hiddenTag:function(tagName){var =
+ele=3Ddocument.getElementsByTagName(tagName);if(ele!=3Dnull){for(var =
+i=3D0;i<ele.length;i++){if(ele[i].style.display!=3D"none"&&ele[i].style.v=
+isibility!=3D'hidden'){ele[i].style.visibility=3D'hidden';this.someToHidd=
+en.push(ele[i])}}}},hiddenEle:function(id){var =
+ele=3Ddocument.getElementById(id);if(typeof(ele)!=3D"undefined"&&ele!=3Dn=
+ull){ele.style.visibility=3D'hidden';this.someToHidden.push(ele)}},showSo=
+me:function(){for(var =
+i=3D0;i<this.someToHidden.length;i++){this.someToHidden[i].style.visibili=
+ty=3D'visible'};for(var =
+i=3D0;i<this.someToDisabled.length;i++){this.someToDisabled[i].disabled=3D=
+false};space("end")}};var Dragdrop=3Dnew =
+Class();Dragdrop.prototype=3D{initialize:function(width,height,shadowWidt=
+h,showShadow,contentType){this.dragData=3Dnull;this.dragDataIn=3Dnull;thi=
+s.backData=3Dnull;this.width=3Dwidth;this.height=3Dheight;this.shadowWidt=
+h=3DshadowWidth;this.showShadow=3DshowShadow;this.contentType=3DcontentTy=
+pe;this.IsDraging=3Dfalse;this.oObj=3DG('dialogBox');Event.observe(G('dia=
+logBoxTitle'),"mousedown",this.moveStart.bindAsEventListener(this),false)=
+},moveStart:function(event){this.IsDraging=3Dtrue;if(this.contentType=3D=3D=
+1){G("iframeBG").style.display=3D"";G("iframeBG").style.width=3Dthis.widt=
+h;G("iframeBG").style.height=3Dthis.height};Event.observe(document,"mouse=
+move",this.mousemove.bindAsEventListener(this),false);Event.observe(docum=
+ent,"mouseup",this.mouseup.bindAsEventListener(this),false);Event.observe=
+(document,"selectstart",this.returnFalse,false);this.dragData=3D{x:Event.=
+pointerX(event),y:Event.pointerY(event)};this.backData=3D{x:parseInt(this=
+.oObj.style.left),y:parseInt(this.oObj.style.top)}},mousemove:function(ev=
+ent){if(!this.IsDraging)return;var =
+iLeft=3DEvent.pointerX(event)-this.dragData["x"]+parseInt(this.oObj.style=
+.left);var =
+iTop=3DEvent.pointerY(event)-this.dragData["y"]+parseInt(this.oObj.style.=
+top);if(this.dragData["y"]<parseInt(this.oObj.style.top))iTop=3DiTop-12;e=
+lse =
+if(this.dragData["y"]>parseInt(this.oObj.style.top)+25)iTop=3DiTop+12;thi=
+s.oObj.style.left=3DiLeft;this.oObj.style.top=3DiTop;if(this.showShadow){=
+G('dialogBoxShadow').style.left=3DiLeft+this.shadowWidth;G('dialogBoxShad=
+ow').style.top=3DiTop+this.shadowWidth};this.dragData=3D{x:Event.pointerX=
+(event),y:Event.pointerY(event)};document.body.style.cursor=3D"move"},mou=
+seup:function(event){if(!this.IsDraging)return;if(this.contentType=3D=3D1=
+)G("iframeBG").style.display=3D"none";document.onmousemove=3Dnull;documen=
+t.onmouseup=3Dnull;var =
+mousX=3DEvent.pointerX(event)-(document.documentElement.scrollLeft||docum=
+ent.body.scrollLeft);var =
+mousY=3DEvent.pointerY(event)-(document.documentElement.scrollTop||docume=
+nt.body.scrollTop);if(mousX<1||mousY<1||mousX>document.body.clientWidth||=
+mousY>document.body.clientHeight){this.oObj.style.left=3Dthis.backData["x=
+"];this.oObj.style.top=3Dthis.backData["y"];if(this.showShadow){G('dialog=
+BoxShadow').style.left=3Dthis.backData.x+this.shadowWidth;G('dialogBoxSha=
+dow').style.top=3Dthis.backData.y+this.shadowWidth}};this.IsDraging=3Dfal=
+se;document.body.style.cursor=3D"";Event.stopObserving(document,"selectst=
+art",this.returnFalse,false)},returnFalse:function(){return false}};
+------=_NextPart_000_0000_01C99506.129F6C30
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/ui/scripts/CommentEditor/BdEditor-mined.js?v=2.3
+
+var =
+_BdBrowser=3D{},_Instance=3D{},_BdElement=3D{},_System=3D{};_System.path=3D=
+"/ui/scripts/CommentEditor/";_System.imagePath=3D"http://img.baidu.com/hi=
+/";function _Bd$(A){if(typeof A=3D=3D"string"){return =
+document.getElementById(A)}return =
+A}_BdElement.addClassName=3Dfunction(D,E){var A=3DD.className.split(" =
+");var F=3Dfalse;for(var =
+C=3D0,B=3DA.length;C<B;C++){if(A[C]=3D=3DE){F=3Dtrue;break}}if(!F){D.clas=
+sName=3DA.concat(E).join(" =
+")}};_BdElement.removeClassName=3Dfunction(A,B){var C=3Dnew RegExp("(^| =
+)"+B+"( =
+|$)","g");A.className=3DA.className.replace(C,"$2")};_BdElement._realLeft=
+Top=3Dfunction(C){var B=3DparseInt(C.currentStyle.borderTopWidth);var =
+A=3DparseInt(C.currentStyle.borderLeftWidth);return{left:isNaN(A)?0:A,top=
+:isNaN(B)?0:B}};_BdElement.realOffset=3Dfunction(G){if(!G){return =
+null}var =
+F=3DG,B=3D0,H=3D0,C=3D0,D=3D0,E=3Dthis.body();do{C+=3DF.offsetLeft||0;D+=3D=
+F.offsetTop||0;if(_BdBrowser.ie&&"tdthdiv".indexOf(F.tagName.toLowerCase(=
+))>-1){var =
+A=3Dthis._realLeftTop(F);C+=3DA.left;D+=3DA.top}if(_BdBrowser.safari&&"ta=
+bletdth".indexOf(F.tagName.toLowerCase())>-1){var =
+A=3Dthis._realLeftTop(F);C+=3DA.left;D+=3DA.top}F=3DF.offsetParent}while(=
+F);if(!_BdBrowser.opera){do{B+=3DG.scrollLeft||0;H+=3DG.scrollTop||0;G=3D=
+G.offsetParent}while(G)}return{x:C-B+E.scrollLeft,y:D-H+E.scrollTop}};_Bd=
+Element.body=3Dfunction(){var A=3D0,I=3D0,E=3D0,C=3D0,B=3D0,J=3D0;var =
+F=3Dwindow,D=3Ddocument,G=3DD.documentElement;A=3DG.clientWidth||D.body.c=
+lientWidth;I=3DF.innerHeight||G.clientHeight||D.body.clientHeight;C=3DD.b=
+ody.scrollTop||G.scrollTop;E=3DD.body.scrollLeft||G.scrollLeft;B=3DMath.m=
+ax(D.body.scrollWidth,G.scrollWidth||0);J=3DMath.max(D.body.scrollHeight,=
+G.scrollHeight||0,I);return{scrollTop:C,scrollLeft:E,scrollWidth:B,scroll=
+Height:J,clientWidth:A,clientHeight:I}};if(typeof =
+(HTMLElement)!=3D"undefined"&&!window.opera){HTMLElement.prototype.__defi=
+neGetter__("currentStyle",function(){return =
+this.ownerDocument.defaultView.getComputedStyle(this,null)});HTMLElement.=
+prototype.insertAdjacentHTML=3Dfunction(A,B){var =
+C=3Dthis.ownerDocument.createRange();C.setStartBefore(this);C=3DC.createC=
+ontextualFragment(B);this.insertAdjacentElement(A,C)};HTMLElement.prototy=
+pe.insertAdjacentElement=3Dfunction(A,B){switch(A){case"beforeBegin":this=
+.parentNode.insertBefore(B,this);break;case"afterBegin":this.insertBefore=
+(B,this.firstChild);break;case"beforeEnd":this.appendChild(B);break;case"=
+afterEnd":if(!this.nextSibling){this.parentNode.appendChild(B)}else{this.=
+parentNode.insertBefore(B,this.nextSibling)}break}}}if(!window.attachEven=
+t&&window.addEventListener){window.attachEvent=3DHTMLElement.prototype.at=
+tachEvent=3Ddocument.attachEvent=3Dfunction(B,D,C){var =
+A=3DC?true:false;this.addEventListener(B.replace(/^on/i,"").toLowerCase()=
+,D,A)};window.detachEvent=3DHTMLElement.prototype.detachEvent=3Ddocument.=
+detachEvent=3Dfunction(B,D,C){var =
+A=3DC?true:false;this.removeEventListener(B.replace(/^on/i,"").toLowerCas=
+e(),D,A)}}_System.extend=3Dfunction(C,B){for(var A in =
+B){C[A]=3DB[A]}return C};Function.prototype.Extends=3Dfunction(A,C){var =
+E=3Dthis.prototype,B,D=3Dthis.prototype=3Dnew =
+A();if(C){D._className=3DC}for(B in =
+E){D[B]=3DE[B]}this.prototype.constructor=3DE.constructor;E=3Dnull;if(D.h=
+ashCode){delete _Instance[D.hashCode]}return D};function uniqueID(){var =
+B=3Dfunction(){return Math.round(Math.random()*2147483648)};var =
+A=3Dfunction(){return B().toString(36)+(B()^(new =
+Date()).getTime()).toString(36)};return A()+A()}function =
+loadCssFile(D){var C=3Ddocument;var A=3DC.body;var =
+B=3DC.createElement("LINK");if(B&&A){B.href=3DD;B.type=3D"text/css";B.rel=
+=3D"Stylesheet";A.insertBefore(B,A.firstChild)}}(function(){if(_BdBrowser=
+.platform){return }var =
+A=3Dwindow.navigator.userAgent;_BdBrowser.platform=3Dwindow.navigator.pla=
+tform;_BdBrowser.firefox=3DA.indexOf("Firefox")>0;_BdBrowser.opera=3Dtype=
+of =
+(window.opera)=3D=3D"object";_BdBrowser.ie=3D!_BdBrowser.opera&&A.indexOf=
+("MSIE")>0;_BdBrowser.mozilla=3Dwindow.navigator.product=3D=3D"Gecko";_Bd=
+Browser.netscape=3Dwindow.navigator.vendor=3D=3D"Netscape";_BdBrowser.gec=
+ko=3DA.indexOf("Gecko")>-1&&A.indexOf("KHTML")=3D=3D-1;_BdBrowser.safari=3D=
+A.indexOf("Safari")>-1;if(_BdBrowser.firefox){var =
+B=3D/Firefox(\s|\/)(\d+(\.\d+)?)/}else{if(_BdBrowser.ie){var B=3D/MSIE( =
+)(\d+(\.\d+)?)/}else{if(_BdBrowser.opera){var =
+B=3D/Opera(\s|\/)(\d+(\.\d+)?)/}else{if(_BdBrowser.netscape){var =
+B=3D/Netscape(\s|\/)(\d+(\.\d+)?)/}else{if(_BdBrowser.safari){var =
+B=3D/Version(\/)(\d+(\.\d+)?)/}else{if(_BdBrowser.mozilla){var =
+B=3D/rv(\:)(\d+(\.\d+)?)/}}}}}}if("undefined"!=3Dtypeof =
+(B)&&B.test(A)){_BdBrowser.version=3DparseFloat(RegExp.$2)}})();String.pr=
+ototype.format=3Dfunction(){if(arguments.length=3D=3D0){return =
+this}for(var B=3Dthis,A=3D0;A<arguments.length;A++){B=3DB.replace(new =
+RegExp("\\{"+A+"\\}","g"),arguments[A])}return B};var =
+_BdPopupLayer=3Dfunction(){_Instance[this.hashCode=3DuniqueID()]=3Dthis;t=
+his.busy=3Dfalse;this.exclusive=3Dfalse;this.autoFit=3Dtrue;this.isOpen=3D=
+false;this.defaultContent=3D"<nobr><div id=3D'Content' nowrap=3D'true' =
+style=3D'border:solid 1px =
+#666666'></div></nobr>";this.hideTrigger=3D{onblur:true,onscroll:true,onm=
+ousedown:true};this.initialize()};_BdPopupLayer._layers=3D[];_BdPopupLaye=
+r._focusOnLayer=3Dfalse;_System.extend(_BdPopupLayer.prototype,{initializ=
+e:function(){_BdPopupLayer._layers[_BdPopupLayer._layers.length]=3Dthis;v=
+ar =
+C=3Dthis;C.id=3DC.name=3D"_BdPopupLayer_"+C.hashCode;this.onBlurHandler=3D=
+function(){setTimeout(function(){if(!_BdPopupLayer._focusOnLayer){C.hide(=
+)}},10)};this.onClickHandler=3Dfunction(){C.hide()};this.onScrollHandler=3D=
+function(){C.hide()};var D=3D"<iframe frameborder=3D'0' =
+name=3D'"+C.name+"' style=3D'position:absolute; z-index:65001; =
+display:none;' scrolling=3D'no' =
+id=3D'"+C.id+"'></iframe>";if(!document.body){document.write(D)}else{docu=
+ment.body.insertAdjacentHTML("afterBegin",D)}var =
+A=3Ddocument.getElementsByTagName("IFRAME");for(var =
+B=3D0;B<A.length;B++){if(A[B].id=3D=3Dthis.id){this.layer=3DA[B]}}frames[=
+this.name].document.write("            <html>                <head>      =
+              <style type=3D'text/css'>                        html =
+*{-moz-user-select:none;}                        body,td,th{font:12px =
+Geneva, Arial, sans-serif; cursor:default;}                        =
+body{margin:0px; background-color:#FFF;}                        =
+.tabPanel{height:253px;width:344px;}                        =
+.tabContent{overflow-y:auto;float:left;width:280px;height:253px;}        =
+                .tabContentHide{display:none;width:263px;height:253px}   =
+                     =
+.tabContentShow{display:block;width:263px;height:253px}                  =
+      =
+.tabMenu{float:right;width:64px;height:140px;text-align:center;line-heigh=
+t:24px;height:24px;font:'\u5b8b\u4f53';font-size:12px;}                  =
+      .tabMenuHover{background:#E8E8FD;}                        =
+.tabMenuNoHover{cursor:pointer;}                        =
+.tableCell{background:#d7d79f;}                        =
+.tableCellOver{background:#ffffbe;}                        =
+.reviewHide{display:block;position:absolute;width:50px;height:50px;left:5=
+px;right:200px;top:3px;bottom:200px;background-color:#FFFFFF;text-align:c=
+onter;}                        =
+.review{width:50px;height:50px;background-position:center;background-repe=
+at:no-repeat;border:1px solid #000;}                        =
+.tabStyle{position:absolute;left:356px;right:200px;top:12px;bottom:200px;=
+z-index:65533;width:50px;height:50px;background:#FFFFFF;}                =
+        .jd img{background:transparent =
+url(http://img.baidu.com/hi/default/jxFace.gif?v=3D1.1) no-repeat scroll =
+left top; cursor:pointer; display:block; width:35px; height:35px; }      =
+                  .pp img{background:transparent =
+url(http://img.baidu.com/hi/default/fFace.gif?v=3D1.1) no-repeat scroll =
+left top; cursor:pointer; display:block; width:25px; height:25px; }      =
+                  .ldw img{background:transparent =
+url(http://img.baidu.com/hi/default/wFace.gif?v=3D1.1) no-repeat scroll =
+left top; cursor:pointer; display:block; width:35px; height:35px; }      =
+                  .tsj img{background:transparent =
+url(http://img.baidu.com/hi/default/tFace.gif?v=3D1.1) no-repeat scroll =
+left top; cursor:pointer; display:block; width:35px; height:35px; }      =
+                  .bb img{background:transparent =
+url(http://img.baidu.com/hi/default/bFace.gif?v=3D1.1) no-repeat scroll =
+left top; cursor:pointer; display:block; width:35px; height:35px; }      =
+                  .youa img{background:transparent =
+url(http://img.baidu.com/hi/default/yFace.gif?v=3D1.1) no-repeat scroll =
+left top; cursor:pointer; display:block; width:35px; height:35px; }      =
+              </style>                </head>                <body =
+onfocus=3D'parent._BdPopupLayer._focusOnLayer=3Dtrue;' =
+onselectstart=3D'return false'>"+this.defaultContent+"</body>            =
+</html>");frames[this.name].document.close();window.attachEvent("onfocus"=
+,function(E){_BdPopupLayer._focusOnLayer=3Dfalse})},write:function(A){thi=
+s.content.innerHTML=3DA},showBy:function(B,C,A){this.show(0,0,C,A,B)},sho=
+wByXYWH:function(C,B,E,D,A){this.show(B,E,D,A,C)},show:function(D,K,B,N,F=
+){var P=3DD=3DD?(isNaN(D)?0:parseInt(D,10)):0;var =
+O=3DK=3DK?(isNaN(K)?0:parseInt(K,10)):0;B=3DB?(isNaN(B)?"auto":parseInt(B=
+,10)):"auto";N=3DN?(isNaN(N)?"auto":parseInt(N,10)):"auto";var =
+G=3D_BdElement.body(),E=3D0;if(F&&(F=3D_Bd$(F))&&F.tagName){E=3DF.offsetH=
+eight;var =
+J=3D_BdElement.realOffset(F);D+=3DJ.x;K+=3DJ.y}this.layer.style.top=3DK+E=
++"px";this.layer.style.left=3DD+"px";this.layer.style.width=3D"2px";this.=
+layer.style.height=3D"2px";if(_BdBrowser.netscape&&_BdBrowser.netscape.ve=
+rsion<7.2){this.layer.style.visibility=3D""}else{this.layer.style.display=
+=3D""}var C=3Dthis.layer.offsetWidth;var =
+M=3Dthis.layer.offsetHeight;if(G.scrollLeft+G.clientWidth<D+C){if(D-C>=3D=
+G.scrollLeft){D-=3DC}else{D=3DG.scrollLeft+G.clientWidth-C}}if(G.scrollTo=
+p+G.clientHeight<K+M+E){if(K-M>=3DG.scrollTop){K-=3DM}else{K=3DG.scrollTo=
+p+G.clientHeight-M}}else{K+=3DE}var I=3Dthis.document,H=3Ddsh=3D0;var =
+A=3DI.body.scrollWidth;var =
+L=3DI.body.scrollHeight;if(I.documentElement){H=3DI.documentElement.scrol=
+lWidth;dsh=3DI.documentElement.scrollHeight}if(isNaN(B)){B=3DMath.max(H,A=
+,this.content.offsetWidth)}if(isNaN(N)){N=3DMath.max(dsh,L,this.content.o=
+ffsetHeight)}this.width=3DB||2;this.height=3DN||2;this.layer.style.top=3D=
+(this.top=3DK)+"px";this.layer.style.left=3D(this.left=3DD)+"px";this.lay=
+er.style.width=3Dthis.width+"px";this.layer.style.height=3Dthis.height+"p=
+x";if(this.hideTrigger.onblur){window.attachEvent("onblur",this.onBlurHan=
+dler)}if(this.hideTrigger.onscroll){window.attachEvent("onscroll",this.on=
+ScrollHandler)}if(this.hideTrigger.onmousedown){document.attachEvent("onm=
+ousedown",this.onClickHandler)}this.isOpen=3Dtrue;this.onshow()},hide:fun=
+ction(){this.isOpen=3Dfalse;this.layer.style.zIndex=3D65001;if(_BdBrowser=
+.netscape&&_BdBrowser.netscape.version<7.2){this.layer.style.visibility=3D=
+"hidden"}else{this.layer.style.display=3D"none"}if(this.hideTrigger.onblu=
+r){window.detachEvent("onblur",this.onBlurHandler)}if(this.hideTrigger.on=
+scroll){window.detachEvent("onscroll",this.onScrollHandler)}if(this.hideT=
+rigger.onmousedown){document.detachEvent("onmousedown",this.onClickHandle=
+r)}if(!this.exclusive){this.document.body.innerHTML=3Dthis.defaultContent=
+;this.width=3Dthis.height=3D0;this.style=3Dthis.busy=3Dfalse}this.onhide(=
+)},getElementById:function(A){return =
+this.document.getElementById(A)}});window.attachEvent("onload",function()=
+{new _BdPopupLayer()});_BdPopupLayer.provider=3Dfunction(C){var =
+B,A=3D0;for(;A<this._layers.length;A++){if(!this._layers[A].busy){B=3Dthi=
+s._layers[A];break}}if(A=3D=3Dthis._layers.length-1){new =
+_BdPopupLayer()}if(A=3D=3Dthis._layers.length){B=3Dnew =
+_BdPopupLayer(C)}B.busy=3Dtrue;B.window=3DB.layer.contentWindow;B.documen=
+t=3DB.window.document;B.content=3DB.document.getElementById("Content");B.=
+style=3DB.content.style;return B};function =
+BdEditor(A,B){this.textarea=3D_Bd$(A);this.width=3DB.width||"100%";this.h=
+eight=3DB.height||"300px";this.modules=3D{};BdEditor.instance=3D_Instance=
+[this.hashCode=3DuniqueID()]=3Dthis}BdEditor.prototype.render=3Dfunction(=
+){loadCssFile(_System.path+"css/default/bdeditor.css");var A=3D"        =
+<div id=3D'bdeditor_container_{2}'>            <table width=3D'{0}' =
+height=3D'{1}' cellpadding=3D'0' cellspacing=3D'0' border=3D'0'>         =
+       <tr>                    <td id=3D'editor_toolbar_{2}' =
+class=3D'ToolbarContainer'></td>                </tr>                =
+<tr>                    <td id=3D'editor_area_{2}' =
+class=3D'EditorContainer'></td>                </tr>            </table> =
+       </div>    =
+".format(this.width,this.height,this.hashCode);this.textarea.insertAdjace=
+ntHTML("beforeBegin",A);this.renderToolbar();this.renderEditorArea();this=
+.makeEditable();this.attachEventListener();this.isLightFont=3Dfalse};BdEd=
+itor.prototype.setCookie=3Dfunction(A,B){document.cookie=3DA+"=3D"+escape=
+(B)+";expires=3DWed, 28-Nov-37 01:45:46 =
+GMT;path=3D/;domain=3D.baidu.com"};BdEditor.prototype.getCookie=3Dfunctio=
+n(B){var A,C=3Dnew RegExp("(^| =
+)"+B+"=3D([^;]*)(;|$)");if(A=3Ddocument.cookie.match(C)){return =
+unescape(A[2])}};BdEditor.prototype.renderToolbar=3Dfunction(){var =
+I=3D["<div class=3D'ToolbarStrip'><table border=3D'0' cellspacing=3D'0' =
+cellpadding=3D'0'><tr>"];var =
+D=3D["_TiSmiley"];if(_BdBrowser.ie){D=3D["_TiSmiley","_LightFont"]}for(va=
+r H=3D0,G=3DD.length;H<G;H++){var B=3Dthis.modules[D[H]]=3Dnew =
+window[D[H]]();if(H=3D=3D1){var A=3D'<input  type=3D"checkbox" =
+name=3D"_LightFont" id=3D"_LightFont'+this.hashCode+'" =
+onclick=3D"switchLightFont(this.checked)" />';I.push("<td width=3D'100%' =
+ align=3D'right' valign=3D'middle'><div =
+class=3D'ToolbarItem'>"+A+"</div></td>")}var =
+C=3D(H=3D=3D0)?"nowrap=3D'nowrap'":"";I.push("<td =
+nowrap=3D'nowrap'>"+B.render()+"</td>")}"editor.lightFontModule.switchLig=
+htFont";I.push("</tr></table></div>");var =
+F=3D_Bd$("editor_toolbar_"+this.hashCode);F.innerHTML=3DI.join("");if(_Bd=
+Browser.ie){this.lightFontModule=3D_Bd$("_LightFont"+this.hashCode);this.=
+lightFontModule.handler=3Dthis;this.lightFontColor=3D"#0000FF";this.light=
+FontModule.switchLightFont=3Dfunction(L){this.handler.isLightFont=3DL;var=
+ =
+J=3DL?this.handler.lightFontColor:"0";if(J!=3D"0"){J=3DJ.replace("#","")}=
+this.handler.setCookie("BDLFONT",J);if(!L){var =
+K=3Dthis.handler.modules._LightFont.layer;if(K){K.hide()}}};var =
+E=3Dthis.getCookie("BDLFONT");if(typeof =
+E=3D=3D"undefined"){E=3D"0"}if(E!=3D"0"){this.lightFontModule.checked=3Dt=
+rue;this.lightFontModule.switchLightFont(true);_Bd$("LightFont_Font_"+thi=
+s.hashCode).style.color=3D"#"+E;this.lightFontColor=3D"#"+E;this.setCooki=
+e("BDLFONT",E)}else{this.lightFontModule.checked=3Dfalse;this.lightFontMo=
+dule.switchLightFont(false);_Bd$("LightFont_Font_"+this.hashCode).style.c=
+olor=3D"#0000FF";this.lightFontColor=3D"#0000FF";this.setCookie("BDLFONT"=
+,E)}}};BdEditor.prototype.renderEditorArea=3Dfunction(){var =
+editor_area=3D_Bd$("editor_area_"+this.hashCode);editor_area.innerHTML=3D=
+"<iframe width=3D'100%' height=3D'"+this.height+"' frameborder=3D'0' =
+src=3D'javascript:void(0)'></iframe>";this.iframe=3Deditor_area.lastChild=
+;var w=3Dthis.window=3Dthis.iframe.contentWindow;var =
+d=3Dthis.document=3Dthis.window.document;d.open();d.write('<html><head><s=
+tyle type=3D"text/css">    /*<![CDATA[*/    body{ background-color: =
+#ffffff; padding: 5px 5px 5px 5px; margin: 0px; }     body, td { =
+font-family: Arial, Verdana, sans-serif; font-size: 14px; }    p{ =
+margin:0px; }    /*]]>*/    =
+</style></head><body></body></html>');d.close();var =
+code=3D";window.onerror=3Dfunction(e){return =
+true;}";if(window.execScript){w.execScript(code)}else{if(_BdBrowser.safar=
+i){var =
+s=3Dd.createElement("SCRIPT");s.type=3D"text/javascript";s.appendChild(d.=
+createTextNode(code));d.documentElement.appendChild(s)}else{eval.call(w,c=
+ode)}}};BdEditor.prototype.makeEditable=3Dfunction(){var =
+D=3Dthis.document;if(_BdBrowser.ie){D.body.disabled=3Dtrue;D.body.content=
+Editable=3Dtrue;D.body.removeAttribute("disabled");try{D.execCommand("Bac=
+kgroundImageCache",false,true)}catch(C){}}else{try{D.body.spellcheck=3Dfa=
+lse;D.designMode=3D"on";try{D.execCommand("styleWithCSS",false,false)}cat=
+ch(B){D.execCommand("useCSS",false,true)}D.execCommand("enableObjectResiz=
+ing",false,true);D.execCommand("enableInlineTableEditing",false,false)}ca=
+tch(A){}}this.textarea.style.display=3D"none"};BdEditor.prototype.attachE=
+ventListener=3Dfunction(){var A=3Dthis,C=3DA.document;var =
+D=3Dfunction(){var =
+E=3DA.modules._TiSmiley.layer;if(E){E.hide()}if(_BdBrowser.ie){E=3DA.modu=
+les._LightFont.layer;if(E){E.hide()}}};if(_BdBrowser.ie){C.body.attachEve=
+nt("onfocus",D)}else{C.addEventListener("focus",D,false)}if(!_BdBrowser.i=
+e){return false}C.attachEvent("onbeforedeactivate",function(G){var =
+F=3DC.selection;var =
+E=3DF.createRange();A.ieSelectionType=3DF.type.toLowerCase();if("control"=
+=3D=3DA.ieSelectionType){A.ieSelectionControl=3DE(0)}else{A.ieSelectionBo=
+okmark=3DE.getBookmark()}});C.attachEvent("onactivate",function(F){var =
+E;try{if("control"=3D=3DA.ieSelectionType){E=3DC.body.createControlRange(=
+);E.add(A.ieSelectionControl)}else{E=3DC.body.createTextRange();E.moveToB=
+ookmark(A.ieSelectionBookmark)}E.select();A.ieSelectionControl=3DA.ieSele=
+ctionBookmark=3Dnull}catch(F){}});function B(){var H=3DC.selection;var =
+G=3DH.type.toLowerCase();if("control"=3D=3DG){var =
+E=3DH.createRange();for(var =
+F=3DE.length-1;F>=3D0;F--){E(F).parentNode.removeChild(E(F))}return =
+false}return true}C.attachEvent("onkeydown",function(I){var =
+I=3DA.window.event||I;var H=3DI.which||I.keyCode||I.charCode;var =
+E=3D0;if(I.ctrlKey||I.metaKey){E+=3D1000}if(I.shiftKey){E+=3D2000}if(I.al=
+tKey){E+=3D4000}var =
+G=3DH+E;if(G=3D=3D8){return(I.returnValue=3DB())}return(I.returnValue=3Dt=
+rue)});return false};BdEditor.prototype.getHtml=3Dfunction(){var =
+B=3Dthis.document.body.innerHTML.replace(/<(p|div)[^>]*>/gi,"<br/>").repl=
+ace(/<\/\s*(p|div)\s*>/gi,"");var =
+A=3DB.replace(/^(<br([^>])*\/?>)+/gi,"");if(_BdBrowser.ie){if(this.lightF=
+ontModule.checked){A=3D'<span =
+style=3D"filter:glow(color=3D'+this.lightFontColor+',strength=3D2);height=
+:0px;color:#FFFFFF">'+A+"</span>"}}return A};function =
+_ToolbarItemBase(){this.tooltipname=3D"";this.tooltip=3D"";this.cssName=3D=
+"Lightfont";this.commandName=3D"";this.disabled=3Dfalse;this.editor=3DBdE=
+ditor.instance;_Instance[this.hashCode=3DuniqueID()]=3Dthis}_System.exten=
+d(_ToolbarItemBase.prototype,{execute:function(){},render:function(){var =
+A=3D"<div class=3D'ToolbarItem' title=3D'"+this.tooltip+"' =
+id=3D'ToolbarItem_{0}'  =
+onclick=3D\"_Instance['{0}'].clickHandler(this)\" =
+onmouseup=3D\"_Instance['{0}'].mouseUpHandler(this)\" =
+onmousedown=3D\"_Instance['{0}'].mouseDownHandler(this)\" =
+onmouseout=3D\"_Instance['{0}'].mouseOutHandler(this)\" =
+onmouseover=3D\"_Instance['{0}'].mouseOverHandler(this)\" ><div =
+class=3D'img "+this.cssName+"' alt=3D'"+this.tooltip+"' /><font =
+style=3D'font-size:12px'>"+this.tooltipname+"</font></div>";return =
+A.format(this.hashCode)},getContainer:function(){return =
+_Bd$("ToolbarItem_"+this.hashCode)},_ac:function(A){_BdElement.addClassNa=
+me(this.getContainer(),A)},_rc:function(A){_BdElement.removeClassName(thi=
+s.getContainer(),A)},mouseUpHandler:function(A){if(!this.disabled){this._=
+rc("mousedown")}},mouseDownHandler:function(A){if(!this.disabled){this._a=
+c("mousedown")}},mouseOutHandler:function(A){if(!this.disabled){this._rc(=
+"mouseover");this._rc("mousedown")}},mouseOverHandler:function(A){if(!thi=
+s.disabled){this._ac("mouseover")}},clickHandler:function(){if(this.disab=
+led){return =
+}this.execute();if(!_BdBrowser.ie){this.editor.window.focus()}}});functio=
+n =
+_LightFont(){_ToolbarItemBase.call(this);this.tooltip=3D"\u95ea\u5149\u5b=
+57";this.tooltipname=3D'<font =
+id=3D"LightFont_Font_'+parent.BdEditor.instance.hashCode+'" =
+style=3D"font-size:10px; =
+color:#000000;">\u25bc</font>&nbsp;\u95ea\u5149\u5b57';this.layer=3D_BdPo=
+pupLayer.provider();this.layer.exclusive=3Dtrue;this._isFirstExecute=3Dtr=
+ue;this._isCreated=3Dfalse;this.disabled=3Dfalse;this.initialize()}_Light=
+Font.Extends(_ToolbarItemBase);_LightFont.prototype.initialize=3Dfunction=
+(){var A=3Dthis;this.layer.onshow=3Dfunction(){var =
+B=3DA.getContainer();B.onmouseover=3DB.onmouseout=3Dfunction(){return =
+false};A._ac("mouseover")};this.layer.onhide=3Dfunction(){var =
+B=3DA.getContainer();B.onmouseover=3Dfunction(){A.mouseOverHandler(this)}=
+;B.onmouseout=3Dfunction(){A.mouseOutHandler(this)};A._rc("mouseover")}};=
+_LightFont.prototype.clickHandler=3Dfunction(){if(!this._isCreated){this.=
+_isCreated=3Dtrue;var =
+L=3D["00","33","66","99","cc","ff","00","33","66","99","cc","ff"];var =
+B=3D[];var A,N,J;for(var F=3D0;F<12;F++){A=3DL[F];for(var =
+E=3D0;E<3;E++){if(F>=3D6){J=3DL[E+3]}else{J=3DL[E]}for(var =
+M=3D0;M<6;M++){N=3DL[M];B[B.length]=3D"#"+J+N+A}}}var I=3D['<table =
+width=3D"199px" height=3D"133px" cellspacing=3D"1" cellpadding=3D"0" =
+bgcolor=3D"#000000" >'];var K=3D0;var C=3D_BdBrowser.ie?10:8;for(var =
+F=3D0;F<12;F++){I.push("<tr>");for(var E=3D0;E<18;E++){var =
+D=3DB[K++];I.push('<td bgcolor=3D"'+D+'" width=3D"10px" height=3D"10px" =
+style=3D"cursor:pointer;font-size:1px"><div style=3D"width:'+C+"px; =
+height:"+C+"px; border:#000 solid 0px\" =
+onmouseover=3D\"parent.BdEditor.instance.modules['_LightFont'].over(this)=
+;\" =
+onmouseout=3D\"parent.BdEditor.instance.modules['_LightFont'].out(this);\=
+" =
+onclick=3D\"parent.BdEditor.instance.modules['_LightFont'].execute('"+D+"=
+',this);\"></div></td>")}I.push("</tr>")}I.push("</table>");B=3DL=3DJ=3DN=
+=3DA=3DC=3DK=3Dnull;var H=3DI.join("");var =
+G=3D["<html><head><title>color panel</title></head><body>"];G.push('<div =
+id=3D"colorPanel" =
+style=3D"width:180px;height:120px">');G.push(H);G.push("</div></body></ht=
+ml>");G=3DG.join("");this.layer.write(G);this.layer.style.border=3D"solid=
+ 1px =
+#A9CCDD"}else{}this.layer.style.height=3D"133px";this.layer.showByXYWH(th=
+is.getContainer(),-125,0,_BdBrowser.ie?"201":"201",_BdBrowser.ie?"135":"1=
+35")};_LightFont.prototype.execute=3Dfunction(A,C){C.style.border=3D"#000=
+ solid 0px";var =
+B=3Dthis;B.layer.hide();parent.BdEditor.instance.lightFontColor=3DA;_Bd$(=
+"LightFont_Font_"+parent.BdEditor.instance.hashCode).style.color=3DA;if(_=
+Bd$("_LightFont"+parent.BdEditor.instance.hashCode).checked){parent.BdEdi=
+tor.instance.setCookie("BDLFONT",A.replace("#",""))}};_LightFont.prototyp=
+e.over=3Dfunction(A){A.style.border=3D"#000 solid =
+1px"};_LightFont.prototype.out=3Dfunction(A){A.style.border=3D"#000 =
+solid 0px"};function =
+_TiSmiley(){_ToolbarItemBase.call(this);this.tabFlags=3D[0,0,0,0,0];this.=
+tooltip=3D"\u63d2\u5165\u8868\u60c5";this.tooltipname=3D"\u63d2\u5165\u88=
+68\u60c5";this.cssName=3D"Smiley";this.commandName=3D"InsertSmiley";this.=
+smileyPath=3D"http://img.baidu.com/hi/face/";this.smileyImages=3D[];this.=
+layer=3D_BdPopupLayer.provider();this.layer.exclusive=3Dtrue;this._isFirs=
+tExecute=3Dtrue;this.initialize()}_TiSmiley.Extends(_ToolbarItemBase);_Ti=
+Smiley.prototype.initialize=3Dfunction(){var =
+A=3Dthis;this.layer.onshow=3Dfunction(){var =
+B=3DA.getContainer();B.onmouseover=3DB.onmouseout=3Dfunction(){return =
+false};A._ac("mouseover")};this.layer.onhide=3Dfunction(){var =
+B=3DA.getContainer();B.onmouseover=3Dfunction(){A.mouseOverHandler(this)}=
+;B.onmouseout=3Dfunction(){A.mouseOutHandler(this)};A._rc("mouseover")}};=
+_TiSmiley.prototype.over=3Dfunction(C,A){var =
+B=3Dthis.layer.getElementById("tabIconReview");this.layer.getElementById(=
+"faceReview").style.backgroundImage=3D"url("+C+")";if(A=3D=3D1){B.style.d=
+isplay=3D"block";B.style.left=3D"4px";B.style.top=3D"3px"}else{B.style.di=
+splay=3D"block";B.style.left=3D"228px";B.style.top=3D"3px"}};_TiSmiley.pr=
+ototype.out=3Dfunction(B){var =
+A=3Dthis.layer.getElementById("tabIconReview");A.style.display=3D"none"};=
+_TiSmiley.prototype.switchTab=3Dfunction(C){var B=3D6;for(var =
+D=3D0;D<B;D++){var E=3Dthis.layer.getElementById("tab"+D);var =
+A=3Dthis.layer.getElementById("tab"+D+"M");if(D=3D=3DC){if(this.tabFlags[=
+C]=3D=3D0){this.tabFlags[C]=3D1;this.createTab("tab"+C)}E.style.display=3D=
+"block";A.className=3D"tabMenuHover"}else{E.style.display=3D"none";A.clas=
+sName=3D"tabMenuNoHover"}}};FCKConfig=3D{};FCKConfig.SmileyInfor=3D{tab0:=
+[],tab1:[],tab2:[],tab3:[],tab4:[],tab5:[]};FCKConfig.SmileyInfor.tab0=3D=
+["Kiss","Love","Yeah","\u554a\uff01","\u80cc\u626d","\u9876","\u6296\u80f=
+8","88","\u6c57","\u778c\u7761","\u9c81\u62c9","\u62cd\u7816","\u63c9\u81=
+38","\u751f\u65e5\u5feb\u4e50","\u5927\u7b11","\u7011\u5e03\u6c57~","\u60=
+ca\u8bb6","\u81ed\u7f8e","\u50bb\u7b11","\u629b\u5a9a\u773c","\u53d1\u601=
+2","\u6253\u9171\u6cb9","\u4fef\u5367\u6491","\u6c14\u6124","\u56e7","\u5=
+43b","\u6012","\u80dc\u5229","HI","KISS","\u4e0d\u8bf4","\u4e0d\u8981","\=
+u626f\u82b1","\u5927\u5fc3","\u9876","\u5927\u60ca","\u98de\u543b","\u9b3=
+c\u8138","\u5bb3\u7f9e","\u53e3\u6c34","\u72c2\u54ed","\u6765","","","","=
+","","","","","","","","","","","\u5f00\u5fc3","\u5077\u7b11","\u5927\u54=
+ed","\u6ef4\u6c57","\u53f9\u6c14","\u8d85\u8d5e","\u56e7\u56e7","\u98de\u=
+543b","\u5929\u4f7f","\u6492\u82b1","\u751f\u6c14","\u88ab\u7838","\u5413=
+\u50bb","\u968f\u610f\u5410"];FCKConfig.SmileyInfor.tab1=3D["Kiss","Love"=
+,"Yeah","\u554a\uff01","\u80cc\u626d","\u9876","\u6296\u80f8","88","\u6c5=
+7","\u778c\u7761","\u9c81\u62c9","\u62cd\u7816","\u63c9\u8138","\u751f\u6=
+5e5\u5feb\u4e50","\u644a\u624b","\u7761\u89c9","\u762b\u5750","\u65e0\u80=
+4a","\u661f\u661f\u95ea","\u65cb\u8f6c","\u4e5f\u4e0d\u884c","\u90c1\u95f=
+7","\u6b63Music","\u6293\u5899","\u649e\u5899\u81f3\u6b7b","\u6b6a\u5934"=
+,"\u6233\u773c","\u98d8\u8fc7","\u4e92\u76f8\u62cd\u7816","\u780d\u6b7b\u=
+4f60","\u6254\u684c\u5b50","\u5c11\u6797\u5bfa","\u4ec0\u4e48\uff1f","\u8=
+f6c\u5934","\u6211\u7231\u725b\u5976","\u6211\u8e22","\u6447\u6643","\u66=
+55\u53a5","\u5728\u7b3c\u5b50\u91cc","\u9707\u8361"];FCKConfig.SmileyInfo=
+r.tab2=3D["\u5927\u7b11","\u7011\u5e03\u6c57~","\u60ca\u8bb6","\u81ed\u7f=
+8e","\u50bb\u7b11","\u629b\u5a9a\u773c","\u53d1\u6012","\u6211\u9519\u4e8=
+6","money","\u6c14\u6124","\u6311\u9017","\u543b","\u6012","\u80dc\u5229"=
+,"\u59d4\u5c48","\u53d7\u4f24","\u8bf4\u5565\u5462\uff1f","\u95ed\u5634",=
+"\u4e0d","\u9017\u4f60\u73a9\u513f","\u98de\u543b","\u7729\u6655","\u9b54=
+\u6cd5","\u6211\u6765\u4e86","\u7761\u4e86","\u6211\u6253","\u95ed\u5634"=
+,"\u6253","\u6253\u6655\u4e86","\u5237\u7259","\u7206\u63cd","\u70b8\u5f3=
+9","\u5012\u7acb","\u522e\u80e1\u5b50","\u90aa\u6076\u7684\u7b11","\u4e0d=
+\u8981\u4e0d\u8981","\u7231\u604b\u4e2d","\u653e\u5927\u4ed4\u7ec6\u770b"=
+,"\u5077\u7aa5","\u8d85\u9ad8\u5174","\u6655","\u677e\u53e3\u6c14","\u621=
+1\u8dd1","\u4eab\u53d7","\u4fee\u517b","\u54ed","\u6c57","\u554a~","\u70e=
+d\u70c8\u6b22\u8fce","\u6253\u9171\u6cb9","\u4fef\u5367\u6491","\u56e7"];=
+FCKConfig.SmileyInfor.tab3=3D["HI","KISS","\u4e0d\u8bf4","\u4e0d\u8981","=
+\u626f\u82b1","\u5927\u5fc3","\u9876","\u5927\u60ca","\u98de\u543b","\u9b=
+3c\u8138","\u5bb3\u7f9e","\u53e3\u6c34","\u72c2\u54ed","\u6765","\u6cea\u=
+773c","\u6d41\u6cea","\u751f\u6c14","\u5410\u820c","\u559c\u6b22","\u65cb=
+\u8f6c","\u518d\u89c1","\u6293\u72c2","\u6c57","\u9119\u89c6","\u62dc","\=
+u5410\u8840","\u5618","\u6253\u4eba","\u8e66\u8df3","\u53d8\u8138","\u626=
+f\u8089","\u5403To","\u5403\u82b1","\u5439\u6ce1\u6ce1\u7cd6","\u5927\u53=
+d8\u8eab","\u98de\u5929\u821e","\u56de\u7738","\u53ef\u601c","\u731b\u62b=
+d","\u6ce1\u6ce1","\u82f9\u679c","\u4eb2","","\u9a9a\u821e","\u70e7\u9999=
+","\u7761","\u5957\u5a03\u5a03","\u6345\u6345","\u821e\u5012","\u897f\u7e=
+a2\u67ff","\u7231\u6155","\u6447","\u6447\u6446","\u6742\u800d","\u62db\u=
+8d22","\u88ab\u6bb4","\u88ab\u7403\u95f7","\u5927\u60ca","\u7406\u60f3","=
+\u6b27\u6253","\u5455\u5410","\u788e","\u5410\u75f0"];FCKConfig.SmileyInf=
+or.tab4=3D["","","","","","","","","","","","","","","","","","","","",""=
+,"","","","","","","","","","","","","","","","","","","","","","","","",=
+"","","","",""];FCKConfig.SmileyInfor.tab5=3D["\u7537\u515c","\u5973\u515=
+c","\u5f00\u5fc3","\u4e56\u4e56","\u5077\u7b11","\u5927\u7b11","\u62bd\u6=
+ce3","\u5927\u54ed","\u65e0\u5948","\u6ef4\u6c57","\u53f9\u6c14","\u72c2\=
+u6655","\u59d4\u5c48","\u8d85\u8d5e","\u56e7\u56e7","\u7591\u95ee","\u98d=
+e\u543b","\u5929\u4f7f","\u6492\u82b1","\u751f\u6c14","\u88ab\u7838","\u5=
+3e3\u6c34","\u6cea\u5954","\u5413\u50bb","\u5410\u820c\u5934","\u70b9\u59=
+34","\u968f\u610f\u5410","\u65cb\u8f6c","\u56f0\u56f0","\u9119\u89c6","\u=
+72c2\u9876","\u7bee\u7403","\u518d\u89c1","\u6b22\u8fce\u5149\u4e34","\u6=
+06d\u559c\u53d1\u8d22","\u7a0d\u7b49","\u6211\u5728\u7ebf","\u6055\u4e0d\=
+u8bae\u4ef7","\u5e93\u623f\u6709\u8d27","\u8d27\u5728\u8def\u4e0a"];FCKCo=
+nfig.SmileyBox=3D{tab0:[],tab1:[],tab2:[],tab3:[],tab4:[],tab5:[]};functi=
+on initImgBox(D,E,B){if(D.length){return }var A=3D"";for(var =
+C=3D1;C<=3DB;C++){A=3DE;if(C<10){A=3DA+"0"}A=3DA+C+".gif";D.push(A)}}init=
+ImgBox(FCKConfig.SmileyBox.tab0,"j_00",70);initImgBox(FCKConfig.SmileyBox=
+.tab1,"t_00",40);initImgBox(FCKConfig.SmileyBox.tab2,"w_00",52);initImgBo=
+x(FCKConfig.SmileyBox.tab3,"B_00",63);initImgBox(FCKConfig.SmileyBox.tab4=
+,"i_f",50);initImgBox(FCKConfig.SmileyBox.tab5,"y_00",40);var =
+faceBox=3DFCKConfig.SmileyBox;var =
+inforBox=3DFCKConfig.SmileyInfor;_TiSmiley.prototype.createTab=3Dfunction=
+(A){var H=3D_System.imagePath;var =
+F=3D"?v=3D1.1";FaceHandler=3D{imageFolders:{tab0:"jx/",tab1:"tsj/",tab2:"=
+ldw/",tab3:"bobo/",tab4:"face/",tab5:"youa/"},imageReviewFolders:{tab0:"j=
+x_review/",tab1:"tsj_review/",tab2:"bobo_review/",tab3:"tsj_review/",tab4=
+:"face/",tab5:"youa/"},imageWidth:{tab0:36,tab1:35,tab2:35,tab3:36,tab4:2=
+5,tab5:35},imageCols:{tab0:7,tab1:7,tab2:7,tab3:7,tab4:7,tab5:7},imageCol=
+Width:{tab0:35,tab1:35,tab2:35,tab3:35,tab4:35,tab5:35},tableWidth:{tab0:=
+263,tab1:280,tab2:263,tab3:263,tab4:263,tab5:280},imageCss:{tab0:"jd",tab=
+1:"tsj",tab2:"ldw",tab3:"bb",tab4:"pp",tab5:"youa"},imageCssOffset:{tab0:=
+35,tab1:35,tab2:35,tab3:35,tab4:25,tab5:35}};var =
+L=3DH+FaceHandler.imageFolders[A];var =
+N=3DH+FaceHandler.imageReviewFolders[A];var =
+U=3DFaceHandler.tableWidth;var K=3DFaceHandler.imageWidth;var =
+V=3DFaceHandler.imageCols[A];var J=3DV/2;var =
+P=3DFaceHandler.imageColWidth;var B=3DFaceHandler.imageCss[A];var =
+I=3DFaceHandler.imageCssOffset[A];var =
+D=3Dthis.layer.getElementById(A);var M=3D['<table cellpadding=3D"0" =
+cellspacing=3D"0"  style=3D"border-collapse:collapse;" border=3D"1" =
+bordercolor=3D"#B8B3FF" width=3D'+U[A]+'  height=3D"100%">'];for(var =
+S=3D0,C=3DfaceBox[A].length;S<C;){M.push("<tr>");for(var =
+R=3D0;R<V;R++,S++){var T=3DfaceBox[A][S];if(T){var O=3DL+T+F;var =
+X=3DL+T;var Q=3DN+T;var E=3DR<J?0:1;var G=3DI*S*(-1)-1;var =
+W=3DinforBox[A][S];M.push('<td width=3D"'+P[A]+'"  height=3D"'+P[A]+'" =
+align=3D"center" valign=3D"middle" style=3D"background-color:#FFFFFF;" =
+onmouseover=3D"this.style.backgroundColor=3D\'#E8E8FD\'"  =
+onmouseout=3D"this.style.backgroundColor=3D\'#FFFFFF\'" =
+>');M.push('<span class=3D"'+B+'"  =
+style=3D"display:block;">');M.push('<img title=3D"'+W+'" =
+style=3D"background-position:left '+G+'px;"  width=3D"'+K[A]+'" =
+height=3D"'+K[A]+"\" =
+onclick=3D\"parent.BdEditor.instance.modules['_TiSmiley'].execute('"+X+"'=
+);\" src=3D\"http://img.baidu.com/hi/default/0.gif\" =
+onmouseover=3D\"parent.BdEditor.instance.modules['_TiSmiley'].over('"+O+"=
+',"+E+');"  =
+onmouseout=3D"parent.BdEditor.instance.modules[\'_TiSmiley\'].out();" =
+/></td>');M.push("</span>")}else{M.push("<td>&nbsp;")}M.push("</td>")}M.p=
+ush("</tr>")}M.push("</table>");M=3DM.join("");D.innerHTML=3DM};_TiSmiley=
+.prototype.clickHandler=3Dfunction(){this.tabFlags=3D[0,0,0,0,0,0];var =
+A=3D[];A.push('<div id=3D"tabPanel" class=3D"tabPanel" >');A.push('	<div =
+id=3D"tabContent" class=3D"tabContent">');A.push('		<div id=3D"tab0" =
+class=3D"tabContentShow">0__tabContent</div>');A.push('		<div =
+id=3D"tab1" class=3D"tabContentHide">1__tabContent</div>');A.push('		=
+<div id=3D"tab2" class=3D"tabContentHide">2__tabContent</div>');A.push('	=
+	<div id=3D"tab3" =
+class=3D"tabContentHide">3__tabContent</div>');A.push('      	<div =
+id=3D"tab4" class=3D"tabContentHide">4__tabContent</div>');A.push('      =
+   <div id=3D"tab5" =
+class=3D"tabContentHide">5__tabContent</div>');A.push("	=
+</div>");A.push('	<div id=3D"tabMenu" class=3D"tabMenu" >');A.push('		=
+<div id=3D"tab0M" class=3D"tabMenuHover"   		=
+onClick=3D"parent.BdEditor.instance.modules[\'_TiSmiley\'].switchTab(0)">=
+&nbsp;&nbsp;&nbsp;<u>\u7cbe\u9009</u>&nbsp;&nbsp;&nbsp;</div>');A.push('	=
+	<div id=3D"tab1M" class=3D"tabMenuNoHover" 	=
+onClick=3D"parent.BdEditor.instance.modules[\'_TiSmiley\'].switchTab(1)">=
+&nbsp;<u>\u5154\u65af\u57fa</u>&nbsp;</div>');A.push('		<div =
+id=3D"tab2M" class=3D"tabMenuNoHover" 	=
+onClick=3D"parent.BdEditor.instance.modules[\'_TiSmiley\'].switchTab(2)">=
+&nbsp;<u>\u7eff\u8c46\u86d9</u>&nbsp;</div>');A.push('		<div =
+id=3D"tab3M" class=3D"tabMenuNoHover" 	=
+onClick=3D"parent.BdEditor.instance.modules[\'_TiSmiley\'].switchTab(3)">=
+&nbsp;&nbsp;<u>BOBO</u>&nbsp;&nbsp;</div>');A.push('       <div =
+id=3D"tab4M" class=3D"tabMenuNoHover" 	=
+onClick=3D"parent.BdEditor.instance.modules[\'_TiSmiley\'].switchTab(4)">=
+&nbsp;&nbsp;<u>\u6ce1\u6ce1</u>&nbsp;&nbsp;</div>');A.push('       <div =
+id=3D"tab5M" class=3D"tabMenuNoHover"    =
+onClick=3D"parent.BdEditor.instance.modules[\'_TiSmiley\'].switchTab(5)">=
+&nbsp;&nbsp;<u>\u6709\u554a</u>&nbsp;&nbsp;</div>');A.push("	=
+</div>");A.push("</div>");A.push('<div id=3D"tabIconReview" =
+class=3D"tabStyle">');var B=3D_System.imagePath;A.push('<img =
+id=3D"faceReview" class=3D"review"  =
+src=3D"http://img.baidu.com/hi/default/0.gif"/>');A.push("</div>");A=3DA.=
+join("");this.layer.write(A);this.layer.style.border=3D"solid 1px =
+#A9CCDD";this.layer.showBy(this.getContainer(),_BdBrowser.ie?"346":"346",=
+_BdBrowser.ie?"255":"255");this.createTab("tab0");this.switchTab(0)};_TiS=
+miley.prototype.execute=3Dfunction(A){var =
+F=3Dthis;F.layer.hide();F.editor.window.focus();if(_BdBrowser.ie){var =
+I=3DF.editor.document.selection;var =
+G=3DI.type.toLowerCase();if("control"=3D=3DG){var =
+J=3DI.createRange();var =
+D=3DJ(0);D.insertAdjacentHTML("beforeBegin",'<img =
+src=3D"'+A+'">');for(var =
+C=3DJ.length-1;C>=3D0;C--){J(C).parentNode.removeChild(J(C))}}else{var =
+E=3DI.createRange();E.pasteHTML('<img src=3D"'+A+'"/>')}}else{var =
+B=3DF.editor.document.createElement("IMG");B.src=3DA;var =
+I=3DF.editor.window.getSelection();var =
+E=3DI.getRangeAt(0);E.deleteContents();E.insertNode(B);var =
+H=3DF.editor.document.createRange();H.selectNode(B);I.removeAllRanges();I=
+.addRange(H);I.collapseToEnd();if(F._isFirstExecute){F.editor.document.ex=
+ecCommand("insertHTML",false,"<br>\x00");F._isFirstExecute=3Dfalse}}};
+------=_NextPart_000_0000_01C99506.129F6C30
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/js/g_spjs.js
+
+function =
+checkblank(id){ele=3Ddocument.getElementById(id);len=3Dbytes(ele.value);i=
+f(len=3D=3D0){showerror("msg_blank");return =
+false}else{hideerror("msg_blank");return true}};function =
+checkbytem(id,smax){ele=3Ddocument.getElementById(id);len=3Dbytes(ele.val=
+ue);if(len>smax){showerror("msg_maxthan");return =
+false}else{hideerror("msg_maxthan");return true}};function =
+checkbytes(id,smin){ele=3Ddocument.getElementById(id);len=3Dbytes(ele.val=
+ue);if(len<smin){showerror("msg_minthan");return =
+false}else{hideerror("msg_minthan");return true}};function =
+checkbyteall(id,smin,smax){ele=3Ddocument.getElementById(id);len=3Dbytes(=
+ele.value);if((len<smin)||(len>smax)){showerror("msg_than");return =
+false}else{hideerror("msg_than");return true}};function =
+bytes(str){if(typeof(str)!=3D'string'){str=3Dstr.value}var =
+len=3D0;for(var =
+i=3D0;i<str.length;i++){if(str.charCodeAt(i)>127){len++}len++}return =
+len};function trimlr(id){var =
+str=3Ddocument.getElementById(id).value;for(i=3D0;str.charAt(i)=3D=3D" =
+"||str.charAt(i)=3D=3D"=A1=A1";i++){}str=3Dstr.substring(i,str.length);fo=
+r(i=3Dstr.length-1;str.charAt(i)=3D=3D" =
+"||str.charAt(i)=3D=3D"=A1=A1";i--){}str=3Dstr.substring(0,i+1);return =
+str};function trimrn(id){var el=3Ddocument.getElementById(id);var =
+s=3Del.value;var len=3Ds.length;i=3D0;flag=3D0;flagn=3D0;var =
+result=3D"";while(i<len){ch=3Ds.charAt(i);if(ch=3D=3D"\n"||ch=3D=3D"\r"){=
+if((flagn=3D=3D1)&&(ch=3D=3D"\n")){flag++;flagn=3D0}else =
+if(ch=3D=3D"\r"){flagn=3D1}i++;if(flag=3D=3D1){result=3Dresult+ch}}else{f=
+lag=3D0;flagn=3D0;result=3Dresult+ch;i++}}return result};function =
+showerror(msg){if(msg)ob=3Ddocument.getElementById(msg);ob.style.display=3D=
+"block"};function =
+hideerror(msg){if(msg)ob=3Ddocument.getElementById(msg);ob.style.display=3D=
+"none"};function =
+setvalue(id){document.getElementById(id).value=3Dtrimrn(id);alert(documen=
+t.getElementById(id).value)};function =
+cutSpace(id){el=3Ddocument.getElementById(id);s=3Del.value;var =
+len=3Ds.length;var i;var ch;var =
+result=3D"";i=3D0;while(i<len){ch=3Ds.charAt(i++);result+=3Dch;if(ch!=3D'=
+ '&&ch!=3D'=A1=A1'){continue}while(i<len&&(ch=3Ds.charAt(i))=3D=3D' =
+'){i++}}return result};function getselect(id,selectname){var =
+ele=3Ddocument.getElementById(id);ele.selectedIndex=3Dselectname};
+------=_NextPart_000_0000_01C99506.129F6C30--

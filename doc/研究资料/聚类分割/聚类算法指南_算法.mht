@@ -1,0 +1,4288 @@
+From: <ÓÉ Microsoft Internet Explorer 5 ±£´æ>
+Subject: =?gb2312?B?vtvA4Mvjt6jWuMTPX8vjt6g=?=
+Date: Sun, 1 Feb 2009 22:51:32 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01C984BF.A0DCBA90"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3350
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: text/html;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/keefo/blog/item/718ab41f46c6d6f4e1fe0b32.html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--STATUS =
+OK--><HTML><HEAD><TITLE>=BE=DB=C0=E0=CB=E3=B7=A8=D6=B8=C4=CF_=CB=E3=B7=A8=
+</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; charset=3Dgb2312">
+<STYLE type=3Dtext/css>.error {
+	FONT-SIZE: 12px; COLOR: #ff0000
+}
+</STYLE>
+
+<SCRIPT src=3D"http://hi.baidu.com/ui/scripts/global.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3Djavascript =
+src=3D"http://hi.baidu.com/js/popup.js"></SCRIPT>
+
+<SCRIPT language=3DJavaScript =
+src=3D"http://hi.baidu.com/js/g_spjs.js"></SCRIPT>
+
+<SCRIPT language=3Djavascript>=0A=
+<!--=0A=
+=0A=
+var allkey=3D"";=0A=
+var i=3D0;=0A=
+var flag=3D0;=0A=
+function setpv(allnum)=0A=
+{=0A=
+	var num =3D allnum.split('_');=0A=
+	document.getElementById("result").innerHTML=3Dnum[0];=0A=
+}=0A=
+		 =0A=
+function checkMail(s) =0A=
+{ =0A=
+  	var pattern=3D/\w+@\w+\.[a-z]+/; =0A=
+  	if(pattern.test(s)) =0A=
+    { =0A=
+       return true; =0A=
+    } =0A=
+  	else =0A=
+   { =0A=
+      return false; =0A=
+   } =0A=
+} =0A=
+=0A=
+=0A=
+function checkeandu(eanduid)=0A=
+{=0A=
+	var eanduvalue=3DG(eanduid).value;=0A=
+	var len=3Dbytes(eanduvalue);=0A=
+	if(len>128)=0A=
+	{=0A=
+		=
+showErr(2,"=C4=FA=CA=E4=C8=EB=B5=C4=CD=F8=D6=B7=BB=F2=D3=CA=CF=E4=CC=AB=B3=
+=A4=A3=AC=C7=EB=B1=A3=B3=D6=D4=DA128=D7=D6=BD=DA=D2=D4=C4=DA=A1=A3");=0A=
+		return false;=0A=
+	}=0A=
+	else=0A=
+	{ =0A=
+		 return true;=0A=
+	}=0A=
+		=0A=
+}=0A=
+=0A=
+function cmtdel(str)=0A=
+{=0A=
+	var pop=3Dnew Popup({ =
+contentType:3,isReloadOnClose:false,width:340,height:80});=0A=
+	pop.setContent("title","=C9=BE=B3=FD=C6=C0=C2=DB");=0A=
+	=
+pop.setContent("confirmCon","=C4=FA=C8=B7=B6=A8=D2=AA=B3=B9=B5=D7=C9=BE=B3=
+=FD=D5=E2=CC=F5=C6=C0=C2=DB=C2=F0=A3=BF");=0A=
+	pop.setContent("callBack",delCallback2);=0A=
+	pop.setContent("parameter",{fid:str,popup:pop});=0A=
+	pop.build();=0A=
+	pop.show();=0A=
+	return false;=0A=
+}=0A=
+function delCallback2(para)=0A=
+{=0A=
+	var o_pop=3Dpara["popup"];=0A=
+	o_pop.config.contentType=3D1;=0A=
+	o_pop.setContent("contentUrl","");=0A=
+	o_pop.reBuild();=0A=
+	G(para["fid"]).target=3Do_pop.iframeIdName;=0A=
+	eval("document."+para["fid"]).submit();=0A=
+}=0A=
+=0A=
+=0A=
+=0A=
+function checkname(strid)=0A=
+{=0A=
+	var ele=3Ddocument.getElementById(strid);=0A=
+	var len=3Dbytes(ele.value);=0A=
+	if(len>49)=0A=
+	{=0A=
+		=
+showErr(1,"=C4=FA=CA=E4=C8=EB=B5=C4=D0=D5=C3=FB=CC=AB=B3=A4=A3=AC=C7=EB=B1=
+=A3=B3=D6=D4=DA49=D7=D6=BD=DA=D2=D4=C4=DA=A1=A3");=0A=
+		return false;=0A=
+	}=0A=
+	else =0A=
+	{		=0A=
+		if(len=3D=3D0)=0A=
+		{=0A=
+			document.getElementById(strid).value=3D"=C4=E4=C3=FB=CD=F8=D3=D1";=0A=
+		}=0A=
+		 return true;=0A=
+	}	=0A=
+	=0A=
+}=0A=
+=0A=
+function checktext(textid)=0A=
+{=0A=
+		document.getElementById(textid).value=3Dtrimlr(textid);=0A=
+		var str=3Dtrimrn(textid);=0A=
+		len=3Dstr.length;=0A=
+		if(len=3D=3D0 || ((/^[\s,=A1=A1]+$/gi).test(str)) )=0A=
+		{=0A=
+			=
+showErr(3,"=C4=FA=B1=D8=D0=EB=CA=E4=C8=EB=C6=C0=C2=DB=C4=DA=C8=DD=A3=AC=C7=
+=EB=BC=EC=B2=E9=A1=A3");=0A=
+			return false;=0A=
+		}=0A=
+		else =0A=
+		{=0A=
+				if(len>1000)=0A=
+				{=0A=
+					=
+showErr(3,"=C4=FA=CA=E4=C8=EB=B5=C4=C6=C0=C2=DB=C4=DA=C8=DD=CC=AB=B3=A4=A3=
+=AC=C7=EB=B1=A3=B3=D6=D4=DA500=D7=D6=D2=D4=C4=DA=A1=A3");=0A=
+					return false;=0A=
+				}=0A=
+			return true;=0A=
+		}	=0A=
+}=0A=
+=0A=
+function showErr(index,str)=0A=
+{=0A=
+	G(index+"_err").style.display=3D"";=0A=
+	G(index+"_err_con").innerHTML=3Dstr;=0A=
+}=0A=
+function hidErr(index)=0A=
+{=0A=
+	G(index+"_err").style.display=3D"none";=0A=
+	G(index+"_err_con").innerHTML=3D"";=0A=
+}=0A=
+=0A=
+function alertPop(tit,con)=0A=
+{=0A=
+	var pop=3Dnew Popup({ =
+contentType:4,isReloadOnClose:false,width:340,height:80});=0A=
+	pop.setContent("title",tit);=0A=
+	pop.setContent("alertCon",con);=0A=
+	pop.build();=0A=
+	pop.show();=0A=
+}=0A=
+=0A=
+function cmtfull()=0A=
+{=0A=
+	var cnum=3D0;=0A=
+	if(cnum>=3D50000)=0A=
+	{=0A=
+		=
+alertPop("=B7=A2=B1=ED=C6=C0=C2=DB","=B5=A5=C6=AA=C8=D5=D6=BE=C6=C0=C2=DB=
+=CA=FD=D7=EE=B6=E0=CE=AA50000=CC=F5.");=0A=
+		return false;=0A=
+	}=0A=
+	else=0A=
+	{=0A=
+		return true;=0A=
+	}=0A=
+}=0A=
+=0A=
+function checkcmtform()=0A=
+{=0A=
+	=
+if(checkname("spBlogCmtor")&&checkeandu("spBlogCmtURL")&&checktext("spBlo=
+gCmtText")&&cmtfull())=0A=
+	{=0A=
+		submitForm();=0A=
+		return true;=0A=
+	}=0A=
+	else=0A=
+	{=0A=
+		return false;=0A=
+	}=0A=
+}=0A=
+=0A=
+var g_pop=3Dnull;=0A=
+function submitForm()=0A=
+{=0A=
+	g_pop=3Dnew Popup({ =
+contentType:1,isReloadOnClose:false,width:340,height:80});=0A=
+	g_pop.setContent("title","=CC=ED=BC=D3=C6=C0=C2=DB");=0A=
+	g_pop.setContent("contentUrl","");=0A=
+	g_pop.setContent("someDisabledBtn","btn_ok");=0A=
+	g_pop.build();=0A=
+	G("popFormSubmit").target=3Dg_pop.iframeIdName;=0A=
+	g_pop.show();=0A=
+}=0A=
+=0A=
+function g_close_pop()=0A=
+{=0A=
+	g_pop.close();=0A=
+}=0A=
+=0A=
+function formatonlinpic()=0A=
+{=0A=
+var picobj=3Ddocument.getElementsByName("onlinepic");=0A=
+var picnum=3Dpicobj.length;=0A=
+	=0A=
+	for(var i=3D0;i<picnum;i++)=0A=
+	{=0A=
+		if(picobj[i].width>200)=0A=
+		{=0A=
+			picobj[i].width=3D200;=0A=
+		}=0A=
+		if(picobj[i].height>200)=0A=
+		{=0A=
+			picobj[i].height=3D200;=0A=
+		}=0A=
+	}=0A=
+    try{document.getElementById("btn_ok").disabled =3D "";}catch(e){}=0A=
+}=0A=
+=0A=
+function addToFavor(){=0A=
+var =
+blogTitle=3D'=BE=DB=C0=E0=CB=E3=B7=A8=D6=B8=C4=CF'.replace(/&#39;/g,'\'')=
+;=0A=
+window.open('http://cang.baidu.com/do/add?it=3D'+encodeURIComponent(blogT=
+itle+'_=B0=D9=B6=C8=BF=D5=BC=E4')+'&iu=3D'+encodeURIComponent(location.hr=
+ef)+'&fr=3Dsp#nw=3D1','_s','scrollbars=3Dno,width=3D600,height=3D450,righ=
+t=3D75,top=3D20,status=3Dno,resizable=3Dyes'); =0A=
+return false;=0A=
+}=0A=
+=0A=
+var isIE =3D /*@cc_on!@*/false;=0A=
+function tracker(did,a){=0A=
+	return function(){=0A=
+		var t=3Dnew Date().getTime();=0A=
+		var href=3Da.href;=0A=
+        if(isIE){=0A=
+            var r =3D /href\s*=3D\s*("|')?([^\s]*)\1/gi;=0A=
+            if(r.test(a.outerHTML))=0A=
+                href =3D RegExp.$2;=0A=
+        }=0A=
+        new Image().src =3D "http://hi.baidu.com/sys/statlog/1.gif?m=3D" =
++ did + "&v=3D" + encodeURIComponent(href) + "&c=3D" + =
+encodeURIComponent(location.href) + "&t=3D"+t;=0A=
+	}=0A=
+}=0A=
+=0A=
+function tracker_init(did){=0A=
+	var _s=3Ddocument.getElementById(did);=0A=
+	var as =3D _s.getElementsByTagName('A');=0A=
+	for(var i =3D 0, j =3D as.length; i < j; i ++){=0A=
+		var a =3D as[i];=0A=
+		if(isIE){=0A=
+			a.attachEvent("onclick", tracker(did,a));=0A=
+		}else{=0A=
+			a.addEventListener("click", tracker(did,a), false);=0A=
+		}=0A=
+	}=0A=
+}=0A=
+=0A=
+=0A=
+/* some functions for cmt-reply */=0A=
+		function cmtreply(cmtName,cmtPorID)=0A=
+		{=0A=
+			window.location.hash=3D"#send";=0A=
+			var cmtForm=3Ddocument.form1;=0A=
+			cmtForm.cm.value=3D"3";=0A=
+			if(!cmtForm.spReferTarget)=0A=
+			{=0A=
+				var ipt=3Ddocument.createElement("input");=0A=
+				ipt.type=3D"hidden";=0A=
+				ipt.name=3D"spReferTarget";=0A=
+				ipt.value=3DcmtPorID;=0A=
+				cmtForm.appendChild(ipt);=0A=
+			}else cmtForm.spReferTarget.value=3DcmtPorID;=0A=
+			 =0A=
+=0A=
+			 //G("reTitle").innerHTML=3D"=BB=D8=B8=B4"+cmtName+"=A3=BA";=0A=
+			 G("cancleReLink").style.display=3D"";=0A=
+			 cmtForm.btn_ok.value=3D"=BB=D8=B8=B4=C6=C0=C2=DB";=0A=
+			 try{cmtForm.getElementsByTagName("textarea")[0].focus(); =
+cmtForm.getElementsByTagName("textarea")[0].value=3D"=BB=D8=B8=B4"+cmtNam=
+e+"=A3=BA"; }catch(e){}=0A=
+		}=0A=
+=0A=
+		function canclereply()=0A=
+		{=0A=
+			var cmtForm=3Ddocument.form1;=0A=
+			cmtForm.cm.value=3D"1";=0A=
+			try{cmtForm.removeChild(cmtForm.spReferTarget);}catch(e){}=0A=
+			try{=0A=
+					var cmt=3DcmtForm.getElementsByTagName("textarea")[0]=0A=
+					cmt.value=3D"";=0A=
+					cmt.focus();=0A=
+			}catch(e){}=0A=
+			G("cancleReLink").style.display=3D"none";=0A=
+			cmtForm.btn_ok.value=3D"=B7=A2=B1=ED=C6=C0=C2=DB";=0A=
+		}=0A=
+=0A=
+		function gotoreply()=0A=
+		{//to checking whether reply cmt =0A=
+			if( window.location.hash.indexOf("&re=3D1")<0) return;=0A=
+			var cmtID=3Dwindow.location.hash.split("&")[0].replace("#","");=0A=
+			var cmtlinks=3Ddocument.getElementsByTagName("a");=0A=
+			for(var i=3D0,n=3Dcmtlinks.length;i<n;i++)=0A=
+			{=0A=
+				if(cmtlinks[i].name=3D=3DcmtID){ var =
+rename=3Dcmtlinks[i].getAttribute("rename");  =
+repid=3Dcmtlinks[i].getAttribute("repid"); break;} =0A=
+			}=0A=
+			if(typeof(rename)!=3D"undefined"){=0A=
+				cmtreply(rename, repid);=0A=
+			}=0A=
+		}=0A=
+=0A=
+//-->=0A=
+</SCRIPT>
+
+<META content=3D"MSHTML 6.00.2900.3492" name=3DGENERATOR></HEAD>
+<BODY onload=3Dformatonlinpic();>
+<CENTER>
+<SCRIPT type=3Dtext/javascript>=0A=
+/*<![CDATA[*/=0A=
+if(top.location !=3D self.location){=0A=
+	top.location =3D self.location;=0A=
+}=0A=
+var myref =3D =
+encodeURIComponent("http://hi.baidu.com/keefo/blog/item/718ab41f46c6d6f4e=
+1fe0b32%2Ehtml");=0A=
+/*]]>*/=0A=
+</SCRIPT>
+<LINK href=3D"http://hi.baidu.com/ui/css/mods.css" type=3Dtext/css=20
+rel=3Dstylesheet><LINK=20
+href=3D"http://hi.baidu.com/keefo/css/item/f8f14e7b82e2f8f40bd18734.css" =
+
+type=3Dtext/css rel=3Dstylesheet><LINK =
+href=3D"http://hi.baidu.com/space.css"=20
+type=3Dtext/css rel=3Dstylesheet>
+<STYLE type=3Dtext/css>#usrbar {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; FONT-SIZE: 12px; BACKGROUND: =
+#ffffff; FILTER: alpha(opacity=3D65); PADDING-BOTTOM: 3px; WIDTH: 100%; =
+COLOR: #000000; LINE-HEIGHT: 19px; PADDING-TOP: 4px; FONT-FAMILY: Arial; =
+LETTER-SPACING: normal; HEIGHT: 19px; TEXT-ALIGN: right; moz-opacity: =
+0.5
+}
+#usrbar A {
+	COLOR: #0000cc; TEXT-DECORATION: underline
+}
+#usrbar A:link {
+	COLOR: #0000cc; TEXT-DECORATION: underline
+}
+#usrbar A:visited {
+	COLOR: #0000cc; TEXT-DECORATION: underline
+}
+#ft {
+	CLEAR: both; FONT-SIZE: 12px; COLOR: #666666; LINE-HEIGHT: 20px; =
+FONT-FAMILY: Arial; HEIGHT: 20px; TEXT-ALIGN: center
+}
+#ft A {
+	COLOR: #7777cc; TEXT-DECORATION: underline
+}
+#ft A:link {
+	COLOR: #7777cc; TEXT-DECORATION: underline
+}
+#ft A:visited {
+	COLOR: #7777cc; TEXT-DECORATION: underline
+}
+#usrbar {
+	LETTER-SPACING: normal
+}
+#usrbar A {
+	LETTER-SPACING: normal
+}
+#usrbar A:link {
+	LETTER-SPACING: normal
+}
+#usrbar A:visited {
+	LETTER-SPACING: normal
+}
+#ft {
+	LETTER-SPACING: normal
+}
+#ft A {
+	LETTER-SPACING: normal
+}
+#ft A:link {
+	LETTER-SPACING: normal
+}
+#ft A:visited {
+	LETTER-SPACING: normal
+}
+</STYLE>
+
+<DIV id=3Dusrbar><NOBR><A href=3D"http://www.baidu.com/" =
+target=3D_blank>=B0=D9=B6=C8=CA=D7=D2=B3</A> | <A=20
+id=3Dhi_index href=3D"http://hi.baidu.com/" =
+target=3D_blank>=B0=D9=B6=C8=BF=D5=BC=E4</A>
+<SCRIPT type=3Dtext/javascript>=0A=
+		document.write('| <a =
+href=3D"http://passport.baidu.com/?login&tpl=3Dsp&tpl_reg=3Dsp&u=3Dhttp:/=
+/hi.baidu.com' + =
+encodeURIComponent('/keefo/blog/item/718ab41f46c6d6f4e1fe0b32%2Ehtml') + =
+'">=B5=C7=C2=BC</a>');=0A=
+		</SCRIPT>
+ </NOBR></DIV>
+<DIV id=3DnewUserTip=20
+style=3D"Z-INDEX: 30000; RIGHT: 0px; FLOAT: right; WIDTH: 220px; =
+POSITION: absolute; TOP: 26px; HEIGHT: 90px; TEXT-ALIGN: right"><A=20
+id=3DnewUserTipShadow=20
+style=3D"DISPLAY: block; FONT-SIZE: 14px; Z-INDEX: 30001; RIGHT: 120px; =
+BACKGROUND: none transparent scroll repeat 0% 0%; OVERFLOW: hidden; =
+WIDTH: 55px; COLOR: #4242f9! important; POSITION: absolute; TOP: 68px; =
+HEIGHT: 14px; TEXT-DECORATION: none! important"=20
+onclick=3DnewUserRegLog()=20
+href=3D"http://passport.baidu.com/?reg&amp;tpl=3Dsp&amp;return_method=3Dg=
+et&amp;skip_ok=3D1&amp;u=3Dhttp://hi.baidu.com/sys/reg/"=20
+target=3D_blank>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A>=20
+<EMBED id=3DnewUserTipSwf style=3D"WIDTH: 220px; HEIGHT: 90px"=20
+src=3Dhttp://hi.baidu.com/ui/flash/userReg/guide.swf=20
+type=3Dapplication/x-shockwave-flash wmode=3D"transparent"=20
+allowScriptAcess=3D"always"> </DIV>
+<SCRIPT language=3Djavascript>=0A=
+	<!--=0A=
+	=0A=
+		new =
+Image().src=3D"http://hi.baidu.com/sys/statlog/1.gif?m=3Dblog_newer_pro2_=
+visit&v=3D/keefo&t=3D"+Math.random();=0A=
+	=0A=
+		function newUserTipShow(f)=0A=
+		{=0A=
+			if(f=3D=3D"0"){//close=0A=
+				G("newUserTipSwf").style.width=3D"40px";=0A=
+				G("newUserTip").style.width=3D"40px";							=0A=
+				G("newUserTipShadow").style.display=3D"none";=0A=
+			}else{//show=0A=
+				G("newUserTip").style.width=3D"220px";=0A=
+				G("newUserTipSwf").style.width=3D"220px";=0A=
+				G("newUserTipShadow").style.display=3D"block";=0A=
+=0A=
+			}=0A=
+		}=0A=
+=0A=
+		function newUserRegLog(){=0A=
+		=0A=
+			new =
+Image().src=3D"http://hi.baidu.com/sys/statlog/1.gif?m=3Dblog_newer_pro2_=
+click&v=3D/keefo&t=3D"+Math.random();=0A=
+		=0A=
+		}=0A=
+	//-->=0A=
+	</SCRIPT>
+
+<SCRIPT type=3Dtext/javascript>=0A=
+=0A=
+function set_cookie_4_bdtip(index/* start from one */, value){=0A=
+	var bdtip =3D document.cookie.match(/(^| )BDTIP=3D([^;]*)(;|$)/);=0A=
+	if(!bdtip){=0A=
+		bdtip=3Dnew Array(index);=0A=
+		for(var i=3D0,n=3Dbdtip.length;i<n;i++)=0A=
+		{=0A=
+			if(bdtip[i]=3D=3D"" || bdtip[i]=3D=3Dnull)  bdtip[i]=3D0;=0A=
+			if(i =3D=3D index - 1){=0A=
+				bdtip[i] =3D value;=0A=
+			}=0A=
+		}=0A=
+	}else{=0A=
+	bdtip =3D bdtip[2].split('-');=0A=
+	if(index > bdtip.length)  bdtip.length=3D index;=0A=
+	for(var i =3D 0, j =3D bdtip.length; i < j; i ++){=0A=
+		if(bdtip[i]=3D=3D"" || bdtip[i]=3D=3Dnull) bdtip[i]=3D0;=0A=
+		if(i =3D=3D index - 1){=0A=
+			bdtip[i] =3D value;=0A=
+		}=0A=
+	}=0A=
+	}=0A=
+	bdtip =3D bdtip.join('-');=0A=
+	document.cookie =3D "BDTIP=3D" + bdtip+ ";expires=3DWed, 28-Nov-37 =
+01:45:46 GMT;path=3D/;domain=3D.baidu.com";=0A=
+}=0A=
+</SCRIPT>
+
+<DIV id=3Dmain align=3Dleft><!--[if IE]>
+<SCRIPT>
+var objmain =3D document.getElementById("main");
+function updatesize(){ var bodyw =3D window.document.body.offsetWidth; =
+if(bodyw <=3D 790) objmain.style.width=3D"772px"; else if(bodyw >=3D =
+1016) objmain.style.width=3D"996px"; else objmain.style.width=3D"100%"; =
+}
+updatesize(); window.onresize =3D updatesize;
+</SCRIPT>
+<![endif]-->
+<DIV id=3Dheader>
+<DIV class=3Dlc>
+<DIV class=3Drc></DIV></DIV>
+<DIV class=3Dtit><A class=3Dtitlink title=3D"keefo=B5=C4=BF=D5=BC=E4 =
+http://hi.baidu.com/keefo"=20
+href=3D"http://hi.baidu.com/keefo">=CB=E3=B7=A8</A></DIV>
+<DIV =
+class=3Ddesc>=C8=E7=B9=FB=C9=D9=D7=F6=BE=CD=C4=DC=CD=EA=B3=C9=A3=AC=B6=E0=
+=D7=F6=BE=CD=CA=C7=CD=BD=C0=CD...=C8=E7=CE=DE=B1=D8=D2=AA=A3=AC=CE=F0=D4=F6=
+=CA=B5=CC=E5 - William of Qccam 1324</DIV>
+<DIV id=3Dtabline></DIV>
+<DIV id=3Dtab><A href=3D"http://hi.baidu.com/keefo">=D6=F7=D2=B3</A><A =
+class=3Don=20
+href=3D"http://hi.baidu.com/keefo/blog">=B2=A9=BF=CD</A><A=20
+href=3D"http://hi.baidu.com/keefo/album">=CF=E0=B2=E1</A><SPAN>|</SPAN><A=
+=20
+href=3D"http://hi.baidu.com/keefo/profile">=B8=F6=C8=CB=B5=B5=B0=B8</A> =
+<SPAN>|</SPAN><A=20
+href=3D"http://hi.baidu.com/keefo/friends">=BA=C3=D3=D1</A> </DIV></DIV>
+<DIV class=3Dstage>
+<DIV class=3Dstagepad>
+<DIV style=3D"WIDTH: 100%">
+<TABLE class=3Dmodth cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD class=3Dmodtl width=3D7>&nbsp;</TD>
+    <TD class=3Dmodtc noWrap>
+      <DIV class=3Dmodhead><SPAN =
+class=3Dmodtit>=B2=E9=BF=B4=CE=C4=D5=C2</SPAN></DIV></TD>
+    <TD class=3Dmodtc noWrap align=3Dright></TD>
+    <TD class=3Dmodtr width=3D7>&nbsp;</TD></TR></TBODY></TABLE>
+<DIV class=3Dmodbox id=3Dm_blog>
+<DIV class=3Dtit>=BE=DB=C0=E0=CB=E3=B7=A8=D6=B8=C4=CF</DIV>
+<DIV class=3Ddate>2007-06-14 18:37</DIV>
+<TABLE style=3D"TABLE-LAYOUT: fixed">
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class=3Dcnt id=3Dblog_text>
+      =
+<P><STRONG>=BC=F2=BD=E9</STRONG>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>K-means</STRONG>&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>=C4=A3=BA=FDC-means</STRONG>&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>=B2=E3=B4=CE=BE=DB=C0=E0</STRONG>&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<STRONG>=C4=A3=BA=FD=B8=DF=CB=B9=BE=DB=C0=E0=
+</STRONG></P>
+      <P align=3Dcenter><STRONG><FONT =
+size=3D5>=BE=DB=C0=E0=BC=F2=BD=E9</FONT></STRONG></P>
+      <P><STRONG><EM><FONT =
+size=3D3>=CA=B2=C3=B4=CA=C7=BE=DB=C0=E0?</FONT></EM></STRONG> </P>
+      <P><FONT=20
+      =
+size=3D2>=BE=DB=C0=E0=B1=BB=C8=CF=CE=AA=CA=C7=D7=EE=D6=D8=D2=AA=B5=C4=CE=DE=
+=BC=E0=B6=BD=D1=A7=CF=B0=CE=CA=CC=E2=A1=A3=CB=F9=D2=D4,=D5=FD=C8=E7=C6=E4=
+=CB=FB=D2=BB=C7=D0=D5=E2=C0=E0=CE=CA=CC=E2=D2=BB=D1=F9,=B4=A6=C0=ED=B9=FD=
+=B3=CC=CA=D7=CF=C8=D2=AA=D4=DA=CE=DE=B1=EA=BC=C7=CA=FD=BE=DD=D6=D0=D1=B0=D5=
+=D2=CF=E0=D3=A6=B5=C4=BD=E1=B9=B9.</FONT></P>
+      <P><FONT =
+size=3D2>=BE=DB=C0=E0=D2=BB=B8=F6=B4=D6=C2=D4=B5=C4=B6=A8=D2=E5=BF=C9=D2=D4=
+=A1=B0=B0=D1=CF=E0=CB=C6=B5=C4=CE=EF=CC=E5=D7=E9=D6=AF=B5=BD=D2=BB=C6=F0=B5=
+=C4=B9=FD=B3=CC=A1=B1=A1=A3=20
+      =
+=D2=F2=B4=CB=B4=D8=C4=DA=B6=D4=CF=F3=CF=E0=CB=C6=B6=C8=B4=F3=A3=AC=B4=D8=BC=
+=E4=B6=D4=CF=F3=CF=E0=CB=C6=B6=C8=D0=A1=A1=A3=C8=E7=CF=C2=CD=BC=CB=F9=CA=BE=
+=D2=BB=B8=F6=BC=F2=B5=A5=BE=DB=C0=E0=B9=FD=B3=CC=A3=BA</FONT><BR><SPAN=20
+      style=3D"FONT-SIZE: 10.5pt"></SPAN></P>
+      <DIV forimg=3D"1"><IMG class=3Dblogimg=20
+      =
+src=3D"http://hiphotos.baidu.com/keefo/pic/item/aa2e64a4db8176f09152ee6b.=
+jpg"=20
+      border=3D0 small=3D"0"></DIV>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      size=3D2>=C0=FD=C8=E7<SPAN>:=20
+      =
+</SPAN>=D4=DA=C9=CF=CD=BC=C7=E9=BF=F6=CF=C2=CE=D2=C3=C7=BF=C9=D2=D4=BA=DC=
+=C8=DD=D2=D7=D5=D2=B3=F6<SPAN>4</SPAN>=B8=F6=B4=D8<SPAN>,</SPAN>=B2=A2=B0=
+=D1=CB=FB=C3=C7=B5=C4=CA=FD=BE=DD=B7=D6=BF=AA<SPAN>;</SPAN>=B8=F9=BE=DD=CF=
+=E0=CB=C6=B2=E2=B6=C8=B5=C4=BE=E0=C0=EB=A3=AC=C8=E7=B9=FB=C1=BD=B8=F6=BB=F2=
+=B6=E0=B8=F6=B6=D4=CF=F3=BC=E4=BE=E0=C0=EB=BD=CF=CE=AA=BD=FC=C4=C7=C3=B4=CB=
+=FB=C3=C7=CA=F4=D3=DA=D2=BB=B8=F6=B4=D8=A3=A8=D4=DA=C9=CF=CD=BC=C7=E9=BF=F6=
+=D6=D0=BE=E0=C0=EB=D7=BC=D4=F2=CE=AA=A1=B0=BC=B8=BA=CE=BE=E0=C0=EB=A1=B1=A3=
+=A9<SPAN>.=20
+      =
+</SPAN>=D5=E2=BE=CD=CA=C7=CB=F9=CE=BD=B5=C4=BB=F9=D3=DA=BE=E0=C0=EB=B5=C4=
+=BE=DB=C0=E0=A1=A3=C1=ED=D2=BB=D6=D6=CA=C7=B8=C5=C4=EE=BE=DB=C0=E0=A3=BA=D2=
+=BB=B8=F6=B8=C5=C4=EE=CB=F9=B6=A8=D2=E5=B5=C4=C1=BD=B8=F6=BB=F2=C1=BD=B8=F6=
+=D2=D4=C9=CF=CE=EF=CC=E5=B6=BC=CA=F4=D3=DA=CD=AC=D2=BB=B4=D8=A1=A3=BB=BB=D1=
+=D4=D6=AE<SPAN>,</SPAN>=B6=D4=CF=F3=B5=C4=BE=DB=B4=D8=D2=C0=BE=DD<SPAN>,<=
+/SPAN>=CA=C7=B8=F9=BE=DD=CB=FC=C3=C7=CB=F9=B7=FB=BA=CF=B5=C4=B6=A8=D2=E5=C0=
+=B4=BC=C6=CB=E3=CF=E0=CB=C6=B6=C8=B5=C4=A3=AC=B6=F8=B2=BB=CA=C7=B0=B4=D5=D5=
+=BC=F2=B5=A5=B5=C4=BC=C6=CB=E3=B2=E2=C1=BF=A1=A3</FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      size=3D2></FONT></SPAN></P><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT =
+size=3D2>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: =
+left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><STRONG><EM>=BE=DB=C0=E0=C4=BF=B1=EA<SPAN></SPAN></EM></STRONG></SP=
+AN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=BE=DB=C0=E0=B5=C4=C4=BF=B1=EA=CA=C7=D2=AA=CA=B9=CE=B4=B1=EA=BC=C7=
+=CA=FD=BE=DD=B0=B4=CA=FD=BE=DD=C4=DA=D4=DA=B9=CC=D3=D0=CA=F4=D0=D4=B7=D6=D7=
+=E9=CE=AA=B1=EA=BC=C7=CA=FD=BE=DD=A1=A3=B5=AB=C8=E7=BA=CE=C8=B7=B6=A8=D2=BB=
+=B8=F6=BE=DB=C0=E0=CA=C7=B7=F1=CA=C7=D3=D0=D0=A7=B5=C4=C4=D8<SPAN>?</SPAN=
+>=CA=B5=BC=F9=D6=A4=C3=F7=B2=A2=C3=BB=D3=D0=BE=F8=B6=D4=B5=C4=A1=B0=D7=EE=
+=BA=C3=A1=B1=B5=C4=B1=EA=D7=BC=A3=AC=BE=DB=C0=E0=BD=E1=B9=FB=B5=C4=BA=C3=BB=
+=B5=D6=BB=C8=A1=BE=F6=D3=EB=CF=A3=CD=FB=B5=C4=BE=DB=C0=E0=C4=BF=B1=EA=A1=A3=
+=20
+      =
+=D2=F2=B4=CB=A3=AC=CA=B9=D3=C3=BE=DB=C0=E0=B5=C4=D3=C3=BB=A7=B1=D8=D0=EB=B9=
+=A9=B8=F8=CB=FC=D5=E2=B8=F6=B1=EA=D7=BC=A3=AC=D5=E2=D1=F9=D7=F6=B2=C5=BF=C9=
+=C4=DC=CA=B9=B5=C3=BE=DB=C0=E0=B5=C4=BD=E1=B9=FB=B8=FC=BC=D3=C2=FA=D7=E3=CB=
+=FB=C3=C7=B5=C4=D0=E8=C7=F3=A1=A3=B1=C8=C8=E7=A3=AC=CE=D2=C3=C7=CF=A3=CD=FB=
+=D5=D2=B5=BD=BE=DF=D3=D0=C4=B3=D6=D6=B9=B2=CD=AC=CC=D8=D0=D4=B5=C4=BC=AF=BA=
+=CF=A3=AC=D1=B0=D5=D2"<SPAN>natural=20
+      =
+clusters</SPAN>=A1=B1<SPAN>,</SPAN>=B2=A2=C3=E8=CA=F6=CB=FC=C3=C7=B5=C4=CE=
+=B4=D6=AA=CC=D8=D0=D4<SPAN>(</SPAN>"<SPAN>natural</SPAN>"=20
+      =CA=FD=BE=DD=C0=E0=D0=CD<SPAN>) , =
+</SPAN>=D3=C3=D2=D4=D5=D2=B5=BD=D3=D0=D3=C3=B5=C4=BB=F2=D5=DF=D7=EE=BA=CF=
+=CA=CA=B5=C4=CA=FD=BE=DD=BC=AF=BA=CF=A3=A8<SPAN>"useful" =
+</SPAN>=CA=FD=BE=DD=C0=E0<SPAN>)=20
+      =
+,</SPAN>=BB=F2=D4=DA=D5=D2=B5=BD=D2=BB=D0=A9=C0=FB=C8=BA=CA=FD=BE=DD=A1=A3=
+</FONT> <SPAN></SPAN></SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: =
+left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><EM><STRONG>=BE=DB=C0=E0=CB=E3=B7=A8=B5=C4=BF=C9=C4=DC=D3=A6=D3=C3=C1=
+=EC=D3=F2</STRONG></EM></SPAN></P><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%">
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=BE=DB=C0=E0=CB=E3=B7=A8=BF=C9=D2=D4=D3=A6=D3=C3=D3=DA=D0=ED=B6=E0=
+=C1=EC=D3=F2<SPAN>,</SPAN>=C0=FD=C8=E7=A3=BA<SPAN></SPAN></FONT></SPAN></=
+P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=C9=CC=D2=B5=D3=AA=CF=FA=A3=BA=CD=A8=B9=FD=B4=F3=C1=BF=B5=C4=B9=CB=
+=BF=CD=CF=FB=B7=D1=D0=D0=CE=AA=C4=A3=CA=BD=A1=A2=B9=CB=BF=CD=B1=B3=BE=B0=A1=
+=A2=B9=BA=CE=EF=BC=C7=C2=BC=B5=C4=CA=FD=BE=DD=A3=AC=D1=B0=D5=D2=C7=B1=D4=DA=
+=BF=CD=BB=A7=C8=BA=CC=E5=CD=C5=A3=BB<SPAN></SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=C9=FA=CE=EF=D1=A7<SPAN>:</SPAN>=B8=F9=BE=DD=D6=B2=CE=EF=BA=CD=B6=
+=AF=CE=EF=B5=C4=B8=F7=D7=D4=CC=D8=B5=E3=B6=D4=CB=FB=C3=C7=BD=F8=D0=D0=B7=D6=
+=C0=E0<SPAN>;=20
+      </SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=CD=BC=CA=E9=B9=DD<SPAN>:</SPAN>=CD=BC=CA=E9=B6=A9=BB=F5<SPAN>;<=
+/SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      size=3D2>=B1=A3=CF=D5<SPAN>: =
+</SPAN>=D5=D2=B3=F6=C6=FB=B3=B5=B1=A3=CF=D5=BF=CD=BB=A7=C8=BA=D6=D0=B8=DF=
+=CB=F7=C5=E2=B5=C4=C6=BD=BE=F9=B3=C9=B1=BE=A3=BB=B2=E9=D5=D2=D5=A9=C6=AD=D0=
+=D0=CE=AA<SPAN>;=20
+      </SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      size=3D2>=B3=C7=CA=D0=B9=E6=BB=AE<SPAN>: =
+</SPAN>=B8=F9=BE=DD=B7=BF=D7=D3=B5=C4=C0=E0=D0=CD<SPAN>,</SPAN>=BC=DB=D6=B5=
+=BA=CD=B5=D8=C0=ED=CE=BB=D6=C3=A3=AC=B7=D6=D7=E9=B7=BF=CE=DD<SPAN>;=20
+      </SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      size=3D2>=B5=D8=D5=F0=D1=D0=BE=BF<SPAN>: =
+</SPAN>=BE=DB=C0=E0=B9=DB=B2=E2=B5=D8=D5=F0=B5=C4=D5=F0=D6=D0=CE=BB=D6=C3=
+<SPAN>,</SPAN>=D2=D4=C8=B7=B6=A8=CE=A3=CF=D5=C7=F8<SPAN>;=20
+      </SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=CD=F2=CE=AC=CD=F8<SPAN>:</SPAN>=CE=C4=BC=FE=B7=D6=C0=E0<SPAN>; =
+
+      =
+</SPAN>=BE=DB=C0=E0=B7=D6=CE=F6=B2=A9=BF=CD=CA=FD=BE=DD=D2=D4=B7=A2=CF=D6=
+=B8=F7=D7=E9=C0=E0=CB=C6=B5=C4=B7=C3=CE=CA=C4=A3=CA=BD</FONT><SPAN><FONT =
+size=3D2>.</FONT>=20
+      </SPAN></SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: =
+left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><EM><STRONG>=D6=F7=D2=AA=D2=AA=C7=F3<SPAN></SPAN></STRONG></EM></SP=
+AN></P><SPAN>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=BC=B4=BE=DB=C0=E0=CB=E3=B7=A8=D3=A6=C2=FA=D7=E3=C8=E7=CF=C2=D2=AA=
+=C7=F3<SPAN>:</SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><SPAN><FONT=20
+      size=3D2><FONT face=3D=CB=CE=CC=E5>* =BF=C9=B2=E2=C1=BF=D0=D4; =
+<BR>&nbsp;&nbsp;&nbsp;&nbsp; * =
+=B4=A6=C0=ED=B2=BB=CD=AC=C0=E0=D0=CD=B5=C4=CA=F4=D0=D4;=20
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; * =
+=BE=DB=C0=E0=C8=CE=D2=E2=D0=CE=D7=B4=B5=C4=B4=D8; =
+<BR>&nbsp;&nbsp;&nbsp;&nbsp; *=20
+      =
+=B6=D4=D7=A8=D2=B5=C1=EC=D3=F2=D6=AA=CA=B6=B5=C4=D0=E8=C7=F3=B5=CD,=D2=D4=
+=C8=B7=B6=A8=CA=E4=C8=EB=B2=CE=CA=FD; <BR>&nbsp;&nbsp;&nbsp;&nbsp; * =
+=D3=D0=C4=DC=C1=A6=B4=A6=C0=ED=D4=EB=C9=F9=CA=FD=BE=DD=BA=CD=C0=EB=C8=BA=B5=
+=E3=CA=FD=BE=DD;=20
+      <BR>&nbsp;&nbsp;&nbsp;&nbsp; * =
+=CA=FD=BE=DD=CA=E4=C8=EB=CB=B3=D0=F2=B5=C4=B5=CD=C3=F4=B8=D0=D0=D4=A3=BB<=
+BR>&nbsp;&nbsp;&nbsp;&nbsp; *=20
+      =B8=DF=CE=AC=B4=A6=C0=ED=C4=DC=C1=A6; <BR>&nbsp;&nbsp;&nbsp;&nbsp; =
+* =BF=C9=BD=E2=CA=CD=D0=D4=BA=CD=BF=C9=D3=C3=D0=D4.</FONT>=20
+      </FONT></SPAN></SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: =
+left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><EM><STRONG>=CE=CA=CC=E2<SPAN></SPAN></STRONG></EM></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      face=3D=CB=CE=CC=E5><FONT =
+size=3D2>=BE=DB=C0=E0=C9=E6=BC=B0=B5=C4=D2=BB=D0=A9=CE=CA=CC=E2=A3=AC=20
+=C6=E4=D6=D0=B0=FC=C0=A8<SPAN>:</SPAN></FONT></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      face=3D=CB=CE=CC=E5><FONT face=3DArial size=3D3><SPAN><FONT =
+face=3D=CB=CE=CC=E5 size=3D2>*=20
+      =
+=CF=D6=D3=D0=BE=DB=C0=E0=BC=BC=CA=F5=B2=A2=B2=BB=C4=DC=C2=FA=D7=E3=B5=B1=C7=
+=B0=CB=F9=D3=D0=B5=C4=D2=AA=C7=F3=A3=BB <BR>&nbsp;&nbsp;&nbsp;&nbsp; *=20
+      =
+=D3=C9=D3=DA=CB=E3=B7=A8=CA=B1=BC=E4=B8=B4=D4=D3=B6=C8=B5=C4=D4=B5=B9=CA=A3=
+=AC=B4=A6=C0=ED=B8=DF=CE=B3=B6=C8=BA=CD=BA=A3=C1=BF=CA=FD=BE=DD=CF=EE=B5=C4=
+=CE=CA=CC=E2=A3=BB<BR>&nbsp;&nbsp;&nbsp;&nbsp; *=20
+      =
+=BE=DB=C0=E0=CB=E3=B7=A8=B5=C4=D0=A7=C2=CA=C8=A1=BE=F6=D3=DA=A1=B0=BE=E0=C0=
+=EB=A1=B1=B5=C4=B6=A8=D2=E5=A3=A8=BB=F9=D3=DA=BE=E0=C0=EB=B5=C4=BE=DB=C0=E0=
+=A3=A9; <BR>&nbsp;&nbsp;&nbsp;&nbsp; *=20
+      =
+=C8=E7=B9=FB=D2=BB=B8=F6=C3=F7=CF=D4=B5=C4=BE=E0=C0=EB=B2=A2=B2=BB=B4=E6=D4=
+=DA,=CE=D2=C3=C7=B1=D8=D0=EB=CE=AA=C6=E4=D7=F6=CF=E0=D3=A6=B5=C4=A1=B0=B6=
+=A8=D2=E5=A1=B1=A3=AC=B6=F8=D4=DA=B6=E0=CE=AC=BF=D5=BC=E4=D6=D0=BE=E0=C0=EB=
+=B5=C4=B6=A8=D2=E5=CA=C7=BA=DC=C0=A7=C4=D1=B5=C4=A3=BB<BR>&nbsp;&nbsp;&nb=
+sp;&nbsp;=20
+      * =
+=BD=E1=B9=FB=B5=C4=BE=DB=C0=E0=CB=E3=B7=A8=A3=AC=BF=C9=D2=D4=D3=D0=B2=BB=CD=
+=AC=B5=C4=BD=E2=CA=CD=A1=A3</FONT><BR></SPAN></FONT></FONT></SPAN><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><SPAN><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><SPAN></SPAN></SPAN></SPAN></SPAN><SPAN>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: =
+left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><STRONG><EM>=BE=DB=C0=E0=CB=E3=B7=A8</EM></STRONG></SPAN></P><SPAN =
+
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%">
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=BE=DB=C0=E0=CB=E3=B7=A8=B7=D6=C0=E0=A3=BA</FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT =
+face=3D=CB=CE=CC=E5=20
+      size=3D2>* =C5=C5=B3=FD=BE=DB=C0=E0<BR>&nbsp;&nbsp;&nbsp;&nbsp; *=20
+      =D6=D8=B5=FE=BE=DB=C0=E0<BR>&nbsp;&nbsp;&nbsp;&nbsp; * =
+=B2=E3=B4=CE=BE=DB=C0=E0<BR>&nbsp;&nbsp;&nbsp;&nbsp; *=20
+      =B8=C5=C2=CA=BE=DB=C0=E0</FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"></SPAN><SPAN><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=B6=D4=D3=DA=B5=DA=D2=BB=D6=D6=C7=E9=BF=F6<SPAN>,</SPAN>=C5=C5=B3=
+=FD=BE=DB=C0=E0=A1=A3=D2=BB=B8=F6=CA=FD=BE=DD=CA=F4=D3=DA=C7=D2=BD=F6=CA=F4=
+=D3=DA=D2=BB=B8=F6=B4=D8=A1=A3=C8=E7=CF=C2=CD=BC=CB=F9=CA=BE=B5=C4=D2=BB=B8=
+=F6=BC=F2=B5=A5=C0=FD=D7=D3=A3=BA=D4=DA=B6=FE=CE=AC=BF=D5=BC=E4=D6=D0=B5=C4=
+=B5=E3=B1=BB=D2=BB=CC=F5=D6=B1=CF=DF=CB=F9=B7=D6=BF=AA=A1=A3</FONT></SPAN=
+></SPAN></P><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><SPAN>
+      <P align=3Dcenter forimg=3D"1"><FONT size=3D2><IMG class=3Dblogimg =
+
+      =
+src=3D"http://hiphotos.baidu.com/keefo/pic/item/2e8b32099cf7d3a82fddd44a.=
+jpg"=20
+      border=3D0 small=3D"0"></FONT></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=D3=EB=B5=DA=D2=BB=D6=D6=BE=DB=C0=E0=CF=E0=B7=B4=A3=AC=D6=D8=B5=FE=
+=BE=DB=C0=E0=A1=A3=CB=FC=CA=B9=D3=C3=C4=A3=BA=FD=B4=D8=BC=AF=A3=AC=CD=AC=D2=
+=BB=B8=F6=B5=E3=BF=C9=C4=DC=CD=AC=CA=B1=CA=FD=BE=DD=C1=BD=B8=F6=BB=F2=B6=E0=
+=B8=F6=B2=BB=CD=AC=B5=C4=B4=D8=A3=AC=B2=A2=B8=B3=D3=E8=B2=BB=CD=AC=B5=C4=B3=
+=C9=D4=B1=B1=EA=BC=C7=A1=A3<SPAN></SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=B2=E3=B4=CE=BE=DB=C0=E0=CB=E3=B7=A8=B5=C4=CB=BC=CF=EB=CA=C7=BA=CF=
+=B2=A2=D7=EE=CF=E0=CB=C6=B5=C4=C1=BD=B8=F6=B4=D8=A1=A3=B3=F5=CA=BC=CC=F5=BC=
+=FE=BF=C9=D2=D4=B0=D1=C3=BF=B8=F6=CA=FD=BE=DD=BF=B4=D7=F7=D2=BB=B8=F6=B5=A5=
+=B6=C0=B5=C4=B4=D8=A3=AC=D4=DA=CA=FD=B4=CA=B5=FC=B4=FA=BC=C6=CB=E3=BA=F3=BE=
+=CD=BF=C9=D2=D4=B5=C3=B5=BD=CF=A3=CD=FB=B5=C4=BE=DB=C0=E0=B4=D8=BC=AF=A1=A3=
+<SPAN></SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=D7=EE=BA=F3=D2=BB=D6=D6=BE=DB=C0=E0=CB=E3=B7=A8=CA=B9=D3=C3<SPA=
+N>Bayes</SPAN>=C8=AB=B8=C5=C2=CA=B7=BD=B7=A8=BD=F8=D0=D0=BE=DB=C0=E0=BC=C6=
+=CB=E3=A1=A3<SPAN></SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 24pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=D4=DA=B1=BE=BD=CC=B3=CC=D6=D0<SPAN>,</SPAN>=CE=D2=C3=C7=BD=E9=C9=
+=DC=CB=C4=B8=F6=D7=EE=B3=A3=D3=C3=B5=C4=BE=DB=C0=E0=CB=E3=B7=A8<SPAN>:</S=
+PAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt 45pt; TEXT-INDENT: -21pt; =
+LINE-HEIGHT: 150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><SPAN><FONT=20
+      size=3D2>* K-means</FONT></SPAN></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt 45pt; TEXT-INDENT: -21pt; =
+LINE-HEIGHT: 150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><SPAN><FONT=20
+      size=3D2>* =C4=A3=BA=FDC-means</FONT></SPAN></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt 45pt; TEXT-INDENT: -21pt; =
+LINE-HEIGHT: 150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><SPAN><FONT=20
+      size=3D2>* =B2=E3=B4=CE=BE=DB=C0=E0</FONT></SPAN></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt 45pt; TEXT-INDENT: -21pt; =
+LINE-HEIGHT: 150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><SPAN><FONT=20
+      size=3D2>* =
+=B8=DF=CB=B9=C4=A3=BA=FD=BE=DB=C0=E0</FONT></SPAN></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt 45pt; TEXT-INDENT: -21pt; =
+LINE-HEIGHT: 150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      size=3D2><SPAN></SPAN></FONT></SPAN></P><FONT size=3D2>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft><FONT size=3D2><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=CB=FB=C3=C7=D6=D0=C3=BF=B8=F6=B6=BC=CA=F4=D3=DA=C9=CF=CE=C4=CB=F9=
+=C1=D0=B5=C4=D2=BB=D6=D6=BE=DB=C0=E0=C0=E0=D0=CD=A1=A3=D2=F2=B4=CB<SPAN>,=
+=20
+      =
+K-means</SPAN>=B5=C4=CA=C7=D2=BB=B8=F6=C5=C5=B3=FD=BE=DB=C0=E0=CB=E3=B7=A8=
+=A3=AC=C4=A3=BA=FD<SPAN>C-means</SPAN>=CA=C7=D2=BB=B8=F6=D6=D8=B5=FE=BE=DB=
+=C0=E0=CB=E3=B7=A8<SPAN>,=20
+      =
+</SPAN>=B2=E3=B4=CE=BE=DB=C0=E0=CF=D4=B6=F8=D2=D7=BC=FB=A3=AC=B8=DF=CB=B9=
+=C4=A3=BA=FD=CA=C7=D2=BB=B8=F6=B8=C5=C2=CA=BE=DB=C0=E0=CB=E3=B7=A8=A1=A3=CE=
+=D2=C3=C7=BD=AB=CF=C2=D2=BB=B2=BF=B7=D6=CC=D6=C2=DB=C3=BF=D2=BB=B8=F6=BE=DB=
+=C0=E0=CB=E3=B7=A8=A1=A3</FONT> </SPAN><SPAN=20
+      style=3D"FONT-SIZE: 10pt; COLOR: black; LINE-HEIGHT: =
+150%"></SPAN></FONT></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: =
+left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><EM><STRONG>=BE=E0=C0=EB=B6=C8=C1=BF<SPAN></SPAN></STRONG></EM></SP=
+AN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=BE=E0=C0=EB=B6=C8=C1=BF=CA=C7=BE=DB=C0=E0=CB=E3=B7=A8=B5=C4=D2=BB=
+=B8=F6=D6=D8=D2=AA=D7=E9=B3=C9=B2=BF=B7=D6=A3=AC=CB=FC=B6=D4=CA=FD=BE=DD=B5=
+=E3=D6=AE=BC=E4=BD=F8=D0=D0=BE=E0=C0=EB=B2=E2=B6=C8=A1=A3=C8=E7=B9=FB=CA=FD=
+=BE=DD=B3=C9=B7=D6=BE=DF=D3=D0=CF=E0=CD=AC=B5=C4=CE=EF=C0=ED=B5=A5=CE=BB<=
+SPAN>,</SPAN>=D4=F2=CA=B9=D3=C3=C5=B7=BC=B8=C0=EF=B5=C2=BE=E0=C0=EB=BE=CD=
+=BF=C9=D2=D4=BC=F2=B5=A5=B5=C4=BC=C6=CB=E3=B3=F6=CA=FD=BE=DD=CF=E0=CB=C6=B6=
+=C8=A1=A3=C8=BB=B6=F8<SPAN>,</SPAN>=BC=B4=CA=B9=D4=DA=D5=E2=D6=D6=C7=E9=BF=
+=F6=CF=C2=C5=B7=BC=B8=C0=EF=B5=C2=BE=E0=C0=EB=D3=D0=CA=B1=D2=B2=BB=E1=B3=A4=
+=C9=FA=CE=F3=B5=BC<SPAN>.=20
+      =
+</SPAN>=CF=C2=CD=BC=CB=B5=C3=F7=D5=E2=B8=F6=CE=CA=CC=E2=A3=BA<SPAN></SPAN=
+></FONT></SPAN></P>
+      <P align=3Dcenter forimg=3D"1"><IMG class=3Dblogimg=20
+      style=3D"WIDTH: 559px; HEIGHT: 269px" height=3D268=20
+      =
+src=3D"http://hiphotos.baidu.com/keefo/pic/item/a274fd12e334bcc9c2fd7850.=
+jpg"=20
+      width=3D609 border=3D0 small=3D"0"></P>
+      <P align=3Dleft forimg=3D"1"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      size=3D2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=CD=BC=CF=F1=D6=D0=CA=B9=D3=C3=BF=ED=B6=C8=BA=CD=B8=DF=B6=C8=B5=C4=B2=E2=C1=
+=BF=B6=D4=CF=F3=A3=AC=BE=A1=B9=DC=C1=BD=D6=D6=B2=E2=C1=BF=BE=F9=B2=C9=C8=A1=
+=CF=E0=CD=AC=B5=C4=CE=EF=C0=ED=B5=A5=CE=BB=A3=AC=B5=AB=CA=C7=CA=B5=BC=CA=C9=
+=CF=D2=BB=B8=F6=C3=F7=D6=C7=B5=C4=BE=F6=B6=A8=CA=C7=A3=AC=C1=BD=D5=DF=B6=BC=
+=B1=D8=D0=EB=D2=D4=CF=E0=B6=D4=B3=DF=B6=C8=A1=A3=C8=E7=C9=CF=CD=BC=CB=F9=CA=
+=BE=A3=AC=B2=BB=CD=AC=B5=C4=B3=DF=B6=C8=A3=AC=BF=C9=B5=BC=D6=C2=B2=BB=CD=AC=
+=BE=DB=C0=E0=D0=A7=B9=FB=A1=A3=D7=A2=D2=E2=A3=AC=D5=E2=B2=BB=BD=F6=CA=C7=D2=
+=BB=B8=F6=CD=BC=D0=CE=B5=C4=CE=CA=CC=E2=A1=A3=CE=CA=CC=E2=B4=D3=C0=FB=D3=C3=
+=CA=FD=D1=A7=B9=AB=CA=BD=BC=C6=CB=E3=B5=A5=D2=BB=CA=FD=BE=DD=CC=D8=D5=F7=CF=
+=F2=C1=BF=A3=AC=C9=CF=C9=FD=CE=AA=B0=D1=CC=D8=CA=E2=BE=E0=C0=EB=BC=C6=CB=E3=
+=D3=C3=D3=DA=BE=DB=C0=E0=CB=E3=B7=A8=D6=D0=A3=BA=D5=E2=B5=BC=D6=C2=B2=BB=CD=
+=AC=B5=C4=B9=AB=CA=BD=B5=C3=B5=BD=B2=BB=CD=AC=B5=C4=BE=DB=C0=E0=BD=E1=B9=FB=
+=A1=A3=D5=FD=D2=F2=C8=E7=B4=CB=A3=AC=B6=D4=D3=DA=B2=BB=CD=AC=B5=C4=BE=DB=C0=
+=E0=D3=A6=D3=C3=A3=AC=CA=CA=B5=B1=B5=C4=CF=C8=D1=E9=D6=AA=CA=B6=B1=D8=D0=EB=
+=D7=F7=CE=AA=D6=C6=B6=A8=BE=E0=C0=EB=B2=E2=B6=C8=B9=AB=B6=D4=B5=C4=D7=BC=D4=
+=F2=A1=A3</FONT></SPAN></P><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      size=3D2><SPAN>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: =
+left"=20
+      align=3Dleft><EM><STRONG><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%">Minkowski=20
+      </SPAN><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%">=B6=C8=C1=BF<SPAN></SPAN></SPAN></STRONG></EM></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=B6=D4=D3=DA=B8=DF=CE=AC=CA=FD=BE=DD<SPAN>,</SPAN>=C1=F7=D0=D0=B5=
+=C4=BC=C6=CB=E3=B7=BD=B7=A8=CA=C7=CA=B9=D3=C3<SPAN>Minkowski</SPAN>=B6=C8=
+=C1=BF=A3=BA</FONT></SPAN></P><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><SPAN>
+      <P align=3Dcenter forimg=3D"1"><IMG class=3Dblogimg=20
+      =
+src=3D"http://hiphotos.baidu.com/keefo/pic/item/343c88bf604fff0d18d81f5e.=
+jpg"=20
+      border=3D0 small=3D"0"></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=C6=E4=D6=D0<SPAN>d</SPAN>=CA=C7=CA=FD=BE=DD=B5=C4=CE=AC=B6=C8=A1=
+=A3=D4=DA<SPAN>p=3D2</SPAN>=CA=B1=D5=E2=B8=F6=CC=D8=CA=E2=C7=E9=BF=F6=CF=C2=
+=BE=CD=BF=C9=D2=D4=CA=B9=D3=C3=C5=B7=BC=B8=C0=EF=B5=C2=BE=E0=C0=EB=B9=AB=CA=
+=BD=BC=C6=CB=E3=A3=AC=D4=DA<SPAN>Manhattan</SPAN>=B6=C8=C1=BF<SPAN>P</SPA=
+N>=D6=B5=CE=AA<SPAN>1</SPAN>=A1=A3=B2=BB=B9=FD=A3=AC=C4=BF=C7=B0=C3=BB=D3=
+=D0=CD=A8=D3=C3=C0=ED=C2=DB=D6=B8=B5=BC=B6=E0=CE=AC=BE=E0=C0=EB=BC=C6=CB=E3=
+=B5=C4=B9=AB=CA=BD=A1=A3<SPAN></SPAN></FONT></SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=D4=DA=B6=E0=CA=FD=C7=E9=BF=F6=CF=C2=A3=AC=CA=FD=BE=DD=B5=C4=CC=D8=
+=D5=F7=CF=F2=C1=BF=CE=DE=B7=A8=D6=B1=BD=D3=B1=C8=BD=CF=A1=A3=D5=E2=D0=A9=CC=
+=D8=D5=F7=B2=BB=C1=AC=D0=F8=B1=E4=C1=BF=A3=AC=C8=E7=B3=A4=B6=C8=A3=AC=B5=AB=
+=C3=FB=B4=CE=B7=D6=C0=E0=B3=FD=CD=E2=A3=AC=C8=E7=B4=D3=D6=DC=C8=D5=B5=BD=D6=
+=DC=D2=BB=A1=A3=D4=DA=D5=E2=D0=A9=B6=E0=B4=CE=CC=E1=B5=BD=B5=C4=C0=FD=D7=D3=
+=D6=D0=A3=AC=B2=BB=CD=AC=C1=EC=D3=F2=B5=C4=CF=C8=D1=E9=D6=AA=CA=B6=B1=D8=D0=
+=EB=C7=A1=B5=B1=B5=C4=CA=B9=D3=C3=A1=A3</FONT>=20
+      </SPAN></P>
+      <P=20
+      style=3D"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.6pt; LINE-HEIGHT: =
+150%; TEXT-ALIGN: left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"></SPAN><STRONG><SPAN=20
+      style=3D"FONT-SIZE: 15pt; COLOR: black; LINE-HEIGHT: =
+150%"></SPAN></STRONG></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: =
+center"=20
+      align=3Dcenter><STRONG><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%">K-means =
+
+      </SPAN></STRONG><STRONG><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%">=BE=DB=C0=E0=CB=E3=B7=A8</SPAN></STRONG></P><SPAN>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: =
+left"=20
+      align=3Dleft><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: =
+150%"><EM><STRONG>=BD=E9=C9=DC<SPAN></SPAN></STRONG></EM></SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      size=3D2>K-means(</FONT><A=20
+      =
+href=3D"file:///C:/Documents%20and%20Settings/Administrator/Local%20Setti=
+ngs/Temp/CyberArticle/174.html#macqueen#macqueen"><SPAN=20
+      style=3D"COLOR: black; TEXT-DECORATION: none"><FONT =
+size=3D2>MacQueen,=20
+      1967</FONT></SPAN></A><FONT size=3D2>)</FONT></SPAN><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=CA=C7=D2=BB=D6=D6=BC=F2=B5=A5=B5=C4=CE=DE=BC=E0=B6=BD=D1=A7=CF=B0=
+=CB=E3=B7=A8=A3=AC=D3=C3=D2=D4=BD=E2=BE=F6=BE=DB=C0=E0=CE=CA=CC=E2=A1=A3=CB=
+=FC=B5=C4=B9=FD=B3=CC=BC=F2=B5=A5=B5=C4=CD=A8=B9=FD=CA=B9=D3=C3=D2=BB=B8=F6=
+=B4=D8=D6=D0=D0=C4=B2=CE=CA=FD=CA=B5=CF=D6=CA=FD=BE=DD=B7=D6=C0=E0=A3=A8=BC=
+=D9=B6=A8=B9=B2=D3=D0<SPAN>K</SPAN>=B5=C4=B4=D8=A3=A9=A1=A3<SPAN>K-means<=
+/SPAN>=B7=BD=B7=A8=B6=A8=D2=E5<SPAN>K</SPAN>=B8=F6=D6=CA=D0=C4=A3=AC=B6=D4=
+=D3=DA=C3=BF=D2=BB=B8=F6=B4=D8=D6=CA=D0=C4=D3=A6=B8=C3=CD=A8=B9=FD=C7=C9=C3=
+=EE=B5=C4=B7=BD=B7=A8=BC=C6=CB=E3=CE=BB=D6=C3=A3=AC=D2=F2=CE=AA=B2=BB=CD=AC=
+=B5=C4=CE=BB=D6=C3=B5=BC=D6=C2=B2=BB=CD=AC=B5=C4=BD=E1=B9=FB=A1=A3=D2=F2=B4=
+=CB=D7=EE=BA=C3=B5=C4=D1=A1=D4=F1=B7=BD=B7=A8=CA=C7=CA=B9=B5=C3=B1=CB=B4=CB=
+=BE=A1=BF=C9=C4=DC=D4=B6=C0=EB=B6=D4=B7=BD=A1=A3=CF=C2=D2=BB=B2=BD=B0=D1=CA=
+=FD=BE=DD=BC=AF=D6=D0=BE=E0=C0=EB=C3=BF=D2=BB=D6=CA=D0=C4=D7=EE=BD=FC=B5=C4=
+=CA=FD=BE=DD=BC=D3=C8=EB=B5=BD=CF=E0=D3=A6=B5=C4=B4=D8=D6=D0=A1=A3=D5=E2=D1=
+=F9<SPAN>K-means</SPAN>=B5=C4=B5=DA=D2=BB=B2=BD=BE=CD=CD=EA=B3=C9=C1=CB=A1=
+=A3=CF=C2=D2=BB=B2=BD=B8=F9=BE=DD=C7=B0=D2=BB=B2=BD=D0=C2=BC=D3=C8=EB=B5=BD=
+=B8=F7=B8=F6=B4=D8=B5=C4=CA=FD=BE=DD=D6=D8=D0=C2=BC=C6=CB=E3=C3=BF=B8=F6=B4=
+=D8=B5=C4=D6=CA=D0=C4=A1=A3=D5=E2=D1=F9=CE=D2=C3=C7=BE=CD=D3=D0=C1=CB<SPA=
+N>K</SPAN>=B8=F6=D0=C2=B5=C4=D6=CA=D0=C4=A3=AC=D6=D8=B8=B4=B5=DA=B6=FE=B2=
+=BD=BA=CD=B5=DA=C8=FD=B2=BF=B2=BB=B6=CF=B5=C4=B8=C4=B1=E4<SPAN>k</SPAN>=B5=
+=C4=D6=CA=D0=C4=B5=C4=CE=BB=D6=C3=A3=AC=D6=B1=B5=BD=D6=CA=D0=C4=B2=BB=D4=D9=
+=D3=D0=B1=E4=BB=AF=A1=A3=BB=BB=BE=E4=BB=B0=CB=B5=BE=CD=CA=C7=D6=CA=D0=C4=B2=
+=BB=D4=DA=B7=A2=C9=FA=D2=C6=B6=AF=A1=A3<SPAN></SPAN></FONT></SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=D7=EE=BA=F3=A3=AC=D5=E2=B8=F6=CB=E3=B7=A8=B5=C4=C4=BF=B1=EA=CA=C7=
+=B5=C3=B5=BD=D7=EE=D0=A1=BB=AF=C4=BF=B1=EA=BA=AF=CA=FD=A1=A3=D5=E2=B8=F6=C4=
+=BF=B1=EA=BA=AF=CA=FD=C8=E7=CF=C2=A3=BA<SPAN></SPAN></FONT></SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%; TEXT-ALIGN: =
+center"=20
+      align=3Dleft></P>
+      <P align=3Dleft forimg=3D"1"></P></SPAN></SPAN></SPAN>
+      <P align=3Dcenter><IMG class=3Dblogimg=20
+      =
+src=3D"http://hiphotos.baidu.com/keefo/pic/item/579f0716f7f1304d21a4e924.=
+jpg"=20
+      border=3D0 small=3D"0"></P>
+      <DIV forimg=3D"1">
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      size=3D2>=C6=E4=D6=D0<SPAN><IMG class=3Dblogimg=20
+      =
+src=3D"http://hiphotos.baidu.com/keefo/pic/item/f0aa72d369e5c9073bf3cf2d.=
+jpg"=20
+      border=3D0 small=3D"0"></SPAN>=CA=C7=CA=FD=BE=DD=B5=E3<IMG =
+class=3Dblogimg=20
+      =
+src=3D"http://hiphotos.baidu.com/keefo/pic/item/a6722922d4965fa34723e82d.=
+jpg"=20
+      border=3D0 small=3D"0">=BA=CD=B4=D8=D6=CA=D0=C4<IMG =
+class=3Dblogimg=20
+      =
+src=3D"http://hiphotos.baidu.com/keefo/pic/item/cbb9e7cca738f21700e9282a.=
+jpg"=20
+      border=3D0 small=3D"0">=B5=C4=BE=E0=C0=EB=A3=AC<IMG =
+class=3Dblogimg=20
+      =
+src=3D"http://hiphotos.baidu.com/keefo/pic/item/cbb9e7cca738f21700e9282a.=
+jpg"=20
+      border=3D0=20
+      =
+small=3D"0"><SPAN></SPAN>=CA=C7=B4=D8=D6=D0<SPAN>n</SPAN>=B8=F6=CA=FD=BE=DD=
+=B5=C4=D6=D0=D0=C4=B5=E3=B1=ED=CA=BE=A1=A3<SPAN></SPAN></FONT></SPAN></P>=
+
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2>=B8=C3=CB=E3=B7=A8=B2=BD=D6=E8=C8=E7=CF=C2<SPAN>:</SPAN></FONT><=
+/SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. =
+
+      =
+=D1=A1=C8=A1k=B8=F6=CA=FD=BE=DD=D7=F7=CE=AAk=B8=F6=B4=D8=B5=C4=B3=F5=CA=BC=
+=D6=CA=D0=C4=A1=A3</SPAN></FONT></SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. =
+
+      =
+=D5=D2=B5=BD=C3=BF=B8=F6=BE=E0=C0=EB=D6=CA=D0=C4=D7=EE=BD=FC=B5=C4=CA=FD=BE=
+=DD=B2=A2=BC=D3=C8=EB=C6=E4=D6=D0=A1=A3</SPAN></FONT></SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. =
+
+      =
+=B8=F9=BE=DD=D0=C2=BC=D3=C8=EB=B4=D8=B5=C4=CA=FD=BE=DD=D6=D8=D0=C2=BC=C6=CB=
+=E3=B8=F7=B8=F6=B4=D8=B5=C4=D6=CA=D0=C4=A1=A3</SPAN></FONT></SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. =
+
+      =
+=D6=D8=B8=B4=B5=DA2=B2=BD=BA=CD=B5=DA3=B2=BD=D6=AA=B5=C0=CB=F9=D3=D0=D6=CA=
+=D0=C4=B2=BB=D4=D9=B7=A2=C9=FA=D2=C6=B6=AF=A1=A3</SPAN></FONT></SPAN></P>=
+
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+=BE=A1=B9=DC=C9=CF=CA=F6=B2=BD=D6=E8=BE=AD=D5=FD=CA=BD=D7=DC=CA=C7=BF=C9=D2=
+=D4=D6=D5=BD=E1=A3=ACK-means=CB=E3=B7=A8=CA=B5=BC=CA=C9=CF=B2=A2=B2=BB=D0=
+=E8=D2=AA=D1=B0=D5=D2=D7=EE=BC=D1=C5=E4=D6=C3=C8=A5=D1=B0=D5=D2=C4=BF=B1=EA=
+=BA=AF=CA=FD=B5=C4=D7=EE=D0=A1=D6=B5=A1=A3=CD=AC=CA=B1=B8=C3=CB=E3=B7=A8=B6=
+=D4=B3=F5=CA=BC=CB=E6=BB=FA=D1=A1=C8=A1=B5=C4K=B8=F6=D6=CA=D0=C4=D2=EC=B3=
+=A3=C3=F4=B8=D0=A1=A3=BF=C9=D2=D4=CD=A8=B9=FD=B6=E0=B4=CE=B2=E2=CA=D4=BC=F5=
+=C9=D9=D5=E2=D6=D6=CE=CA=CC=E2=A1=A3</SPAN></FONT></SPAN></P>
+      <P style=3D"MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: 150%"><SPAN=20
+      style=3D"FONT-SIZE: 12pt; COLOR: black; LINE-HEIGHT: 150%"><FONT=20
+      =
+size=3D2><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+K-means=CA=C7=D2=BB=D6=D6=BC=F2=B5=A5=B5=C4=CB=E3=B7=A8=A3=AC=B2=A2=C7=D2=
+=BF=C9=D2=D4=CA=CA=D3=C3=D3=DA=B6=E0=D6=D6=C1=EC=D3=F2=A1=A3=CE=D2=C3=C7=D2=
+=B2=D5=FD=D2=AA=BF=B4=B5=BD=A3=AC=CB=FC=B5=C4=D2=BB=B8=F6=BA=C3=B5=C4=B8=C4=
+=BD=F8=CB=E3=B7=A8=B1=E3=CA=C7=CA=B9=D3=C3=C4=A3=BA=FD=CC=D8=D5=F7=CF=F2=C1=
+=BF=BC=C6=CB=E3=A1=A3</SPAN></FONT></SPAN></P></DIV></SPAN></FONT></SPAN>=
+</FONT></SPAN></SPAN></SPAN></SPAN>
+      =
+<P></P></SPAN></SPAN></FONT></SPAN></DIV></TD></TR></TBODY></TABLE><BR>
+<DIV class=3Dopt><A =
+title=3D=B2=E9=BF=B4=B8=C3=B7=D6=C0=E0=D6=D0=CB=F9=D3=D0=CE=C4=D5=C2=20
+href=3D"http://hi.baidu.com/keefo/blog/category/&Icirc;&Auml;=A1=C0&frac3=
+4;=A1=A4&Ouml;&Agrave;=A8=A4">=C0=E0=B1=F0=A3=BA=CE=C4=B1=BE=B7=D6=C0=E0<=
+/A> | <A=20
+title=3D=BD=AB=B4=CB=CE=C4=D5=C2=CC=ED=BC=D3=B5=BD=B0=D9=B6=C8=CB=D1=B2=D8=
+ onclick=3D"return addToFavor();"=20
+href=3D"http://cang.baidu.com/do/add" =
+target=3D_blank>=CC=ED=BC=D3=B5=BD=CB=D1=B2=D8</A> | =E4=AF=C0=C0(<SPAN=20
+id=3Dresult></SPAN>) | <A=20
+href=3D"http://hi.baidu.com/keefo/blog/item/718ab41f46c6d6f4e1fe0b32.html=
+#send">=C6=C0=C2=DB</A>&nbsp;(0)
+<SCRIPT language=3Djavascript>=0A=
+/*<![CDATA[*/=0A=
+var pre =3D =
+[true,'ICTCLAS=B7=D6=B4=CA=B3=CC=D0=F2=CA=B9=D3=C3=D6=D0=B7=A2=CF=D6=B5=C4=
+=CE=CA=CC=E2', =
+'ICTCLAS=B7=D6=B4=CA=B3=CC=D0=F2=CA=B9=D3=C3=D6=D0=B7=A2=CF=D6=B5=C4=CE=CA=
+...','/keefo/blog/item/5c5cdf50da9e0463853524a7.html'];=0A=
+var post =3D =
+[true,'=C5=C0=B3=E6=BC=BC=CA=F5=D1=D0=BE=BF','=C5=C0=B3=E6=BC=BC=CA=F5=D1=
+=D0=BE=BF', '/keefo/blog/item/0e9c5e4ce7ada1fad62afc6f.html'];=0A=
+if(pre[0] || post[0]){=0A=
+	document.write('<div =
+style=3D"height:5px;line-height:5px;">&nbsp;</div><div id=3D"in_nav">');=0A=
+	if(pre[0]){=0A=
+		document.write('=C9=CF=D2=BB=C6=AA=A3=BA<a href=3D"' + pre[3] + '" =
+title=3D"' + pre[1] + '">' +  pre[2] + '</a>&nbsp;&nbsp;&nbsp;&nbsp;');=0A=
+	}=0A=
+	if(post[0]){=0A=
+		document.write('=CF=C2=D2=BB=C6=AA=A3=BA<a href=3D"' + post[3] + '" =
+title=3D"' + post[1] + '">' +  post[2] + '</a>');=0A=
+	}=0A=
+	document.write('</div>');=0A=
+}=0A=
+/*]]>*/=0A=
+</SCRIPT>
+ </DIV>
+<DIV class=3Dline></DIV>
+<DIV id=3Din_reader>
+<DIV class=3Dtit>=D7=EE=BD=FC=B6=C1=D5=DF=A3=BA</DIV>
+<SCRIPT>=0A=
+=0A=
+	var g_spAnnony=3Dtrue;=0A=
+=0A=
+=0A=
+var g_read=3D[=0A=
+	=0A=
+["aimingzuo","879761696d696e677a756ffd02","aimingzuo"],=0A=
+	=0A=
+["asdherhjsk","b28a6c795f706572736f6e616cb300","ly_personal"],=0A=
+	=0A=
+["%B1%AD%BE%C6%B8%AF%C9%FA","261cb1adbec6b8afc9fac001","=B1=AD=BE=C6=B8=AF=
+=C9=FA"],=0A=
+	=0A=
+["jmsshjgs","6b136a6d7373686a67732e02","jmsshjgs"],=0A=
+	=0A=
+["ilotus%5Fy","590146726565646f6d5f59dd00","Freedom_Y"],=0A=
+	=0A=
+["52xenos","b699353278656e6f73d700","52xenos"],=0A=
+	=0A=
+["qianyanjiang","0fc97169616e79616e6a69616e676103","qianyanjiang"],=0A=
+	=0A=
+["xyp86","6a51626561727970c303","bearyp"],=0A=
+=0A=
+{}=0A=
+];=0A=
+g_read.length=3Dg_read.length-1;=0A=
+=0A=
+var _rh1=3D"";=0A=
+var _rh2=3D"";=0A=
+=0A=
+function wrreader(){=0A=
+	_rh1 +=3D '<table width=3D"100%" ><tr>';=0A=
+	_rh2+=3D'<tr>';=0A=
+	if(g_spAnnony){=0A=
+		_rh1+=3D'<td align=3D"center" width=3D"10%" ><img border=3D"0" =
+width=3D"55" height=3D"55" =
+src=3D"http://img.baidu.com/hi/img/portraitn.jpg"></td>';=0A=
+		_rh2+=3D'<td>&nbsp;</td>';=0A=
+		if(g_read.length>0){=0A=
+			_rh1+=3D'<td align=3D"left" width=3D"12%">';=0A=
+		}else{=0A=
+			_rh1+=3D'<td align=3D"left" width=3D"100%">';=0A=
+		}=0A=
+		_rh1+=3D'<a =
+href=3D"http://passport.baidu.com/?login&tpl=3Dsp&tpl_reg=3Dsp&u=3D'+myre=
+f+'" =
+target=3D"_self">=B5=C7=C2=BC</a>=BA=F3=A3=AC=C4=FA=BE=CD=B3=F6=CF=D6=D4=DA=
+=D5=E2=C0=EF=A1=A3</td>';=0A=
+		_rh2+=3D'<td>&nbsp;</td>'=0A=
+	}=0A=
+	if(g_read.length=3D=3D0){=0A=
+		if(!g_spAnnony){=0A=
+			_rh1+=3D'<td align=3Dleft =
+width=3D"100%">=D7=EE=BD=FC=BB=B9=C3=BB=D3=D0=B5=C7=C2=BC=D3=C3=BB=A7=BF=B4=
+=B9=FD=D5=E2=C6=AA=CE=C4=D5=C2=A1=AD=A1=AD</td>';=0A=
+			_rh2+=3D'<td>&nbsp;</td>';=0A=
+		}=0A=
+	}else{=0A=
+		for(i=3D0,len=3Dg_read.length;i<len;i++){=0A=
+			_rh1+=3D'<td align=3D"center" valign=3D"bottom" width=3D"10%" =
+class=3D"user"><a href=3D"/'+g_read[i][0]+'" target=3D"_blank"><img =
+border=3D"0" =
+src=3D"http://himg.baidu.com/sys/portraitn/item/'+g_read[i][1]+'.jpg"></a=
+></td>';=0A=
+			_rh2+=3D'<td align=3D"center" valign=3D"top" class=3D"user"><a =
+href=3D"/'+g_read[i][0]+'" target=3D"_blank">'+g_read[i][2]+'</a></td>';=0A=
+		}=0A=
+	}=0A=
+	_rh1+=3D'<td width=3D"100%"></td></tr>';=0A=
+	_rh2+=3D'<td></td></tr></table>';=0A=
+	document.write(_rh1+_rh2);=0A=
+}=0A=
+=0A=
+wrreader();=0A=
+</SCRIPT>
+</DIV>
+<DIV class=3Dline></DIV>
+<SCRIPT language=3DJavaScript>=0A=
+allkey=3Dallkey+"8e07b2248e0448338744f9ae_718ab41f46c6d6f4e1fe0b32_";=0A=
+</SCRIPT>
+
+<DIV id=3Din_comment><A name=3Dcomment></A>
+<DIV class=3Dtit>=CD=F8=D3=D1=C6=C0=C2=DB=A3=BA</DIV>
+<SCRIPT>=0A=
+function writecmt(type,id,cmtname,cmturl,portraitId){=0A=
+	var html1=3D"";=0A=
+=0A=
+	if(type=3D=3D1){=0A=
+			html1=3D"<a href=3D'"+cmturl+"' target=3D'_blank' =
+title=3D'"+cmturl+"'><img  border=3D'0' =
+src=3D'http://himg.baidu.com/sys/portraitn/item/"+portraitId+".jpg'><br>"=
++cmtname+"</a>";=0A=
+	}else{=0A=
+		if(cmtname=3D=3D"" || cmtname=3D=3D"=C4=E4=C3=FB=CD=F8=D3=D1"){=0A=
+			if(cmturl=3D=3D""){=0A=
+				html1=3D"<a>=C4=E4=C3=FB=CD=F8=D3=D1</a>";=0A=
+			}else{=0A=
+				html1=3D"<a href=3D'"+cmturl+"' target=3D'_blank' =
+title=3D'"+cmturl+"'>"+cmtname+"</a>";=0A=
+			}=0A=
+		}else{=0A=
+			if(cmturl=3D=3D""){=0A=
+				html1=3D"<div class=3D'f14' =
+style=3D'display:inline'>=CD=F8=D3=D1:<a>"+cmtname+"</a></div>";=0A=
+			}else{=0A=
+				html1=3D"<div class=3D'f14' style=3D'display:inline'>=CD=F8=D3=D1:<a =
+href=3D'"+cmturl+"' target=3D'_blank' =
+title=3D'"+cmturl+"'>"+cmtname+"</a></div>";=0A=
+			}=0A=
+		}=0A=
+	}=0A=
+	document.write(html1);=0A=
+}=0A=
+=0A=
+</SCRIPT>
+
+<DIV id=3Dpage></DIV></DIV>
+<DIV id=3Din_send><A name=3Dsend></A>
+<FORM id=3DpopFormSubmit name=3Dform1 onsubmit=3D"return checkcmtform()" =
+
+action=3D/keefo/commit method=3Dpost><INPUT type=3Dhidden value=3D8 =
+name=3Dct> <INPUT=20
+type=3Dhidden value=3D1 name=3Dcm> <INPUT type=3Dhidden =
+value=3D718ab41f46c6d6f4e1fe0b32=20
+name=3DspBlogID> <INPUT id=3DspRefURL type=3Dhidden name=3DspRefURL>
+<SCRIPT>=0A=
+    document.getElementById("spRefURL").value =3D window.location.href;=0A=
+</SCRIPT>
+=20
+<DIV class=3Dtit>=B7=A2=B1=ED=C6=C0=C2=DB=A3=BA</DIV>
+<TABLE cellSpacing=3D5 cellPadding=3D0 width=3D620 border=3D0>
+  <TBODY>
+  <TR>
+    <TD class=3Df14>=D0=D5=A1=A1=C3=FB=A3=BA</TD>
+    <TD><INPUT id=3DspBlogCmtor style=3D"WIDTH: 220px" =
+onfocus=3DhidErr(1);=20
+      tabIndex=3D1 maxLength=3D49 onchange=3D"checkname('spBlogCmtor')"=20
+      name=3DspBlogCmtor>
+      <SCRIPT>=0A=
+document.write(" &nbsp;&nbsp; <a =
+href=3D'http://passport.baidu.com/?reg&tpl=3Dsp&return_method=3Dget&skip_=
+ok=3D1&u=3Dhttp://hi.baidu.com/sys/reg/' =
+target=3D'_blank'>=D7=A2=B2=E1</a>");=0A=
+document.write(' | <a =
+href=3D"http://passport.baidu.com/?login&tpl=3Dsp&tpl_reg=3Dsp&u=3D'+myre=
+f+'">=B5=C7=C2=BC</a>');=0A=
+=0A=
+</SCRIPT>
+      =20
+      <DIV id=3Dnmerror style=3D"DISPLAY: =
+none">*=D0=D5=C3=FB=D7=EE=B3=A4=CE=AA50=D7=D6=BD=DA</DIV></TD></TR>
+  <TR id=3D1_err style=3D"DISPLAY: none">
+    <TD>&nbsp;</TD>
+    <TD>
+      <DIV class=3Derror id=3D1_err_con></DIV></TD></TR>
+  <TR>
+    <TD class=3Df14>=CD=F8=D6=B7=BB=F2=D3=CA=CF=E4=A3=BA</TD>
+    <TD><INPUT id=3DspBlogCmtURL style=3D"WIDTH: 360px" =
+onfocus=3DhidErr(2);=20
+      tabIndex=3D2 maxLength=3D128 =
+onchange=3D"checkeandu('spBlogCmtURL')"=20
+      name=3DspBlogCmtURL> (=D1=A1=CC=EE)</TD>
+    <SCRIPT>=0A=
+G("spBlogCmtor").value=3D"";=0A=
+G("spBlogCmtURL").value=3D"";=0A=
+</SCRIPT>
+  </TR>
+  <TR id=3D2_err style=3D"DISPLAY: none">
+    <TD>&nbsp;</TD>
+    <TD>
+      <DIV class=3Derror id=3D2_err_con></DIV></TD></TR>
+  <TR>
+    <TD class=3Df14 id=3DreTitle =
+vAlign=3Dtop>=C4=DA=A1=A1=C8=DD=A3=BA</TD>
+    <TD><TEXTAREA id=3DspBlogCmtText style=3D"WIDTH: 520px; HEIGHT: =
+155px" onfocus=3DhidErr(3); tabIndex=3D3 =
+name=3DspBlogCmtText></TEXTAREA>
+      <SCRIPT>=0A=
+G("spBlogCmtor").value=3DG("spBlogCmtor").defaultValue;=0A=
+G("spBlogCmtText").value=3D"";=0A=
+</SCRIPT>
+       </TD></TR>
+  <TR id=3D3_err style=3D"DISPLAY: none">
+    <TD>&nbsp;</TD>
+    <TD>
+      <DIV class=3Derror id=3D3_err_con></DIV></TD></TR>
+  <TR id=3Dvercode>
+    <TD class=3Df14 vAlign=3Dtop>=D1=E9=D6=A4=C2=EB=A3=BA</TD>
+    <TD vAlign=3Dtop><INPUT type=3Dhidden=20
+      =
+value=3D30357370616365323033303435363934343030303030303030303030303030313=
+2333334393938393766A3E469989370F3D448035D52040330=20
+      name=3DspVcode> <INPUT id=3DspVerifyKey onfocus=3Df_focus() =
+tabIndex=3D4=20
+      maxLength=3D4 size=3D6 name=3DspVerifyKey =
+autocomplete=3D"off"><BR>
+      <SCRIPT type=3Dtext/javascript>=0A=
+/*<![CDATA[*/=0A=
+var =
+imgsrc=3D"http://hiup.baidu.com/cgi-bin/genimg?30357370616365323033303435=
+3639343430303030303030303030303030303132333334393938393766A3E469989370F3D=
+448035D52040330";=0A=
+function f_focus(){=0A=
+	if(G('yanzheng').style.display=3D=3D"none" ){=0A=
+		G('verifypic').src=3Dimgsrc;=0A=
+		G('yanzheng').style.display=3D"block";=0A=
+	}=0A=
+}=0A=
+function newverifypic(){=0A=
+	G("verifypic").src =3D imgsrc +"&t=3D"+ Math.random();=0A=
+	return false;=0A=
+}=0A=
+/*]]>*/=0A=
+</SCRIPT>
+
+      <DIV id=3Dyanzheng style=3D"DISPLAY: none"><IMG id=3Dverifypic =
+height=3D40=20
+      width=3D120><WBR><A =
+title=3D=BF=B4=B2=BB=C7=E5=D7=F3=B1=DF=B5=C4=D7=D6=B7=FB =
+onfocus=3Dthis.blur();=20
+      onclick=3D"return newverifypic();"=20
+      =
+href=3D"http://hi.baidu.com/keefo/blog/item/718ab41f46c6d6f4e1fe0b32.html=
+#">=BF=B4=B2=BB=C7=E5?</A>=20
+      </DIV></TD></TR>
+  <TR>
+    <TD class=3Df14 vAlign=3Dtop>&nbsp;</TD>
+    <TD class=3Df14 vAlign=3Dtop><INPUT id=3Dbtn_ok tabIndex=3D5 =
+type=3Dsubmit value=3D=B7=A2=B1=ED=C6=C0=C2=DB =
+name=3Dbtn_ok>&nbsp;&nbsp;&nbsp;&nbsp;<A=20
+      id=3DcancleReLink style=3D"DISPLAY: none; FONT-SIZE: 12px; COLOR: =
+#666"=20
+      onclick=3D"canclereply(); return false;"=20
+      =
+href=3D"http://hi.baidu.com/keefo/blog/item/718ab41f46c6d6f4e1fe0b32.html=
+#">=C8=A1=CF=FB=BB=D8=B8=B4</A></TD></TR></TBODY></TABLE></FORM></DIV><BR=
+></DIV>
+<TABLE height=3D8 cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD class=3Dmodbl width=3D7>&nbsp;</TD>
+    <TD class=3Dmodbc>&nbsp;</TD>
+    <TD class=3Dmodbr =
+width=3D7>&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV>
+<SCRIPT language=3Djavascript>=0A=
+<!--=0A=
+var hstr=3D"/keefo/brwstat?key1=3D1";=0A=
+document.write("<script src=3D'"+hstr+"&key2=3D"+allkey+"'><\/script>");=0A=
+//-->=0A=
+</SCRIPT>
+<BR>
+<CENTER>
+<DIV id=3Dft>&copy;2009 Baidu</DIV></CENTER>
+<SCRIPT>=0A=
+if(document.getElementById("m_blog"))=0A=
+{=0A=
+	var imgarray =3D =
+document.getElementById("m_blog").getElementsByTagName('img');=0A=
+	var imgw =3D document.getElementById("m_blog").offsetWidth;=0A=
+	imgw =3Dimgw-40;=0A=
+	for(var i=3D0; i<imgarray.length; i++){=0A=
+	if(imgarray[i].className=3D=3D"blogimg" && imgarray[i].width>=3Dimgw) =
+imgarray[i].width=3Dimgw;=0A=
+	}=0A=
+}=0A=
+=0A=
+// Fix ff bugs=0A=
+var blog_text =3D document.getElementById('blog_text');=0A=
+blog_text.innerHTML =3D =
+blog_text.innerHTML.replace(/href\s*=3D\s*("|')?(\.\.\/\.\.\/)/gi,"href=3D=
+$1../$2");=0A=
+=0A=
+gotoreply();=0A=
+</SCRIPT>
+</CENTER><IMG style=3D"DISPLAY: none" src=3D""> </BODY></HTML>
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://hiphotos.baidu.com/keefo/pic/item/aa2e64a4db8176f09152ee6b.jpg
+
+R0lGODlhWAIsAfcAAAAAAAEBAQICAgMDAwQEBAUFBQYGBgcHBwgICAkJCQoKCgsLCwwMDA0NDQ4O
+Dg8PDxAQEBERERISEhMTExQUFBUVFRYWFhcXFxgYGBkZGRoaGhsbGxwcHB0dHR4eHh8fHyAgICEh
+ISIiIiMjIyQkJCUlJSYmJicnJygoKCkpKSoqKisrKywsLC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0
+NDU1NTY2Njc3Nzg4ODk5OTo6Ojs7Ozw8PD09PT4+Pj8/P0BAQEFBQUJCQkNDQ0REREVFRUZGRkdH
+R0hISElJSUpKSktLS0xMTE1NTU5OTk9PT1BQUFFRUVJSUlNTU1RUVFVVVVZWVldXV1hYWFlZWVpa
+WltbW1xcXF1dXV5eXl9fX2BgYGFhYWJiYmNjY2RkZGVlZWZmZmdnZ2hoaGlpaWpqamtra2xsbG1t
+bW5ubm9vb3BwcHFxcXJycnNzc3R0dHV1dXZ2dnd3d3h4eHl5eXp6ent7e3x8fH19fX5+fn9/f4CA
+gIGBgYKCgoODg4SEhIWFhYaGhoeHh4iIiImJiYqKiouLi4yMjI2NjY6Ojo+Pj5CQkJGRkZKSkpOT
+k5SUlJWVlZaWlpeXl5iYmJmZmZqampubm5ycnJ2dnZ6enp+fn6CgoKGhoaKioqOjo6SkpKWlpaam
+pqenp6ioqKmpqaqqqqurq6ysrK2tra6urq+vr7CwsLGxsbKysrOzs7S0tLW1tba2tre3t7i4uLm5
+ubq6uru7u7y8vL29vb6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcbGxsfHx8jIyMnJycrKysvLy8zM
+zM3Nzc7Ozs/Pz9DQ0NHR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dra2tvb29zc3N3d3d7e3t/f
+3+Dg4OHh4eLi4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy
+8vPz8/T09PX19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///yH/C01TT0ZGSUNFOS4wGAAA
+AAxjbVBQSkNtcDA3MTIA+AED6sxglQAsAAAAAFgCLAEACP8A/wkcSLCgwYMIEypcyLChw4cQI0qc
+SLGixYsYM2rcyLGjx48gQ4ocSbKkyZMoU6pcybKly5cwY8qcSbOmzZs4c+rcybOnz59AgwodSrSo
+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
++7LnyYAAADs=
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://hiphotos.baidu.com/keefo/pic/item/2e8b32099cf7d3a82fddd44a.jpg
+
+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
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://hiphotos.baidu.com/keefo/pic/item/a274fd12e334bcc9c2fd7850.jpg
+
+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
+l/oRIQAAOw==
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://hiphotos.baidu.com/keefo/pic/item/343c88bf604fff0d18d81f5e.jpg
+
+R0lGODlhywA5AHcAMSH+GlNvZnR3YXJlOiBNaWNyb3NvZnQgT2ZmaWNlACH/C01TT0ZGSUNFOS4w
+GAAAAAxtc09QTVNPRkZJQ0U5LjAC8Zm0lgAh/wtNU09GRklDRTkuMBUAAAAJcEhZcwAAAEAAAABA
+AGJDY1sAIf8LTVNPRkZJQ0U5LjAYAAAADGNtUFBKQ21wMDcxMgAAAAdPbbelACH5BAEAAAAALAAA
+AADLADkAgAAAAAAAAAL/hI+py+0Po5y02ouz3rz7D4biSJbmiabqygUBC8cy+s72jV91zve+sfsJ
+h6wg8YgUGZPMps7ljEqn1Kr1t7xislpl18P9dsJAsviwdKmh54kZ2Ia84xIzm96Y4x12gL79t6dA
+VhMoZiiIxueXmJcAhfhlp9bIYERZOZiZ98J1ybiJELkwChOEqalYqrUq6nQKmlrWakUL17TT6agY
+Kou2Bgz8+Poblht492CrrJGVPPiJy7u7FbEsl+H57MrNVNiXjb0yarx9O530Vzp3bV3Nx05cZwEp
+LgrJjs9ML/f23dlulh9D6ip8s/eIYLx7wXxx2lfGhDmEEN2dW0SKn0WD+/MwXqQQzBw5NyTRURvG
+cSNIlZa6kRjZceNElMNyYUvjMCROihnh2LzXLJbLZwU71qt4q+jClB4xFjqp0Z/Dpsr0AY0WcaDW
+X0C3ejVZEqojNlZVPcmK1qdLpM2IUtSzU2PLmDkDfnRLd4MumnM/Ul0nlq+xhCMuYeVZzVNglqsG
+N1Xsai+YmrGKtpj5UO6YvpZgkfrnV2/Ep2AXaz4heTM0nWv4mg76syfLLXYzf0jDWtjaInDD9uIc
+VFre366JszVeumxXQbWvKHbMHHng1FPjNHcO7fiZ69gJFyObiHv3pN9J4xHPSuBEVICk+0aO3r38
++fTr27+PX0QBADs=
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://hiphotos.baidu.com/keefo/pic/item/579f0716f7f1304d21a4e924.jpg
+
+R0lGODlhsAA9AHcAMSH+GlNvZnR3YXJlOiBNaWNyb3NvZnQgT2ZmaWNlACH5BAEAAAAALAMABQCn
+ADUAgwAAAAAAAAYFBQMDAwsKCgoICQsJCggHBwwKCwUEBAcGBwkICAkHCAcGBgECAwECAwT/EMhJ
+q70Yh5C7/2AojmRpftyprmzrvlMKz3Rtm9wmjxvQ38CgMOZb9XbDpJL1U6WQy6gU1Dw9p9iKLpsr
+4iTQbFQWHl6t4LJ4vGZ726UzEZ6U00X29x2Y33vsan4vfRqFU3KBgi6EFmGMQWePLwI6lZaXFpSX
+m5UXknOGbjmdQpQDBB4FVROmqB2qjmAojTuJNZ8ABpYGLa0eB2W+HcCesn/FoEq4AAgJAQowwhi6
+GdIX1I3GHbHJddoezggz1tnVAafbyLZQSLY0ywQBAjXO6Cf1rnjfod3uM8uqFtQgMOBcPhIEDfIw
+RoBBAl4FElBoN/GFAQXnChzTY+4gjIT2/0qA9JjOi44DAAYMqMhy3wkGAQTG2+juXAZOWz4klHhi
+p743sAqQ7FLLxYKYEhKgLGlL1dIbCef1LCh1lh5nDG76G4EgAM8QuDBqDELwqYmyYL/BNGsE5w6Y
+Y9NyvFBwCIEGLO7+3KHrq5JwC+dWcLrNrQi/9wK/LShuySqrUGBKpdQYSAOSJC4rniBQLDSX73bg
+1UJ67gYDCBoEiHvjAGsTrkk8EbCgAMQADQQqAYby7mt1FiKeO4B5RoGsK47HASNgAC8JA5Y+tgHs
+mcfHy4DoXbFdNuiWYth9T4KgagfdF8qDQD8n0VY+5d7T0OzBAGIK9DvYj78xPHAssX0gwLJoFgTo
+wYD83QQHN/K9UAB706iG3GAQXiNhgho0+M5/Ueji1iUVevhhJRVm5x+GSiQ0YiXPTaDiiqeh6EcX
+HCqhCYwxUnAjji22p0gaCgr24y3jDWmMhkZulqQhSC7p5JOLGAHllPxMVJMnTVKZZJZZaslFIO6p
+0aWXWDxhSZFHnjkmmVKAaRUybD5JxplCsoTJmnF6U1KQVeY5JJjTxVBGTn4aiWehWtKI6KJ4HMro
+CxEAADs=
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://hiphotos.baidu.com/keefo/pic/item/f0aa72d369e5c9073bf3cf2d.jpg
+
+R0lGODlhRQAhAHcAMSH+GlNvZnR3YXJlOiBNaWNyb3NvZnQgT2ZmaWNlACH5BAEAAAAALAMABAA/
+ABoAgAAAAAAAAAKWhI+py+0Zwpu0Ogmw3XzG3IWWpGXkpZzio4LtUiLxmoLuC0HaTB9nBLTBagZe
+z5UzCn3MYy2Gk+WaTil0OaViqzhV8GNrKVng4bVUDqM7YGV3OSYDg9rGe13NsrBiYXwztsMXVpQn
+VWg3SILxkXZE57N2lmjIIJlEWUlUODmkucmJCfP3KMpE+nln+nkxo8oa8grLgVMAADs=
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://hiphotos.baidu.com/keefo/pic/item/a6722922d4965fa34723e82d.jpg
+
+R0lGODlhGwAZAHcAMSH+GlNvZnR3YXJlOiBNaWNyb3NvZnQgT2ZmaWNlACH5BAEAAAAALAMAAwAV
+ABIAgAAAAAAAAAIyhH+BptCbYJRuhVclZmjPDmrWKIbRpVxchbUts73UvNLi45X5rDrpbssEIUBa
+0XgEFAAAOw==
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://hiphotos.baidu.com/keefo/pic/item/cbb9e7cca738f21700e9282a.jpg
+
+R0lGODlhEQAZAHcAMSH+GlNvZnR3YXJlOiBNaWNyb3NvZnQgT2ZmaWNlACH5BAEAAAAALAIACQAM
+AA0AgAAAAAAAAAIZhIOmF7fa3ooSVkjpQxqk64Ce2EmldTJKAQA7
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/ui/css/mods.css
+
+#m_comment P {
+	MARGIN: 0pt
+}
+#m_comment .cnt IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: =
+0px
+}
+#m_comment .date {
+	COLOR: #666666
+}
+#m_event .nav {
+	TEXT-ALIGN: right
+}
+#m_event .nav SPAN {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+#m_event .nav SPAN.lk {
+	FONT-WEIGHT: normal; CURSOR: pointer; COLOR: #3399cc; TEXT-DECORATION: =
+underline
+}
+#m_event TD {
+	PADDING-LEFT: 5px; VERTICAL-ALIGN: middle; HEIGHT: 30px
+}
+#m_event .alter TD {
+	BACKGROUND-COLOR: #f0f0f0
+}
+#m_event .time {
+	WIDTH: 100px; COLOR: #666
+}
+#m_event .line {
+	BORDER-TOP: #ececec 1px solid; MARGIN-TOP: 3px; LINE-HEIGHT: 3px; =
+HEIGHT: 3px
+}
+#m_friends {
+	OVERFLOW: hidden
+}
+#m_friends .frd {
+	FLOAT: left; MARGIN: 0px 3px; OVERFLOW: hidden; WIDTH: 75px; HEIGHT: =
+90px
+}
+#m_friends .portrait {
+	BACKGROUND-POSITION: center bottom; DISPLAY: block; BACKGROUND-REPEAT: =
+no-repeat; HEIGHT: 55px
+}
+#m_friends .info {
+	TEXT-ALIGN: center
+}
+#m_friends .info A {
+	BACKGROUND-POSITION: left top; PADDING-LEFT: 16px; BACKGROUND-REPEAT: =
+no-repeat
+}
+#m_friends .online A {
+	BACKGROUND-IMAGE: url(http://img.baidu.com/passport/icn_online.gif)
+}
+#m_friends .offline A {
+	BACKGROUND-IMAGE: url(http://img.baidu.com/passport/icn_offline.gif)
+}
+#m_friends .hosttip {
+	LINE-HEIGHT: 90px; HEIGHT: 90px
+}
+#m_pro .wrapper {
+	CLEAR: both; OVERFLOW: hidden
+}
+#m_pro .portrait {
+	FLOAT: left; WIDTH: 110px; MARGIN-RIGHT: 6px; TEXT-ALIGN: center
+}
+#m_pro .userinfo {
+	PADDING-LEFT: 6px; FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #333333
+}
+#m_pro A.btfan {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 10px; DISPLAY: block; PADDING-LEFT: =
+0px; BACKGROUND: url(http://img.baidu.com/hi/img/mf/btfanbg.gif) =
+no-repeat; PADDING-BOTTOM: 0px; WIDTH: 88px; LINE-HEIGHT: 22px; =
+MARGIN-RIGHT: 10px; PADDING-TOP: 2px; HEIGHT: 22px; TEXT-ALIGN: center
+}
+#m_pro DIV.line {
+	MARGIN-TOP: 10px; LINE-HEIGHT: 5px
+}
+#m_pro .act {
+	CLEAR: both
+}
+#m_pro .act-links {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: =
+0px; PADDING-TOP: 0px
+}
+#m_pro .act-links A {
+	DISPLAY: block; FLOAT: left
+}
+#m_pro .act-links A.send-message-link {
+	MARGIN-TOP: 4px; MARGIN-LEFT: 0px
+}
+#m_useronline .frd {
+	FLOAT: left; MARGIN: 0px 3px; OVERFLOW: hidden; WIDTH: 75px; HEIGHT: =
+90px
+}
+#m_useronline .portrait {
+	BACKGROUND-POSITION: center bottom; DISPLAY: block; BACKGROUND-REPEAT: =
+no-repeat; HEIGHT: 55px
+}
+#m_useronline .info {
+	TEXT-ALIGN: center
+}
+#warpper {
+	MARGIN: 0px 0px 0px 200px; POSITION: relative
+}
+#warpper .content {
+	LEFT: -200px; POSITION: absolute; TOP: 5px
+}
+#warpper .photo {
+	LEFT: -200px; WIDTH: 190px; POSITION: absolute; TOP: 5px; TEXT-ALIGN: =
+center
+}
+#warpper .line {
+	MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+#warpper .act {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px
+}
+.clear {
+	CLEAR: both; FONT-SIZE: 0px; LINE-HEIGHT: 1px; HEIGHT: 1px
+}
+#m_friendStat TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+#m_friendStat TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+#m_friendStat TD {
+	FONT: 400 14px/22px arial; BORDER-BOTTOM: #d2e9f4 1px solid
+}
+#m_friendStat TD.info A:link {
+	FONT-WEIGHT: bold
+}
+#m_friendStat TD.info A:visited {
+	FONT-WEIGHT: 400
+}
+#m_friendStat TD SPAN {
+	FONT-SIZE: 12px; MARGIN-LEFT: 10px; COLOR: #8c8c8c; ZOOM: 1
+}
+#m_friendStat TD IMG {
+	BORDER-RIGHT: #a1ccdd 1px solid; BORDER-TOP: #a1ccdd 1px solid; =
+VERTICAL-ALIGN: middle; BORDER-LEFT: #a1ccdd 1px solid; MARGIN-RIGHT: =
+10px; BORDER-BOTTOM: #a1ccdd 1px solid
+}
+#m_friendStat TD A IMG {
+	BORDER-RIGHT: #a1ccdd 1px solid; BORDER-TOP: #a1ccdd 1px solid; =
+VERTICAL-ALIGN: bottom; BORDER-LEFT: #a1ccdd 1px solid; MARGIN-RIGHT: =
+10px; BORDER-BOTTOM: #a1ccdd 1px solid
+}
+#m_friendStat .pg {
+	FONT: 400 14px/30px arial; PADDING-TOP: 10px; HEIGHT: 30px; TEXT-ALIGN: =
+center
+}
+#m_searchFriend TD {
+	HEIGHT: 28px
+}
+#mod_inbaidu UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 5px =
+0px 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #b2b2b2 1px dotted
+}
+#mod_inbaidu .title {
+	FONT-SIZE: 14px; PADDING-BOTTOM: 5px; LIST-STYLE-TYPE: none
+}
+#mod_inbaidu .list {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 15px; BORDER-BOTTOM: #f0f0f0 1px solid
+}
+#mod_inbaidu .list A {
+	TEXT-DECORATION: none
+}
+#mod_inbaidu .noContent {
+	PADDING-BOTTOM: 5px; LIST-STYLE-TYPE: none
+}
+#mod_inbaidu .qzContent {
+	PADDING-BOTTOM: 5px; LIST-STYLE-TYPE: none
+}
+#m_comment #picCmt .img {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; OVERFLOW: =
+hidden; BORDER-LEFT: #ccc 1px solid; WIDTH: 65px; BORDER-BOTTOM: #ccc =
+1px solid; HEIGHT: 65px
+}
+#m_comment #picCmt A IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: =
+0px
+}
+#m_comment #picCmt .name {
+	HEIGHT: 20px
+}
+.error {
+	COLOR: red
+}
+#m_albumlist .tit .cmt A:link {
+	FONT: 400 12px/18px arial; COLOR: #666; TEXT-DECORATION: none
+}
+#m_albumlist .tit .cmt A:visited {
+	FONT: 400 12px/18px arial; COLOR: #666; TEXT-DECORATION: none
+}
+#m_albumlist .tit .cmt A:hover {
+	TEXT-DECORATION: underline
+}
+#m_pet_setting .name {
+	WIDTH: 80px
+}
+#m_pet_setting .space {
+	WIDTH: 50px
+}
+#petset #layout {
+	TABLE-LAYOUT: fixed
+}
+#petset #layout TD.c2t1 {
+	PADDING-LEFT: 10px; WIDTH: 74%! important
+}
+#petset #layout TD.c2t2 {
+	WIDTH: 20px
+}
+#petset #layout TD.c2t3 {
+	PADDING-RIGHT: 10px; WIDTH: 24%! important
+}
+#m_pet_info .petheader {
+	PADDING-BOTTOM: 10px
+}
+#m_pet_setting DT {
+	FONT-WEIGHT: bold
+}
+#m_pet_setting DD {
+	MARGIN-TOP: 8px
+}
+#m_pet_setting .prompt {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; COLOR: =
+#707070; PADDING-TOP: 0px
+}
+#m_pet_setting .limit {
+	COLOR: #707070
+}
+#m_petcard .feed {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: =
+0px; PADDING-TOP: 5px
+}
+#mod_pet_record .feed {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: =
+0px; PADDING-TOP: 5px
+}
+#m_petcard .feed LI {
+	LIST-STYLE-TYPE: none
+}
+#mod_pet_record .feed LI {
+	LIST-STYLE-TYPE: none
+}
+#m_petcard .more {
+	TEXT-ALIGN: right
+}
+#mod_pet_record .more {
+	TEXT-ALIGN: right
+}
+#m_petcard .time {
+	COLOR: #676767
+}
+#mod_pet_record .time {
+	COLOR: #676767
+}
+#m_petcard DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 8px; LINE-HEIGHT: 8px; =
+HEIGHT: 8px
+}
+#m_pet_record DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 8px; LINE-HEIGHT: 8px; =
+HEIGHT: 8px
+}
+#m_pet_setting DIV.line {
+	BORDER-TOP: #d2e9f4 1px solid; MARGIN-TOP: 8px; LINE-HEIGHT: 8px; =
+HEIGHT: 8px
+}
+#layout DIV.uwaTitleEdit {
+	FONT-SIZE: 12px; COLOR: #000000
+}
+#layout DIV.uwaTitleEdit SPAN A {
+	COLOR: #0000ff; LINE-HEIGHT: 26px
+}
+#layout DIV.uwaConfEdit DIV {
+	FONT-SIZE: 12px; MARGIN: 4px 0px
+}
+#layout DIV.uwaConfEdit DIV LABEL {
+	MARGIN-RIGHT: 3px
+}
+#layout DIV.uwaConfEdit DIV INPUT {
+	MARGIN-BOTTOM: 3px; VERTICAL-ALIGN: middle
+}
+SELECT {
+	MARGIN-BOTTOM: 3px; VERTICAL-ALIGN: middle
+}
+.clearfix:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: =
+"."
+}
+.clearfix {
+	DISPLAY: inline-block
+}
+ HTML .clearfix {
+	HEIGHT: 1%
+}
+.clearfix {
+	DISPLAY: block
+}
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/keefo/css/item/f8f14e7b82e2f8f40bd18734.css
+
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #ffffff; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+A {
+	TEXT-DECORATION: none
+}
+#header {
+	HEIGHT: 90px
+}
+#header DIV.lc {
+	DISPLAY: none
+}
+#header DIV.rc {
+	DISPLAY: none
+}
+#header DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 40px; LEFT: 10px; COLOR: #5ca5d6; =
+LINE-HEIGHT: 90px; TOP: 0px
+}
+#header DIV.tit A.titlink {
+	COLOR: #000
+}
+#header DIV.tit A.titlink:visited {
+	COLOR: #000
+}
+#header DIV.desc {
+	FONT-SIZE: 14px; LEFT: 100px; COLOR: #000; TOP: 45px
+}
+#tabline {
+	TOP: 92px; BACKGROUND-COLOR: #bbbbbb
+}
+#tab {
+	TOP: 70px
+}
+#tab A.on {
+	MARGIN-TOP: 2px; FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 20px; =
+BACKGROUND-COLOR: #ededed
+}
+#tab A.on:link {
+	MARGIN-TOP: 2px; FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 20px; =
+BACKGROUND-COLOR: #ededed
+}
+#tab A.on:visited {
+	MARGIN-TOP: 2px; FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 20px; =
+BACKGROUND-COLOR: #ededed
+}
+#tab SPAN {
+	FONT-SIZE: 14px; COLOR: #000000
+}
+#tab A:link {
+	FONT-SIZE: 14px; COLOR: #000000
+}
+#tab A:visited {
+	FONT-SIZE: 15px; COLOR: #000000
+}
+#tab2 {
+	BACKGROUND: #dae9f5
+}
+#tab2 SPAN {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000
+}
+#tab2 A {
+	FONT-SIZE: 12px
+}
+#tab2 A:link {
+	COLOR: #0000cc
+}
+#tab2 A:visited {
+	COLOR: #0000cc
+}
+.stage {
+=09
+}
+#layout TD.c2t1 {
+	BORDER-RIGHT: #a6a6a6 1px dashed
+}
+#layout TD.c3t1 {
+	BORDER-RIGHT: #a6a6a6 1px dashed
+}
+#layout TD.c3t3 {
+	BORDER-RIGHT: #a6a6a6 1px dashed
+}
+#comm_info {
+	COLOR: #333333; FONT-FAMILY: Arial; TEXT-ALIGN: left
+}
+#comm_info DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#comm_info A {
+	COLOR: #000
+}
+#page {
+	FONT-SIZE: 14px; FONT-FAMILY: Arial; HEIGHT: 30px; TEXT-ALIGN: center
+}
+#page SPAN {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: =
+14px; PADDING-BOTTOM: 3px; COLOR: #333333; PADDING-TOP: 3px
+}
+#page A.pc {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000
+}
+#page A.pc:visited {
+	COLOR: #000
+}
+#page A.pi {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 14px; PADDING-BOTTOM: =
+3px; COLOR: #000; PADDING-TOP: 3px
+}
+#page A.pi:visited {
+	COLOR: #000
+}
+.c2t2 {
+	DISPLAY: none
+}
+.c2t3 {
+	PADDING-LEFT: 0px
+}
+.mod {
+	MARGIN-BOTTOM: 10px
+}
+.modhandle {
+	CURSOR: move
+}
+.modth {
+	MARGIN-BOTTOM: 5px; HEIGHT: 20px
+}
+.modhead {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+.modopt {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px
+}
+.modtit {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #666666
+}
+A.modtit {
+	COLOR: #666666
+}
+A.modtit:visited {
+	COLOR: #666666
+}
+.modtitlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #666666
+}
+A.modtitlink {
+	COLOR: #666666
+}
+A.modtitlink:visited {
+	COLOR: #666666
+}
+A.modtitlink:hover {
+	COLOR: #666666
+}
+.modact {
+	FONT-SIZE: 12px; COLOR: #000
+}
+A.modact:link {
+	COLOR: #000
+}
+A.modact:visited {
+	COLOR: #000
+}
+.modbox {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #ffffff; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.modtl {
+	DISPLAY: none; LINE-HEIGHT: 1px
+}
+.modtc {
+=09
+}
+.modtr {
+	LINE-HEIGHT: 1px
+}
+.modbl {
+	LINE-HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.modbc {
+	LINE-HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.modbr {
+	LINE-HEIGHT: 1px; BACKGROUND-COLOR: #ffffff
+}
+.modlabel {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000
+}
+#m_artclg .item {
+	PADDING-LEFT: 9px
+}
+#m_board .item {
+	PADDING-LEFT: 9px
+}
+#m_blog DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+#m_blog DIV.tit A {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #000
+}
+#m_blog DIV.tit A:visited {
+	COLOR: #000
+}
+#m_blog DIV.date {
+	FONT-SIZE: 8pt; FLOAT: right; MARGIN: 0px; COLOR: #999
+}
+#m_blog DIV.cnt {
+	FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 20px
+}
+#m_blog DIV.cnt DIV {
+	FONT-SIZE: 14px
+}
+#m_blog DIV.more {
+	MARGIN: 14px 0px 16px
+}
+#m_blog DIV.more A {
+	FONT-SIZE: 14px; COLOR: #000
+}
+#m_blog DIV.more A:visited {
+	COLOR: #000
+}
+#m_blog DIV.opt {
+	FONT-SIZE: 8pt; COLOR: #999
+}
+#m_blog DIV.opt A {
+	COLOR: #999
+}
+#m_blog DIV.opt A:visited {
+	COLOR: #999
+}
+#m_blog DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 9px; LINE-HEIGHT: 9px
+}
+#m_blog DIV.none {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 14px; PADDING-BOTTOM: =
+100px; COLOR: #333333; PADDING-TOP: 100px
+}
+#m_pro A {
+	COLOR: #000
+}
+#m_pro A:visited {
+	COLOR: #000
+}
+#m_pro DIV.image {
+	TEXT-ALIGN: center
+}
+#m_pro DIV.act {
+	MARGIN-TOP: 10px
+}
+#m_pro DIV.user {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333333
+}
+#m_pro DIV.desc {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_pro DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 17px; LINE-HEIGHT: 17px
+}
+#m_pro TD {
+	FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 24px
+}
+#m_pro .photo {
+	BORDER-RIGHT: #ddd 1px solid; BORDER-TOP: #ddd 1px solid; BACKGROUND: =
+#fff; BORDER-LEFT: #ddd 1px solid; BORDER-BOTTOM: #ddd 1px solid
+}
+#m_pro .photo TD {
+	FONT-SIZE: 12px
+}
+#m_pro .photo .image {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; =
+PADDING-TOP: 20px
+}
+#m_pro .photo .line {
+	BORDER-TOP: #ddd 1px solid; FONT-SIZE: 1px; WIDTH: 90%; LINE-HEIGHT: 0
+}
+#m_pro .ref {
+	BORDER-RIGHT: #ddd 1px solid; BORDER-TOP: #ddd 1px solid; MARGIN-TOP: =
+10px; BORDER-LEFT: #ddd 1px solid; BORDER-BOTTOM: #ddd 1px solid
+}
+#m_pro .ref .tit {
+	PADDING-LEFT: 10px; BACKGROUND: #eee; BORDER-BOTTOM: #ddd 1px solid
+}
+#m_pro .ref .cnt {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: #fff; =
+PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#m_pro .basic TD {
+	FONT-SIZE: 14px; COLOR: #666
+}
+#m_pro .basic .tit {
+	FONT-WEIGHT: bold
+}
+#m_pro .basic A:hover {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BACKGROUND: #261cdc; =
+PADDING-BOTTOM: 1px; COLOR: #fff; PADDING-TOP: 1px; TEXT-DECORATION: =
+none
+}
+#m_pro .basic A.nlk:hover {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: =
+#196cca; PADDING-TOP: 0px; BACKGROUND-COLOR: #fff; TEXT-DECORATION: =
+underline
+}
+#m_pro .pline {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 10px; MARGIN-LEFT: 5px; =
+LINE-HEIGHT: 10px
+}
+#m_pro .pitem {
+	FONT-SIZE: 14px; MARGIN-LEFT: 5px; LINE-HEIGHT: 22px
+}
+#m_pro .pitem .tit {
+	COLOR: #666
+}
+#m_pro .pitem A:hover {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BACKGROUND: #261cdc; =
+PADDING-BOTTOM: 1px; COLOR: #fff; PADDING-TOP: 1px; TEXT-DECORATION: =
+none
+}
+#m_album DIV.image {
+	TEXT-ALIGN: center
+}
+#m_album DIV.page {
+	FONT-SIZE: 12px; COLOR: #333333; TEXT-ALIGN: center
+}
+#m_album DIV.page A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#m_album DIV.page A:visited {
+	COLOR: #0000cc
+}
+#m_album .phpage {
+	MARGIN-TOP: 10px; PADDING-BOTTOM: 5px; TEXT-ALIGN: center
+}
+#m_links DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_links DIV.item A {
+	FONT-SIZE: 12px; COLOR: #000; TEXT-DECORATION: none
+}
+#m_links DIV.item A:visited {
+	COLOR: #000
+}
+#m_links DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_mylink1 DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_mylink1 DIV.item A {
+	FONT-SIZE: 12px; COLOR: #000; TEXT-DECORATION: none
+}
+#m_mylink1 DIV.item A:visited {
+	COLOR: #000
+}
+#m_mylink1 DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_mylink2 DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_mylink2 DIV.item A {
+	FONT-SIZE: 12px; COLOR: #000; TEXT-DECORATION: none
+}
+#m_mylink2 DIV.item A:visited {
+	COLOR: #000
+}
+#m_mylink2 DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_mylink3 DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_mylink3 DIV.item A {
+	FONT-SIZE: 12px; COLOR: #000; TEXT-DECORATION: none
+}
+#m_mylink3 DIV.item A:visited {
+	COLOR: #000
+}
+#m_mylink3 DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_mylink4 DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_mylink4 DIV.item A {
+	FONT-SIZE: 12px; COLOR: #000; TEXT-DECORATION: none
+}
+#m_mylink4 DIV.item A:visited {
+	COLOR: #000
+}
+#m_mylink4 DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_artclg DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_artclg DIV.item A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#m_artclg DIV.item A:visited {
+	COLOR: #000
+}
+#m_artclg DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_filed DIV.item {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_filed DIV.item A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#m_filed DIV.item A:visited {
+	COLOR: #000
+}
+#m_filed DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_comment DIV.item {
+	PADDING-LEFT: 9px; FONT-SIZE: 12px; COLOR: #333333
+}
+#m_comment DIV.item A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#m_comment DIV.item A:visited {
+	COLOR: #000
+}
+#m_comment DIV.item A.cnt {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_comment DIV.item A.cnt:visited {
+	COLOR: #333333
+}
+#m_comment DIV.item A.cnt:hover {
+	COLOR: #333333; TEXT-DECORATION: underline
+}
+#m_comment DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#m_albumlist DIV.note {
+	FONT-SIZE: 14px; COLOR: #333333
+}
+#m_albumlist DIV.desc {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 14px; =
+MARGIN-BOTTOM: 12px; PADDING-BOTTOM: 3px; LINE-HEIGHT: 22px; =
+PADDING-TOP: 3px; BACKGROUND-COLOR: #f2f2f2
+}
+#m_albumlist DIV.none {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 14px; PADDING-BOTTOM: =
+100px; COLOR: #333333; PADDING-TOP: 100px
+}
+#m_albumlist DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 10px; LINE-HEIGHT: 16px
+}
+#m_albumlist DIV.tit {
+	FONT-SIZE: 14px; MARGIN: 6px 0px 7px; COLOR: #333333
+}
+#m_albumlist DIV.tit A {
+	FONT-SIZE: 14px; COLOR: #000
+}
+#m_albumlist DIV.tit A:visited {
+	COLOR: #000
+}
+#m_albumlist SPAN.count {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #333333
+}
+#m_albumlist SPAN.size {
+	FONT-SIZE: 12px; COLOR: #999999; FONT-FAMILY: Arial
+}
+#m_albumlist A.act {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#m_albumlist A.act:visited {
+	COLOR: #000
+}
+#m_albumlist A.page {
+	FONT-SIZE: 14px; COLOR: #0000cc
+}
+#m_albumlist A.page:visited {
+	COLOR: #0000cc
+}
+#m_albumlist TD.image {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#999999 1px solid; PADDING-LEFT: 5px; BACKGROUND: #ffffff; =
+PADDING-BOTTOM: 5px; BORDER-LEFT: #999999 1px solid; PADDING-TOP: 5px; =
+BORDER-BOTTOM: #999999 1px solid
+}
+#m_albumlist .phbox {
+	MARGIN-TOP: 15px; MARGIN-LEFT: 15px
+}
+#m_albumlist .phbox .phpage {
+	FONT-SIZE: 14px; COLOR: #636363
+}
+#m_albumlist .phbox .phinfo {
+	FONT-SIZE: 12px; MARGIN: 6px 0px 2px; COLOR: #636363
+}
+#m_albumlist .phbox .phimg {
+	MARGIN-BOTTOM: 10px
+}
+#m_friend DIV.filter {
+	PADDING-LEFT: 10px; MARGIN-BOTTOM: 10px; LINE-HEIGHT: 27px; =
+PADDING-TOP: 10px; HEIGHT: 27px
+}
+#m_friend DIV.catalog {
+	PADDING-LEFT: 10px; FONT-SIZE: 14px; MARGIN-BOTTOM: 10px; LINE-HEIGHT: =
+27px; HEIGHT: 27px; BACKGROUND-COLOR: #f2f2f2
+}
+#m_friend DIV.user {
+	MARGIN-TOP: 4px; FONT-SIZE: 12px; COLOR: #333333
+}
+#m_friend DIV.user A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#m_friend DIV.user A:visited {
+	COLOR: #000
+}
+#m_friend DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 10px; LINE-HEIGHT: 16px
+}
+#m_setting A {
+	COLOR: #000
+}
+#m_setting A:visited {
+	COLOR: #000
+}
+#m_setting {
+	FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 22px
+}
+#m_setting IMG.sel {
+	BORDER-RIGHT: #000 4px solid; BORDER-TOP: #000 4px solid; BORDER-LEFT: =
+#000 4px solid; BORDER-BOTTOM: #000 4px solid
+}
+#m_setting IMG.unsel {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BORDER-LEFT: =
+#000 1px solid; BORDER-BOTTOM: #000 1px solid
+}
+#m_setting SPAN.tit {
+	FONT-SIZE: 14px
+}
+#m_setting SPAN.usr {
+	COLOR: #333333
+}
+#m_setting DIV.sel {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-TOP: 6px
+}
+#m_setting DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 20px; LINE-HEIGHT: 16px
+}
+#m_sysinfo A {
+	COLOR: #000
+}
+#m_sysinfo A:visited {
+	COLOR: #000
+}
+#m_sysinfo {
+	FONT-SIZE: 14px; COLOR: #333333; LINE-HEIGHT: 22px
+}
+#m_sysinfo SPAN.new {
+	FONT-SIZE: 10px; COLOR: #ff0000; FONT-FAMILY: Arial
+}
+#m_sysinfo SPAN.date {
+	FONT-SIZE: 14px; COLOR: #333333
+}
+#m_setbase {
+	FONT-SIZE: 14px; COLOR: #333333
+}
+#m_setbase TD {
+	FONT-SIZE: 14px; COLOR: #333333
+}
+#m_setbase DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+#in_comment {
+	WIDTH: 710px
+}
+#in_comment DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-BOTTOM: 12px; COLOR: #333333
+}
+#in_comment DIV.user {
+	FONT-SIZE: 12px; MARGIN-BOTTOM: 6px; COLOR: #333333
+}
+#in_comment DIV.user A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#in_comment DIV.user A:visited {
+	COLOR: #000
+}
+#in_comment DIV.user SPAN.date {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#in_comment DIV.desc {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#in_comment DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 17px; LINE-HEIGHT: 17px
+}
+#m_track {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#m_track A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#m_track A:visited {
+	COLOR: #000
+}
+#in_send DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN: 10px 0px; COLOR: #333333
+}
+#m_search {
+=09
+}
+#m_search INPUT.text {
+=09
+}
+#m_search INPUT.radio {
+=09
+}
+#m_search INPUT.submit {
+=09
+}
+#in_msg {
+	WIDTH: 710px
+}
+#in_msg DIV.tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-BOTTOM: 12px; COLOR: #333333
+}
+#in_msg .item TD.index {
+	FONT-WEIGHT: bold; WIDTH: 40px
+}
+#in_msg .item DIV.user {
+	WIDTH: 150px; COLOR: #333333
+}
+#in_msg .item DIV.user A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#in_msg .item DIV.user A:visited {
+	COLOR: #000
+}
+#in_msg .item DIV.user IMG {
+	MARGIN-BOTTOM: 5px
+}
+#in_msg .item TD.cnt A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#in_msg .item TD.cnt A:visited {
+	COLOR: #000
+}
+#in_msg SPAN.date {
+	FONT-SIZE: 12px; COLOR: #333333
+}
+#in_msg DIV.desc {
+	MARGIN-TOP: 5px; FONT-SIZE: 12px; COLOR: #333333
+}
+#in_msg DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 17px; LINE-HEIGHT: 17px
+}
+#m_cang DIV.item {
+	PADDING-LEFT: 9px; FONT-SIZE: 12px; COLOR: #333333
+}
+#m_cang DIV.item A {
+	FONT-SIZE: 12px; COLOR: #000
+}
+#m_cang DIV.item A:visited {
+	COLOR: #000
+}
+#m_cang DIV.line {
+	BORDER-TOP: #a6a6a6 1px dashed; MARGIN-TOP: 5px; LINE-HEIGHT: 8px
+}
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: text/css;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/space.css
+
+BODY {
+	MARGIN: 0px
+}
+FORM {
+	MARGIN: 0px
+}
+BODY {
+	FILTER: none; VISIBILITY: visible! important; WORD-BREAK: break-all; =
+ZOOM: 1! important; FONT-FAMILY: Arial; WORD-WRAP: break-word; =
+moz-opacity: 1
+}
+TD {
+	FILTER: none; VISIBILITY: visible! important; WORD-BREAK: break-all; =
+ZOOM: 1! important; FONT-FAMILY: Arial; WORD-WRAP: break-word; =
+moz-opacity: 1
+}
+DIV {
+	FILTER: none; VISIBILITY: visible! important; WORD-BREAK: break-all; =
+ZOOM: 1! important; FONT-FAMILY: Arial; WORD-WRAP: break-word; =
+moz-opacity: 1
+}
+TD {
+	FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+DIV {
+	FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+HTML BODY CENTER {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #ft {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar NOBR {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar STRONG {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar A {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar A:link {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar A:visited {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #ft A {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #ft A:link {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #ft A:visited {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; BORDER-BOTTOM: medium none; ZOOM: 1! important; =
+FONT-FAMILY: Arial! important; LETTER-SPACING: normal! important; =
+POSITION: static! important; FONT-VARIANT: normal! important; =
+TEXT-DECORATION: none! important; moz-opacity: 1; max-width: none; =
+min-width: none; font-size-adjust: none
+}
+HTML BODY CENTER #usrbar {
+	DISPLAY: block! important; LINE-HEIGHT: 19px! important; HEIGHT: 19px! =
+important
+}
+HTML BODY CENTER #ft {
+	DISPLAY: block! important; LINE-HEIGHT: 19px! important; HEIGHT: 19px! =
+important
+}
+HTML BODY CENTER #usrbar NOBR {
+	DISPLAY: block! important; LINE-HEIGHT: 19px! important; HEIGHT: 19px! =
+important
+}
+HTML BODY CENTER #usrbar STRONG {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #usrbar A {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #usrbar A:link {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #usrbar A:visited {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #ft A {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #ft A:link {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #ft A:visited {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+HTML BODY CENTER #usrbar STRONG {
+	COLOR: #000000! important; TEXT-ALIGN: left! important; =
+TEXT-DECORATION: none! important
+}
+HTML BODY CENTER {
+	DISPLAY: block! important
+}
+HTML BODY CENTER #main {
+	RIGHT: auto! important; LEFT: auto! important; BOTTOM: auto! important; =
+POSITION: relative! important; TOP: auto! important
+}
+HTML BODY CENTER #usrbar {
+	RIGHT: auto! important; LEFT: auto! important; BOTTOM: auto! important; =
+POSITION: relative! important; TOP: auto! important
+}
+HTML BODY CENTER #ft {
+	RIGHT: auto! important; LEFT: auto! important; BOTTOM: auto! important; =
+POSITION: relative! important; TOP: auto! important
+}
+HTML BODY CENTER #usrbar NOBR {
+	COLOR: #000000! important; TEXT-ALIGN: right! important
+}
+HTML BODY CENTER #usrbar {
+	PADDING-RIGHT: 10px! important; PADDING-LEFT: 0px! important; Z-INDEX: =
+65530! important; BACKGROUND: #ffffff; FILTER: alpha(opacity=3D65)! =
+important; PADDING-BOTTOM: 3px! important; WIDTH: auto! important; =
+COLOR: #000000! important; PADDING-TOP: 4px! important; TEXT-ALIGN: =
+right! important; moz-opacity: 0.5
+}
+HTML BODY CENTER #usrbar A {
+	COLOR: #0000cc! important
+}
+HTML BODY CENTER #usrbar A:link {
+	COLOR: #0000cc! important
+}
+HTML BODY CENTER #usrbar A:visited {
+	COLOR: #0000cc! important
+}
+HTML BODY CENTER #ft {
+	Z-INDEX: 65534! important; COLOR: #666666! important; TEXT-ALIGN: =
+center! important
+}
+HTML BODY CENTER #ft A {
+	COLOR: #7777cc! important
+}
+HTML BODY CENTER #ft A:link {
+	COLOR: #7777cc! important
+}
+HTML BODY CENTER #ft A:visited {
+	COLOR: #7777cc! important
+}
+HTML BODY CENTER #main {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; Z-INDEX: 10000! important; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; max-width: 1000px; min-width: =
+756px
+}
+#header {
+	POSITION: relative
+}
+#header DIV.lc {
+	FONT-SIZE: 0px; POSITION: relative; HEIGHT: 100%
+}
+#header DIV.rc {
+	FONT-SIZE: 0px; RIGHT: 0px; POSITION: relative; HEIGHT: 100%
+}
+#header DIV.tit {
+	POSITION: absolute
+}
+#header DIV.desc {
+	POSITION: absolute
+}
+#tabline {
+	FONT-SIZE: 0px; WIDTH: 100%; LINE-HEIGHT: 1px; POSITION: absolute; =
+HEIGHT: 1px
+}
+#tab {
+	PADDING-LEFT: 10px; WIDTH: 100%; LINE-HEIGHT: 22px; POSITION: absolute; =
+HEIGHT: 22px
+}
+#tab A.on {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 12px; FONT-WEIGHT: bold; FONT-SIZE: =
+13px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#tab SPAN {
+	FONT-SIZE: 13px; FLOAT: left
+}
+#tab A {
+	PADDING-RIGHT: 14px; PADDING-LEFT: 14px; FONT-SIZE: 13px; FLOAT: left; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#tab2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 348px; FONT-SIZE: 12px; =
+PADDING-BOTTOM: 0px; LINE-HEIGHT: 23px; PADDING-TOP: 1px; POSITION: =
+relative; HEIGHT: 23px
+}
+#tab2 SPAN {
+	CURSOR: default
+}
+.stage {
+	WIDTH: 100%; PADDING-TOP: 10px; HEIGHT: auto
+}
+.stagepad {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; =
+PADDING-TOP: 0px
+}
+.applytmp {
+	BACKGROUND: #ffffe1; BORDER-BOTTOM: #ce0f0f 2px solid; HEIGHT: 43px
+}
+#set_cs {
+	Z-INDEX: 65533; POSITION: relative
+}
+#set_cs TABLE.actbar {
+	BORDER-RIGHT: #e10602 1px solid; BORDER-TOP: #e10602 1px solid; =
+BACKGROUND: #ffffe1; MARGIN-BOTTOM: 10px; BORDER-LEFT: #e10602 1px =
+solid; BORDER-BOTTOM: #e10602 1px solid; HEIGHT: 70px
+}
+#set_cs DIV.panel {
+	WIDTH: 100%; POSITION: absolute; TOP: 71px
+}
+#cscnt {
+	BORDER-RIGHT: #ec4847 2px solid; PADDING-RIGHT: 15px; BORDER-TOP: =
+#ec4847 2px solid; PADDING-LEFT: 15px; BACKGROUND: #ffffff; =
+PADDING-BOTTOM: 15px; BORDER-LEFT: #ec4847 2px solid; PADDING-TOP: 15px; =
+BORDER-BOTTOM: #ec4847 2px solid; TEXT-ALIGN: left
+}
+#cslayout {
+	BORDER-RIGHT: #ec4847 2px solid; PADDING-RIGHT: 15px; BORDER-TOP: =
+#ec4847 2px solid; PADDING-LEFT: 15px; BACKGROUND: #ffffff; =
+PADDING-BOTTOM: 15px; BORDER-LEFT: #ec4847 2px solid; PADDING-TOP: 15px; =
+BORDER-BOTTOM: #ec4847 2px solid; TEXT-ALIGN: left
+}
+#csbg {
+	BORDER-RIGHT: #ec4847 2px solid; PADDING-RIGHT: 15px; BORDER-TOP: =
+#ec4847 2px solid; PADDING-LEFT: 15px; BACKGROUND: #ffffff; =
+PADDING-BOTTOM: 15px; BORDER-LEFT: #ec4847 2px solid; PADDING-TOP: 15px; =
+BORDER-BOTTOM: #ec4847 2px solid; TEXT-ALIGN: left
+}
+#cscnt {
+	WIDTH: 800px
+}
+#cslayout {
+	WIDTH: 620px
+}
+#csbg {
+	WIDTH: 520px
+}
+.f12 {
+	FONT-SIZE: 12px
+}
+.f14 {
+	FONT-SIZE: 14px
+}
+#layout {
+	TABLE-LAYOUT: fixed
+}
+#m_blog DIV.cnt {
+	OVERFLOW: hidden
+}
+#m_albumlist DIV.desc {
+	OVERFLOW: hidden
+}
+#m_blog DIV.tit {
+	OVERFLOW: hidden
+}
+#m_artclg DIV.item {
+	OVERFLOW: hidden
+}
+#m_comment DIV.item {
+	OVERFLOW: hidden
+}
+#m_links DIV.item {
+	OVERFLOW: hidden
+}
+#m_cang DIV.item {
+	OVERFLOW: hidden
+}
+#m_album DIV.image {
+	OVERFLOW: hidden
+}
+#m_links DIV.item {
+	OVERFLOW: hidden
+}
+#in_comment DIV.desc {
+	OVERFLOW: hidden
+}
+#m_friblog DIV.item {
+	OVERFLOW: hidden
+}
+#m_blog DIV.cnt {
+	OVERFLOW: hidden; WORD-BREAK: normal; POSITION: static
+}
+#m_blog DIV.cnt FONT {
+	LINE-HEIGHT: normal
+}
+#m_blog DIV.cnt  {
+	LINE-HEIGHT: normal
+}
+#m_blog TABLE {
+	TABLE-LAYOUT: auto
+}
+#in_comment DIV.tit {
+	TEXT-ALIGN: left
+}
+#in_send DIV.tit {
+	TEXT-ALIGN: left
+}
+#in_reader DIV.tit {
+	TEXT-ALIGN: left
+}
+#usrbar_popup {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup NOBR {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup STRONG {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup A {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup A:link {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup A:visited {
+	CLEAR: both! important; BORDER-RIGHT: medium none; BORDER-TOP: medium =
+none; FONT-SIZE: 12px! important; BACKGROUND: none transparent scroll =
+repeat 0% 0%; FILTER: none! important; FLOAT: none! important; =
+VISIBILITY: visible! important; MARGIN: 0px; WORD-SPACING: normal! =
+important; VERTICAL-ALIGN: baseline! important; OVERFLOW: visible! =
+important; TEXT-TRANSFORM: none! important; BORDER-LEFT: medium none; =
+WIDTH: auto! important; DIRECTION: inherit! important; LAYOUT-FLOW: =
+horizontal! important; LINE-HEIGHT: normal! important; BORDER-BOTTOM: =
+medium none; ZOOM: 1! important; FONT-FAMILY: Arial! important; =
+LETTER-SPACING: normal! important; POSITION: static! important; =
+FONT-VARIANT: normal! important; TEXT-DECORATION: none! important; =
+moz-opacity: 1; max-width: none; min-width: none; font-size-adjust: none
+}
+#usrbar_popup {
+	DISPLAY: block! important; LINE-HEIGHT: 19px! important; HEIGHT: 19px! =
+important
+}
+#usrbar_popup NOBR {
+	DISPLAY: block! important; LINE-HEIGHT: 19px! important; HEIGHT: 19px! =
+important
+}
+#usrbar_popup STRONG {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+#usrbar_popup A {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+#usrbar_popup A:link {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+#usrbar_popup A:visited {
+	DISPLAY: inline! important; HEIGHT: auto! important; TEXT-DECORATION: =
+underline! important
+}
+#usrbar_popup STRONG {
+	COLOR: #000000! important; TEXT-ALIGN: left! important; =
+TEXT-DECORATION: none! important
+}
+#usrbar_popup {
+	PADDING-RIGHT: 10px! important; PADDING-LEFT: 0px! important; RIGHT: =
+auto! important; BACKGROUND: #ffffff; FILTER: alpha(opacity=3D65)! =
+important; LEFT: auto! important; PADDING-BOTTOM: 3px! important; WIDTH: =
+auto! important; COLOR: #000000! important; BOTTOM: auto! important; =
+PADDING-TOP: 4px! important; POSITION: relative! important; TOP: auto! =
+important; TEXT-ALIGN: right! important; moz-opacity: 0.5
+}
+#usrbar_popup NOBR {
+	COLOR: #000000! important; TEXT-ALIGN: right! important
+}
+#usrbar_popup A {
+	COLOR: #0000cc! important
+}
+#usrbar_popup A:link {
+	COLOR: #0000cc! important
+}
+#usrbar_popup A:visited {
+	COLOR: #0000cc! important
+}
+#usrbar_popup #my_home_container {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px
+}
+#cals {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #ccc 1px =
+solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #ccc 1px =
+solid; WIDTH: 100%; PADDING-TOP: 2px; BORDER-BOTTOM: #ccc 1px solid; =
+BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+#cals .cal_body {
+	FONT-SIZE: 12px; WIDTH: 100%; FONT-FAMILY: Arial
+}
+#cals .cal_mth {
+	FONT-SIZE: 12px; WIDTH: 100%; FONT-FAMILY: Arial
+}
+#cals .cal_yr TD {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 12px; BACKGROUND: =
+none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 1px; LINE-HEIGHT: =
+15px; PADDING-TOP: 1px; WHITE-SPACE: nowrap
+}
+#cals .cal_yr .cal_pre {
+	PADDING-LEFT: 10px; FONT-SIZE: 8px; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/pre.gif) no-repeat center center
+}
+#cals .cal_yr .cal_nxt {
+	PADDING-LEFT: 10px; FONT-SIZE: 8px; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/nxt.gif) no-repeat center center
+}
+#cals .cal_yr .cal_pre_ovr {
+	PADDING-LEFT: 10px; FONT-SIZE: 8px; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/pre_ovr.gif) no-repeat center =
+center; CURSOR: pointer
+}
+#cals .cal_yr .cal_nxt_ovr {
+	PADDING-LEFT: 10px; FONT-SIZE: 8px; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/nxt_ovr.gif) no-repeat center =
+center; CURSOR: pointer
+}
+#cals .cal_yr TABLE {
+	WIDTH: 30px
+}
+#cals TR {
+=09
+}
+#cals TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 12px; PADDING-BOTTOM: =
+3px; LINE-HEIGHT: 14px; PADDING-TOP: 3px; FONT-FAMILY: Arial; =
+WHITE-SPACE: nowrap; TEXT-ALIGN: center
+}
+#cals .today {
+	BORDER-RIGHT: #fca93f 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#fca93f 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; BACKGROUND: =
+#fff4cc; PADDING-BOTTOM: 2px; BORDER-LEFT: #fca93f 1px solid; =
+PADDING-TOP: 2px; BORDER-BOTTOM: #fca93f 1px solid
+}
+#cals .cal_week TD {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Tahoma
+}
+#cals .mth_ctrl {
+	COLOR: #000000
+}
+#cals .cal_date {
+	COLOR: #000000
+}
+#cals .cal_sa {
+	COLOR: #000066
+}
+#cals .cal_su {
+	COLOR: #000066
+}
+#cals .not_come {
+	COLOR: #333
+}
+#cals .cal_before {
+	VISIBILITY: hidden
+}
+#cals .cal_after {
+	VISIBILITY: hidden
+}
+#cals .cal_active {
+	FONT-WEIGHT: bold; COLOR: #0000cc; TEXT-DECORATION: underline
+}
+#cals .cal_select {
+	BORDER-RIGHT: #d6d6d6 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#d6d6d6 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: =
+#d6d6d6 1px solid; COLOR: #0000cc; PADDING-TOP: 2px; BORDER-BOTTOM: =
+#d6d6d6 1px solid; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: underline
+}
+#cals .disable {
+	COLOR: #999; TEXT-DECORATION: none
+}
+#cals .yr_normal {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #fff 1px solid; BORDER-LEFT: =
+#fff 1px solid; LINE-HEIGHT: 14px; BORDER-BOTTOM: #fff 1px solid
+}
+#cals .mth_normal {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #fff 1px solid; BORDER-LEFT: =
+#fff 1px solid; LINE-HEIGHT: 14px; BORDER-BOTTOM: #fff 1px solid
+}
+#cals .yr_sel {
+	BORDER-RIGHT: #ffad42 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: =
+#ffad42 1px solid; PADDING-LEFT: 0px; BACKGROUND: #ffec93; =
+PADDING-BOTTOM: 0px; BORDER-LEFT: #ffad42 1px solid; CURSOR: pointer; =
+LINE-HEIGHT: 14px; PADDING-TOP: 0px; BORDER-BOTTOM: #ffad42 1px solid
+}
+#cals .mth_sel {
+	BORDER-RIGHT: #ffad42 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: =
+#ffad42 1px solid; PADDING-LEFT: 0px; BACKGROUND: #ffec93; =
+PADDING-BOTTOM: 0px; BORDER-LEFT: #ffad42 1px solid; CURSOR: pointer; =
+LINE-HEIGHT: 14px; PADDING-TOP: 0px; BORDER-BOTTOM: #ffad42 1px solid
+}
+#cals .yr_sel .cal_arrow {
+	DISPLAY: none
+}
+#cals .mth_sel .cal_arrow {
+	DISPLAY: none
+}
+#cals .yr_normal .cal_arrow {
+	DISPLAY: none
+}
+#cals .mth_normal .cal_arrow {
+	DISPLAY: none
+}
+#cals .cal_roll {
+	BORDER-RIGHT: #ff9000 1px solid; BORDER-TOP: #ff9000 1px solid; =
+DISPLAY: none; FONT-SIZE: 12px; BACKGROUND: #fef3c1; BORDER-LEFT: =
+#ff9000 1px solid; LINE-HEIGHT: 18px; BORDER-BOTTOM: #ff9000 1px solid; =
+FONT-FAMILY: Arial; POSITION: absolute
+}
+#cals .cal_roll .normal {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#cals .cal_roll .msover {
+	BACKGROUND: #f5e182; CURSOR: pointer
+}
+#cals .cal_pop {
+	DISPLAY: none; POSITION: absolute
+}
+#cals .cal_pp_arw {
+	DISPLAY: none; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/poparrow.gif) no-repeat; LEFT: 10%; =
+POSITION: relative; TOP: 1px; line-h: 6px
+}
+#cals .cal_pp_cnt {
+	BORDER-RIGHT: #666 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #666 1px =
+solid; PADDING-LEFT: 3px; FONT-SIZE: 12px; BACKGROUND: =
+url(http://img.baidu.com/hi/img/date/popbg.gif); PADDING-BOTTOM: 3px; =
+BORDER-LEFT: #666 1px solid; MARGIN-RIGHT: 20px; PADDING-TOP: 3px; =
+BORDER-BOTTOM: #666 1px solid; FONT-FAMILY: Arial; WHITE-SPACE: nowrap
+}
+#cals .cal_rng {
+=09
+}
+#cals .cal_rng TD {
+	FONT-SIZE: 12px; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#spVerifyKey {
+	IME-MODE: disabled
+}
+#spVerifyKey INPUT {
+	IME-MODE: disabled
+}
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/ui/scripts/global.js
+
+/* declare namespace */=0A=
+(function(){=0A=
+	var namespaces =3D [ "System","BdElement", "BdBrowser", "BdEvent", =
+"BdUtil", "BdAjax","BdString"];=0A=
+	for(var i =3D 0, j =3D namespaces.length; i < j; i ++){=0A=
+		if(window[namespaces[i]] !=3D 'object')=0A=
+			window[namespaces[i]] =3D {};=0A=
+	}=0A=
+})();=0A=
+=0A=
+/* attach methods */=0A=
+(function(){=0A=
+	/* BdBrowser scope */=0A=
+	var ua =3D navigator.userAgent.toLowerCase();=0A=
+=0A=
+	var isStrict =3D document.compatMode =3D=3D "CSS1Compat",=0A=
+		isOpera =3D ua.indexOf("opera") > -1,=0A=
+		isSafari =3D (/webkit|khtml/).test(ua),=0A=
+		isSafari3 =3D isSafari && ua.indexOf('webkit/5') !=3D -1,=0A=
+		isIE =3D !isOpera && ua.indexOf("msie") > -1,=0A=
+		isIE7 =3D !isOpera && ua.indexOf("msie 7") > -1,=0A=
+		isGecko =3D !isSafari && ua.indexOf("gecko") > -1,=0A=
+		isBorderBox =3D isIE && !isStrict,=0A=
+		isWindows =3D (ua.indexOf("windows") !=3D -1 || ua.indexOf("win32") =
+!=3D -1),=0A=
+		isMac =3D (ua.indexOf("macintosh") !=3D -1 || ua.indexOf("mac os x") =
+!=3D -1),=0A=
+		isAir =3D (ua.indexOf("adobeair") !=3D -1),=0A=
+		isLinux =3D (ua.indexOf("linux") !=3D -1),=0A=
+		isSecure =3D window.location.href.toLowerCase().indexOf("https") =
+=3D=3D=3D 0;=0A=
+=0A=
+    // remove css image flicker=0A=
+    if(isIE && !isIE7){=0A=
+        try{=0A=
+            document.execCommand("BackgroundImageCache", false, true);=0A=
+        }catch(e){}=0A=
+    }=0A=
+    =0A=
+    var browsers =3D {=0A=
+        isOpera : isOpera,=0A=
+        isSafari : isSafari,=0A=
+        isSafari3 : isSafari3,=0A=
+        isSafari2 : isSafari && !isSafari3,=0A=
+        isIE : isIE,=0A=
+        isIE6 : isIE && !isIE7,=0A=
+        isIE7 : isIE7,=0A=
+        isGecko : isGecko,=0A=
+        isBorderBox : isBorderBox,=0A=
+        isLinux : isLinux,=0A=
+        isWindows : isWindows,=0A=
+        isMac : isMac,=0A=
+        isAir : isAir=0A=
+    };=0A=
+=0A=
+    for(var p in browsers){=0A=
+        BdBrowser[p] =3D browsers[p];=0A=
+    }=0A=
+=0A=
+    /* BdElement scope */=0A=
+    window.Bd$ =3D BdElement.check =3D function(id){=0A=
+        return typeof id =3D=3D 'string' ? document.getElementById(id) : =
+id;=0A=
+    }=0A=
+=0A=
+    BdElement.removeNode =3D isIE ? function(){=0A=
+        var d;=0A=
+        return function(node){=0A=
+            if(node && node.tagName !=3D 'BODY'){=0A=
+                d =3D d || document.createElement('DIV');=0A=
+                d.appendChild(node);=0A=
+                d.innerHTML =3D '';=0A=
+            }=0A=
+        }=0A=
+    }() : function(node){=0A=
+        if(node && node.parentNode && node.tagName !=3D 'BODY'){=0A=
+            node.parentNode.removeChild(node);=0A=
+        }=0A=
+    }=0A=
+=0A=
+    /* BdEvent scope */=0A=
+    BdEvent.addEvent =3D function(el, fn, handler){=0A=
+        if(isIE){=0A=
+            el.attachEvent("on" + fn, handler);=0A=
+        }else{=0A=
+            el.addEventListener(fn, handler, false); =0A=
+        }=0A=
+    }=0A=
+=0A=
+    BdEvent.removeEvent =3D function(el, fn, handler){=0A=
+        if(isIE){=0A=
+            el.detachEvent("on" + fn, handler);=0A=
+        }else{=0A=
+            el.removeEventListener(fn, handler, false); =0A=
+        }=0A=
+    }=0A=
+=0A=
+	BdEvent.addDOMLoadEvent =3D (function(){=0A=
+        // create event function stack=0A=
+        var load_events =3D [],=0A=
+            load_timer,=0A=
+            script,=0A=
+            done,=0A=
+            exec,=0A=
+            old_onload,=0A=
+            init =3D function () {=0A=
+                done =3D true;=0A=
+                // kill the timer=0A=
+                clearInterval(load_timer);=0A=
+=0A=
+                // execute each function in the stack in the order they =
+were added=0A=
+                while (exec =3D load_events.shift())=0A=
+                    setTimeout(exec, 10);=0A=
+                if (script) script.onreadystatechange =3D '';=0A=
+            };=0A=
+=0A=
+            return function (func) {=0A=
+                // if the init function was already ran, just run this =
+function now and stop=0A=
+                if (done) return func();=0A=
+=0A=
+=0A=
+                if (!load_events[0]) {=0A=
+                    // for Mozilla/Opera9=0A=
+                    if (document.addEventListener)=0A=
+                        document.addEventListener("DOMContentLoaded", =
+init, false);=0A=
+=0A=
+                    // for Internet Explorer=0A=
+=0A=
+                    /*@cc_on @*/=0A=
+                    /*@if (@_win32)=0A=
+                        document.write("<script id=3D__ie_onload defer =
+src=3D//0><\/scr"+"ipt>");=0A=
+                        script =3D =
+document.getElementById("__ie_onload");=0A=
+                        script.onreadystatechange =3D function() {=0A=
+                            if (this.readyState =3D=3D "complete")=0A=
+                                init(); // call the onload handler=0A=
+                        };=0A=
+                    /*@end @*/=0A=
+=0A=
+=0A=
+                    // for Safari=0A=
+                    if (/WebKit/i.test(navigator.userAgent)) { // sniff=0A=
+                        load_timer =3D setInterval(function() {=0A=
+                            if =
+(/loaded|complete/.test(document.readyState))=0A=
+                                init(); // call the onload handler=0A=
+                        }, 10);=0A=
+                    }=0A=
+=0A=
+                    // for other browsers set the window.onload, but =
+also execute the old window.onload=0A=
+                    old_onload =3D window.onload;=0A=
+=0A=
+                    window.onload =3D function() {=0A=
+                        init();=0A=
+                        if (old_onload) old_onload();=0A=
+                    };=0A=
+                }=0A=
+=0A=
+            load_events.push(func);=0A=
+        }=0A=
+	})();=0A=
+=0A=
+	/* BdUtil scope */=0A=
+	BdUtil.insertWBR =3D (function(){=0A=
+		var textAreaCache =3D null;=0A=
+=0A=
+		function getContainer(){=0A=
+			var textarea =3D document.getElementById('insertWBR_container');=0A=
+			if(!textarea){=0A=
+				textarea =3D document.createElement('TEXTAREA');=0A=
+				textarea.id =3D 'insertWBR_container';=0A=
+				textarea.style.display =3D 'none';=0A=
+				document.body.insertBefore(textarea, document.body.firstChild);=0A=
+			}=0A=
+			return (textAreaCache =3D textarea)=0A=
+		}=0A=
+=0A=
+		return function(text, step){=0A=
+			var textarea =3D textAreaCache || getContainer();=0A=
+			if(!textarea) return text;=0A=
+			=0A=
+			textarea.innerHTML =3D =
+text.replace(/&/g,'&amp;').replace(/</g,"&lt;").replace(/>/g,"&gt;");=0A=
+			var string =3D textarea.value;=0A=
+			=0A=
+=0A=
+			var step =3D (step || 5), reg =3D new RegExp("(\\S{" + step + "})", =
+"gi");=0A=
+			var result =3D =
+string.replace(/(<[^>]+>)/gi,"$1<wbr/>").replace(/(>|^)([^<]+)(<|$)/gi, =
+function(a,b,c,d){=0A=
+				if(c.length < step) return a;=0A=
+				return b + c.replace(reg, "$1<wbr/>") + d;=0A=
+			}).replace(/&([^;]*)(<wbr\/?>)([^;]*);/g,'&$1$3;');=0A=
+			return result;=0A=
+		}=0A=
+	})();=0A=
+=0A=
+	BdUtil.hi_tracker =3D (function(){=0A=
+		function E(s){ return encodeURIComponent(s) }=0A=
+=0A=
+		function tracker(mn, a){=0A=
+			return function(){=0A=
+				var t =3D new Date().getTime(),=0A=
+					href =3D a.href;=0A=
+				if(isIE){=0A=
+					var regex =3D /href\s*=3D\s*("|')?([^\s]*)\1/gi;=0A=
+					if(regex.test(a.outerHTML))=0A=
+						href =3D RegExp.$2;=0A=
+				}=0A=
+				new Image().src =3D "http://hi.baidu.com/sys/statlog/1.gif?m=3D" + =
+E(mn) + "&v=3D" + E(href) + "&t=3D"+t;=0A=
+			}=0A=
+		}=0A=
+=0A=
+		return function(mod_id_or_el, mod_name){=0A=
+			var bl =3D (typeof mod_id_or_el =3D=3D 'string'),=0A=
+				el =3D bl ? document.getElementById(mod_id_or_el) : mod_id_or_el,=0A=
+				mn =3D mod_name || (bl ? mod_id_or_el : el.tagName),=0A=
+				as =3D el.nodeName.toUpperCase() =3D=3D 'A' ? [el] : =
+el.getElementsByTagName('A');=0A=
+			if(!as || as.length <=3D 0) return false;=0A=
+			for(var i =3D 0, j =3D as.length; i < j; i ++){=0A=
+				var a =3D as[i];=0A=
+				isIE ? a.attachEvent("onclick", tracker(mn, a)) : =
+a.addEventListener("click", tracker(mn, a), false);=0A=
+			}=0A=
+		}=0A=
+	})();=0A=
+=0A=
+    /* BdAjax scope */=0A=
+    BdAjax.getXHR =3D function(){=0A=
+        var xhr =3D null;=0A=
+        try{=0A=
+            return (xhr =3D new XMLHttpRequest());=0A=
+        }catch(e){}=0A=
+=0A=
+        for(var i =3D 0, a =3D ['MSXML3','MSXML2','Microsoft']; i < =
+a.length; i ++){=0A=
+            try{=0A=
+                xhr =3D new ActiveXObject(a[i]+'.XMLHTTP');=0A=
+                break;=0A=
+            }catch(e){}=0A=
+        }=0A=
+=0A=
+        return xhr;=0A=
+    }=0A=
+=0A=
+    BdAjax.request =3D function(url, json){=0A=
+        var xhr =3D this.getXHR();=0A=
+        if(!xhr){=0A=
+            throw new Error("cant't initialize xhr instance.");=0A=
+        }=0A=
+		var options=3D{};=0A=
+        options.method    =3D (json.method || 'get').toLowerCase();=0A=
+        options.asyn      =3D true;=0A=
+        options.onSuccess =3D json.onSuccess || function(){};=0A=
+        options.onFailure =3D json.onFailure || function(){ new =
+Image().src =3D "/sys/statlog/1.gif?m=3Dajax-request&v=3D" + =
+encodeURIComponent(url) + "&t=3D" + new Date().getTime();};=0A=
+       =0A=
+        =0A=
+        options.postData =3D json.postData || null;=0A=
+=0A=
+        xhr.open(options.method, url, options.asyn);=0A=
+=0A=
+		if("post" =3D=3D options.method.toLowerCase()){=0A=
+            xhr.setRequestHeader("Content-Type", =
+"application/x-www-form-urlencoded");=0A=
+        } =0A=
+=0A=
+        xhr.onreadystatechange =3D function(){=0A=
+            if(xhr.readyState =3D=3D 4){=0A=
+                if(xhr.status =3D=3D 0 || xhr.status =3D=3D 200){=0A=
+                    options.onSuccess(xhr);=0A=
+                }else{=0A=
+                    options.onFailure(xhr);=0A=
+                }=0A=
+            }=0A=
+        }=0A=
+        xhr.send(options.postData);=0A=
+    }=0A=
+=0A=
+	BdAjax.loadJS=3D(function()=0A=
+	{=0A=
+		var head ;=0A=
+		return function(jsUrl){=0A=
+			head =3D head || document.getElementsByTagName("head")[0];=0A=
+			var s=3Ddocument.createElement("script");=0A=
+			s.type=3D"text/javascript";=0A=
+			s.src=3DjsUrl;=0A=
+			head.appendChild(s);=0A=
+		}=0A=
+=0A=
+	})();=0A=
+	=0A=
+	BdString.trim=3Dfunction(str)=0A=
+	{=0A=
+		return str.replace(/(^[\s\t\xa0\u3000]+)|([\u3000\xa0\s\t]+$)/g, "");=0A=
+	}=0A=
+	BdString.byteLength =3D function(str){=0A=
+		return str.replace(/[^\x00-\xFF]/g, "ly").length;=0A=
+	}=0A=
+	BdString.subByte =3D function(s, n){=0A=
+		if(this.byteLength(s)<=3Dn) =0A=
+			return s;=0A=
+		for(var i=3DMath.floor((n=3Dn-2)/2),l=3Ds.length; i<l; i++)=0A=
+			if(this.byteLength(s.substr(0,i))>=3Dn)=0A=
+				return s.substr(0,i) +"\u2026";=0A=
+		return s;=0A=
+	}=0A=
+})();=0A=
+
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/js/popup.js
+
+if(!Array.prototype.push){Array.prototype.push=3Dfunction(){var =
+startLength=3Dthis.length;for(var =
+i=3D0;i<arguments.length;i++)this[startLength+i]=3Darguments[i];return =
+this.length}};function G(){var elements=3Dnew Array();for(var =
+i=3D0;i<arguments.length;i++){var element=3Darguments[i];if(typeof =
+element=3D=3D'string')element=3Ddocument.getElementById(element);if(argum=
+ents.length=3D=3D1)return element;elements.push(element)};return =
+elements};Function.prototype.bind=3Dfunction(object){var =
+__method=3Dthis;return =
+function(){__method.apply(object,arguments)}};Function.prototype.bindAsEv=
+entListener=3Dfunction(object){var __method=3Dthis;return =
+function(event){__method.call(object,event||window.event)}};Object.extend=
+=3Dfunction(destination,source){for(property in =
+source){destination[property]=3Dsource[property]};return =
+destination};if(!window.Event){var Event=3Dnew =
+Object()};Object.extend(Event,{observers:false,element:function(event){re=
+turn =
+event.target||event.srcElement},isLeftClick:function(event){return(((even=
+t.which)&&(event.which=3D=3D1))||((event.button)&&(event.button=3D=3D1)))=
+},pointerX:function(event){return =
+event.pageX||(event.clientX+(document.documentElement.scrollLeft||documen=
+t.body.scrollLeft))},pointerY:function(event){return =
+event.pageY||(event.clientY+(document.documentElement.scrollTop||document=
+.body.scrollTop))},stop:function(event){if(event.preventDefault){event.pr=
+eventDefault();event.stopPropagation()}else{event.returnValue=3Dfalse;eve=
+nt.cancelBubble=3Dtrue}},findElement:function(event,tagName){var =
+element=3DEvent.element(event);while(element.parentNode&&(!element.tagNam=
+e||(element.tagName.toUpperCase()!=3DtagName.toUpperCase())))element=3Del=
+ement.parentNode;return =
+element},_observeAndCache:function(element,name,observer,useCapture){if(!=
+this.observers)this.observers=3D[];if(element.addEventListener){this.obse=
+rvers.push([element,name,observer,useCapture]);element.addEventListener(n=
+ame,observer,useCapture)}else =
+if(element.attachEvent){this.observers.push([element,name,observer,useCap=
+ture]);element.attachEvent('on'+name,observer)}},unloadCache:function(){i=
+f(!Event.observers)return;for(var =
+i=3D0;i<Event.observers.length;i++){Event.stopObserving.apply(this,Event.=
+observers[i]);Event.observers[i][0]=3Dnull};Event.observers=3Dfalse},obse=
+rve:function(element,name,observer,useCapture){var =
+element=3DG(element);useCapture=3DuseCapture||false;if(name=3D=3D'keypres=
+s'&&(navigator.appVersion.match(/Konqueror|Safari|KHTML/)||element.attach=
+Event))name=3D'keydown';this._observeAndCache(element,name,observer,useCa=
+pture)},stopObserving:function(element,name,observer,useCapture){var =
+element=3DG(element);useCapture=3DuseCapture||false;if(name=3D=3D'keypres=
+s'&&(navigator.appVersion.match(/Konqueror|Safari|KHTML/)||element.detach=
+Event))name=3D'keydown';if(element.removeEventListener){element.removeEve=
+ntListener(name,observer,useCapture)}else =
+if(element.detachEvent){element.detachEvent('on'+name,observer)}}});Event=
+.observe(window,'unload',Event.unloadCache,false);var =
+Class=3Dfunction(){var =
+_class=3Dfunction(){this.initialize.apply(this,arguments)};for(i=3D0;i<ar=
+guments.length;i++){superClass=3Darguments[i];for(member in =
+superClass.prototype){_class.prototype[member]=3DsuperClass.prototype[mem=
+ber]}};_class.child=3Dfunction(){return new =
+Class(this)};_class.extend=3Dfunction(f){for(property in =
+f){_class.prototype[property]=3Df[property]}};return _class};function =
+space(flag){if(flag=3D=3D"begin"){var =
+ele=3Ddocument.getElementById("ft");if(typeof(ele)!=3D"undefined"&&ele!=3D=
+null)ele.id=3D"ft_popup";ele=3Ddocument.getElementById("usrbar");if(typeo=
+f(ele)!=3D"undefined"&&ele!=3Dnull)ele.id=3D"usrbar_popup"}else =
+if(flag=3D=3D"end"){var =
+ele=3Ddocument.getElementById("ft_popup");if(typeof(ele)!=3D"undefined"&&=
+ele!=3Dnull)ele.id=3D"ft";ele=3Ddocument.getElementById("usrbar_popup");i=
+f(typeof(ele)!=3D"undefined"&&ele!=3Dnull)ele.id=3D"usrbar"}};var =
+Popup=3Dnew =
+Class();Popup.prototype=3D{iframeIdName:'ifr_popup',initialize:function(c=
+onfig){this.config=3DObject.extend({contentType:1,isHaveTitle:true,scroll=
+Type:'no',isBackgroundCanClick:false,isSupportDraging:true,isShowShadow:t=
+rue,isReloadOnClose:true,width:400,height:300},config||{});this.info=3D{s=
+hadowWidth:4,title:"",contentUrl:"",contentHtml:"",callBack:null,paramete=
+r:null,confirmCon:"",alertCon:"",someHiddenTag:"select,object,embed",some=
+DisabledBtn:"",someHiddenEle:"",overlay:0,coverOpacity:40};this.color=3D{=
+cColor:"#EEEEEE",bColor:"#FFFFFF",tColor:"#709CD2",wColor:"#FFFFFF"};this=
+.dropClass=3Dnull;this.someToHidden=3D[];this.someToDisabled=3D[];if(!thi=
+s.config.isHaveTitle)this.config.isSupportDraging=3Dfalse;this.iniBuild()=
+},setContent:function(arrt,val){if(val!=3D''){switch(arrt){case =
+'width':this.config.width=3Dval;break;case =
+'height':this.config.height=3Dval;break;case =
+'title':this.info.title=3Dval;break;case =
+'contentUrl':this.info.contentUrl=3Dval;break;case =
+'contentHtml':this.info.contentHtml=3Dval;break;case =
+'callBack':this.info.callBack=3Dval;break;case =
+'parameter':this.info.parameter=3Dval;break;case =
+'confirmCon':this.info.confirmCon=3Dval;break;case =
+'alertCon':this.info.alertCon=3Dval;break;case =
+'someHiddenTag':this.info.someHiddenTag=3Dval;break;case =
+'someHiddenEle':this.info.someHiddenEle=3Dval;break;case =
+'someDisabledBtn':this.info.someDisabledBtn=3Dval;break;case =
+'overlay':this.info.overlay=3Dval}}},iniBuild:function(){G('dialogCase')?=
+G('dialogCase').parentNode.removeChild(G('dialogCase')):function(){};var =
+oDiv=3Ddocument.createElement('span');oDiv.id=3D'dialogCase';document.bod=
+y.appendChild(oDiv)},build:function(){var =
+baseZIndex=3D10001+this.info.overlay*10;var =
+showZIndex=3DbaseZIndex+2;this.iframeIdName=3D'ifr_popup'+this.info.overl=
+ay;var path=3D"http://img.baidu.com/hi/img/";var close=3D'<input =
+type=3D"image" id=3D"dialogBoxClose" src=3D"'+path+'dialogclose.gif" =
+border=3D"0" width=3D"16" height=3D"16" align=3D"absmiddle" =
+title=3D"=B9=D8=B1=D5"/>';var cB=3D'filter: =
+alpha(opacity=3D'+this.info.coverOpacity+');opacity:'+this.info.coverOpac=
+ity/100+';';var cover=3D'<div id=3D"dialogBoxBG" =
+style=3D"position:absolute;top:0px;left:0px;width:100%;height:100%;z-inde=
+x:'+baseZIndex+';'+cB+'background-color:'+this.color.cColor+';display:non=
+e;"></div>';var mainBox=3D'<div id=3D"dialogBox" style=3D"border:1px =
+solid =
+'+this.color.tColor+';display:none;z-index:'+showZIndex+';position:relati=
+ve;width:'+this.config.width+'px;"><table width=3D"100%" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" =
+bgcolor=3D"'+this.color.bColor+'">';if(this.config.isHaveTitle){mainBox+=3D=
+'<tr height=3D"24" bgcolor=3D"'+this.color.tColor+'"><td><table =
+style=3D"-moz-user-select:none;height:24px;" width=3D"100%" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" ><tr>'+'<td width=3D"6" =
+height=3D"24"></td><td id=3D"dialogBoxTitle" =
+style=3D"color:'+this.color.wColor+';font-size:14px;font-weight:bold;">'+=
+this.info.title+'&nbsp;</td>'+'<td id=3D"dialogClose" width=3D"20" =
+align=3D"right" valign=3D"middle">'+close+'</td><td =
+width=3D"6"></td></tr></table></td></tr>'}else{mainBox+=3D'<tr =
+height=3D"10"><td align=3D"right">'+close+'</td></tr>'};mainBox+=3D'<tr =
+style=3D"height:'+this.config.height+'px" valign=3D"top"><td =
+id=3D"dialogBody" =
+style=3D"position:relative;"></td></tr></table></div>'+'<div =
+id=3D"dialogBoxShadow" =
+style=3D"display:none;z-index:'+baseZIndex+';"></div>';if(!this.config.is=
+BackgroundCanClick){G('dialogCase').innerHTML=3Dcover+mainBox;G('dialogBo=
+xBG').style.height=3Ddocument.body.scrollHeight}else =
+G('dialogCase').innerHTML=3DmainBox;Event.observe(G('dialogBoxClose'),"cl=
+ick",this.reset.bindAsEventListener(this),false);if(this.config.isSupport=
+Draging){dropClass=3Dnew =
+Dragdrop(this.config.width,this.config.height,this.info.shadowWidth,this.=
+config.isSupportDraging,this.config.contentType);G("dialogBoxTitle").styl=
+e.cursor=3D"move"};this.lastBuild()},lastBuild:function(){var =
+confirm=3D'<div style=3D"width:100%;height:100%;text-align:center;"><div =
+style=3D"margin:20px 20px 0 =
+20px;font-size:14px;line-height:16px;color:#000000;">'+this.info.confirmC=
+on+'</div><div style=3D"margin:20px;"><input id=3D"dialogOk" =
+type=3D"button" value=3D"  =C8=B7=B6=A8  "/>&nbsp;<input =
+id=3D"dialogCancel" type=3D"button" value=3D"  =C8=A1=CF=FB  =
+"/></div></div>';var alert=3D'<div =
+style=3D"width:100%;height:100%;text-align:center;"><div =
+style=3D"margin:20px 20px 0 =
+20px;font-size:14px;line-height:16px;color:#000000;">'+this.info.alertCon=
++'</div><div style=3D"margin:20px;"><input id=3D"dialogYES" =
+type=3D"button" value=3D"  =C8=B7=B6=A8  "/></div></div>';var =
+baseZIndex=3D10001+this.info.overlay*10;var =
+coverIfZIndex=3DbaseZIndex+4;if(this.config.contentType=3D=3D1){var =
+openIframe=3D"<iframe width=3D'100%' =
+style=3D'height:"+this.config.height+"px' name=3D'"+this.iframeIdName+"' =
+id=3D'"+this.iframeIdName+"' src=3D'"+this.info.contentUrl+"' =
+frameborder=3D'0' =
+scrolling=3D'"+this.config.scrollType+"'></iframe>";var =
+coverIframe=3D"<div id=3D'iframeBG' =
+style=3D'position:absolute;top:0px;left:0px;width:1px;height:1px;z-index:=
+"+coverIfZIndex+";filter: =
+alpha(opacity=3D00);opacity:0.00;background-color:#ffffff;'><div>";G("dia=
+logBody").innerHTML=3DopenIframe+coverIframe}else =
+if(this.config.contentType=3D=3D2){G("dialogBody").innerHTML=3Dthis.info.=
+contentHtml}else =
+if(this.config.contentType=3D=3D3){G("dialogBody").innerHTML=3Dconfirm;Ev=
+ent.observe(G('dialogOk'),"click",this.forCallback.bindAsEventListener(th=
+is),false);Event.observe(G('dialogCancel'),"click",this.close.bindAsEvent=
+Listener(this),false)}else =
+if(this.config.contentType=3D=3D4){G("dialogBody").innerHTML=3Dalert;Even=
+t.observe(G('dialogYES'),"click",this.close.bindAsEventListener(this),fal=
+se)}},reBuild:function(){G('dialogBody').height=3DG('dialogBody').clientH=
+eight;this.lastBuild()},show:function(){this.hiddenSome();this.middle();i=
+f(this.config.isShowShadow)this.shadow()},forCallback:function(){return =
+this.info.callBack(this.info.parameter)},shadow:function(){var =
+oShadow=3DG('dialogBoxShadow');var =
+oDialog=3DG('dialogBox');oShadow['style']['position']=3D"absolute";oShado=
+w['style']['background']=3D"#000";oShadow['style']['display']=3D"";oShado=
+w['style']['opacity']=3D"0.2";oShadow['style']['filter']=3D"alpha(opacity=
+=3D20)";oShadow['style']['top']=3DoDialog.offsetTop+this.info.shadowWidth=
+;oShadow['style']['left']=3DoDialog.offsetLeft+this.info.shadowWidth;oSha=
+dow['style']['width']=3DoDialog.offsetWidth;oShadow['style']['height']=3D=
+oDialog.offsetHeight},middle:function(){if(!this.config.isBackgroundCanCl=
+ick)G('dialogBoxBG').style.display=3D'';var =
+oDialog=3DG('dialogBox');oDialog['style']['position']=3D"absolute";oDialo=
+g['style']['display']=3D'';var =
+sClientWidth=3Ddocument.body.clientWidth;var =
+sClientHeight=3Ddocument.body.clientHeight;var =
+sScrollTop=3Ddocument.body.scrollTop;var =
+sleft=3D(document.body.clientWidth/2)-(oDialog.offsetWidth/2);var =
+iTop=3D-80+(sClientHeight/2+sScrollTop)-(oDialog.offsetHeight/2);var =
+sTop=3DiTop>0?iTop:(sClientHeight/2+sScrollTop)-(oDialog.offsetHeight/2);=
+if(sTop<1)sTop=3D"20";if(sleft<1)sleft=3D"20";oDialog['style']['left']=3D=
+sleft;oDialog['style']['top']=3DsTop},reset:function(){if(this.config.isR=
+eloadOnClose){top.location.reload()};this.close()},close:function(){G('di=
+alogBox').style.display=3D'none';if(!this.config.isBackgroundCanClick)G('=
+dialogBoxBG').style.display=3D'none';if(this.config.isShowShadow)G('dialo=
+gBoxShadow').style.display=3D'none';G('dialogBody').innerHTML=3D'';this.s=
+howSome()},hiddenSome:function(){var =
+tag=3Dthis.info.someHiddenTag.split(",");if(tag.length=3D=3D1&&tag[0]=3D=3D=
+"")tag.length=3D0;for(var =
+i=3D0;i<tag.length;i++){this.hiddenTag(tag[i])};var =
+ids=3Dthis.info.someHiddenEle.split(",");if(ids.length=3D=3D1&&ids[0]=3D=3D=
+"")ids.length=3D0;for(var =
+i=3D0;i<ids.length;i++){this.hiddenEle(ids[i])};var =
+ids=3Dthis.info.someDisabledBtn.split(",");if(ids.length=3D=3D1&&ids[0]=3D=
+=3D"")ids.length=3D0;for(var =
+i=3D0;i<ids.length;i++){this.disabledBtn(ids[i])};space("begin")},disable=
+dBtn:function(id){var =
+ele=3Ddocument.getElementById(id);if(typeof(ele)!=3D"undefined"&&ele!=3Dn=
+ull&&ele.disabled=3D=3Dfalse){ele.disabled=3Dtrue;this.someToDisabled.pus=
+h(ele)}},hiddenTag:function(tagName){var =
+ele=3Ddocument.getElementsByTagName(tagName);if(ele!=3Dnull){for(var =
+i=3D0;i<ele.length;i++){if(ele[i].style.display!=3D"none"&&ele[i].style.v=
+isibility!=3D'hidden'){ele[i].style.visibility=3D'hidden';this.someToHidd=
+en.push(ele[i])}}}},hiddenEle:function(id){var =
+ele=3Ddocument.getElementById(id);if(typeof(ele)!=3D"undefined"&&ele!=3Dn=
+ull){ele.style.visibility=3D'hidden';this.someToHidden.push(ele)}},showSo=
+me:function(){for(var =
+i=3D0;i<this.someToHidden.length;i++){this.someToHidden[i].style.visibili=
+ty=3D'visible'};for(var =
+i=3D0;i<this.someToDisabled.length;i++){this.someToDisabled[i].disabled=3D=
+false};space("end")}};var Dragdrop=3Dnew =
+Class();Dragdrop.prototype=3D{initialize:function(width,height,shadowWidt=
+h,showShadow,contentType){this.dragData=3Dnull;this.dragDataIn=3Dnull;thi=
+s.backData=3Dnull;this.width=3Dwidth;this.height=3Dheight;this.shadowWidt=
+h=3DshadowWidth;this.showShadow=3DshowShadow;this.contentType=3DcontentTy=
+pe;this.IsDraging=3Dfalse;this.oObj=3DG('dialogBox');Event.observe(G('dia=
+logBoxTitle'),"mousedown",this.moveStart.bindAsEventListener(this),false)=
+},moveStart:function(event){this.IsDraging=3Dtrue;if(this.contentType=3D=3D=
+1){G("iframeBG").style.display=3D"";G("iframeBG").style.width=3Dthis.widt=
+h;G("iframeBG").style.height=3Dthis.height};Event.observe(document,"mouse=
+move",this.mousemove.bindAsEventListener(this),false);Event.observe(docum=
+ent,"mouseup",this.mouseup.bindAsEventListener(this),false);Event.observe=
+(document,"selectstart",this.returnFalse,false);this.dragData=3D{x:Event.=
+pointerX(event),y:Event.pointerY(event)};this.backData=3D{x:parseInt(this=
+.oObj.style.left),y:parseInt(this.oObj.style.top)}},mousemove:function(ev=
+ent){if(!this.IsDraging)return;var =
+iLeft=3DEvent.pointerX(event)-this.dragData["x"]+parseInt(this.oObj.style=
+.left);var =
+iTop=3DEvent.pointerY(event)-this.dragData["y"]+parseInt(this.oObj.style.=
+top);if(this.dragData["y"]<parseInt(this.oObj.style.top))iTop=3DiTop-12;e=
+lse =
+if(this.dragData["y"]>parseInt(this.oObj.style.top)+25)iTop=3DiTop+12;thi=
+s.oObj.style.left=3DiLeft;this.oObj.style.top=3DiTop;if(this.showShadow){=
+G('dialogBoxShadow').style.left=3DiLeft+this.shadowWidth;G('dialogBoxShad=
+ow').style.top=3DiTop+this.shadowWidth};this.dragData=3D{x:Event.pointerX=
+(event),y:Event.pointerY(event)};document.body.style.cursor=3D"move"},mou=
+seup:function(event){if(!this.IsDraging)return;if(this.contentType=3D=3D1=
+)G("iframeBG").style.display=3D"none";document.onmousemove=3Dnull;documen=
+t.onmouseup=3Dnull;var =
+mousX=3DEvent.pointerX(event)-(document.documentElement.scrollLeft||docum=
+ent.body.scrollLeft);var =
+mousY=3DEvent.pointerY(event)-(document.documentElement.scrollTop||docume=
+nt.body.scrollTop);if(mousX<1||mousY<1||mousX>document.body.clientWidth||=
+mousY>document.body.clientHeight){this.oObj.style.left=3Dthis.backData["x=
+"];this.oObj.style.top=3Dthis.backData["y"];if(this.showShadow){G('dialog=
+BoxShadow').style.left=3Dthis.backData.x+this.shadowWidth;G('dialogBoxSha=
+dow').style.top=3Dthis.backData.y+this.shadowWidth}};this.IsDraging=3Dfal=
+se;document.body.style.cursor=3D"";Event.stopObserving(document,"selectst=
+art",this.returnFalse,false)},returnFalse:function(){return false}};
+------=_NextPart_000_0000_01C984BF.A0DCBA90
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://hi.baidu.com/js/g_spjs.js
+
+function =
+checkblank(id){ele=3Ddocument.getElementById(id);len=3Dbytes(ele.value);i=
+f(len=3D=3D0){showerror("msg_blank");return =
+false}else{hideerror("msg_blank");return true}};function =
+checkbytem(id,smax){ele=3Ddocument.getElementById(id);len=3Dbytes(ele.val=
+ue);if(len>smax){showerror("msg_maxthan");return =
+false}else{hideerror("msg_maxthan");return true}};function =
+checkbytes(id,smin){ele=3Ddocument.getElementById(id);len=3Dbytes(ele.val=
+ue);if(len<smin){showerror("msg_minthan");return =
+false}else{hideerror("msg_minthan");return true}};function =
+checkbyteall(id,smin,smax){ele=3Ddocument.getElementById(id);len=3Dbytes(=
+ele.value);if((len<smin)||(len>smax)){showerror("msg_than");return =
+false}else{hideerror("msg_than");return true}};function =
+bytes(str){if(typeof(str)!=3D'string'){str=3Dstr.value}var =
+len=3D0;for(var =
+i=3D0;i<str.length;i++){if(str.charCodeAt(i)>127){len++}len++}return =
+len};function trimlr(id){var =
+str=3Ddocument.getElementById(id).value;for(i=3D0;str.charAt(i)=3D=3D" =
+"||str.charAt(i)=3D=3D"=A1=A1";i++){}str=3Dstr.substring(i,str.length);fo=
+r(i=3Dstr.length-1;str.charAt(i)=3D=3D" =
+"||str.charAt(i)=3D=3D"=A1=A1";i--){}str=3Dstr.substring(0,i+1);return =
+str};function trimrn(id){var el=3Ddocument.getElementById(id);var =
+s=3Del.value;var len=3Ds.length;i=3D0;flag=3D0;flagn=3D0;var =
+result=3D"";while(i<len){ch=3Ds.charAt(i);if(ch=3D=3D"\n"||ch=3D=3D"\r"){=
+if((flagn=3D=3D1)&&(ch=3D=3D"\n")){flag++;flagn=3D0}else =
+if(ch=3D=3D"\r"){flagn=3D1}i++;if(flag=3D=3D1){result=3Dresult+ch}}else{f=
+lag=3D0;flagn=3D0;result=3Dresult+ch;i++}}return result};function =
+showerror(msg){if(msg)ob=3Ddocument.getElementById(msg);ob.style.display=3D=
+"block"};function =
+hideerror(msg){if(msg)ob=3Ddocument.getElementById(msg);ob.style.display=3D=
+"none"};function =
+setvalue(id){document.getElementById(id).value=3Dtrimrn(id);alert(documen=
+t.getElementById(id).value)};function =
+cutSpace(id){el=3Ddocument.getElementById(id);s=3Del.value;var =
+len=3Ds.length;var i;var ch;var =
+result=3D"";i=3D0;while(i<len){ch=3Ds.charAt(i++);result+=3Dch;if(ch!=3D'=
+ '&&ch!=3D'=A1=A1'){continue}while(i<len&&(ch=3Ds.charAt(i))=3D=3D' =
+'){i++}}return result};function getselect(id,selectname){var =
+ele=3Ddocument.getElementById(id);ele.selectedIndex=3Dselectname};
+------=_NextPart_000_0000_01C984BF.A0DCBA90--
