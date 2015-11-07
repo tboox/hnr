@@ -6,3 +6,10 @@ a Off-line handwritten numeral recognition system
 不过毕业后就再没整过，所以不推荐在项目中使用，现在放出来，仅供参考学习。
 
 doc目录下有我写的毕业论文，还有相关文献资料
+
+Email: 
+
+* waruqi@gmail.com
+* waruqi@126.com
+
+QQ: 565947663
