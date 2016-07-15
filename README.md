@@ -7,6 +7,9 @@ a Off-line handwritten numeral recognition system
 
 doc目录下有我写的毕业论文，还有相关文献资料
 
+![before](http://tboox.org/static/img/hnr/before.png)
+![after](http://tboox.org/static/img/hnr/after.png)
+
 Email: 
 
 * waruqi@gmail.com
